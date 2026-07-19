@@ -44,7 +44,7 @@ function inject(text, words, minutes) {
       }
       if (!hasWord) kept.push(`wordCount: ${words}`)
       if (!hasRead) kept.push(`readMinutes: ${Math.max(1, Math.round(minutes))}`)
-      return `---${kept.join('\n')}${tail}`
+      return `---\n${kept.join('\n')}${tail}`
     }
   }
   return `---\nwordCount: ${words}\nreadMinutes: ${Math.max(1, Math.round(minutes))}\n---\n${text}`

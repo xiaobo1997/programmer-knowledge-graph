@@ -16,3 +16,9 @@ docs/.vitepress/cache/
 
 # 临时导出
 docs-八股文旧版备份.tar.gz
+
+# 自动生成的搜索索引
+docs/.vitepress/dist/assets/
+
+# GitHub Pages workflow 元数据
+!docs/.vitepress/dist/.gitkeep
