@@ -1,0 +1,17 @@
+{
+  "name": "programmer-knowledge-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "程序员的长期知识图谱：读书笔记、全栈学习、DevOps、Agent 开发等。",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:verify": "node scripts/verify-site.mjs",
+    "meta:inject": "node scripts/inject-article-meta.cjs"
+  },
+  "devDependencies": {
+    "reading-time": "^1.5.0",
+    "vitepress": "^1.6.4"
+  }
+}

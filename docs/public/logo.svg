@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="程序员的知识图谱">
+  <defs>
+    <linearGradient id="g" x1="8" y1="7" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#46d8a2"/>
+      <stop offset="1" stop-color="#16855e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#173b2c"/>
+  <path d="M18 14h6v36h-6zM28 14h6v36h-6zM40 14h6v22h-6z" fill="url(#g)"/>
+  <circle cx="49" cy="44" r="6" fill="#8ce8bf"/>
+  <circle cx="22" cy="22" r="3" fill="#fff"/>
+  <circle cx="34" cy="36" r="3" fill="#fff"/>
+  <path d="M22 22 L34 36 L49 44" stroke="#8ce8bf" stroke-width="1.4" fill="none" opacity="0.7"/>
+</svg>

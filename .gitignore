@@ -1,0 +1,18 @@
+# Node / 构建产物
+node_modules/
+.npm-cache/
+
+# VitePress 缓存与构建
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# 编辑器
+.idea/
+.vscode/
+
+# 本地设计与隔离 worktree
+.superpowers/
+.worktrees/
+
+# 临时导出
+docs-八股文旧版备份.tar.gz
