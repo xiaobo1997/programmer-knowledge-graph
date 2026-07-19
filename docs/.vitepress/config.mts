@@ -8,7 +8,6 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '程序员的知识图谱',
   description: '读书笔记、全栈学习、DevOps、Agent 开发等长期沉淀。',
-  base: '/programmer-knowledge-graph/',
   cleanUrls: true,
   lastUpdated: true,
   head: [

@@ -1,0 +1,9 @@
+# Cloudflare Pages configuration
+
+# Site served from https://programmer-knowledge-graph.pages.dev
+# After successful first deploy, custom domains (e.g. knowledgegraph.xiaobo1997.com)
+# can be added in Cloudflare dashboard.
+
+[build]
+command = "npm run docs:build"
+publish = "docs/.vitepress/dist"
