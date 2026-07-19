@@ -1,3 +1,0 @@
-# VitePress 配置 local search 时 base 路径会出现在搜索 API 路径里，
-# 此文件用于在 CI 里确保搜索资源能正确加载。
-# 实际调整已在 docs/.vitepress/config.mts 中通过 base 字段完成，无需额外配置。
