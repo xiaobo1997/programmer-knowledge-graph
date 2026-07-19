@@ -10,7 +10,8 @@ const titleMap: Record<string, string> = {
   'reading-notes': '读书笔记',
   'fullstack': '全栈学习',
   'devops': 'DevOps',
-  'agent': 'Agent 开发',
+  'agent': 'Agent / AI',
+  'career': '个人成长',
   'roadmap': '技术地图',
 }
 
@@ -101,4 +102,71 @@ export function generateSidebar(docsPath: string): SidebarItem[] {
   }
 
   return sidebar
+}
+
+/**
+ * 生成多 sidebar 映射：每个分类目录对应一个独立侧栏，只显示该分类文章
+ * key 是路径前缀（如 '/devops/'），value 是该分类下的 SidebarItem[]
+ *
+ * 效果：
+ * - 在 /devops 下的页面，侧栏只显示 devops 分类的文章
+ * - 在 /reading-notes 下的页面，侧栏只显示读书笔记的文章
+ * - 在 /readme 等根页面，侧栏显示全部
+ */
+export function generateSidebarMap(docsPath: string): Record<string, SidebarItem[]> {
+  const entries = sortNames(readdirSync(docsPath))
+  const map: Record<string, SidebarItem[]> = {}
+
+  // 根路径：用默认侧栏（全部）
+  const rootSidebar: SidebarItem[] = []
+  const rootFiles = entries
+    .filter((entry) => {
+      const fullPath = join(docsPath, entry)
+      return statSync(fullPath).isFile() && extname(entry) === '.md' && !excludeFiles.has(entry)
+    })
+    .map((entry) => ({
+      text: displayTitle(basename(entry, '.md')),
+      link: `/${basename(entry, '.md')}`,
+    }))
+  if (rootFiles.length) {
+    rootSidebar.push({ text: '阅读指南', collapsed: true, items: rootFiles })
+  }
+  for (const entry of entries) {
+    const fullPath = join(docsPath, entry)
+    if (!statSync(fullPath).isDirectory() || excludeDirs.has(entry)) continue
+
+    const children = scanDirectory(fullPath, docsPath)
+    if (children.length) {
+      rootSidebar.push({
+        text: displayTitle(entry),
+        collapsed: true,
+        items: children,
+      })
+    }
+  }
+  map['/'] = rootSidebar
+  map['/readme/'] = rootSidebar
+
+  // 每个分类目录：独立侧栏
+  for (const entry of entries) {
+    const fullPath = join(docsPath, entry)
+    if (!statSync(fullPath).isDirectory() || excludeDirs.has(entry)) continue
+
+    const dirItems: SidebarItem[] = []
+    const children = scanDirectory(fullPath, docsPath)
+    if (children.length) {
+      dirItems.push({
+        text: displayTitle(entry),
+        collapsed: false,
+        items: children,
+      })
+    }
+
+    if (dirItems.length) {
+      // key 用前缀路径（VitePress 会自动匹配 /devops/* 和 /devops/）
+      map[`/${entry}/`] = dirItems
+    }
+  }
+
+  return map
 }

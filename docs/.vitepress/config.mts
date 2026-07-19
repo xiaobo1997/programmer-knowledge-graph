@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { resolve } from 'node:path'
-import { generateSidebar } from './utils'
+import { generateSidebar, generateSidebarMap } from './utils'
 
 const docsPath = resolve(process.cwd(), 'docs')
 
@@ -28,7 +28,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '总目录', link: '/readme' },
     ],
-    sidebar: generateSidebar(docsPath),
+    // 多 sidebar：每个分类目录用各自的侧栏（只显示该分类文章）
+    sidebar: generateSidebarMap(docsPath),
     search: {
       provider: 'local',
       options: {

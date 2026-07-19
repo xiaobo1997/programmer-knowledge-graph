@@ -8,7 +8,8 @@ const sections = [
   { key: 'reading-notes', icon: '▤', label: '读书笔记', link: '/reading-notes' },
   { key: 'fullstack', icon: '⌘', label: '全栈学习', link: '/fullstack' },
   { key: 'devops', icon: '◈', label: 'DevOps', link: '/devops' },
-  { key: 'agent', icon: '✦', label: 'Agent 开发', link: '/agent' },
+  { key: 'agent', icon: '✦', label: 'Agent / AI', link: '/agent' },
+  { key: 'career', icon: '◉', label: '个人成长', link: '/career' },
   { key: 'roadmap', icon: '⬡', label: '技术地图', link: '/roadmap' },
 ]
 

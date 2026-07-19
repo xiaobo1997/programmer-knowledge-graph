@@ -33,20 +33,20 @@ features:
     link: /devops
     linkText: 查看 DevOps
   - icon: ✦
-    title: Agent 开发
+    title: Agent / AI
     details: LLM Agent、工具调用、RAG、记忆与多步推理等构建经验。
     link: /agent
     linkText: 进入 Agent 专题
+  - icon: ◉
+    title: 个人成长
+    details: 软技能、职业规划、薪资谈判、效率工具与心理建设。
+    link: /career
+    linkText: 查看个人成长
   - icon: ⬡
     title: 技术地图
     details: 各领域学习路径、依赖关系与里程碑，跨专题串成一张图。
     link: /roadmap
     linkText: 查看技术地图
-  - icon: ☕
-    title: 面试与 Offer
-    details: 面试题、面经、Offer 路线在独立仓库维护，避免与长期学习混淆。
-    link: https://github.com/xiaobo1997/java-get-offer-interview
-    linkText: 跳转至 java-get-offer-interview
 ---
 
 ## 知识图谱不是题库
@@ -56,8 +56,6 @@ features:
 - 读过的书、记住的核心观点与可执行行动
 - 跨领域学习时沉淀的方法论与踩坑记录
 - 让下次少走弯路的判断框架
-
-不是为了应付面试，也不是工具手册。面试题、八股和面经复盘在 [`xiaobo1997/java-get-offer-interview`](https://github.com/xiaobo1997/java-get-offer-interview) 独立维护。
 
 ## 使用方式
 
@@ -74,7 +72,8 @@ features:
 - `reading-notes/`：读书笔记
 - `fullstack/`：全栈学习
 - `devops/`：DevOps
-- `agent/`：Agent 开发
+- `agent/`：Agent / AI
+- `career/`：个人成长
 - `roadmap/`：技术地图
 
 <h2 id="reading-notes">读书笔记</h2>

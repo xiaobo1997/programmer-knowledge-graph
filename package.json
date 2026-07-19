@@ -8,7 +8,9 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "docs:verify": "node scripts/verify-site.mjs",
-    "meta:inject": "node scripts/inject-article-meta.cjs"
+    "toc:sync": "node scripts/sync-toc.cjs",
+    "meta:inject": "node scripts/inject-article-meta.cjs",
+    "prebuild": "npm run toc:sync && npm run meta:inject"
   },
   "devDependencies": {
     "reading-time": "^1.5.0",
