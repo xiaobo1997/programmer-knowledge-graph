@@ -1,9 +1,6 @@
-# Cloudflare Pages configuration
+name = "programmer-knowledge-graph"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "docs/.vitepress/dist"
 
-# Site served from https://programmer-knowledge-graph.pages.dev
-# After successful first deploy, custom domains (e.g. knowledgegraph.xiaobo1997.com)
-# can be added in Cloudflare dashboard.
-
-[build]
-command = "npm run docs:build"
-publish = "docs/.vitepress/dist"
+[site]
+bucket = "docs/.vitepress/dist"
