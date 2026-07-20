@@ -80,11 +80,25 @@ const sections: Section[] = [
         excerpt: 'FROM eclipse-temurin:17-jre-alpine'
       },
       {
+        file: '/devops/cicd/github-actions-basics',
+        title: 'GitHub Actions 基础：5 个核心概念',
+        wordCount: 175,
+        readMinutes: 1,
+        excerpt: '定义在 .github/workflows/*.yml，每个文件是一个 workflow。'
+      },
+      {
         file: '/devops/github-actions-cicd',
         title: 'GitHub Actions 入门：把仓库变成自动发布系统',
         wordCount: 1368,
         readMinutes: 6,
         excerpt: '没有 CICD 的时候，每改一点东西你要：'
+      },
+      {
+        file: '/devops/cicd/gitlab-vs-github-actions',
+        title: 'GitLab CI vs GitHub Actions：怎么选',
+        wordCount: 243,
+        readMinutes: 1,
+        excerpt: '本仓库用的是 GitHub Actions（因为仓库在 GitHub）。workflow 文件在 .github/workflows/docs.yml。'
       },
       {
         file: '/devops/kubernetes-basics',
