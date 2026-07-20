@@ -8,8 +8,7 @@
 - **Agent 开发**：LLM Agent、Tool Use、RAG、Memory
 - **技术地图**：各领域学习路径与里程碑
 
-面试与 Offer 准备在独立仓库
-[`xiaobo1997/java-get-offer-interview`](https://github.com/xiaobo1997/java-get-offer-interview) 维护。
+
 
 ## 站点
 
