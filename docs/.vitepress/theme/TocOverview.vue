@@ -80,6 +80,13 @@ const sections: Section[] = [
         excerpt: 'FROM eclipse-temurin:17-jre-alpine'
       },
       {
+        file: '/devops/github-actions-cicd',
+        title: 'GitHub Actions 入门：把仓库变成自动发布系统',
+        wordCount: 1368,
+        readMinutes: 6,
+        excerpt: '没有 CICD 的时候，每改一点东西你要：'
+      },
+      {
         file: '/devops/kubernetes-basics',
         title: 'Kubernetes 核心概念：一文读懂 Pod / Service / Deployment',
         wordCount: 322,
