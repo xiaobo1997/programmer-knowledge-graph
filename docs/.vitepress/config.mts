@@ -10,6 +10,8 @@ export default defineConfig({
   description: '读书笔记、全栈学习、DevOps、Agent 开发等长期沉淀。',
   cleanUrls: true,
   lastUpdated: true,
+  // GitHub Pages 子路径部署
+  base: '/programmer-knowledge-graph/',
   head: [
     ['meta', { name: 'theme-color', content: '#173b2c' }],
   ],
