@@ -5,6 +5,7 @@ import mediumZoom from 'medium-zoom'
 import { nextTick, onMounted, onUnmounted, watch } from 'vue'
 import ArticleMeta from './ArticleMeta.vue'
 import KnowledgeRail from './KnowledgeRail.vue'
+import ReadingEnhancements from './ReadingEnhancements.vue'
 
 const route = useRoute()
 let zoom: ReturnType<typeof mediumZoom> | undefined
@@ -24,6 +25,9 @@ onUnmounted(() => zoom?.detach())
 
 <template>
   <DefaultTheme.Layout>
+    <template #layout-bottom>
+      <ReadingEnhancements />
+    </template>
     <template #sidebar-nav-before>
       <KnowledgeRail />
     </template>
