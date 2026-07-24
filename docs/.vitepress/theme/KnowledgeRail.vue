@@ -27,9 +27,24 @@ const sections = [
   { key: 'career', label: '个人成长', color: '#ec4899', accent: '#db2777', link: '/career' },
 ]
 
+// 首页 + 9 大类合成一个列表（视觉统一：都是图标方块 + 文字标签）
+const allItems = computed(() => [
+  {
+    key: 'home',
+    label: '首页',
+    iconKey: 'practice',
+    color: '#64748b',
+    accent: '#475569',
+    link: '',
+  },
+  ...sections,
+])
+
 const activeKey = computed(() => {
-  const section = sections.find((s) => route.path.startsWith(`/${s.key}`))
-  return section?.key ?? (route.path === '/' ? 'home' : '')
+  const item = allItems.value.find(
+    (s) => route.path.startsWith(`/${s.key}`) || (s.key === 'home' && (route.path === '/' || route.path === '')),
+  )
+  return item?.key ?? ''
 })
 
 function colorWithAlpha(hex: string, alpha: number) {
@@ -39,17 +54,25 @@ function colorWithAlpha(hex: string, alpha: number) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`
 }
 
-// === 折叠状态：默认展开，记住在 localStorage ===
+// === 折叠状态：默认展开，点击 banner logo 触发全部折叠/展开 ===
 const COLLAPSE_KEY = 'pkg-rail-collapsed'
-const collapsed = ref(false)
+const collapsed = ref(false)  // 默认展开
 
-// 只在客户端加载时读 localStorage（SSR 跳过）
 if (typeof window !== 'undefined') {
   try {
-    collapsed.value = localStorage.getItem(COLLAPSE_KEY) === '1'
-  } catch {
-    // localStorage 不可用时保持默认
+    const saved = localStorage.getItem(COLLAPSE_KEY)
+    if (saved !== null) collapsed.value = saved === '1'
+  } catch {}
+}
+
+watch(collapsed, (v) => {
+  if (typeof window !== 'undefined') {
+    try { localStorage.setItem(COLLAPSE_KEY, v ? '1' : '0') } catch {}
   }
+})
+
+function toggleCollapse() {
+  collapsed.value = !collapsed.value
 }
 
 watch(collapsed, (v) => {
@@ -59,76 +82,28 @@ watch(collapsed, (v) => {
     } catch {}
   }
 })
-
-function toggleCollapse() {
-  collapsed.value = !collapsed.value
-}
 </script>
 
 <template>
   <nav class="knowledge-rail" :class="{ 'knowledge-rail--collapsed': collapsed }" aria-label="知识分类">
-    <!-- 折叠/展开按钮：右上角 -->
-    <button
-      type="button"
-      class="rail-collapse-toggle"
-      :title="collapsed ? '展开分类列表' : '折叠分类列表'"
-      :aria-label="collapsed ? '展开分类列表' : '折叠分类列表'"
-      @click="toggleCollapse"
-    >
-      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-        <path
-          v-if="collapsed"
-          d="M4 6l4 4 4-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          v-else
-          d="M4 10l4-4 4 4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-
-    <!-- 首页固定显示，不折叠 -->
+    <!-- 一个连续列表：首页 + 9 大类，视觉统一 -->
     <a
-      class="rail-home"
-      :href="base"
-      :class="{ active: activeKey === 'home' }"
-      aria-label="首页"
-      :title="collapsed ? '首页' : ''"
-    >
-      <span class="rail-icon-box rail-icon-box--home">
-        <CategoryIcon key_="practice" :size="22" />
-      </span>
-      <span class="rail-label">首页</span>
-    </a>
-
-    <!-- 9 大类：折叠时只显示图标方框，展开时显示完整 -->
-    <a
-      v-for="section in sections"
-      :key="section.key"
+      v-for="item in allItems"
+      :key="item.key"
       class="rail-item"
-      :class="{ active: activeKey === section.key }"
-      :href="joinPath(base, section.link)"
-      :title="collapsed ? section.label : section.label"
+      :class="{ active: activeKey === item.key, home: item.key === 'home' }"
+      :href="item.key === 'home' ? base : joinPath(base, item.link)"
+      :title="item.label"
       :style="{
-        '--rail-color': section.color,
-        '--rail-color-soft': colorWithAlpha(section.color, 0.12),
-        '--rail-color-strong': section.accent,
+        '--rail-color': item.color,
+        '--rail-color-soft': colorWithAlpha(item.color, 0.12),
+        '--rail-color-strong': item.accent,
       }"
     >
       <span class="rail-icon-box">
-        <CategoryIcon :key_="section.key" :size="22" />
+        <CategoryIcon :key_="item.iconKey" :size="22" />
       </span>
-      <span class="rail-label">{{ section.label }}</span>
+      <span class="rail-label">{{ item.label }}</span>
     </a>
   </nav>
 </template>
@@ -138,33 +113,12 @@ function toggleCollapse() {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 30px 8px 12px 8px;  /* 顶部留出折叠按钮空间 */
+  padding: 12px 8px;
   position: relative;
 }
 
 /* 折叠/展开按钮：右上角小箭头 */
-.rail-collapse-toggle {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  z-index: 10;
-  width: 22px;
-  height: 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background: transparent;
-  color: var(--vp-c-text-3);
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  padding: 0;
-}
-.rail-collapse-toggle:hover {
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
-}
+
 
 /* 折叠状态：只显示方框图标 */
 .knowledge-rail--collapsed .rail-label {
@@ -180,7 +134,8 @@ function toggleCollapse() {
   height: 36px;
 }
 
-.rail-home,
+
+
 .rail-item {
   display: flex;
   align-items: center;
@@ -194,21 +149,18 @@ function toggleCollapse() {
   font-size: 14px;
 }
 
-.rail-home:hover,
 .rail-item:hover {
   background-color: var(--rail-color-soft, var(--vp-c-bg-soft));
   color: var(--rail-color, var(--vp-c-text-1));
   transform: translateX(2px);
 }
 
-.rail-home.active,
 .rail-item.active {
   background-color: var(--rail-color-soft, var(--vp-c-bg-soft));
   color: var(--rail-color, var(--vp-c-text-1));
   font-weight: 600;
 }
 
-.rail-home.active::before,
 .rail-item.active::before {
   content: '';
   position: absolute;
@@ -234,8 +186,8 @@ function toggleCollapse() {
   transition: width 0.2s ease, height 0.2s ease;
 }
 
-.rail-icon-box--home {
-  background-color: var(--vp-c-text-2);
+.rail-item.home .rail-icon-box {
+  background-color: var(--rail-color);
 }
 
 .rail-icon-box :deep(svg) {
