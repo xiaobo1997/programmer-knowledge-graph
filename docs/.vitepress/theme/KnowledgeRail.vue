@@ -46,7 +46,7 @@ function colorWithAlpha(hex: string, alpha: number) {
   <nav class="knowledge-rail" aria-label="知识分类">
     <a
       class="rail-home"
-      :href="base + '/'"
+      :href="base"
       :class="{ active: activeKey === 'home' }"
       aria-label="首页"
     >
