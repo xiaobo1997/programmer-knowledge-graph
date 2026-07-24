@@ -4,7 +4,12 @@ import { useRoute, useData } from 'vitepress'
 
 const route = useRoute()
 const { site } = useData()
-const base = computed(() => site.value.base || '/')
+function joinPath(base: string, file: string): string {
+  const b = base.endsWith('/') ? base.slice(0, -1) : base
+  const f = file.startsWith('/') ? file : '/' + file
+  return b + f
+}
+const base = computed(() => joinPath(site.value.base || '/', ''))
 
 const sections = [
   { key: 'reading-notes', icon: '▤', label: '读书笔记', link: '/reading-notes' },
@@ -23,13 +28,13 @@ const activeKey = computed(() => {
 
 <template>
   <nav class="knowledge-rail" aria-label="知识分类">
-    <a class="rail-home" :href="base" :class="{ active: activeKey === 'home' }" aria-label="首页">X</a>
+    <a class="rail-home" :href="base + '/'" :class="{ active: activeKey === 'home' }" aria-label="首页">X</a>
     <a
       v-for="section in sections"
       :key="section.key"
       class="rail-item"
       :class="{ active: activeKey === section.key }"
-      :href="base + section.link"
+      :href="joinPath(base, section.link)"
       :title="section.label"
     >
       <span class="rail-icon">{{ section.icon }}</span>

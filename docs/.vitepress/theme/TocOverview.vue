@@ -24,7 +24,12 @@ const props = defineProps<{
 }>()
 
 const { site } = useData()
-const base = computed(() => site.value.base || '/')
+function joinPath(base: string, file: string): string {
+  const b = base.endsWith('/') ? base.slice(0, -1) : base
+  const f = file.startsWith('/') ? file : '/' + file
+  return b + f
+}
+const base = computed(() => joinPath(site.value.base || '/', ''))
 
 const sections: Section[] = [
   {
@@ -266,7 +271,7 @@ function setActive(key: string) {
       </div>
       <ul class="toc-articles">
         <li v-for="a in s.articles" :key="a.file" class="toc-article">
-          <a :href="base + a.file" class="toc-article-title">{{ a.title }}</a>
+          <a :href="joinPath(base, a.file)" class="toc-article-title">{{ a.title }}</a>
           <div class="toc-article-meta">
             <span>⏱ {{ a.readMinutes }} 分钟</span>
             <span class="dot">·</span>
