@@ -1,6 +1,8 @@
 ---
 title: 读书笔记
 aside: false
+wordCount: 87
+readMinutes: 1
 ---
 
 <script setup lang="ts">

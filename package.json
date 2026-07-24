@@ -10,7 +10,8 @@
     "docs:verify": "node scripts/verify-site.mjs",
     "toc:sync": "node scripts/sync-toc.cjs",
     "meta:inject": "node scripts/inject-article-meta.cjs",
-    "prebuild": "npm run toc:sync && npm run meta:inject"
+    "prebuild": "npm run toc:sync && npm run meta:inject",
+    "x": "node scripts/x.mjs"
   },
   "devDependencies": {
     "pagefind": "^1.5.2",

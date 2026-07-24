@@ -4,6 +4,8 @@ author: xiaobo
 level: 入门
 tags: [CICD, GitHub Actions]
 test: true
+wordCount: 172
+readMinutes: 1
 ---
 
 

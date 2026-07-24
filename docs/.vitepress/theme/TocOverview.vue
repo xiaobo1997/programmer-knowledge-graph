@@ -54,6 +54,22 @@ const sections: Section[] = [
         excerpt: "RAG 解决的核心问题：让 LLM 回答它训练时没见过的信息。  LLM 训练数据有截止时间  LLM 不懂你的公司内部文档  LLM 可能产生幻觉（编造答案）…",
         tags: ["RAG","LLM","向量数据库"],
       },
+      {
+        file: "/ai/llm/test1",
+        title: "test1",
+        wordCount: 0,
+        readMinutes: 1,
+        excerpt: "",
+        tags: [],
+      },
+      {
+        file: "/ai/rag/test2",
+        title: "test2",
+        wordCount: 0,
+        readMinutes: 1,
+        excerpt: "",
+        tags: [],
+      },
     ],
   },
   {

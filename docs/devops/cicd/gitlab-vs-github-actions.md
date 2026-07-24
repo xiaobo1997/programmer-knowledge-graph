@@ -4,6 +4,8 @@ author: xiaobo
 level: 进阶
 tags: [CICD, GitLab, GitHub Actions, 对比]
 test: true
+wordCount: 249
+readMinutes: 1
 ---
 
 

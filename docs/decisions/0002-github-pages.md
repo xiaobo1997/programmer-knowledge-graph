@@ -1,3 +1,7 @@
+---
+wordCount: 341
+readMinutes: 1
+---
 # ADR-0002: 用 GitHub Pages + GitHub Actions 部署
 
 ## 状态

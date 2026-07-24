@@ -1,6 +1,8 @@
 ---
 title: 个人成长
 aside: false
+wordCount: 71
+readMinutes: 1
 ---
 
 <script setup lang="ts">

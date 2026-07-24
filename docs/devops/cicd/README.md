@@ -1,5 +1,7 @@
 ---
 test: true
+wordCount: 107
+readMinutes: 1
 ---
 # CICD 工具与实践
 

@@ -1,6 +1,8 @@
 ---
 title: DevOps
 aside: false
+wordCount: 62
+readMinutes: 1
 ---
 
 <script setup lang="ts">

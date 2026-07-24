@@ -1,3 +1,7 @@
+---
+wordCount: 1568
+readMinutes: 5
+---
 # 分类重构 + OpenSpec 化
 
 > 2025-07-20 启动。本次改动把仓库从「按技术分 6 类」改为「按工程师工作场景分 7 类」，并加上 OpenSpec 化结构（changes / decisions / conventions / AGENTS.md）。

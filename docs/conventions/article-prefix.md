@@ -1,3 +1,7 @@
+---
+wordCount: 486
+readMinutes: 2
+---
 # 文章前缀规范
 
 > 写新文章时必读。

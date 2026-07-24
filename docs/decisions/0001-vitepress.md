@@ -1,3 +1,7 @@
+---
+wordCount: 365
+readMinutes: 1
+---
 # ADR-0001: 用 VitePress 做静态站点
 
 ## 状态

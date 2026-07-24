@@ -1,3 +1,7 @@
+---
+wordCount: 374
+readMinutes: 1
+---
 # Git Commit 规范
 
 ## 格式

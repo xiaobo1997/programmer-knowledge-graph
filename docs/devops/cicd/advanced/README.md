@@ -1,5 +1,7 @@
 ---
 test: true
+wordCount: 58
+readMinutes: 1
 ---
 # CICD 进阶
 

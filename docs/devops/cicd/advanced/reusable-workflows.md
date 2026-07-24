@@ -4,6 +4,8 @@ author: xiaobo
 level: 进阶
 tags: [CICD, GitHub Actions, DRY]
 test: true
+wordCount: 281
+readMinutes: 1
 ---
 
 

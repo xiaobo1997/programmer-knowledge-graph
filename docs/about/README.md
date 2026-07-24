@@ -1,3 +1,7 @@
+---
+wordCount: 291
+readMinutes: 1
+---
 # 程序员的长期知识图谱
 
 这里沉淀：

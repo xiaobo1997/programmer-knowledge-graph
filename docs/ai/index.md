@@ -1,6 +1,8 @@
 ---
 title: AI & 大模型
 aside: false
+wordCount: 85
+readMinutes: 1
 ---
 
 <script setup lang="ts">

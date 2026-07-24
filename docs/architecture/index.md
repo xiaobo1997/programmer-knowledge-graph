@@ -1,6 +1,8 @@
 ---
 title: 架构 & 性能
 aside: false
+wordCount: 91
+readMinutes: 1
 ---
 
 <script setup lang="ts">

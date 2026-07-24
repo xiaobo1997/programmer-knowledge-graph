@@ -1,3 +1,7 @@
+---
+wordCount: 380
+readMinutes: 1
+---
 # ADR-0004: 示例代码独立仓库
 
 ## 状态

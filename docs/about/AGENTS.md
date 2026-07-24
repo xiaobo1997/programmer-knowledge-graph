@@ -1,3 +1,7 @@
+---
+wordCount: 915
+readMinutes: 3
+---
 # AGENTS.md — AI 进入本仓库的入口
 
 > 任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes）第一次进入这个仓库，**必须先读这个文件**。然后按顺序读 conventions → decisions → changes。

@@ -4,6 +4,8 @@ author: xiaobo
 level: 入门
 tags: [CICD, GitHub Actions, DevOps]
 test: true
+wordCount: 1292
+readMinutes: 4
 ---
 
 
