@@ -40,6 +40,9 @@ onMounted(async () => {
 const route = useRoute()
 const { frontmatter, site } = useData()
 
+// 如果外部没传 sections prop，用 sectionsData（运行时 fetch）
+const effectiveSections = computed<Section[]>(() => sectionsData.value)
+
 // 用 VitePress 的 withBase 处理 base 路径（GitHub Pages 部署需要）
 // 拼接时去重双斜杠：base 末尾 + file 开头
 function joinPath(base: string, file: string): string {
