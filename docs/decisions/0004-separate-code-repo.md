@@ -58,4 +58,4 @@
 ## 关联
 
 - [docs/conventions/code-example-link.md](../conventions/code-example-link.md)
-- [AGENTS.md 仓库边界](../AGENTS.md)
+- [AGENTS.md 仓库边界](../about/AGENTS)

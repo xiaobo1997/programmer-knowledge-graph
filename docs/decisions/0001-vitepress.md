@@ -55,5 +55,5 @@
 
 ## 关联
 
-- [README.md](../README.md)
-- [AGENTS.md](../AGENTS.md)
+- [README.md](../about/README)
+- [AGENTS.md](../about/AGENTS)

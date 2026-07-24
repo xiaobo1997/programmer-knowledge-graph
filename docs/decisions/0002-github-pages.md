@@ -72,4 +72,4 @@ GitHub Pages (https://xiaobo1997.github.io/programmer-knowledge-graph/)
 ## 关联
 
 - [docs/changes/2025-07-20-classification-restructuring.md](../changes/2025-07-20-classification-restructuring.md)
-- [AGENTS.md](../AGENTS.md)
+- [AGENTS.md](../about/AGENTS)
