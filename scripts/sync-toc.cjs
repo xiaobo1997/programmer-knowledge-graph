@@ -7,30 +7,39 @@ const ROOT = 'docs'
 const VUE_PATH = 'docs/.vitepress/theme/TocOverview.vue'
 const JSON_PATH = 'docs/.vitepress/theme/sections.json'
 
-// 分类配置
+// 9 大类：按工程师工作场景划分
 const titleMap = {
-  'reading-notes': '读书笔记',
-  'fullstack': '全栈学习',
-  'devops': 'DevOps',
-  'agent': 'Agent / AI',
-  'career': '个人成长',
-  'roadmap': '技术地图',
+  backend: '后端开发',
+  frontend: '前端开发',
+  data: '数据 & 中间件',
+  devops: 'DevOps & 云原生',
+  ai: 'AI & 大模型',
+  architecture: '架构 & 性能',
+  practice: '工程实践',
+  reading: '读书笔记',
+  career: '个人成长',
 }
 const iconMap = {
-  'reading-notes': '▤',
-  fullstack: '⌘',
-  devops: '◈',
-  agent: '✦',
-  career: '◉',
-  roadmap: '⬡',
+  backend: '⌬',
+  frontend: '⌘',
+  data: '▥',
+  devops: '◉',
+  ai: '✦',
+  architecture: '⬡',
+  practice: '⚙',
+  reading: '☰',
+  career: '◐',
 }
 const descMap = {
-  'reading-notes': '技术、商业、个人成长阅读的笔记、思考与可执行行动。',
-  fullstack: '前端、后端、跨端、网络、性能调优等横向技能与项目实践。',
+  backend: 'Java/Go/Python、数据库、消息队列、分布式、JVM 调优。',
+  frontend: 'JS/TS、Vue/React、构建工具、Web 性能、跨端。',
+  data: 'MySQL、Redis、Elasticsearch、消息队列、缓存设计。',
   devops: 'Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。',
-  agent: 'LLM Agent、Tool Use、RAG、记忆与多步推理。',
-  career: '软技能、职业规划、薪资谈判、效率工具与心理建设。',
-  roadmap: '各领域学习路径、依赖关系与里程碑。',
+  ai: 'LLM、Agent、RAG、向量数据库、Prompt 工程。',
+  architecture: '系统设计、高并发、容量规划、稳定性工程。',
+  practice: 'Git、测试、Code Review、调试、编码规范与工具链。',
+  reading: '整本书学习心得、跨领域阅读。',
+  career: '软技能、Career、面试、薪资谈判、心理建设。',
 }
 
 function walk(root) {
@@ -43,7 +52,9 @@ function walk(root) {
       result.push(...walk(p))
     } else if (
       name.endsWith('.md') &&
-      !name.toUpperCase().endsWith('README.MD') &&
+      // 普通 README.md（无 [test] 前缀）是占位，过滤掉
+      // [test]README.md 是子目录说明文章，要保留
+      !(name === 'README.md') &&
       !['index.md', 'readme.md'].includes(name)
     ) {
       result.push(p)
@@ -143,13 +154,16 @@ function buildSections() {
         const stats = readingTime(body)
         const wordCount = meta.wordCount ? parseInt(meta.wordCount, 10) : wordCountOf(body)
         const readMinutes = meta.readMinutes ? parseInt(meta.readMinutes, 10) : Math.max(1, Math.round(stats.minutes))
+        const isTest = /\[test\]/.test(rel)
+        const cleanTitle = meta.title || titleFromHeading(body, rel.split('/').pop())
         return {
           file: `/${rel}`,
-          title: meta.title || titleFromHeading(body, rel.split('/').pop()),
+          title: isTest ? '🧪 ' + cleanTitle : cleanTitle,
           wordCount,
           readMinutes,
           excerpt: excerptFromBody(body),
           tags: Array.isArray(meta.tags) ? meta.tags : [],
+          isTest,
         }
       })
       .sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'))

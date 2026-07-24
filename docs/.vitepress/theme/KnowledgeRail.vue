@@ -11,13 +11,17 @@ function joinPath(base: string, file: string): string {
 }
 const base = computed(() => joinPath(site.value.base || '/', ''))
 
+// 9 大类，按工程师工作场景划分
 const sections = [
-  { key: 'reading-notes', icon: '▤', label: '读书笔记', link: '/reading-notes' },
-  { key: 'fullstack', icon: '⌘', label: '全栈学习', link: '/fullstack' },
-  { key: 'devops', icon: '◈', label: 'DevOps', link: '/devops' },
-  { key: 'agent', icon: '✦', label: 'Agent / AI', link: '/agent' },
-  { key: 'career', icon: '◉', label: '个人成长', link: '/career' },
-  { key: 'roadmap', icon: '⬡', label: '技术地图', link: '/roadmap' },
+  { key: 'backend', icon: '⌬', label: '后端开发', link: '/backend' },
+  { key: 'frontend', icon: '⌘', label: '前端开发', link: '/frontend' },
+  { key: 'data', icon: '▥', label: '数据 & 中间件', link: '/data' },
+  { key: 'devops', icon: '◉', label: 'DevOps & 云原生', link: '/devops' },
+  { key: 'ai', icon: '✦', label: 'AI & 大模型', link: '/ai' },
+  { key: 'architecture', icon: '⬡', label: '架构 & 性能', link: '/architecture' },
+  { key: 'practice', icon: '⚙', label: '工程实践', link: '/practice' },
+  { key: 'reading', icon: '☰', label: '读书笔记', link: '/reading' },
+  { key: 'career', icon: '◐', label: '个人成长', link: '/career' },
 ]
 
 const activeKey = computed(() => {

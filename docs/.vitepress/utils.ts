@@ -7,17 +7,20 @@ const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base'
 
 // 目录名 → 显示名映射
 const titleMap: Record<string, string> = {
-  // 一级分类
-  'reading-notes': '读书笔记',
-  'fullstack': '全栈学习',
-  'devops': 'DevOps',
-  'agent': 'Agent / AI',
-  'career': '个人成长',
-  'roadmap': '技术地图',
-  // 二级子目录（按需添加）
-  'cicd': 'CICD 工具',
+  // 9 大类（按工程师工作场景划分）
+  backend: '后端开发',
+  frontend: '前端开发',
+  data: '数据 & 中间件',
+  devops: 'DevOps & 云原生',
+  ai: 'AI & 大模型',
+  architecture: '架构 & 性能',
+  practice: '工程实践',
+  reading: '读书笔记',
+  career: '个人成长',
+  // 二级子目录
+  cicd: 'CICD 工具',
   // 三级子目录
-  'advanced': '进阶',
+  advanced: '进阶',
 }
 
 type SidebarItem = {

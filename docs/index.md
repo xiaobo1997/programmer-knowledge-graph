@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "程序员的长期知识图谱"
   text: "把每一份阅读、每一次学习、每一段实践，沉淀成一张可生长的图。"
-  tagline: 读书笔记 · 全栈学习 · DevOps · Agent 开发 · 技术地图
+  tagline: 后端 · 前端 · 数据 · DevOps · AI · 架构 · 工程实践 · 读书 · 成长
   image:
     src: /logo.svg
     alt: 程序员的知识图谱
@@ -17,36 +17,51 @@ hero:
       link: https://github.com/xiaobo1997/programmer-knowledge-graph
 
 features:
-  - icon: ▤
-    title: 读书笔记
-    details: 技术、商业、个人成长阅读的笔记、思考与可执行行动。
-    link: /reading-notes
-    linkText: 浏览读书笔记
+  - icon: ⌬
+    title: 后端开发
+    details: Java/Go/Python、数据库、消息队列、分布式、JVM 调优。
+    link: /backend
+    linkText: 进入后端
   - icon: ⌘
-    title: 全栈学习
-    details: 前端、后端、跨端、网络、性能调优等横向技能与项目实践。
-    link: /fullstack
-    linkText: 查看全栈路线
-  - icon: ◈
-    title: DevOps
-    details: Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。
-    link: /devops
-    linkText: 查看 DevOps
-  - icon: ✦
-    title: Agent / AI
-    details: LLM Agent、工具调用、RAG、记忆与多步推理等构建经验。
-    link: /agent
-    linkText: 进入 Agent 专题
+    title: 前端开发
+    details: JS/TS、Vue/React、构建工具、Web 性能、跨端。
+    link: /frontend
+    linkText: 进入前端
+  - icon: ▥
+    title: 数据 & 中间件
+    details: MySQL、Redis、Elasticsearch、消息队列、缓存设计。
+    link: /data
+    linkText: 进入数据专题
   - icon: ◉
-    title: 个人成长
-    details: 软技能、职业规划、薪资谈判、效率工具与心理建设。
-    link: /career
-    linkText: 查看个人成长
+    title: DevOps & 云原生
+    details: Linux、Docker、Kubernetes、CICD、监控、应急响应。
+    link: /devops
+    linkText: 进入 DevOps
+  - icon: ✦
+    title: AI & 大模型
+    details: LLM、Agent、RAG、向量数据库、Prompt 工程。
+    link: /ai
+    linkText: 进入 AI 专题
   - icon: ⬡
-    title: 技术地图
-    details: 各领域学习路径、依赖关系与里程碑，跨专题串成一张图。
-    link: /roadmap
-    linkText: 查看技术地图
+    title: 架构 & 性能
+    details: 系统设计、高并发、容量规划、稳定性工程。
+    link: /architecture
+    linkText: 进入架构
+  - icon: ⚙
+    title: 工程实践
+    details: Git、测试、Code Review、调试、编码规范与工具链。
+    link: /practice
+    linkText: 进入工程实践
+  - icon: ☰
+    title: 读书笔记
+    details: 整本书学习心得、跨领域阅读，沉淀认知而非题库。
+    link: /reading
+    linkText: 浏览读书笔记
+  - icon: ◐
+    title: 个人成长
+    details: 软技能、Career、面试、薪资谈判、心理建设。
+    link: /career
+    linkText: 进入个人成长
 ---
 
 ## 知识图谱不是题库
@@ -57,34 +72,39 @@ features:
 - 跨领域学习时沉淀的方法论与踩坑记录
 - 让下次少走弯路的判断框架
 
+**9 大类按工程师工作场景划分**——不按技术分（避免 DevOps 占 9 篇这种失衡），不按时间排（避免「最新的不一定是最重要的」）。
+
+## 仓库边界
+
+- **本文档仓库**：放「为什么、怎么做、踩过什么坑」—— 这是知识本身
+- **示例代码仓库**（待建）：放「完整可运行的项目」—— 文档里贴链接，文本更聚焦
+
+文章里要演示代码时，会链接到示例代码仓库，**不把大段代码贴在文档里**。
+
 ## 使用方式
 
-- 左侧「知识分类」列出当前所有大类
-- 顶部搜索（`⌘ K`）支持全文中文搜索
-- 文章页右侧「本页目录」基于标题自动生成
-- 图片支持点击放大，懒加载自动启用
-- 所有内容按专题分目录组织，按时间顺序追加
+- 顶部胶囊：进入「总目录」按分类筛选文章
+- 顶部搜索（`⌘ K`）：全文搜索（Pagefind 索引）
+- 文章页右侧「本页目录」：自动生成章节锚点
+- 文章底部「相关阅读」：基于标签推荐同类文章
+- 「在 GitHub 上编辑此页」：每篇文章 footer 有链接
 
-## 当前状态
+## 沉淀原则
 
-仓库刚建立，处于**空白期**。每个分类目录下放占位文件，等你逐篇写入：
+- 写**值得保留的认知**，不写 1+1=2
+- 真实项目案例 > 教程摘抄
+- 配图优先用 Mermaid / 截图，不堆文字
+- 文章前缀 `[test]` 表示测试占位，正式内容不加
 
-- `reading-notes/`：读书笔记
-- `fullstack/`：全栈学习
-- `devops/`：DevOps
-- `agent/`：Agent / AI
-- `career/`：个人成长
-- `roadmap/`：技术地图
+## 仓库治理
 
-<h2 id="reading-notes">读书笔记</h2>
+- `AGENTS.md`：AI 进入仓库的入口
+- `docs/conventions/`：沉淀的命名/格式规范
+- `docs/decisions/`：架构决策记录（ADR）
+- `docs/changes/`：每次重大改动记录
 
-每本书的笔记包含四个固定板块：
-
-- 核心观点：作者主张什么
-- 个人思考：我认同/怀疑的部分
-- 行动清单：接下来 30 天要做的 1-3 件事
-- 工程实践连接：与日常工作/项目怎么打通
+AI 改仓库时**先看 conventions → decisions → changes，再动手**。
 
 ## 贡献方式
 
-仓库公开，欢迎你 fork 与讨论。
+仓库公开，欢迎 fork 与讨论。
