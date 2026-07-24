@@ -32,8 +32,9 @@ export default defineConfig({
     ],
     // 多 sidebar：每个分类目录用各自的侧栏（只显示该分类文章）
     sidebar: generateSidebarMap(docsPath),
+    // Pagefind 全文搜索（构建时自动索引）
     search: {
-      provider: 'local',
+      provider: 'pagefind',
       options: {
         locales: {
           root: {
