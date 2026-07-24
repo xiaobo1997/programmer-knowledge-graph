@@ -26,73 +26,113 @@ function clean() {
   }
 }
 
+// 完整 build 流程（dev / build / deploy 都复用）
+function fullBuild() {
+  clean()
+  const ok1 = run('npm run toc:sync')
+  if (!ok1) process.exit(1)
+  const ok2 = run('npm run meta:inject')
+  if (!ok2) process.exit(1)
+  const ok3 = run('npm run docs:build')
+  if (!ok3) process.exit(1)
+  const ok4 = run('npm run docs:verify')
+  if (!ok4) process.exit(1)
+}
+
+// 智能端口处理：如果 5175 占用，自动找下一个
+function findFreePort(preferred = 5175) {
+  let port = preferred
+  while (port < 5200) {
+    try {
+      execSync(`lsof -i:${port} -P -n`, { stdio: 'ignore' })
+      port++
+    } catch {
+      return port
+    }
+  }
+  return preferred
+}
+
+// 检测 dist 是否需要重建（如果不存在或比源文件旧）
+function distStale() {
+  const distIndex = resolve(ROOT, 'docs/.vitepress/dist/index.html')
+  if (!existsSync(distIndex)) return true
+  // 简单判断：dist 文件是否比 docs/ 任意 .md 新
+  try {
+    const distMtime = execSync(`stat -f %m "${distIndex}" 2>/dev/null || stat -c %Y "${distIndex}"`, { encoding: 'utf-8' }).trim()
+    const srcNewer = execSync(
+      `find docs -name '*.md' -newer "${distIndex}" -type f 2>/dev/null | head -1`,
+      { cwd: ROOT, encoding: 'utf-8' }
+    ).trim()
+    return !!srcNewer
+  } catch {
+    return true
+  }
+}
+
 const COMMANDS = {
   // === 核心命令 ===
+
+  // dev: 智能启动 — 没有 dist 或 dist 过期会自动 build，否则直接起 dev
   dev: {
-    desc: '本地 dev server（5175）',
+    desc: '本地 dev（自动 build if needed）',
     run: async () => {
-      clean()
-      const child = spawn(npmCmd, ['run', 'docs:dev', '--', '--host', '127.0.0.1', '--port', '5175'], {
+      if (distStale()) {
+        console.log('\x1b[33m检测到 dist 缺失或过期，先 build...\x1b[0m')
+        fullBuild()
+      } else {
+        console.log('\x1b[32mdist 是新的，跳过 build 直接起 dev server\x1b[0m')
+      }
+      const port = findFreePort(5175)
+      const child = spawn(npmCmd, ['run', 'docs:dev', '--', '--host', '127.0.0.1', `--port`, String(port)], {
         cwd: ROOT,
         stdio: 'inherit',
       })
       process.on('SIGINT', () => child.kill('SIGINT'))
-      await new Promise(() => {}) // 永远不退出
+      await new Promise(() => {})
     },
   },
 
+  // build: 完整的本地构建 + 验证（不部署）
   build: {
-    desc: '清理 + 构建 + 验证（本地用）',
+    desc: '清理 + build + 验证',
     run: () => {
-      clean()
-      const ok1 = run('npm run toc:sync')
-      if (!ok1) process.exit(1)
-      const ok2 = run('npm run meta:inject')
-      if (!ok2) process.exit(1)
-      const ok3 = run('npm run docs:build')
-      if (!ok3) process.exit(1)
-      const ok4 = run('npm run docs:verify')
-      if (!ok4) process.exit(1)
+      fullBuild()
       console.log('\n\x1b[32m✓ 构建成功 + 验证通过\x1b[0m')
+      console.log('\x1b[36m本地预览：http://127.0.0.1:5175/programmer-knowledge-graph/\x1b[0m')
     },
   },
 
-  // === 部署相关 ===
+  // 部署
   deploy: {
-    desc: '构建 + git add + commit + push（自动部署到 GitHub Pages）',
+    desc: 'build + git add + commit + push（commit message: 剩余所有参数）',
     run: () => {
-      clean()
-      run('npm run toc:sync')
-      run('npm run meta:inject')
-      run('npm run docs:build')
-      const verifyOk = run('npm run docs:verify')
-      if (!verifyOk) {
-        console.error('\n\x1b[31m✗ 验证失败，不提交\x1b[0m')
-        process.exit(1)
-      }
+      fullBuild()
       run('git add -A')
       const status = execSync('git status --short', { cwd: ROOT, encoding: 'utf-8' }).trim()
       if (!status) {
         console.log('\n\x1b[33m没有改动，跳过 commit\x1b[0m')
         return
       }
-      const msg = process.argv[3] || 'chore: 更新站点'
+      // 收集所有剩余参数作为 commit message（不用引号）
+      const msgParts = process.argv.slice(3).filter((arg) => !arg.startsWith('--'))
+      const msg = msgParts.length ? msgParts.join(' ') : 'chore: 更新站点'
       run(`git commit -m "${msg.replace(/"/g, '\\"')}"`)
       run('git push origin master')
-      console.log('\n\x1b[32m✓ 已推送，GitHub Pages 1-2 分钟后自动部署\x1b[0m')
+      console.log('\n\x1b[32m✓ 已推送\x1b[0m')
+      console.log('\x1b[36m查看 CI：npm run x -- check\x1b[0m')
     },
   },
+
+  // === 辅助 ===
 
   sync: {
     desc: '只跑 sync-toc（不构建）',
-    run: () => {
-      run('npm run toc:sync')
-    },
+    run: () => run('npm run toc:sync'),
   },
 
-  // === 检查工具 ===
   check: {
-    desc: '检查 Actions 状态（CI 部署后用）',
+    desc: '看 GitHub Actions 最新状态',
     run: async () => {
       const token = process.env.GITHUB_TOKEN || readFileSync(resolve(process.env.HOME, '.hermes/github-token'), 'utf-8').trim()
       try {
@@ -100,8 +140,8 @@ const COMMANDS = {
         const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } })
         const data = await res.json()
         for (const r of (data.workflow_runs || []).slice(0, 3)) {
-          const color = r.conclusion === 'success' ? '\x1b[32m' : '\x1b[31m'
-          console.log(`${color}${r.conclusion}\x1b[0m  ${r.name}  (${r.head_sha?.slice(0, 7)})  ${r.updated_at}`)
+          const color = r.conclusion === 'success' ? '\x1b[32m' : r.conclusion === 'failure' ? '\x1b[31m' : '\x1b[33m'
+          console.log(`${color}${r.conclusion || r.status}\x1b[0m  ${r.name}  (${r.head_sha?.slice(0, 7)})  ${r.updated_at}`)
         }
       } catch (e) {
         console.error('检查失败：', e.message)
@@ -113,22 +153,23 @@ const COMMANDS = {
 const cmd = process.argv[2]
 if (!cmd || cmd === '--help' || cmd === '-h' || !COMMANDS[cmd]) {
   console.log(`
-\x1b[36m用法：node scripts/x.js <command>\x1b[0m
+\x1b[36m用法：npm run x -- <command> [args]\x1b[0m
 
 可用命令：
 ${Object.entries(COMMANDS).map(([k, v]) => `  \x1b[33m${k.padEnd(10)}\x1b[0m ${v.desc}`).join('\n')}
 
-\x1b[36m快捷别名：\x1b[0m
-  dev    = npm run docs:dev -- --host 127.0.0.1 --port 5175
-  build  = clean + sync-toc + meta-inject + docs:build + docs:verify
-  deploy = build + git add/commit/push (commit message: script "deploy" <msg>)
-  sync   = 只跑 sync-toc 重新生成总目录
-  check  = 查看 GitHub Actions 最新状态
+\x1b[36m快捷工作流：\x1b[0m
+  \x1b[33mdev\x1b[0m     自动 build（如需）+ dev server
+  \x1b[33mbuild\x1b[0m   只 build + 验证
+  \x1b[33mdeploy\x1b[0m  build + commit + push（剩余参数作为 commit message）
+  \x1b[33msync\x1b[0m    只重新生成总目录
+  \x1b[33mcheck\x1b[0m   看 Actions 状态
 
 \x1b[36m示例：\x1b[0m
-  node scripts/x.js dev
-  node scripts/x.js build
-  node scripts/x.js deploy "feat: 新增 MySQL 索引优化文章"
+  npm run x -- dev
+  npm run x -- build
+  npm run x -- deploy feat: 新增 MySQL 索引优化文章      ← 不需要引号
+  npm run x -- check
 `)
   process.exit(cmd === '--help' || cmd === '-h' ? 0 : 1)
 }

@@ -126,6 +126,14 @@ const sections: Section[] = [
         excerpt: "谈薪不是\"讨价还价\"，而是用对方听得懂的语言表达你的价值。 不要在对方已经决定给你 offer 之前谈薪。筹码 = 对方已经选你但还没发 offer。 不要说\"…",
         tags: ["薪资","Offer"],
       },
+      {
+        file: "/career/README",
+        title: "个人成长",
+        wordCount: 138,
+        readMinutes: 1,
+        excerpt: "软技能、职业规划、薪资谈判、沟通与协作、向上管理。  职业规划：35 年技术路线选择、大厂 vs 中小厂、技术管理路径  软技能：沟通、向上汇报、会议效率、跨团…",
+        tags: [],
+      },
     ],
   },
   {
@@ -134,6 +142,22 @@ const sections: Section[] = [
     label: "DevOps & 云原生",
     description: "Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。",
     articles: [
+      {
+        file: "/devops/cicd/README",
+        title: "🧪 CICD 工具与实践",
+        wordCount: 107,
+        readMinutes: 1,
+        excerpt: "CI/CD 工具链、流水线设计、自动化部署。  GitHub Actions：本仓库用的方案，详见 GitHub Actions 入门  GitLab CI：另…",
+        tags: [],
+      },
+      {
+        file: "/devops/cicd/advanced/README",
+        title: "🧪 CICD 进阶",
+        wordCount: 58,
+        readMinutes: 1,
+        excerpt: "矩阵构建、可复用 workflow、自托管 runner、安全加固。  矩阵构建：actionsmatrix  可复用 workflow：reusablewor…",
+        tags: [],
+      },
       {
         file: "/devops/docker-getting-started",
         title: "🧪 Docker 入门：镜像、容器、镜像仓库",
