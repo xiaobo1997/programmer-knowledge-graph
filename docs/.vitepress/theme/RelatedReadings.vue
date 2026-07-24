@@ -24,7 +24,10 @@ const props = defineProps<{
 }>()
 
 const route = useRoute()
-const { frontmatter } = useData()
+const { frontmatter, site } = useData()
+
+// 用 VitePress 的 withBase 处理 base 路径（GitHub Pages 部署需要）
+const base = computed(() => site.value.base || '/')
 
 // 当前文章的标签 + 所在分类
 const currentTags = computed<string[]>(() => {
@@ -88,7 +91,7 @@ const hasRelated = computed(() => relatedArticles.value.length > 0)
         class="related-item"
         :data-section="r.section.key"
       >
-        <a :href="r.article.file" class="related-link">
+        <a :href="base + r.article.file" class="related-link">
           <span class="related-section-icon">{{ r.section.icon }}</span>
           <span class="related-item-content">
             <span class="related-item-title">{{ r.article.title }}</span>

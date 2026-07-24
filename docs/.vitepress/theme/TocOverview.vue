@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useData } from 'vitepress'
 
 interface Article {
   file: string
@@ -7,6 +8,7 @@ interface Article {
   wordCount: number
   readMinutes: number
   excerpt: string
+  tags?: string[]
 }
 
 interface Section {
@@ -20,6 +22,9 @@ interface Section {
 const props = defineProps<{
   filter?: string
 }>()
+
+const { site } = useData()
+const base = computed(() => site.value.base || '/')
 
 const sections: Section[] = [
   {
@@ -261,7 +266,7 @@ function setActive(key: string) {
       </div>
       <ul class="toc-articles">
         <li v-for="a in s.articles" :key="a.file" class="toc-article">
-          <a :href="a.file" class="toc-article-title">{{ a.title }}</a>
+          <a :href="base + a.file" class="toc-article-title">{{ a.title }}</a>
           <div class="toc-article-meta">
             <span>⏱ {{ a.readMinutes }} 分钟</span>
             <span class="dot">·</span>

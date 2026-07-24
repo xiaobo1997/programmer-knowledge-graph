@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vitepress'
+import { useRoute, useData } from 'vitepress'
 
 const route = useRoute()
+const { site } = useData()
+const base = computed(() => site.value.base || '/')
 
 const sections = [
   { key: 'reading-notes', icon: '▤', label: '读书笔记', link: '/reading-notes' },
@@ -21,13 +23,13 @@ const activeKey = computed(() => {
 
 <template>
   <nav class="knowledge-rail" aria-label="知识分类">
-    <a class="rail-home" href="/" :class="{ active: activeKey === 'home' }" aria-label="首页">X</a>
+    <a class="rail-home" :href="base" :class="{ active: activeKey === 'home' }" aria-label="首页">X</a>
     <a
       v-for="section in sections"
       :key="section.key"
       class="rail-item"
       :class="{ active: activeKey === section.key }"
-      :href="section.link"
+      :href="base + section.link"
       :title="section.label"
     >
       <span class="rail-icon">{{ section.icon }}</span>
