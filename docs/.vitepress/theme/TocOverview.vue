@@ -87,6 +87,20 @@ const sections: Section[] = [
         excerpt: '定义在 .github/workflows/*.yml，每个文件是一个 workflow。'
       },
       {
+        file: '/devops/cicd/advanced/actions-matrix',
+        title: 'GitHub Actions 矩阵构建：多环境并行跑',
+        wordCount: 232,
+        readMinutes: 1,
+        excerpt: 'jobs:'
+      },
+      {
+        file: '/devops/cicd/advanced/reusable-workflows',
+        title: 'GitHub Actions 可复用 workflow',
+        wordCount: 290,
+        readMinutes: 1,
+        excerpt: '你有 5 个仓库都用同一种「install → test → build → deploy」流程。每次复制粘贴 workflow 改一点点，维护起来很痛苦。'
+      },
+      {
         file: '/devops/github-actions-cicd',
         title: 'GitHub Actions 入门：把仓库变成自动发布系统',
         wordCount: 1368,

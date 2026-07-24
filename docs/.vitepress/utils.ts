@@ -16,6 +16,8 @@ const titleMap: Record<string, string> = {
   'roadmap': '技术地图',
   // 二级子目录（按需添加）
   'cicd': 'CICD 工具',
+  // 三级子目录
+  'advanced': '进阶',
 }
 
 type SidebarItem = {
