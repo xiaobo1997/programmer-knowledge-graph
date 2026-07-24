@@ -54,22 +54,6 @@ const sections: Section[] = [
         excerpt: "RAG 解决的核心问题：让 LLM 回答它训练时没见过的信息。  LLM 训练数据有截止时间  LLM 不懂你的公司内部文档  LLM 可能产生幻觉（编造答案）…",
         tags: ["RAG","LLM","向量数据库"],
       },
-      {
-        file: "/ai/llm/test1",
-        title: "test1",
-        wordCount: 0,
-        readMinutes: 1,
-        excerpt: "",
-        tags: [],
-      },
-      {
-        file: "/ai/rag/test2",
-        title: "test2",
-        wordCount: 0,
-        readMinutes: 1,
-        excerpt: "",
-        tags: [],
-      },
     ],
   },
   {
@@ -161,7 +145,7 @@ const sections: Section[] = [
       {
         file: "/devops/cicd/github-actions-basics",
         title: "🧪 GitHub Actions 基础：5 个核心概念",
-        wordCount: 143,
+        wordCount: 172,
         readMinutes: 1,
         excerpt: "给第一次写 workflow 的人的速通教程。 定义在 .github/workflows/.yml，每个文件是一个 workflow。 触发 workflow…",
         tags: ["CICD","GitHub Actions"],
@@ -169,7 +153,7 @@ const sections: Section[] = [
       {
         file: "/devops/cicd/advanced/actions-matrix",
         title: "🧪 GitHub Actions 矩阵构建：多环境并行跑",
-        wordCount: 189,
+        wordCount: 251,
         readMinutes: 1,
         excerpt: "用 matrix 一次跑多个环境 / 多个版本 / 多个操作系统。 这个配置会跑 3 × 2 = 6 个 job：3 个 Node 版本 × 2 个操作系统。 …",
         tags: ["CICD","GitHub Actions","矩阵"],
@@ -177,7 +161,7 @@ const sections: Section[] = [
       {
         file: "/devops/cicd/advanced/reusable-workflows",
         title: "🧪 GitHub Actions 可复用 workflow",
-        wordCount: 233,
+        wordCount: 281,
         readMinutes: 1,
         excerpt: "用 workflowcall 把通用流水线抽出来，多仓库共享。 你有 5 个仓库都用同一种「install → test → build → deploy」流程…",
         tags: ["CICD","GitHub Actions","DRY"],
@@ -185,15 +169,15 @@ const sections: Section[] = [
       {
         file: "/devops/github-actions-cicd",
         title: "🧪 GitHub Actions 入门：把仓库变成自动发布系统",
-        wordCount: 1146,
-        readMinutes: 6,
+        wordCount: 1292,
+        readMinutes: 4,
         excerpt: "写给第一次想给仓库加自动化发布的工程师。一文搞清楚「push 后站点怎么自动更新」。 没有 CICD 的时候，每改一点东西你要： 1. 在本地 build 2.…",
         tags: ["CICD","GitHub Actions","DevOps"],
       },
       {
         file: "/devops/cicd/gitlab-vs-github-actions",
         title: "🧪 GitLab CI vs GitHub Actions：怎么选",
-        wordCount: 216,
+        wordCount: 249,
         readMinutes: 1,
         excerpt: "两个主流 CICD 工具的对比，帮你做技术选型。 | 维度 | GitHub Actions | GitLab CI | |||| | 与代码托管集成 | Gi…",
         tags: ["CICD","GitLab","GitHub Actions","对比"],
