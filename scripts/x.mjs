@@ -73,15 +73,17 @@ function distStale() {
 const COMMANDS = {
   // === 核心命令 ===
 
-  // dev: 智能启动 — 没有 dist 或 dist 过期会自动 build，否则直接起 dev
+  // dev: 智能启动 — sync + 自动 build（如需）+ dev server
   dev: {
-    desc: '本地 dev（自动 build if needed）',
+    desc: '本地 dev（sync + 智能 build + dev server）',
     run: async () => {
+      // sync-toc 总是先跑（数据驱动，让分类、总目录、ArticleMeta 同步）
+      run('npm run toc:sync')
       if (distStale()) {
         console.log('\x1b[33m检测到 dist 缺失或过期，先 build...\x1b[0m')
         fullBuild()
       } else {
-        console.log('\x1b[32mdist 是新的，跳过 build 直接起 dev server\x1b[0m')
+        console.log('\x1b[32mdist 是新的，直接起 dev server\x1b[0m')
       }
       const port = findFreePort(5175)
       const child = spawn(npmCmd, ['run', 'docs:dev', '--', '--host', '127.0.0.1', `--port`, String(port)], {
@@ -93,17 +95,17 @@ const COMMANDS = {
     },
   },
 
-  // build: 完整的本地构建 + 验证（不部署）
+  // build: 同步 + 完整 build + 验证
   build: {
-    desc: '清理 + build + 验证',
+    desc: 'sync + 清理 + build + 验证',
     run: () => {
-      fullBuild()
+      fullBuild() // fullBuild 内部已经跑 toc:sync + meta:inject
       console.log('\n\x1b[32m✓ 构建成功 + 验证通过\x1b[0m')
       console.log('\x1b[36m本地预览：http://127.0.0.1:5175/programmer-knowledge-graph/\x1b[0m')
     },
   },
 
-  // 部署
+  // 部署：build + git add + commit + push
   deploy: {
     desc: 'build + git add + commit + push（commit message: 剩余所有参数）',
     run: () => {
@@ -125,11 +127,6 @@ const COMMANDS = {
   },
 
   // === 辅助 ===
-
-  sync: {
-    desc: '只跑 sync-toc（不构建）',
-    run: () => run('npm run toc:sync'),
-  },
 
   check: {
     desc: '看 GitHub Actions 最新状态',
@@ -159,10 +156,9 @@ if (!cmd || cmd === '--help' || cmd === '-h' || !COMMANDS[cmd]) {
 ${Object.entries(COMMANDS).map(([k, v]) => `  \x1b[33m${k.padEnd(10)}\x1b[0m ${v.desc}`).join('\n')}
 
 \x1b[36m快捷工作流：\x1b[0m
-  \x1b[33mdev\x1b[0m     自动 build（如需）+ dev server
-  \x1b[33mbuild\x1b[0m   只 build + 验证
+  \x1b[33mdev\x1b[0m     sync + 智能 build + dev server（最常用）
+  \x1b[33mbuild\x1b[0m   sync + build + verify
   \x1b[33mdeploy\x1b[0m  build + commit + push（剩余参数作为 commit message）
-  \x1b[33msync\x1b[0m    只重新生成总目录
   \x1b[33mcheck\x1b[0m   看 Actions 状态
 
 \x1b[36m示例：\x1b[0m
