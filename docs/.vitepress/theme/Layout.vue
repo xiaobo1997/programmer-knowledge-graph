@@ -7,7 +7,6 @@ import ArticleMeta from './ArticleMeta.vue'
 import KnowledgeRail from './KnowledgeRail.vue'
 import ReadingEnhancements from './ReadingEnhancements.vue'
 import RelatedReadings from './RelatedReadings.vue'
-import sectionsData from './sections.json'
 
 const route = useRoute()
 let zoom: ReturnType<typeof mediumZoom> | undefined
@@ -38,7 +37,7 @@ onUnmounted(() => zoom?.detach())
       <ArticleMeta />
     </template>
     <template #doc-footer-before>
-      <RelatedReadings :sections="sectionsData" />
+      <RelatedReadings />
     </template>
     <template #aside-outline-after>
       <div class="reading-tools">

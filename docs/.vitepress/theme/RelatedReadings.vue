@@ -19,9 +19,23 @@ interface Section {
   articles: Article[]
 }
 
-const props = defineProps<{
-  sections: Section[]
-}>()
+// sections 数据：通过 fetch 在运行时加载（避免被 vite 静态分析找不到）
+// 同时也避免被 git 跟踪（sections.json 是 sync-toc 自动生成的）
+const sectionsData = ref<Section[]>([])
+
+import { onMounted, ref } from 'vue'
+
+onMounted(async () => {
+  try {
+    const res = await fetch(`${base.value}/.vitepress/theme/sections.json`)
+    if (res.ok) {
+      sectionsData.value = await res.json()
+    }
+  } catch (e) {
+    // sections.json 不可用，相关阅读功能降级
+    console.warn('[RelatedReadings] failed to load sections.json:', e)
+  }
+})
 
 const route = useRoute()
 const { frontmatter, site } = useData()
@@ -45,7 +59,7 @@ const currentFile = computed(() => currentPath.value.replace(/^\//, ''))
 
 // 找出当前文章所在 section
 const currentSection = computed<Section | undefined>(() => {
-  for (const s of props.sections) {
+  for (const s of effectiveSections.value) {
     for (const a of s.articles) {
       if (a.file === '/' + currentFile.value) return s
     }
@@ -59,7 +73,7 @@ const relatedArticles = computed<Array<{ article: Article; section: Section; sco
   const currentTagsLower = currentTags.value.map((t) => t.toLowerCase())
   const currentSectionKey = currentSection.value?.key
 
-  for (const s of props.sections) {
+  for (const s of effectiveSections.value) {
     for (const a of s.articles) {
       // 跳过当前文章
       if (a.file === '/' + currentFile.value) continue
