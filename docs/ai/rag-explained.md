@@ -5,7 +5,9 @@ level: 进阶
 tags: [RAG, LLM, 向量数据库]
 wordCount: 462
 readMinutes: 1
+test: true
 ---
+
 
 # RAG 检索增强生成：让 LLM 用上私有知识
 

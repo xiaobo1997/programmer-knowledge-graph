@@ -5,14 +5,23 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = resolve(root, 'docs/.vitepress/dist')
 
+// 9 大类 + 总目录 + 首页 = 11 个关键产物
 const checks = [
   ['首页', 'index.html'],
   ['总目录', 'readme.html'],
-  ['读书笔记 README', 'reading-notes/README.html'],
-  ['全栈 README', 'fullstack/README.html'],
-  ['DevOps README', 'devops/README.html'],
-  ['Agent README', 'agent/README.html'],
-  ['技术地图 README', 'roadmap/README.html'],
+  ['404', '404.html'],
+  ['后端', 'backend/index.html'],
+  ['前端', 'frontend/index.html'],
+  ['数据', 'data/index.html'],
+  ['DevOps', 'devops/index.html'],
+  ['AI', 'ai/index.html'],
+  ['架构', 'architecture/index.html'],
+  ['工程实践', 'practice/index.html'],
+  ['读书笔记', 'reading/index.html'],
+  ['个人成长', 'career/index.html'],
+  ['后端示例文章', 'backend/[test]spring-boot-hello.html'],
+  ['DevOps 示例文章', 'devops/[test]docker-getting-started.html'],
+  ['凤凰架构笔记', 'reading/[test]凤凰架构.html'],
 ]
 
 const failures = []

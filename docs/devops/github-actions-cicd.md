@@ -3,7 +3,9 @@ title: GitHub Actions 入门：把仓库变成自动发布系统
 author: xiaobo
 level: 入门
 tags: [CICD, GitHub Actions, DevOps]
+test: true
 ---
+
 
 # GitHub Actions 入门：把仓库变成自动发布系统
 

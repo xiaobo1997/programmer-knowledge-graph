@@ -5,7 +5,9 @@ level: 进阶
 tags: [管理, 转型]
 wordCount: 486
 readMinutes: 2
+test: true
 ---
+
 
 # 技术管理转型：从骨干到 TL
 

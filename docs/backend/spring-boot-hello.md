@@ -5,7 +5,9 @@ level: 入门
 tags: [Java, Spring Boot]
 wordCount: 220
 readMinutes: 1
+test: true
 ---
+
 
 # Spring Boot 起步：Hello World 与自动装配原理
 

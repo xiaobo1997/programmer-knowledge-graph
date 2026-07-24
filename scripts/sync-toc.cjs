@@ -154,17 +154,17 @@ function buildSections() {
         const stats = readingTime(body)
         const wordCount = meta.wordCount ? parseInt(meta.wordCount, 10) : wordCountOf(body)
         const readMinutes = meta.readMinutes ? parseInt(meta.readMinutes, 10) : Math.max(1, Math.round(stats.minutes))
-        const isTest = /\[test\]/.test(rel)
-        const cleanTitle = meta.title || titleFromHeading(body, rel.split('/').pop())
-        return {
-          file: `/${rel}`,
-          title: isTest ? '🧪 ' + cleanTitle : cleanTitle,
-          wordCount,
-          readMinutes,
-          excerpt: excerptFromBody(body),
-          tags: Array.isArray(meta.tags) ? meta.tags : [],
-          isTest,
-        }
+        const isTest = /\\[test\\]/.test(rel) || meta.test === 'true' || meta.test === true
+                const cleanTitle = meta.title || titleFromHeading(body, rel.split('/').pop())
+                return {
+                  file: `/${rel}`,
+                  title: isTest ? '🧪 ' + cleanTitle : cleanTitle,
+                  wordCount,
+                  readMinutes,
+                  excerpt: excerptFromBody(body),
+                  tags: Array.isArray(meta.tags) ? meta.tags : [],
+                  isTest,
+                }
       })
       .sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'))
     sections.push({

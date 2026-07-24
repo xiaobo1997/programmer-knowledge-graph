@@ -1,3 +1,6 @@
+---
+test: true
+---
 # CICD 进阶
 
 > 矩阵构建、可复用 workflow、自托管 runner、安全加固。

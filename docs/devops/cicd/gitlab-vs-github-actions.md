@@ -3,7 +3,9 @@ title: GitLab CI vs GitHub Actions：怎么选
 author: xiaobo
 level: 进阶
 tags: [CICD, GitLab, GitHub Actions, 对比]
+test: true
 ---
+
 
 # GitLab CI vs GitHub Actions：怎么选
 

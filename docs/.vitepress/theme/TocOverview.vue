@@ -39,7 +39,7 @@ const sections: Section[] = [
     description: "LLM、Agent、RAG、向量数据库、Prompt 工程。",
     articles: [
       {
-        file: "/ai/[test]llm-agent-intro",
+        file: "/ai/llm-agent-intro",
         title: "🧪 LLM Agent 入门：什么是 Agent",
         wordCount: 359,
         readMinutes: 1,
@@ -47,7 +47,7 @@ const sections: Section[] = [
         tags: ["Agent","LLM"],
       },
       {
-        file: "/ai/[test]rag-explained",
+        file: "/ai/rag-explained",
         title: "🧪 RAG 检索增强生成：让 LLM 用上私有知识",
         wordCount: 462,
         readMinutes: 1,
@@ -63,7 +63,7 @@ const sections: Section[] = [
     description: "系统设计、高并发、容量规划、稳定性工程。",
     articles: [
       {
-        file: "/architecture/[test]backend-roadmap-3-to-5",
+        file: "/architecture/backend-roadmap-3-to-5",
         title: "🧪 后端工程师技术地图：3 年到 5 年路线",
         wordCount: 606,
         readMinutes: 2,
@@ -71,7 +71,7 @@ const sections: Section[] = [
         tags: ["路线","后端","职业"],
       },
       {
-        file: "/architecture/[test]cloud-native-path",
+        file: "/architecture/cloud-native-path",
         title: "🧪 云原生工程师学习路径",
         wordCount: 403,
         readMinutes: 1,
@@ -87,7 +87,7 @@ const sections: Section[] = [
     description: "Java/Go/Python、数据库、消息队列、分布式、JVM 调优。",
     articles: [
       {
-        file: "/backend/[test]restful-design",
+        file: "/backend/restful-design",
         title: "🧪 RESTful API 设计：九个最佳实践",
         wordCount: 397,
         readMinutes: 1,
@@ -95,7 +95,7 @@ const sections: Section[] = [
         tags: ["API","REST","设计"],
       },
       {
-        file: "/backend/[test]spring-boot-hello",
+        file: "/backend/spring-boot-hello",
         title: "🧪 Spring Boot 起步：Hello World 与自动装配原理",
         wordCount: 220,
         readMinutes: 1,
@@ -111,7 +111,7 @@ const sections: Section[] = [
     description: "软技能、Career、面试、薪资谈判、心理建设。",
     articles: [
       {
-        file: "/career/[test]tech-lead-transition",
+        file: "/career/tech-lead-transition",
         title: "🧪 技术管理转型：从骨干到 TL",
         wordCount: 486,
         readMinutes: 2,
@@ -119,7 +119,7 @@ const sections: Section[] = [
         tags: ["管理","转型"],
       },
       {
-        file: "/career/[test]salary-negotiation",
+        file: "/career/salary-negotiation",
         title: "🧪 谈薪时机：什么时候开口",
         wordCount: 502,
         readMinutes: 2,
@@ -135,23 +135,7 @@ const sections: Section[] = [
     description: "Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。",
     articles: [
       {
-        file: "/devops/cicd/[test]README",
-        title: "🧪 CICD 工具与实践",
-        wordCount: 98,
-        readMinutes: 1,
-        excerpt: "CI/CD 工具链、流水线设计、自动化部署。  GitHub Actions：本仓库用的方案，详见 GitHub Actions 入门  GitLab CI：另…",
-        tags: [],
-      },
-      {
-        file: "/devops/cicd/advanced/[test]README",
-        title: "🧪 CICD 进阶",
-        wordCount: 54,
-        readMinutes: 1,
-        excerpt: "矩阵构建、可复用 workflow、自托管 runner、安全加固。  矩阵构建：actionsmatrix  可复用 workflow：reusablewor…",
-        tags: [],
-      },
-      {
-        file: "/devops/[test]docker-getting-started",
+        file: "/devops/docker-getting-started",
         title: "🧪 Docker 入门：镜像、容器、镜像仓库",
         wordCount: 333,
         readMinutes: 1,
@@ -159,7 +143,7 @@ const sections: Section[] = [
         tags: ["Docker","容器"],
       },
       {
-        file: "/devops/cicd/[test]github-actions-basics",
+        file: "/devops/cicd/github-actions-basics",
         title: "🧪 GitHub Actions 基础：5 个核心概念",
         wordCount: 143,
         readMinutes: 1,
@@ -167,7 +151,7 @@ const sections: Section[] = [
         tags: ["CICD","GitHub Actions"],
       },
       {
-        file: "/devops/cicd/advanced/[test]actions-matrix",
+        file: "/devops/cicd/advanced/actions-matrix",
         title: "🧪 GitHub Actions 矩阵构建：多环境并行跑",
         wordCount: 189,
         readMinutes: 1,
@@ -175,7 +159,7 @@ const sections: Section[] = [
         tags: ["CICD","GitHub Actions","矩阵"],
       },
       {
-        file: "/devops/cicd/advanced/[test]reusable-workflows",
+        file: "/devops/cicd/advanced/reusable-workflows",
         title: "🧪 GitHub Actions 可复用 workflow",
         wordCount: 233,
         readMinutes: 1,
@@ -183,7 +167,7 @@ const sections: Section[] = [
         tags: ["CICD","GitHub Actions","DRY"],
       },
       {
-        file: "/devops/[test]github-actions-cicd",
+        file: "/devops/github-actions-cicd",
         title: "🧪 GitHub Actions 入门：把仓库变成自动发布系统",
         wordCount: 1146,
         readMinutes: 6,
@@ -191,7 +175,7 @@ const sections: Section[] = [
         tags: ["CICD","GitHub Actions","DevOps"],
       },
       {
-        file: "/devops/cicd/[test]gitlab-vs-github-actions",
+        file: "/devops/cicd/gitlab-vs-github-actions",
         title: "🧪 GitLab CI vs GitHub Actions：怎么选",
         wordCount: 216,
         readMinutes: 1,
@@ -199,7 +183,7 @@ const sections: Section[] = [
         tags: ["CICD","GitLab","GitHub Actions","对比"],
       },
       {
-        file: "/devops/[test]kubernetes-basics",
+        file: "/devops/kubernetes-basics",
         title: "🧪 Kubernetes 核心概念：一文读懂 Pod / Service / Deployment",
         wordCount: 322,
         readMinutes: 1,
@@ -215,7 +199,7 @@ const sections: Section[] = [
     description: "整本书学习心得、跨领域阅读。",
     articles: [
       {
-        file: "/reading/[test]凤凰架构",
+        file: "/reading/凤凰架构",
         title: "🧪 《凤凰架构》读书笔记",
         wordCount: 1787,
         readMinutes: 6,

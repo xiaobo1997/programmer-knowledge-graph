@@ -3,7 +3,9 @@ title: GitHub Actions 基础：5 个核心概念
 author: xiaobo
 level: 入门
 tags: [CICD, GitHub Actions]
+test: true
 ---
+
 
 # GitHub Actions 基础：5 个核心概念
 

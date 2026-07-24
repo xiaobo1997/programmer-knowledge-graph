@@ -3,7 +3,9 @@ title: GitHub Actions 可复用 workflow
 author: xiaobo
 level: 进阶
 tags: [CICD, GitHub Actions, DRY]
+test: true
 ---
+
 
 # GitHub Actions 可复用 workflow
 
