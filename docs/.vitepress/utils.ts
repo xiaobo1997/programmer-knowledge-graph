@@ -2,7 +2,7 @@ import { readdirSync, statSync } from 'node:fs'
 import { basename, extname, join, relative } from 'node:path'
 
 const excludeFiles = new Set(['index.md'])
-const excludeDirs = new Set(['.vitepress', 'node_modules', 'public', 'superpowers'])
+const excludeDirs = new Set(['.vitepress', 'node_modules', 'public', 'superpowers', 'about', 'changes', 'conventions', 'decisions'])
 const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base' })
 
 // 目录名 → 显示名映射

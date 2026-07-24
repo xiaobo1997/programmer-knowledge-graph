@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useData } from 'vitepress'
+import CategoryIcon from './CategoryIcon.vue'
+
+const COLOR_MAP: Record<string, string> = {
+  backend: '#f97316',
+  frontend: '#06b6d4',
+  data: '#eab308',
+  devops: '#0ea5e9',
+  ai: '#a855f7',
+  architecture: '#14b8a6',
+  practice: '#64748b',
+  reading: '#f59e0b',
+  career: '#ec4899',
+}
 
 interface Article {
   file: string
@@ -276,6 +289,7 @@ function setActive(key: string) {
         type="button"
         class="toc-filter"
         :class="{ active: activeKey === s.key }"
+        :style="{ '--toc-color': COLOR_MAP[s.key] || '#10b981' }"
         @click="setActive(s.key)"
       >
         <span class="filter-icon">{{ s.icon }}</span>
