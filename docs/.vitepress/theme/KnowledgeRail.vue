@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import CategoryIcon from './CategoryIcon.vue'
 
 const route = useRoute()
 const { site } = useData()
 
-// 用 VitePress 的 withBase 处理 base 路径（GitHub Pages 部署需要）
-// 拼接时去重双斜杠：base 末尾 + file 开头
+// 拼接 base 路径，去重双斜杠
 function joinPath(base: string, file: string): string {
   const b = base.endsWith('/') ? base.slice(0, -1) : base
   const f = file.startsWith('/') ? file : '/' + file
@@ -34,21 +33,77 @@ const activeKey = computed(() => {
 })
 
 function colorWithAlpha(hex: string, alpha: number) {
-  // #rrggbb → rgba(r, g, b, alpha)
   const r = parseInt(hex.slice(1, 3), 16)
   const g = parseInt(hex.slice(3, 5), 16)
   const b = parseInt(hex.slice(5, 7), 16)
   return `rgba(${r}, ${g}, ${b}, ${alpha})`
 }
+
+// === 折叠状态：默认展开，记住在 localStorage ===
+const COLLAPSE_KEY = 'pkg-rail-collapsed'
+const collapsed = ref(false)
+
+// 只在客户端加载时读 localStorage（SSR 跳过）
+if (typeof window !== 'undefined') {
+  try {
+    collapsed.value = localStorage.getItem(COLLAPSE_KEY) === '1'
+  } catch {
+    // localStorage 不可用时保持默认
+  }
+}
+
+watch(collapsed, (v) => {
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(COLLAPSE_KEY, v ? '1' : '0')
+    } catch {}
+  }
+})
+
+function toggleCollapse() {
+  collapsed.value = !collapsed.value
+}
 </script>
 
 <template>
-  <nav class="knowledge-rail" aria-label="知识分类">
+  <nav class="knowledge-rail" :class="{ 'knowledge-rail--collapsed': collapsed }" aria-label="知识分类">
+    <!-- 折叠/展开按钮：右上角 -->
+    <button
+      type="button"
+      class="rail-collapse-toggle"
+      :title="collapsed ? '展开分类列表' : '折叠分类列表'"
+      :aria-label="collapsed ? '展开分类列表' : '折叠分类列表'"
+      @click="toggleCollapse"
+    >
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+        <path
+          v-if="collapsed"
+          d="M4 6l4 4 4-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          v-else
+          d="M4 10l4-4 4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- 首页固定显示，不折叠 -->
     <a
       class="rail-home"
       :href="base"
       :class="{ active: activeKey === 'home' }"
       aria-label="首页"
+      :title="collapsed ? '首页' : ''"
     >
       <span class="rail-icon-box rail-icon-box--home">
         <CategoryIcon key_="practice" :size="22" />
@@ -56,13 +111,14 @@ function colorWithAlpha(hex: string, alpha: number) {
       <span class="rail-label">首页</span>
     </a>
 
+    <!-- 9 大类：折叠时只显示图标方框，展开时显示完整 -->
     <a
       v-for="section in sections"
       :key="section.key"
       class="rail-item"
       :class="{ active: activeKey === section.key }"
       :href="joinPath(base, section.link)"
-      :title="section.label"
+      :title="collapsed ? section.label : section.label"
       :style="{
         '--rail-color': section.color,
         '--rail-color-soft': colorWithAlpha(section.color, 0.12),
@@ -82,7 +138,46 @@ function colorWithAlpha(hex: string, alpha: number) {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 12px 8px;
+  padding: 30px 8px 12px 8px;  /* 顶部留出折叠按钮空间 */
+  position: relative;
+}
+
+/* 折叠/展开按钮：右上角小箭头 */
+.rail-collapse-toggle {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 10;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--vp-c-text-3);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  padding: 0;
+}
+.rail-collapse-toggle:hover {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+
+/* 折叠状态：只显示方框图标 */
+.knowledge-rail--collapsed .rail-label {
+  display: none;
+}
+.knowledge-rail--collapsed .rail-home,
+.knowledge-rail--collapsed .rail-item {
+  justify-content: center;
+  padding: 8px 6px;
+}
+.knowledge-rail--collapsed .rail-icon-box {
+  width: 36px;
+  height: 36px;
 }
 
 .rail-home,
@@ -136,6 +231,7 @@ function colorWithAlpha(hex: string, alpha: number) {
   background-color: var(--rail-color, var(--vp-c-brand-1));
   flex-shrink: 0;
   color: white;
+  transition: width 0.2s ease, height 0.2s ease;
 }
 
 .rail-icon-box--home {
@@ -152,6 +248,7 @@ function colorWithAlpha(hex: string, alpha: number) {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: opacity 0.18s ease;
 }
 
 @media (max-width: 768px) {
