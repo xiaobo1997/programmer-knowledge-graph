@@ -25,163 +25,179 @@ const sections: Section[] = [
   {
     key: 'agent',
     icon: '✦',
-    label: 'Agent / AI',
-    description: 'LLM Agent、Tool Use、RAG、记忆与多步推理。',
+    label: "Agent / AI",
+    description: "LLM Agent、Tool Use、RAG、记忆与多步推理。",
     articles: [
       {
-        file: '/agent/llm-agent-intro',
-        title: 'LLM Agent 入门：什么是 Agent',
+        file: "/agent/llm-agent-intro",
+        title: "LLM Agent 入门：什么是 Agent",
         wordCount: 359,
         readMinutes: 1,
-        excerpt: '一个 LLM Agent 由三部分组成：'
+        excerpt: "Agent 不是更聪明的聊天机器人，而是能行动的智能体。 一个 LLM Agent 由三部分组成： 1. 大脑：LLM，负责推理和决策 2. 工具：外部函数/A…",
+        tags: ["Agent","LLM"],
       },
       {
-        file: '/agent/rag-explained',
-        title: 'RAG 检索增强生成：让 LLM 用上私有知识',
+        file: "/agent/rag-explained",
+        title: "RAG 检索增强生成：让 LLM 用上私有知识",
         wordCount: 462,
         readMinutes: 1,
-        excerpt: 'Embedding（向量化）'
-      }
-    ]
+        excerpt: "RAG 解决的核心问题：让 LLM 回答它训练时没见过的信息。  LLM 训练数据有截止时间  LLM 不懂你的公司内部文档  LLM 可能产生幻觉（编造答案）…",
+        tags: ["RAG","LLM","向量数据库"],
+      },
+    ],
   },
   {
     key: 'career',
     icon: '◉',
-    label: '个人成长',
-    description: '软技能、职业规划、薪资谈判、效率工具与心理建设。',
+    label: "个人成长",
+    description: "软技能、职业规划、薪资谈判、效率工具与心理建设。",
     articles: [
       {
-        file: '/career/tech-lead-transition',
-        title: '技术管理转型：从骨干到 TL',
+        file: "/career/tech-lead-transition",
+        title: "技术管理转型：从骨干到 TL",
         wordCount: 486,
         readMinutes: 2,
-        excerpt: '转型最痛的不是技术不够，而是身份认同：以前用代码衡量自己，现在用团队业绩衡量自己。'
+        excerpt: "团队里技术最好的那个人，不一定是最好的 TL。 | 角色 | 核心目标 | 时间分配 | |||| | 骨干工程师 | 写好代码 | 90% 在写代码 | | …",
+        tags: ["管理","转型"],
       },
       {
-        file: '/career/salary-negotiation',
-        title: '谈薪时机：什么时候开口',
+        file: "/career/salary-negotiation",
+        title: "谈薪时机：什么时候开口",
         wordCount: 502,
         readMinutes: 2,
-        excerpt: '不要在对方已经决定给你 offer 之前谈薪。筹码 = 对方已经选你但还没发 offer。'
-      }
-    ]
+        excerpt: "谈薪不是\"讨价还价\"，而是用对方听得懂的语言表达你的价值。 不要在对方已经决定给你 offer 之前谈薪。筹码 = 对方已经选你但还没发 offer。 不要说\"…",
+        tags: ["薪资","Offer"],
+      },
+    ],
   },
   {
     key: 'devops',
     icon: '◈',
-    label: 'DevOps',
-    description: 'Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。',
+    label: "DevOps",
+    description: "Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。",
     articles: [
       {
-        file: '/devops/docker-getting-started',
-        title: 'Docker 入门：镜像、容器、镜像仓库',
+        file: "/devops/docker-getting-started",
+        title: "Docker 入门：镜像、容器、镜像仓库",
         wordCount: 333,
         readMinutes: 1,
-        excerpt: 'FROM eclipse-temurin:17-jre-alpine'
+        excerpt: "三句话记住：镜像是模板，容器是实例，仓库是分发。  镜像 (Image)：只读的文件系统快照 + 元数据  容器 (Container)：镜像的运行实例，有自己…",
+        tags: ["Docker","容器"],
       },
       {
-        file: '/devops/cicd/github-actions-basics',
-        title: 'GitHub Actions 基础：5 个核心概念',
-        wordCount: 175,
+        file: "/devops/cicd/github-actions-basics",
+        title: "GitHub Actions 基础：5 个核心概念",
+        wordCount: 143,
         readMinutes: 1,
-        excerpt: '定义在 .github/workflows/*.yml，每个文件是一个 workflow。'
+        excerpt: "给第一次写 workflow 的人的速通教程。 定义在 .github/workflows/.yml，每个文件是一个 workflow。 触发 workflow…",
+        tags: ["CICD","GitHub Actions"],
       },
       {
-        file: '/devops/cicd/advanced/actions-matrix',
-        title: 'GitHub Actions 矩阵构建：多环境并行跑',
-        wordCount: 232,
+        file: "/devops/cicd/advanced/actions-matrix",
+        title: "GitHub Actions 矩阵构建：多环境并行跑",
+        wordCount: 189,
         readMinutes: 1,
-        excerpt: 'jobs:'
+        excerpt: "用 matrix 一次跑多个环境 / 多个版本 / 多个操作系统。 这个配置会跑 3 × 2 = 6 个 job：3 个 Node 版本 × 2 个操作系统。 …",
+        tags: ["CICD","GitHub Actions","矩阵"],
       },
       {
-        file: '/devops/cicd/advanced/reusable-workflows',
-        title: 'GitHub Actions 可复用 workflow',
-        wordCount: 290,
+        file: "/devops/cicd/advanced/reusable-workflows",
+        title: "GitHub Actions 可复用 workflow",
+        wordCount: 233,
         readMinutes: 1,
-        excerpt: '你有 5 个仓库都用同一种「install → test → build → deploy」流程。每次复制粘贴 workflow 改一点点，维护起来很痛苦。'
+        excerpt: "用 workflowcall 把通用流水线抽出来，多仓库共享。 你有 5 个仓库都用同一种「install → test → build → deploy」流程…",
+        tags: ["CICD","GitHub Actions","DRY"],
       },
       {
-        file: '/devops/github-actions-cicd',
-        title: 'GitHub Actions 入门：把仓库变成自动发布系统',
-        wordCount: 1368,
+        file: "/devops/github-actions-cicd",
+        title: "GitHub Actions 入门：把仓库变成自动发布系统",
+        wordCount: 1146,
         readMinutes: 6,
-        excerpt: '没有 CICD 的时候，每改一点东西你要：'
+        excerpt: "写给第一次想给仓库加自动化发布的工程师。一文搞清楚「push 后站点怎么自动更新」。 没有 CICD 的时候，每改一点东西你要： 1. 在本地 build 2.…",
+        tags: ["CICD","GitHub Actions","DevOps"],
       },
       {
-        file: '/devops/cicd/gitlab-vs-github-actions',
-        title: 'GitLab CI vs GitHub Actions：怎么选',
-        wordCount: 243,
+        file: "/devops/cicd/gitlab-vs-github-actions",
+        title: "GitLab CI vs GitHub Actions：怎么选",
+        wordCount: 216,
         readMinutes: 1,
-        excerpt: '本仓库用的是 GitHub Actions（因为仓库在 GitHub）。workflow 文件在 .github/workflows/docs.yml。'
+        excerpt: "两个主流 CICD 工具的对比，帮你做技术选型。 | 维度 | GitHub Actions | GitLab CI | |||| | 与代码托管集成 | Gi…",
+        tags: ["CICD","GitLab","GitHub Actions","对比"],
       },
       {
-        file: '/devops/kubernetes-basics',
-        title: 'Kubernetes 核心概念：一文读懂 Pod / Service / Deployment',
+        file: "/devops/kubernetes-basics",
+        title: "Kubernetes 核心概念：一文读懂 Pod / Service / Deployment",
         wordCount: 322,
         readMinutes: 1,
-        excerpt: 'K8s 调度的最小单位，可以包含 1 个或多个容器：'
-      }
-    ]
+        excerpt: "K8s 不只是容器调度器，是一整套声明式运维系统。 K8s 调度的最小单位，可以包含 1 个或多个容器： 声明期望状态，K8s 自动维护： 把一组 Pod 暴露…",
+        tags: ["Kubernetes","云原生"],
+      },
+    ],
   },
   {
     key: 'fullstack',
     icon: '⌘',
-    label: '全栈学习',
-    description: '前端、后端、跨端、网络、性能调优等横向技能。',
+    label: "全栈学习",
+    description: "前端、后端、跨端、网络、性能调优等横向技能与项目实践。",
     articles: [
       {
-        file: '/fullstack/restful-design',
-        title: 'RESTful API 设计：九个最佳实践',
+        file: "/fullstack/restful-design",
+        title: "RESTful API 设计：九个最佳实践",
         wordCount: 397,
         readMinutes: 1,
-        excerpt: 'GET    /api/users        ✅'
+        excerpt: "接口比实现更难改。这份清单帮你避开常见的坑。 动词在 HTTP method 里；URL 里只有资源。 集合资源用复数，单条资源在路径里加 ID。 | 场景 |…",
+        tags: ["API","REST","设计"],
       },
       {
-        file: '/fullstack/spring-boot-hello',
-        title: 'Spring Boot 起步：Hello World 与自动装配原理',
+        file: "/fullstack/spring-boot-hello",
+        title: "Spring Boot 起步：Hello World 与自动装配原理",
         wordCount: 220,
         readMinutes: 1,
-        excerpt: '新建一个 Application.java：'
-      }
-    ]
+        excerpt: "写给刚开始接触 Spring Boot 的工程师。 新建一个 Application.java： 启动后访问 http://localhost:8080，就能看…",
+        tags: ["Java","Spring Boot"],
+      },
+    ],
   },
   {
     key: 'reading-notes',
     icon: '▤',
-    label: '读书笔记',
-    description: '每一本书的核心观点、个人思考、行动清单与工程连接。',
+    label: "读书笔记",
+    description: "技术、商业、个人成长阅读的笔记、思考与可执行行动。",
     articles: [
       {
-        file: '/reading-notes/凤凰架构',
-        title: '《凤凰架构》读书笔记',
+        file: "/reading-notes/凤凰架构",
+        title: "《凤凰架构》读书笔记",
         wordCount: 1787,
         readMinutes: 6,
-        excerpt: '本文只做摘要与个人沉淀，不复制官网正文。读完作者原文请直接访问官网。'
-      }
-    ]
+        excerpt: "一本围绕\"如何构建一套可靠的分布式大型软件系统\"开源架构书，作者从事企业级架构研发。原文以 GitHub Pages + TravisCI 持续同步发布，免费、…",
+        tags: ["架构","分布式","云原生"],
+      },
+    ],
   },
   {
     key: 'roadmap',
     icon: '⬡',
-    label: '技术地图',
-    description: '各领域学习路径、依赖关系与里程碑。',
+    label: "技术地图",
+    description: "各领域学习路径、依赖关系与里程碑。",
     articles: [
       {
-        file: '/roadmap/backend-roadmap-3-to-5',
-        title: '后端工程师技术地图：3 年到 5 年路线',
+        file: "/roadmap/backend-roadmap-3-to-5",
+        title: "后端工程师技术地图：3 年到 5 年路线",
         wordCount: 606,
         readMinutes: 2,
-        excerpt: '可选方向：'
+        excerpt: "这张图告诉你每个阶段该学什么、做到什么程度。  一门主流语言（Java / Go / Python）  数据结构与算法基础  SQL 与关系数据库  HTTP/…",
+        tags: ["路线","后端","职业"],
       },
       {
-        file: '/roadmap/cloud-native-path',
-        title: '云原生工程师学习路径',
+        file: "/roadmap/cloud-native-path",
+        title: "云原生工程师学习路径",
         wordCount: 403,
         readMinutes: 1,
-        excerpt: '云原生是一个生态而不是单一技术。学完上面 6 个阶段，你在任何一家公司都能聊得开、做得动。'
-      }
-    ]
-  }
+        excerpt: "这条路径帮你从\"会用 Docker\"过渡到\"能在生产环境用 K8s\"。  Docker 命令、Dockerfile 编写  Docker Compose 多容器…",
+        tags: ["云原生","K8s","路线"],
+      },
+    ],
+  },
 ]
 
 const activeKey = ref<string>(props.filter || 'all')

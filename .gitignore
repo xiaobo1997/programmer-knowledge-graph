@@ -22,3 +22,6 @@ docs/.vitepress/dist/assets/
 
 # GitHub Pages workflow 元数据
 !docs/.vitepress/dist/.gitkeep
+
+# sync-toc 自动生成（避免冲突，CI 会重跑）
+docs/.vitepress/theme/sections.json

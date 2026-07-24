@@ -60,6 +60,11 @@ export default defineConfig({
     darkModeSwitchTitle: '切换为深色模式',
     lastUpdatedText: '最后更新',
     docFooter: { prev: '上一篇', next: '下一篇' },
+    // 「在 GitHub 上编辑」链接
+    editLink: {
+      text: '在 GitHub 上编辑此页',
+      link: 'https://github.com/xiaobo1997/programmer-knowledge-graph/edit/master/docs/',
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/xiaobo1997/programmer-knowledge-graph' },
     ],
