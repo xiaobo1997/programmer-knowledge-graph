@@ -7,12 +7,15 @@ const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base'
 
 // 目录名 → 显示名映射
 const titleMap: Record<string, string> = {
+  // 一级分类
   'reading-notes': '读书笔记',
   'fullstack': '全栈学习',
   'devops': 'DevOps',
   'agent': 'Agent / AI',
   'career': '个人成长',
   'roadmap': '技术地图',
+  // 二级子目录（按需添加）
+  'cicd': 'CICD 工具',
 }
 
 type SidebarItem = {
