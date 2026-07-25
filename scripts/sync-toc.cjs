@@ -1,11 +1,12 @@
 /* eslint-disable */
-const { readdirSync, readFileSync, writeFileSync, statSync } = require('node:fs')
+const { readdirSync, readFileSync, writeFileSync, statSync, mkdirSync, existsSync } = require('node:fs')
 const { join } = require('node:path')
 const readingTime = require('reading-time')
 
 const ROOT = 'docs'
 const VUE_PATH = 'docs/.vitepress/theme/TocOverview.vue'
 const JSON_PATH = 'docs/.vitepress/theme/sections.json'
+const PUBLIC_PATH = 'docs/public/sections.json'
 
 // 9 大类：按工程师工作场景划分
 const titleMap = {
@@ -215,8 +216,12 @@ function main() {
   const sections = buildSections()
   const totalArticles = sections.reduce((s, x) => s + x.articles.length, 0)
 
-  // 1. 写 sections.json
-  writeFileSync(JSON_PATH, JSON.stringify(sections, null, 2) + '\n', 'utf8')
+  // 1. 写 sections.json（两个位置）
+  const json = JSON.stringify(sections, null, 2) + '\n'
+  writeFileSync(JSON_PATH, json, 'utf8')
+  // public/ 让 vitepress 在 dev/prod 都能作为静态资源 serve
+  if (!existsSync('docs/public')) mkdirSync('docs/public', { recursive: true })
+  writeFileSync(PUBLIC_PATH, json, 'utf8')
 
   // 2. 替换 TocOverview.vue 的 sections 数组
   let vue = readFileSync(VUE_PATH, 'utf8')
