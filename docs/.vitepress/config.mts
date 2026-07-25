@@ -41,7 +41,7 @@ export default defineConfig({
     sidebar: generateSidebarMap(docsPath),
     // Pagefind 全文搜索（构建时自动索引）
     search: {
-      provider: 'pagefind',
+      provider: 'local',
       options: {
         locales: {
           root: {
