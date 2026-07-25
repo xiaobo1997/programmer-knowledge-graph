@@ -64,14 +64,9 @@
 ## 必跑命令
 
 ```bash
-# 写完文章必须跑这 4 个命令
+# 写完文章只跑一个命令
 cd ~/myworkspace/git/programmer-knowledge-graph
-rm -rf docs/.vitepress/dist docs/.vitepress/cache
-npm run docs:build        # 自动跑 sync-toc + meta-inject
-npm run docs:verify       # 检查 7 关键产物
-git add -A
-git commit -m "feat: ..."  # 中文 commit
-git push origin master
+npm run x -- deploy "feat: 新增 XXX 文章"  # 内部自动 build + commit + push
 ```
 
 ## 文件指引
@@ -83,7 +78,9 @@ git push origin master
 | 写文章 | `docs/conventions/article-prefix.md` + `docs/decisions/0003-7-categories.md` |
 | 加链接规范 | `docs/conventions/code-example-link.md` |
 | 部署相关 | `docs/changes/2025-07-20-github-pages-cicd.md` + `.github/workflows/docs.yml` |
-| 改 UI 主题 | `docs/decisions/0001-vitepress.md` + `docs/.vitepress/theme/custom.css` |
+| 改 UI 主题 | `docs/conventions/ui-design.md` + `docs/.vitepress/theme/custom.css` |
+| 改 KnowledgeRail 风格 | `docs/decisions/0005-shields-badge-rail.md` |
+| 改 CategoryIcon | `docs/conventions/ui-design.md` 第 3 节 |
 
 ## 提问的艺术
 
@@ -92,12 +89,13 @@ git push origin master
 - 改动前先讲思路（5 个决策点）→ 等用户确认 → 再写代码
 - 完成后跑验证 → 报告实际结果，不说"应该对了"
 
-## 仓库状态（截至 2025-07-20）
+## 仓库状态（截至 2025-07-25）
 
 - 9 大类已建好骨架，3 类暂空（frontend / data / practice）
-- 18 篇 `[test]` 占位文章 + 1 篇 change 记录
-- OpenSpec 结构（changes / decisions / conventions）已建
-- GitHub Pages 自动部署
+- 19 篇文章（18 篇 `[test]` 占位 + 1 篇 change）
+- OpenSpec 结构已建（5 conventions / 5 decisions / 2 changes）
+- KnowledgeRail shields.io badge 风格 + 默认折叠
+- GitHub Pages 自动部署（commit da541a9）
 - 示例代码仓库待建
 
 ---
