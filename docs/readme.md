@@ -30,7 +30,5 @@ import TocOverview from './.vitepress/theme/TocOverview.vue'
 
 ## 仓库治理
 
-- [AGENTS.md](./about/AGENTS) — AI 进入仓库的入口（必读）
-- [docs/conventions/](./conventions/) — 命名/格式规范
-- [docs/decisions/](./decisions/) — 架构决策记录
-- [docs/changes/](./changes/) — 每次重大改动记录
+- [openspec/AGENTS.md](../openspec/AGENTS.md) — AI 入口（必读）
+- [openspec/](../openspec/index.md) — OpenSpec 治理（AGENTS.md + conventions + decisions + changes）

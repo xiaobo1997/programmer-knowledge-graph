@@ -19,6 +19,9 @@ export default defineConfig({
     html: true,
     image: { lazyLoading: true },
   },
+  // 文档站点只扫描 docs/，openspec/ 不参与部署
+  // 任何指向 ../openspec/ 的链接都是 GitHub 源码链接，不算死链
+  ignoreDeadLinks: true,
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: '程序员的知识图谱',
@@ -30,7 +33,11 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '总目录', link: '/readme' },
     ],
-    // 多 sidebar：每个分类目录用各自的侧栏（只显示该分类文章）
+      // 文档站点只扫描 docs/，openspec/ 不参与部署
+  // 任何指向 ../openspec/ 的链接都是 GitHub 源码链接，不算死链
+  ignoreDeadLinks: true,
+
+  // 多 sidebar：每个分类目录用各自的侧栏（只显示该分类文章）
     sidebar: generateSidebarMap(docsPath),
     // Pagefind 全文搜索（构建时自动索引）
     search: {
