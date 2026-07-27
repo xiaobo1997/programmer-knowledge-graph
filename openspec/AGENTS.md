@@ -3,7 +3,9 @@
 > 任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes）第一次进入这个仓库，**必须先读这个文件**。然后按顺序读：
 
 1. **本文件（AGENTS.md）** — 总览
-2. **写作前必读**：[`conventions/images.md`](./conventions/images.md)（图片规范，写文章必看）
+2. **写作前必读**：
+   - [`conventions/article-format.md`](./conventions/article-format.md)（文章格式：concept/problem/deep-dive + 5W 速记卡）
+   - [`conventions/images.md`](./conventions/images.md)（图片规范）
 3. **修改规范前必读**：[`conventions/article-prefix.md`](./conventions/article-prefix.md) + [`classification.md`](./conventions/classification.md)
 4. **改大结构前必读**：[`decisions/0003-7-categories.md`](./decisions/0003-7-categories.md)（9 大类方案）
 5. **AI 读完后**：再读 `decisions/` 其他 ADR + `changes/` 改动记录

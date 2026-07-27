@@ -12,3 +12,4 @@ readMinutes: 1
 - [示例代码链接规范](./code-example-link) — 文档与代码仓库分工
 - [UI 设计规范](./ui-design) — shields badge 风格 / 配色 / 图标尺寸
 - [图片规范](./images) — 图片存放、格式、命名、Mermaid 优先
+- [文章内容格式规范](./article-format) — concept/problem/deep-dive 三种类型 + 5W 速记卡 + 排版规则
