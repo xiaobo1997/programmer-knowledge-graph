@@ -11,3 +11,4 @@ readMinutes: 1
 - [Git Commit 规范](./git-commit) — commit message 格式
 - [示例代码链接规范](./code-example-link) — 文档与代码仓库分工
 - [UI 设计规范](./ui-design) — shields badge 风格 / 配色 / 图标尺寸
+- [图片规范](./images) — 图片存放、格式、命名、Mermaid 优先

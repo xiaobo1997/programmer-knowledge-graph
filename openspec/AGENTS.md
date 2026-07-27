@@ -28,6 +28,9 @@ docs/.vitepress/      ← VitePress 配置 + theme 组件
 
 **规则**：文章里要演示代码时，**链接到示例代码仓库**，**不把大段代码贴到文档**。
 
+文章配图：放 `docs/public/images/article/{分类}/`，命名 `{分类}-{slug}.{ext}`。
+架构图优先用 Mermaid（VitePress 原生支持），详见 [`images.md`](./conventions/images.md)。
+
 ## 9 大类
 
 | 目录 | 中文名 | 内容 |
