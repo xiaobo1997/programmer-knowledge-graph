@@ -1,6 +1,14 @@
 # AGENTS.md — AI 进入本仓库的入口
 
-> 任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes）第一次进入这个仓库，**必须先读这个文件**。然后按顺序读 conventions → decisions → changes。
+> 任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes）第一次进入这个仓库，**必须先读这个文件**。然后按顺序读：
+
+1. **本文件（AGENTS.md）** — 总览
+2. **写作前必读**：[`conventions/images.md`](./conventions/images.md)（图片规范，写文章必看）
+3. **修改规范前必读**：[`conventions/article-prefix.md`](./conventions/article-prefix.md) + [`classification.md`](./conventions/classification.md)
+4. **改大结构前必读**：[`decisions/0003-7-categories.md`](./decisions/0003-7-categories.md)（9 大类方案）
+5. **AI 读完后**：再读 `decisions/` 其他 ADR + `changes/` 改动记录
+
+**改任何东西前，先看 conventions → decisions → changes。**
 
 ## 这是什么
 
@@ -18,6 +26,26 @@ docs/                 ← VitePress 站点源文件（9 大类文章 / 首页 / 
 scripts/              ← 构建脚本（sync-toc / inject-article-meta / x.mjs）
 docs/.vitepress/      ← VitePress 配置 + theme 组件
 ```
+
+## ⚠️ 文章配图规范（AI 必读！）
+
+**任何 AI 在为本仓库写文章、加图片时，必须先看 [`conventions/images.md`](./conventions/images.md)。**
+
+核心要点速记：
+
+| 来源 | 何时用 | 目录/登记 |
+|---|---|---|
+| **本地图片**（仓库内） | 核心架构图、自绘流程图、需要长期保留的图 | `docs/public/images/article/{分类}/{分类}-{slug}.{ext}` |
+| **外部图床**（远程 URL） | 一次性截图、临时补充、第三方文档原图 | 文章 frontmatter `images:` 字段登记元数据（src/alt/type/source/expires/backup） |
+
+引用语法：
+
+- 本地：`![alt](/images/article/backend/xxx.png)`
+- 外部（用 frontmatter 变量）：`![alt]({{ images[0].src }})`
+
+**禁止：** 中文文件名 / 绝对路径 / base64 嵌入 / 不靠谱免费图床（微博、QQ）/ `docs/{category}/` 子目录（不会部署）。
+
+完整规范见 [`openspec/conventions/images.md`](./conventions/images.md)。
 
 ## 仓库边界（重要！）
 
