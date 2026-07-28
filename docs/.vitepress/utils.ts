@@ -1,4 +1,4 @@
-import { readdirSync, statSync } from 'node:fs'
+import { readdirSync, statSync, existsSync } from 'node:fs'
 import { basename, extname, join, relative } from 'node:path'
 
 const excludeFiles = new Set(['index.md'])
@@ -7,6 +7,23 @@ const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base'
 
 // 目录名 → 显示名映射
 const titleMap: Record<string, string> = {
+  // 子目录（侧栏展示的中文名）
+  'rest': 'REST 设计',
+  'spring-boot': 'Spring Boot 实战',
+  'java': 'Java 实战',
+  'java17特性': 'Java 17 新特性',
+  '1.17的亮点': 'Java 17 亮点速览',
+  'docker': 'Docker 基础',
+  'kubernetes': 'Kubernetes 实战',
+  'github-actions': 'GitHub Actions',
+  'llm-agent': 'LLM Agent',
+  'rag': 'RAG 检索增强',
+  'backend-roadmap': '后端路线',
+  'cloud-native': '云原生',
+  '凤凰架构': '《凤凰架构》',
+  '薪资谈判': '薪资谈判',
+  'tech-lead': 'Tech Lead 转型',
+
   // 9 大类（按工程师工作场景划分）
   backend: '后端开发',
   frontend: '前端开发',
@@ -46,19 +63,32 @@ function displayTitle(name: string) {
 function scanDirectory(dirPath: string, docsPath: string): SidebarItem[] {
   const entries = sortNames(readdirSync(dirPath))
   const items: SidebarItem[] = []
+  let dirIndexLink: string | undefined // 本目录 index.md 的链接（如有）
 
+  // 1. 先收集本目录下的 .md 文件
   for (const entry of entries) {
     const fullPath = join(dirPath, entry)
     const stat = statSync(fullPath)
     if (stat.isFile() && extname(entry) === '.md' && !excludeFiles.has(entry)) {
       const relativePath = relative(docsPath, fullPath)
-      items.push({
-        text: displayTitle(basename(entry, '.md')),
-        link: `/${relativePath.replace(/\\/g, '/').replace(/\.md$/, '')}`,
-      })
+      // README.md 当作目录索引
+      const isIndex = basename(entry, '.md') === 'index'
+      const linkPath = isIndex
+        ? `/${relativePath.replace(/\\/g, '/').replace(/index\.md$/, '')}`
+        : `/${relativePath.replace(/\\/g, '/').replace(/\.md$/, '')}`
+      if (isIndex) {
+        // 记录本目录 index.md 的链接，子目录分组会用作 heading link
+        dirIndexLink = linkPath
+      } else {
+        items.push({
+          text: displayTitle(basename(entry, '.md')),
+          link: linkPath,
+        })
+      }
     }
   }
 
+  // 2. 再递归子目录（作为分组）
   for (const entry of entries) {
     const fullPath = join(dirPath, entry)
     const stat = statSync(fullPath)
@@ -66,9 +96,17 @@ function scanDirectory(dirPath: string, docsPath: string): SidebarItem[] {
 
     const children = scanDirectory(fullPath, docsPath)
     if (children.length) {
+      // 子目录有 index.md 时，把目录也变成可点击的 link（VitePress 支持 text + link + items）
+      const subIndexMd = existsSync(join(dirPath, entry, 'index.md'))
+      let dirLink: string | undefined
+      if (subIndexMd) {
+        const rel = relative(docsPath, join(dirPath, entry))
+        dirLink = `/${rel.replace(/\\/g, '/')}/`
+      }
       items.push({
         text: displayTitle(entry),
-        collapsed: true,
+        link: dirLink,
+        collapsed: false,
         items: children,
       })
     }
@@ -155,26 +193,105 @@ export function generateSidebarMap(docsPath: string): Record<string, SidebarItem
   map['/'] = rootSidebar
   map['/readme/'] = rootSidebar
 
-  // 每个分类目录：独立侧栏
-  for (const entry of entries) {
-    const fullPath = join(docsPath, entry)
-    if (!statSync(fullPath).isDirectory() || excludeDirs.has(entry)) continue
+  // 每个一级分类：递归构建侧栏
+    for (const entry of entries) {
+      const fullPath = join(docsPath, entry)
+      if (!statSync(fullPath).isDirectory() || excludeDirs.has(entry)) continue
 
-    const dirItems: SidebarItem[] = []
-    const children = scanDirectory(fullPath, docsPath)
-    if (children.length) {
-      dirItems.push({
+      // 该分类下的所有 sidebar（包含分类首页 + 子目录 + 子目录下的所有嵌套内容）
+      const dirItems = buildSidebarTree(fullPath, docsPath)
+
+      // 空分类也注册 sidebar（用分类首页作 heading，不被跳过）
+      const topGroup: SidebarItem = {
         text: displayTitle(entry),
         collapsed: false,
-        items: children,
-      })
+        items: dirItems.length > 0 ? dirItems : [
+          { text: displayTitle(entry), link: `/${entry}/` },
+        ],
+      }
+      map[`/${entry}/`] = [topGroup]
+      map[`/${entry}`] = [topGroup]
+
+      if (dirItems.length === 0) continue
+
+      // 递归为每个深层路径注册同一份 sidebar
+      registerSidebarPaths(topGroup, map)
     }
 
-    if (dirItems.length) {
-      // key 用前缀路径（VitePress 会自动匹配 /devops/* 和 /devops/）
-      map[`/${entry}/`] = dirItems
+    return map
+  }
+
+  /**
+   * 递归为每个深层路径注册 sidebar
+   * 当前 group（含一级分类 heading + 子树）赋给所有子目录路径
+   */
+  function registerSidebarPaths(group: SidebarItem, map: Record<string, SidebarItem[]>): void {
+    for (const item of group.items || []) {
+      if (!item.link || !item.items) continue
+      const link = item.link
+      if (!link.startsWith('/') || !link.endsWith('/')) continue
+      map[link] = [group]
+      map[link.slice(0, -1)] = [group]
+    }
+    // 对每个 group 的子项递归（而不是对 group 本身递归，避免无限循环）
+    for (const item of group.items || []) {
+      if (!item.items) continue
+      // 给 item 子项的 sidebar 也赋同一份 group
+      for (const sub of item.items) {
+        if (!sub.link || !sub.items) continue
+        const subLink = sub.link
+        if (!subLink.startsWith('/') || !subLink.endsWith('/')) continue
+        map[subLink] = [group]
+        map[subLink.slice(0, -1)] = [group]
+      }
     }
   }
 
-  return map
-}
+  /**
+   * 构建指定目录下的所有 sidebar 项（递归）
+   * - 收集所有 .md 文件作为 link（跳过 index.md）
+   * - 收集所有子目录作为 group（递归）
+   */
+  function buildSidebarTree(dirPath: string, docsPath: string): SidebarItem[] {
+    const entries = sortNames(readdirSync(dirPath))
+    const items: SidebarItem[] = []
+
+    // 1. 收集 .md 文件
+    for (const entry of entries) {
+      const fullPath = join(dirPath, entry)
+      const stat = statSync(fullPath)
+      if (!stat.isFile() || extname(entry) !== '.md' || excludeFiles.has(entry)) continue
+      if (basename(entry, '.md') === 'index') continue
+      const relativePath = relative(docsPath, fullPath)
+      const linkPath = `/${relativePath.replace(/\\/g, '/').replace(/\.md$/, '')}`
+      items.push({
+        text: displayTitle(basename(entry, '.md')),
+        link: linkPath,
+      })
+    }
+
+    // 2. 收集子目录作为 group
+    for (const entry of entries) {
+      const fullPath = join(dirPath, entry)
+      const stat = statSync(fullPath)
+      if (!stat.isDirectory() || excludeDirs.has(entry)) continue
+
+      const childItems = buildSidebarTree(fullPath, docsPath)
+      if (childItems.length === 0) continue
+
+      let dirLink: string | undefined
+      if (existsSync(join(dirPath, entry, 'index.md'))) {
+        const rel = relative(docsPath, join(dirPath, entry))
+        dirLink = `/${rel.replace(/\\/g, '/')}/`
+      }
+
+      items.push({
+        text: displayTitle(entry),
+        link: dirLink,
+        collapsed: false,
+        items: childItems,
+      })
+    }
+
+    return items
+  }

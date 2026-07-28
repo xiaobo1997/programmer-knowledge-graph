@@ -18,7 +18,21 @@ export default defineConfig({
   markdown: {
     html: true,
     image: { lazyLoading: true },
+    config: (md) => {
+      // 把 ```mermaid 代码块替换成 <MermaidBlock> 全局组件
+      const defaultFenceRender = md.renderer.rules.fence!
+      md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
+        const token = tokens[idx]
+        if (token.info === 'mermaid') {
+          const code = md.utils.escapeHtml(token.content)
+          return `<MermaidBlock code="${md.utils.escapeHtml(token.content)}" />`
+        }
+        return defaultFenceRender(tokens, idx, options, env, slf)
+      }
+    },
   },
+  // 让 MermaidBlock 组件作为全局组件被 markdown 使用
+  vueTemplate: false,
   // 文档站点只扫描 docs/，openspec/ 不参与部署
   // 任何指向 ../openspec/ 的链接都是 GitHub 源码链接，不算死链
   ignoreDeadLinks: true,

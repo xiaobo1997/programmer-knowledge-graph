@@ -53,7 +53,8 @@ function walk(root) {
       result.push(...walk(p))
     } else if (
       name.endsWith('.md') &&
-      !['index.md', 'readme.md'].includes(name)
+      // 跳过顶层分类的 index.md（=分类首页，不算文章）
+      !(name === 'index.md' && root === ROOT)
     ) {
       // 跳过无 frontmatter 的 README.md（占位文件）
       // 有 frontmatter 的 README.md 是说明文章，保留

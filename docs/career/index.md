@@ -1,22 +1,15 @@
 ---
-title: 个人成长
-aside: false
-wordCount: 71
+wordCount: 138
 readMinutes: 1
 ---
-
-<script setup lang="ts">
-import TocOverview from '../.vitepress/theme/TocOverview.vue'
-</script>
-
 # 个人成长
 
-> 软技能、职业规划、薪资谈判、效率工具与心理建设。
+> 软技能、职业规划、薪资谈判、沟通与协作、向上管理。
 
-<TocOverview filter="career" />
+- **职业规划**：3-5 年技术路线选择、大厂 vs 中小厂、技术管理路径
+- **软技能**：沟通、向上汇报、会议效率、跨团队协作
+- **薪资与 Offer**：市场定级、面议策略、谈薪时机
+- **效率工具**：GTD、个人流程、Mac/Win 工具链
+- **心理与生活**：加班与休息、职业倦怠、副业与转型
 
-## 沉淀原则
-
-- 不写鸡汤，只写真实踩过的坑
-- 数据和原则比感受有用
-- 长期主义 > 短期收益
+新主题只需新建 `[主题名].md`，文件名建议带前缀以便排序。
