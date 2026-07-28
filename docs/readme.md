@@ -30,5 +30,6 @@ import TocOverview from './.vitepress/theme/TocOverview.vue'
 
 ## 仓库治理
 
-- [openspec/AGENTS.md](../openspec/AGENTS.md) — AI 入口（必读）
-- [openspec/](../openspec/index.md) — OpenSpec 治理（AGENTS.md + conventions + decisions + changes）
+- [AGENTS.md](../../AGENTS.md) — AI 入口（必读）
+- [docs/conventions/](./conventions/) — 写作规范（文章格式 / 图片 / 验证流程）
+- [docs/adr/](./adr/) — 架构决策记录（VitePress 选型 / GitHub Pages / 9 大类 / shields badge 等）

@@ -1,6 +1,6 @@
 ---
 title: 文章内容格式规范
-wordCount: 8484
+wordCount: 8487
 readMinutes: 27
 ---
 
@@ -1007,19 +1007,19 @@ graph TD
 
 ### 与现有仓库的关系
 
-**openspec/conventions/article-format.md**（本文件）= 学习 + 沉淀方法论
+**docs/conventions/article-format.md**（本文件）= 学习 + 沉淀方法论
 
-**openspec/conventions/** 下其他规范：
+**docs/conventions/** 下其他规范：
 - `images.md` — 图片规范（沉淀时用）
 - `git-commit.md` — 提交规范（沉淀时用）
 - `code-example-link.md` — 代码示例（实践时用）
 - `ui-design.md` — 视觉规范（展示时用）
 
-**openspec/decisions/** = 学完之后做的「重大决策」
+**docs/adr/** = 学完之后做的「重大决策」
 
-**openspec/changes/** = 学完之后做的「重大改动」
+**docs/changes/** = 学完之后做的「重大改动」
 
-**整个 OpenSpec 体系就是「学习 → 沉淀 → 决策 → 改动」的完整记录。**
+**整个文档规范体系就是「学习 → 沉淀 → 决策 → 改动」的完整记录。**
 
 ### 总结
 

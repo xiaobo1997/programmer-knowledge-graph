@@ -29,33 +29,6 @@
           "向量数据库"
         ],
         "isTest": true
-      },
-      {
-        "file": "/ai/index",
-        "title": "AI & 大模型",
-        "wordCount": 85,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/ai/llm-agent/index",
-        "title": "LLM Agent",
-        "wordCount": 13,
-        "readMinutes": 1,
-        "excerpt": "LLM Agent 原理与开发。  1intro",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/ai/rag/index",
-        "title": "RAG",
-        "wordCount": 11,
-        "readMinutes": 1,
-        "excerpt": "检索增强生成。  1explained",
-        "tags": [],
-        "isTest": false
       }
     ]
   },
@@ -90,33 +63,6 @@
           "路线"
         ],
         "isTest": true
-      },
-      {
-        "file": "/architecture/backend-roadmap/index",
-        "title": "后端路线",
-        "wordCount": 18,
-        "readMinutes": 1,
-        "excerpt": "后端工程师技术路线图。  13to5year",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/architecture/index",
-        "title": "架构 & 性能",
-        "wordCount": 91,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/architecture/cloud-native/index",
-        "title": "云原生",
-        "wordCount": 15,
-        "readMinutes": 1,
-        "excerpt": "云原生架构与实践。  1path",
-        "tags": [],
-        "isTest": false
       }
     ]
   },
@@ -165,59 +111,6 @@
           "速览"
         ],
         "isTest": false
-      },
-      {
-        "file": "/backend/index",
-        "title": "后端开发",
-        "wordCount": 89,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/backend/java/java17特性/index",
-        "title": "Java 17 新特性",
-        "wordCount": 380,
-        "readMinutes": 1,
-        "excerpt": "Java 17 是 2021 年发布的 LTS 长期支持版本，至少支持到 2029 年。  本文系统讲解 Java 17 的关键新特性 + 升级决策。  编程语…",
-        "tags": [
-          "后端",
-          "Java",
-          "LTS",
-          "新特性"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/backend/java/index",
-        "title": "Java 实战",
-        "wordCount": 325,
-        "readMinutes": 1,
-        "excerpt": "Java 工程实践 + 版本演进 + 特性学习。  Java 17 新特性 — LTS 长期支持版本，至少支持到 2029 年  JVM 生态核心语言之一  后…",
-        "tags": [
-          "后端",
-          "Java"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/backend/rest/index",
-        "title": "REST 设计",
-        "wordCount": 18,
-        "readMinutes": 1,
-        "excerpt": "RESTful API 设计原则与最佳实践。  1restfuldesign",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/backend/spring-boot/index",
-        "title": "Spring Boot",
-        "wordCount": 15,
-        "readMinutes": 1,
-        "excerpt": "Spring Boot 实战与常用模式。  1helloworld",
-        "tags": [],
-        "isTest": false
       }
     ]
   },
@@ -250,33 +143,6 @@
           "Offer"
         ],
         "isTest": true
-      },
-      {
-        "file": "/career/index",
-        "title": "个人成长",
-        "wordCount": 138,
-        "readMinutes": 1,
-        "excerpt": "软技能、职业规划、薪资谈判、沟通与协作、向上管理。  职业规划：35 年技术路线选择、大厂 vs 中小厂、技术管理路径  软技能：沟通、向上汇报、会议效率、跨团…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/career/薪资谈判/index",
-        "title": "薪资谈判",
-        "wordCount": 17,
-        "readMinutes": 1,
-        "excerpt": "薪资谈判策略与技巧。  1negotiation",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/career/tech-lead/index",
-        "title": "Tech Lead 转型",
-        "wordCount": 17,
-        "readMinutes": 1,
-        "excerpt": "从高级开发到 Tech Lead。  1transition",
-        "tags": [],
-        "isTest": false
       }
     ]
   },
@@ -286,33 +152,6 @@
     "label": "数据 & 中间件",
     "description": "MySQL、Redis、Elasticsearch、消息队列、缓存设计。",
     "articles": [
-      {
-        "file": "/data/rocketmq/事务消息/index",
-        "title": "事务消息",
-        "wordCount": 170,
-        "readMinutes": 1,
-        "excerpt": "RocketMQ 事务消息专题。  RocketMQ 事务消息：分布式事务的工程实践 — 写 DB + 通知下游的强一致方案 | 场景 | 适合度 | ||| …",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/data/index",
-        "title": "数据 & 中间件",
-        "wordCount": 85,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/data/rocketmq/index",
-        "title": "RocketMQ",
-        "wordCount": 50,
-        "readMinutes": 1,
-        "excerpt": "阿里开源的分布式消息中间件。  事务消息：分布式事务的工程实践 — 写 DB + 通知下游的强一致方案",
-        "tags": [],
-        "isTest": false
-      },
       {
         "file": "/data/rocketmq/事务消息/1_transactional-message",
         "title": "RocketMQ 事务消息：分布式事务的工程实践",
@@ -335,15 +174,6 @@
     "label": "DevOps & 云原生",
     "description": "Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。",
     "articles": [
-      {
-        "file": "/devops/cicd/index",
-        "title": "🧪 CICD 工具与实践",
-        "wordCount": 107,
-        "readMinutes": 1,
-        "excerpt": "CI/CD 工具链、流水线设计、自动化部署。  GitHub Actions：本仓库用的方案，详见 GitHub Actions 入门  GitLab CI：另…",
-        "tags": [],
-        "isTest": true
-      },
       {
         "file": "/devops/docker/1_getting-started",
         "title": "🧪 Docker 入门：镜像、容器、镜像仓库",
@@ -432,85 +262,6 @@
           "云原生"
         ],
         "isTest": true
-      },
-      {
-        "file": "/devops/cicd/advanced/index",
-        "title": "CICD 进阶",
-        "wordCount": 19,
-        "readMinutes": 1,
-        "excerpt": "复杂 CICD 场景与优化。  README  actionsmatrix  reusableworkflows",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/devops/index",
-        "title": "DevOps",
-        "wordCount": 62,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/devops/docker/index",
-        "title": "Docker",
-        "wordCount": 13,
-        "readMinutes": 1,
-        "excerpt": "容器化基础与实践。  1gettingstarted",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/devops/cicd/github-actions/index",
-        "title": "GitHub Actions",
-        "wordCount": 10,
-        "readMinutes": 1,
-        "excerpt": "GitHub Actions 实战。  1overview",
-        "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/devops/kubernetes/index",
-        "title": "Kubernetes",
-        "wordCount": 13,
-        "readMinutes": 1,
-        "excerpt": "K8s 核心概念与运维。  1basics",
-        "tags": [],
-        "isTest": false
-      }
-    ]
-  },
-  {
-    "key": "frontend",
-    "icon": "⌘",
-    "label": "前端开发",
-    "description": "JS/TS、Vue/React、构建工具、Web 性能、跨端。",
-    "articles": [
-      {
-        "file": "/frontend/index",
-        "title": "前端开发",
-        "wordCount": 85,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
-      }
-    ]
-  },
-  {
-    "key": "practice",
-    "icon": "⚙",
-    "label": "工程实践",
-    "description": "Git、测试、Code Review、调试、编码规范与工具链。",
-    "articles": [
-      {
-        "file": "/practice/index",
-        "title": "工程实践",
-        "wordCount": 90,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
       }
     ]
   },
@@ -520,15 +271,6 @@
     "label": "读书笔记",
     "description": "整本书学习心得、跨领域阅读。",
     "articles": [
-      {
-        "file": "/reading/凤凰架构/index",
-        "title": "《凤凰架构》",
-        "wordCount": 25,
-        "readMinutes": 1,
-        "excerpt": "周志明《凤凰架构》读书笔记。  1笔记",
-        "tags": [],
-        "isTest": false
-      },
       {
         "file": "/reading/凤凰架构/1_笔记",
         "title": "🧪 《凤凰架构》读书笔记",
@@ -541,15 +283,6 @@
           "云原生"
         ],
         "isTest": true
-      },
-      {
-        "file": "/reading/index",
-        "title": "读书笔记",
-        "wordCount": 87,
-        "readMinutes": 1,
-        "excerpt": "<script setup lang=\"ts\" import TocOverview from '../.vitepress/theme/TocOverview…",
-        "tags": [],
-        "isTest": false
       }
     ]
   }

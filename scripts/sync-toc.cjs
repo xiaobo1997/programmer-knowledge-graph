@@ -53,19 +53,10 @@ function walk(root) {
       result.push(...walk(p))
     } else if (
       name.endsWith('.md') &&
-      // 跳过顶层分类的 index.md（=分类首页，不算文章）
-      !(name === 'index.md' && root === ROOT)
+      // 跳过任何层级的 index.md（=分类首页/子主题首页，不算文章）
+      name !== 'index.md' &&
+      name !== 'README.md'
     ) {
-      // 跳过无 frontmatter 的 README.md（占位文件）
-      // 有 frontmatter 的 README.md 是说明文章，保留
-      if (name === 'README.md') {
-        try {
-          const content = readFileSync(p, 'utf8')
-          if (!content.startsWith('---')) continue
-        } catch {
-          continue
-        }
-      }
       result.push(p)
     }
   }

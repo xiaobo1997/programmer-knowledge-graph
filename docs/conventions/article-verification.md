@@ -149,7 +149,7 @@ readMinutes: 8
 - [ ] 数据 → 「XX 公司」「用户 123」
 - [ ] 金额 → 「峰值 QPS 800」/ 「金额 XX 元」
 
-**完整规则：** 见 [`openspec/conventions/article-format.md`](./article-format.md)
+**完整规则：** 见 [`docs/conventions/article-format.md`](./article-format.md)
 
 ### Loop 4：时效性检查
 
@@ -247,7 +247,7 @@ readMinutes: 8
 让 AI 按以下 prompt 跑验证循环：
 
 ```markdown
-请按 `openspec/conventions/article-verification.md` 的 6 个 Loop 验证这篇文章：
+请按 `docs/conventions/article-verification.md` 的 6 个 Loop 验证这篇文章：
 
 文件路径：docs/xxx/yyy.md
 
@@ -365,14 +365,14 @@ readMinutes: 8
 **这是「先想再做」的执行规范——属于 conventions：**
 
 ```
-openspec/
+docs/
 ├── conventions/         ← 「怎么做」（规范）
 │   ├── article-format.md          ← 写作模板
 │   ├── article-verification.md    ← ★ 本文件（验证流程）
 │   ├── images.md
 │   ├── git-commit.md
 │   └── ...
-├── decisions/           ← 「为什么这样决策」
+├── adr/                 ← 「为什么这样决策」
 └── changes/             ← 「做了什么」
 ```
 
@@ -386,6 +386,6 @@ openspec/
 '''
 
 # 写文件
-with open('/Users/xiaobo/myworkspace/git/programmer-knowledge-graph/openspec/conventions/article-verification.md', 'w', encoding='utf-8') as f:
+with open('/Users/xiaobo/myworkspace/git/programmer-knowledge-graph/docs/conventions/article-verification.md', 'w', encoding='utf-8') as f:
     f.write(content)
 print('done')
