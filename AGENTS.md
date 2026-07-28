@@ -6,6 +6,27 @@
 
 **程序员的长期知识图谱**——按工程师工作场景分 9 大类，长期沉淀「值得保留的认知」。
 
+## 规范体系（无 openspec/）
+
+本仓库**不再使用 openspec/ 目录**。所有规范都在仓库根的 `docs/` 下：
+
+- `docs/conventions/` — 写作规范（文章格式 / 图片 / 验证流程 / frontmatter / UI）
+- `docs/adr/` — 架构决策记录
+
+**历史 commit message 中可能仍出现 `docs(openspec):` 标签**（例如 2dce517 / 74b849f）—— 这是仓库早期 OpenSpec 体系留下的痕迹，**代码层面已经全部迁移到 docs/conventions/ + docs/adr/，不要被历史 commit message 误导**。
+
+如果发现任何文档还引用了 `openspec/` 路径，请按下方映射表修正：
+
+| 旧路径 | 新路径 |
+|---|---|
+| `openspec/conventions/article-fm.md` | `docs/conventions/article-fm.md` |
+| `openspec/conventions/article-format.md` | `docs/conventions/article-format.md` |
+| `openspec/conventions/classification.md` | `docs/conventions/classification.md` |
+| `openspec/conventions/git-commit.md` | `docs/conventions/git-commit.md` |
+| `openspec/decisions/0003-xxx.md` | `docs/adr/0003-xxx.md` |
+| `openspec/AGENTS.md` | `AGENTS.md`（仓库根） |
+| `openspec/changes/YYYY-MM-DD-xxx.md` | `CHANGELOG.md`（仓库根） |
+
 ## 仓库结构
 
 - **`docs/`** — VitePress 站点源文件（首页 / 9 大类文章 / 知识地图）
