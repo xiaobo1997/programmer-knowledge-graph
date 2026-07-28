@@ -1,5 +1,7 @@
 ---
 title: 图片规范
+wordCount: 1336
+readMinutes: 4
 ---
 
 # 图片规范
