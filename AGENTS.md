@@ -1,59 +1,49 @@
 # AGENTS.md
 
-> 任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes）第一次进入这个仓库，**必须先读这个文件**。
+> 🔴 **任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes / 任何编辑器 / 任何大模型）进入本仓库，第一时间必须读这个文件，然后读 `docs/writing-skills/README.md`。没有例外。**
+
+## AI 进入后执行顺序
+
+1. **本文件（AGENTS.md）** — 仓库总览、规范体系、边界
+2. **`docs/writing-skills/README.md`** — 🔴 写作方法论入口（必读！所有写文章任务必须先加载）
+3. **`docs/conventions/article-verification.md`** — 写完必跑的 6 Loop 验证
+4. **`CHANGELOG.md`** — 最近改了什么
 
 ## 这是什么
 
-**程序员的长期知识图谱**——按工程师工作场景分 9 大类，长期沉淀「值得保留的认知」。
+**程序员的长期知识图谱**——10 大分类，长期沉淀「值得保留的认知」。
 
 ## 规范体系（无 openspec/）
 
-本仓库**不再使用 openspec/ 目录**。所有规范都在仓库根的 `docs/` 下：
+本仓库**不再使用 openspec/ 目录**。所有规范在 `docs/` 下：
 
-- `docs/conventions/` — 写作规范（文章格式 / 图片 / 验证流程 / frontmatter / UI）
-- `docs/adr/` — 架构决策记录
-
-**历史 commit message 中可能仍出现 `docs(openspec):` 标签**（例如 2dce517 / 74b849f）—— 这是仓库早期 OpenSpec 体系留下的痕迹，**代码层面已经全部迁移到 docs/conventions/ + docs/adr/，不要被历史 commit message 误导**。
-
-如果发现任何文档还引用了 `openspec/` 路径，请按下方映射表修正：
-
-| 旧路径 | 新路径 |
+| 目录 | 用途 |
 |---|---|
-| `openspec/conventions/article-fm.md` | `docs/conventions/article-fm.md` |
-| `openspec/conventions/article-format.md` | `docs/conventions/article-format.md` |
-| `openspec/conventions/classification.md` | `docs/conventions/classification.md` |
-| `openspec/conventions/git-commit.md` | `docs/conventions/git-commit.md` |
-| `openspec/decisions/0003-xxx.md` | `docs/adr/0003-xxx.md` |
-| `openspec/AGENTS.md` | `AGENTS.md`（仓库根） |
-| `openspec/changes/YYYY-MM-DD-xxx.md` | `CHANGELOG.md`（仓库根） |
+| `docs/writing-skills/` | 🔴 写作方法论入口（AI 先看这个） |
+| `docs/conventions/` | 写作规范（文章格式、业务模板、图片、分类、UI、验证） |
+| `docs/adr/` | 架构决策记录 |
+| `scripts/` | 构建脚本 |
+
+**历史 commit 中可能残留 `docs(openspec):` 标签——不要被误导。**
 
 ## 仓库结构
 
-- **`docs/`** — VitePress 站点源文件（首页 / 9 大类文章 / 知识地图）
-- **`docs/conventions/`** — 写作规范（文章格式、图片规范、分类规范、UI 规范）
-- **`docs/adr/`** — 架构决策记录（历史重大决策）
-- **`scripts/`** — 构建脚本（sync-toc / inject-article-meta / x.mjs 统一入口）
-- **`CHANGELOG.md`** — 所有变更记录
-- **`AGENTS.md`** — 本文件
-
-## AI 进入后必读
-
-1. **本文件** — 总览
-2. **`docs/conventions/article-format.md`** — 文章格式规范（技术文章）
-3. **`docs/conventions/biz-article-template.md`** — 业务知识文章模板（15 section 骨架 + 配图规范）⭐
-4. **`docs/conventions/images.md`** — 图片规范
-5. **`docs/conventions/classification.md`** — 分类规范
-6. **`CHANGELOG.md`** — 最近改了什么
-
-### 写业务知识文章
-
-判断标准：文章属于「业务领域认知」而非「技术工具使用」→ 用 biz-article-template。
-
-AI 写业务文章的标准流程：
-1. 先输出「写作确认清单」（主题、覆盖维度、配图、篇幅）
-2. 等用户确认后再写全文
-3. 写完跑 6 Loop 验证
-4. 更新 CHANGELOG.md
+```
+docs/
+├── writing-skills/     ← 🔴 AI 入口：怎么写、写在哪、用什么模板
+├── conventions/        ← 规范（article-format / biz-article-template / images / classification）
+├── adr/                ← 决策记录
+├── backend/            ← 后端开发（Java、REST、Spring Boot）
+├── frontend/           ← 前端开发
+├── data/               ← 数据 & 中间件（RocketMQ、Redis）
+├── devops/             ← DevOps & 云原生（Docker、K8s、CICD）
+├── ai/                 ← AI & 大模型（LLM Agent、RAG）
+├── architecture/       ← 架构 & 性能（后端路线、云原生）
+├── practice/           ← 工程实践
+├── reading/            ← 读书笔记
+├── career/             ← 个人成长
+└── biz/                ← 业务知识（支付、信贷、跨境收单）
+```
 
 ## Commit 规范
 
@@ -69,17 +59,18 @@ chore: 构建/工具链
 
 ## 不允许的事情
 
-- ❌ 在文档里贴大段代码（> 20 行）— 链接到示例代码仓库
-- ❌ 改已有正式文章的 frontmatter / 内容（除非用户明确允许）
-- ❌ 不写 commit message 就 push
-- ❌ 跳过 build 验证就推送（必须 `npm run docs:build` 跑通）
+- ❌ 不读 `docs/writing-skills/README.md` 就开始写文章
+- ❌ 改已有正式文章的内容（除非用户明确允许）
+- ❌ 改 3 个配置文件不同时改（utils / KnowledgeRail / sync-toc）
+- ❌ 不跑 6 Loop 验证就 commit
+- ❌ 不跑 `npm run docs:build` 就 push
 
 ## 必跑命令
 
 ```bash
-# 写完文章
-cd ~/myworkspace/git/programmer-knowledge-graph
-npm run x -- deploy "feat: 新增 XXX 文章"  # 自动 build + commit + push
+npm run x -- dev      # http://127.0.0.1:5175/programmer-knowledge-graph/
+npm run x -- build    # 构建 + 验证
+npm run x -- deploy "feat: xxx"  # build + commit + push
 ```
 
 ## 提问的艺术
@@ -87,4 +78,4 @@ npm run x -- deploy "feat: 新增 XXX 文章"  # 自动 build + commit + push
 - 不确定用户意图 → 问，不要猜
 - 多种方案 → 列出来让用户选
 - 改动前先讲思路 → 等用户确认 → 再写代码
-- 完成后跑验证 → 报告实际结果，不说"应该对了"
+- 写完跑 6 Loop → 报告实际结果，不说"应该对了"
