@@ -25,6 +25,7 @@ const sections = [
   { key: 'practice',     label: 'practice',  name: '工程实践',     color: '#64748b', text: '#fff' },
   { key: 'reading',      label: 'reading',   name: '读书笔记',     color: '#f59e0b', text: '#fff' },
   { key: 'career',       label: 'career',    name: '个人成长',     color: '#ec4899', text: '#fff' },
+  { key: 'biz',          label: 'biz',       name: '业务知识',     color: '#10b981', text: '#fff' },
 ]
 
 const activeKey = computed(() => {

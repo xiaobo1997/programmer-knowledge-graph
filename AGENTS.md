@@ -39,10 +39,21 @@
 ## AI 进入后必读
 
 1. **本文件** — 总览
-2. **`docs/conventions/article-format.md`** — 文章格式规范
-3. **`docs/conventions/images.md`** — 图片规范
-4. **`docs/conventions/classification.md`** — 分类规范
-5. **`CHANGELOG.md`** — 最近改了什么
+2. **`docs/conventions/article-format.md`** — 文章格式规范（技术文章）
+3. **`docs/conventions/biz-article-template.md`** — 业务知识文章模板（15 section 骨架 + 配图规范）⭐
+4. **`docs/conventions/images.md`** — 图片规范
+5. **`docs/conventions/classification.md`** — 分类规范
+6. **`CHANGELOG.md`** — 最近改了什么
+
+### 写业务知识文章
+
+判断标准：文章属于「业务领域认知」而非「技术工具使用」→ 用 biz-article-template。
+
+AI 写业务文章的标准流程：
+1. 先输出「写作确认清单」（主题、覆盖维度、配图、篇幅）
+2. 等用户确认后再写全文
+3. 写完跑 6 Loop 验证
+4. 更新 CHANGELOG.md
 
 ## Commit 规范
 

@@ -34,10 +34,15 @@ const titleMap: Record<string, string> = {
   practice: '工程实践',
   reading: '读书笔记',
   career: '个人成长',
+  biz: '业务知识',
   // 二级子目录
   cicd: 'CICD 工具',
   // 三级子目录
   advanced: '进阶',
+  // 业务知识子主题
+  '互联网金融信贷': '互联网金融信贷',
+  '国内支付': '国内支付',
+  '跨境支付收单': '跨境支付收单',
 }
 
 type SidebarItem = {

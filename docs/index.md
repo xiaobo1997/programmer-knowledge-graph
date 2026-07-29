@@ -62,6 +62,11 @@ features:
     details: 软技能、Career、面试、薪资谈判、心理建设。
     link: /career
     linkText: 进入个人成长
+  - icon: ◈
+    title: 业务知识
+    details: 互联网金融、支付体系、跨境收单等业务领域的全维度认知。
+    link: /biz
+    linkText: 进入业务知识
 ---
 
 ## 知识图谱不是题库

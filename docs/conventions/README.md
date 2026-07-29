@@ -1,5 +1,5 @@
 ---
-wordCount: 99
+wordCount: 124
 readMinutes: 1
 ---
 # 写作规范
@@ -13,6 +13,7 @@ readMinutes: 1
 | [article-format.md](./article-format.md) | 文章格式：concept/problem/deep-dive + 5W 速记卡 |
 | [article-prefix.md](./article-format.md) | 文章前缀规范 |
 | [article-verification.md](./article-verification.md) | 文章发布前验证清单 |
+| [biz-article-template.md](./biz-article-template.md) | **业务知识文章模板** — 15 section 骨架 + AI 写作指令 + 配图规范 |
 | [classification.md](./classification.md) | 分类规范 |
 | [images.md](./images.md) | 图片规范 |
 | [ui-design.md](./ui-design.md) | UI 设计规范 |

@@ -19,6 +19,7 @@ const titleMap = {
   practice: '工程实践',
   reading: '读书笔记',
   career: '个人成长',
+  biz: '业务知识',
 }
 const iconMap = {
   backend: '⌬',
@@ -30,6 +31,7 @@ const iconMap = {
   practice: '⚙',
   reading: '☰',
   career: '◐',
+  biz: '◈',
 }
 const descMap = {
   backend: 'Java/Go/Python、数据库、消息队列、分布式、JVM 调优。',
@@ -41,6 +43,7 @@ const descMap = {
   practice: 'Git、测试、Code Review、调试、编码规范与工具链。',
   reading: '整本书学习心得、跨领域阅读。',
   career: '软技能、Career、面试、薪资谈判、心理建设。',
+  biz: '互联网金融、支付体系、跨境收单等业务领域的全维度认知。',
 }
 
 function walk(root) {
