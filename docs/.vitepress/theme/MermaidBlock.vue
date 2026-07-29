@@ -10,6 +10,7 @@ const props = defineProps<{
 }>()
 
 const container = ref<HTMLElement | null>(null)
+const svgContent = ref('')  // 响应式 SVG 内容，供全屏 overlay 使用
 const id = `mermaid-${Math.random().toString(36).slice(2, 11)}`
 
 // 全屏放大状态
@@ -32,8 +33,13 @@ async function render() {
     })
     const { svg } = await mermaid.render(id, props.code.trim())
     container.value.innerHTML = svg
+    // 全屏 overlay 用的 SVG：去掉内联 max-width 和 width="100%"，避免 flex 容器里塌缩
+    svgContent.value = svg
+      .replace(/max-width:\s*[^;"]+;?/gi, '')
+      .replace(/\bwidth="100%"/gi, '')
   } catch (err) {
     container.value.innerHTML = `<pre style="color: #f56c6c; background: rgba(245,108,108,0.1); padding: 12px; border-radius: 6px;">${err instanceof Error ? err.message : String(err)}</pre>`
+    svgContent.value = ''
   }
 }
 
@@ -81,7 +87,7 @@ watch(() => props.code, render)
       @keydown="onKeydown"
     >
       <button class="mermaid-close" @click="zoomOut" title="关闭 (Esc)">✕</button>
-      <div class="mermaid-overlay-inner" v-html="container?.innerHTML ?? ''" />
+      <div class="mermaid-overlay-inner" v-html="svgContent" />
     </div>
   </Teleport>
 </template>
@@ -116,19 +122,18 @@ watch(() => props.code, render)
   to { opacity: 1; }
 }
 .mermaid-overlay-inner {
-  max-width: 95vw;
-  max-height: 95vh;
-  overflow: auto;
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+  height: 95vh;
 }
 .mermaid-overlay-inner :deep(svg) {
   max-width: 90vw;
   max-height: 90vh;
-  width: auto;
-  height: auto;
   background: white;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 html.dark .mermaid-overlay-inner :deep(svg) {
   background: #1a1a2e;
