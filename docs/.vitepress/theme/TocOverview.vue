@@ -132,7 +132,7 @@ const sections: Section[] = [
     description: "互联网金融、支付体系、跨境收单等业务领域的全维度认知。",
     articles: [
       {
-        file: "/biz/跨境支付收单/2_参与方与角色",
+        file: "/biz/跨境支付收单/2_参与方全景-9类角色拆解",
         title: "跨境收单的 9 类参与者：谁在赚钱，谁在扛风险",
         wordCount: 1879,
         readMinutes: 6,
@@ -140,7 +140,7 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","角色","业务知识"],
       },
       {
-        file: "/biz/跨境支付收单/1_概述",
+        file: "/biz/跨境支付收单/1_概述-10分钟入门",
         title: "跨境支付收单：技术人 10 分钟入门",
         wordCount: 1348,
         readMinutes: 4,
@@ -156,9 +156,9 @@ const sections: Section[] = [
         tags: ["支付","清结算","国内支付","业务知识"],
       },
       {
-        file: "/biz/跨境支付收单/3_外卡支付全流程",
+        file: "/biz/跨境支付收单/3_外卡支付链路-从授权到结算",
         title: "外卡支付全流程：一笔 VISA 卡的钱怎么到你账上",
-        wordCount: 1491,
+        wordCount: 1493,
         readMinutes: 5,
         excerpt: "一句话定义：外卡支付 = 境外消费者用 VISA/Mastercard 在中国商户网站付款，钱经过 6 个机构、换一次汇，T+3~T+7 到商户账上。 很多人以…",
         tags: ["跨境支付","收单","交易流程","业务知识"],
