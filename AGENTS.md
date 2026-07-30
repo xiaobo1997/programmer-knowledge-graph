@@ -2,12 +2,28 @@
 
 > 🔴 **任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes / 任何编辑器 / 任何大模型）进入本仓库，第一时间必须读这个文件，然后读 `docs/writing-skills/README.md`。没有例外。**
 
+## 五层栈覆盖
+
+本仓库在 AI 五层栈中的覆盖：
+
+| 层 | 覆盖 | 位置 |
+|----|:--:|------|
+| L5 工具协议 | — | 纯文档仓库，不需要 MCP |
+| L4 任务流 | — | 文档仓库不需要 |
+| L3 规范驱动 ⭐ | ✅ | `docs/conventions/`（文章格式、图片、分类、UI、验证） |
+| L2 决策档案 | ✅ | `docs/adr/`（5 个架构决策记录） |
+| L1 项目记忆 ⭐ | ✅ | `AGENTS.md` + `docs/writing-skills/` |
+| L0 卫生习惯 | ✅ | Conventional Commits + `CHANGELOG.md` |
+
+**AI 进来不是裸仓库——L0+L1+L2+L3 全有。**
+
 ## AI 进入后执行顺序
 
 1. **本文件（AGENTS.md）** — 仓库总览、规范体系、边界
-2. **`docs/writing-skills/README.md`** — 🔴 写作方法论入口（必读！所有写文章任务必须先加载）
-3. **`docs/conventions/article-verification.md`** — 写完必跑的 6 Loop 验证
-4. **`CHANGELOG.md`** — 最近改了什么
+2. **`docs/writing-skills/README.md`** — 🔴 写作方法论入口（必读！）
+3. **`docs/conventions/README.md`** — 🔴 规范入口：文章格式、图片、分类、UI、验证
+4. **`docs/adr/README.md`** — 架构决策历史
+5. **`CHANGELOG.md`** — 最近改了什么、为什么改
 
 ## 这是什么
 
