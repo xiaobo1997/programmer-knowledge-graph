@@ -158,8 +158,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付收单/3_外卡支付全流程",
         title: "外卡支付全流程：一笔 VISA 卡的钱怎么到你账上",
-        wordCount: 1309,
-        readMinutes: 7,
+        wordCount: 1491,
+        readMinutes: 5,
         excerpt: "一句话定义：外卡支付 = 境外消费者用 VISA/Mastercard 在中国商户网站付款，钱经过 6 个机构、换一次汇，T+3~T+7 到商户账上。 很多人以…",
         tags: ["跨境支付","收单","交易流程","业务知识"],
       },
