@@ -73,6 +73,16 @@ refactor: 重构 xxx
 chore: 构建/工具链
 ```
 
+### Commit 和 CHANGELOG 的分工
+
+| | commit message | CHANGELOG.md |
+|---|---|---|
+| **放什么** | 做了什么（格式统一） | 为什么做、业务背景、AI 该知道什么 |
+| **给谁看** | git log 快速浏览 | AI + 人类理解意图 |
+| **粒度** | 单次改动 | 一个 feature / 一次重构的完整意图 |
+
+**🔴 铁律**：CHANGELOG 记录 feature 级变更（新增模块、架构决策、方法论更新）。日常改文章、修 typo 只用 commit message，不写 CHANGELOG。CHANGELOG 不是 commit log。
+
 ## 不允许的事情
 
 - ❌ 不读 `docs/writing-skills/README.md` 就开始写文章
