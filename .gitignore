@@ -30,3 +30,8 @@ docs/.vitepress/theme/sections.json
 docs/writing-skills/
 docs/conventions/
 docs/adr/
+
+# 内部规范与决策记录（外部用户无需看到）
+docs/writing-skills/
+docs/conventions/
+docs/adr/
