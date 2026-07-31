@@ -132,7 +132,7 @@ const sections: Section[] = [
     description: "互联网金融、支付体系、跨境收单等业务领域的全维度认知。",
     articles: [
       {
-        file: "/biz/跨境支付/业务从零开始学习/17_代付Payout-资金流出",
+        file: "/biz/跨境支付/浅析业务/17_代付Payout-资金流出",
         title: "代付Payout：资金流出的逆向全流程",
         wordCount: 431,
         readMinutes: 1,
@@ -140,7 +140,7 @@ const sections: Section[] = [
         tags: ["跨境支付","代付","Payout","资金流出","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/10_端到端实战-境外卡全链路",
+        file: "/biz/跨境支付/浅析业务/10_端到端实战-境外卡全链路",
         title: "端到端实战：境外 VISA 卡在中国商户的全链路走查",
         wordCount: 721,
         readMinutes: 2,
@@ -148,7 +148,7 @@ const sections: Section[] = [
         tags: ["跨境支付","端到端","实战","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/8_多币种账户体系-设计原理",
+        file: "/biz/跨境支付/浅析业务/8_多币种账户体系-设计原理",
         title: "多币种账户体系：从模型到状态机的设计原理",
         wordCount: 513,
         readMinutes: 2,
@@ -156,7 +156,7 @@ const sections: Section[] = [
         tags: ["跨境支付","账户","多币种","数据模型","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/7_跨境对账与结算-架构设计",
+        file: "/biz/跨境支付/浅析业务/7_跨境对账与结算-架构设计",
         title: "跨境对账与结算：三方模型、换汇与差异处理",
         wordCount: 1021,
         readMinutes: 3,
@@ -164,7 +164,7 @@ const sections: Section[] = [
         tags: ["跨境支付","对账","结算","换汇","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/9_风控与合规-跨境监管框架",
+        file: "/biz/跨境支付/浅析业务/9_风控与合规-跨境监管框架",
         title: "跨境风控与合规：3DS、拒付率、反洗钱与制裁筛查",
         wordCount: 936,
         readMinutes: 3,
@@ -172,7 +172,7 @@ const sections: Section[] = [
         tags: ["跨境支付","风控","3DS","拒付","AML","合规","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/2_参与方全景-9类角色拆解",
+        file: "/biz/跨境支付/浅析业务/2_参与方全景-9类角色拆解",
         title: "跨境收单的 9 类参与者：谁在赚钱，谁在扛风险",
         wordCount: 1879,
         readMinutes: 6,
@@ -180,7 +180,7 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","角色","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/13_订单生命周期-状态机与逆向",
+        file: "/biz/跨境支付/浅析业务/13_订单生命周期-状态机与逆向",
         title: "跨境收单订单生命周期：从下单到销户的完整状态机",
         wordCount: 822,
         readMinutes: 3,
@@ -188,7 +188,7 @@ const sections: Section[] = [
         tags: ["跨境支付","订单","状态机","退款","拒付","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/14_核心功能用例-12个场景",
+        file: "/biz/跨境支付/浅析业务/14_核心功能用例-12个场景",
         title: "跨境收单核心功能用例：12 个标准化场景",
         wordCount: 569,
         readMinutes: 2,
@@ -196,7 +196,7 @@ const sections: Section[] = [
         tags: ["跨境支付","功能用例","产品","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/4_业务模式-费率与分润深度",
+        file: "/biz/跨境支付/浅析业务/4_业务模式-费率与分润深度",
         title: "跨境收单业务模式：聚合 vs 直连，费率与分润深度拆解",
         wordCount: 1390,
         readMinutes: 4,
@@ -204,7 +204,7 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","业务模式","费率","分润","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/18_多币种路径-4层币种口径",
+        file: "/biz/跨境支付/浅析业务/18_多币种路径-4层币种口径",
         title: "跨境支付多币种路径：4层币种口径与换汇流转",
         wordCount: 719,
         readMinutes: 2,
@@ -212,7 +212,7 @@ const sections: Section[] = [
         tags: ["跨境支付","多币种","换汇","DCC","币种","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/12_支付方式与交易类型矩阵",
+        file: "/biz/跨境支付/浅析业务/12_支付方式与交易类型矩阵",
         title: "跨境支付能力全景：7 种支付方式 × 10 种交易类型",
         wordCount: 1033,
         readMinutes: 3,
@@ -220,7 +220,7 @@ const sections: Section[] = [
         tags: ["跨境支付","支付方式","能力矩阵","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/1_概述-10分钟入门",
+        file: "/biz/跨境支付/浅析业务/1_概述-10分钟入门",
         title: "跨境支付收单：技术人 10 分钟入门",
         wordCount: 1348,
         readMinutes: 4,
@@ -236,7 +236,7 @@ const sections: Section[] = [
         tags: ["支付","清结算","国内支付","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/11_全局架构设计-跨境收单系统全景",
+        file: "/biz/跨境支付/浅析业务/11_全局架构设计-跨境收单系统全景",
         title: "全局架构设计：跨境收单系统全景与从零搭建决策清单",
         wordCount: 923,
         readMinutes: 3,
@@ -244,7 +244,7 @@ const sections: Section[] = [
         tags: ["跨境支付","架构设计","系统设计","技术架构","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/5_收单系统架构-模块与部署",
+        file: "/biz/跨境支付/浅析业务/5_收单系统架构-模块与部署",
         title: "收单系统架构：从功能模块到部署拓扑",
         wordCount: 1482,
         readMinutes: 5,
@@ -252,7 +252,7 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","系统架构","技术架构","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/6_通道管理与路由-深度",
+        file: "/biz/跨境支付/浅析业务/6_通道管理与路由-深度",
         title: "通道管理与路由：从原理到实践的深度拆解",
         wordCount: 1142,
         readMinutes: 4,
@@ -260,7 +260,7 @@ const sections: Section[] = [
         tags: ["跨境支付","通道","路由","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/3_外卡支付链路-从授权到结算",
+        file: "/biz/跨境支付/浅析业务/3_外卡支付链路-从授权到结算",
         title: "外卡支付全流程：一笔 VISA 卡的钱怎么到你账上",
         wordCount: 1493,
         readMinutes: 5,
@@ -268,7 +268,7 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","交易流程","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/15_线上支付全流程-PC收银台与H5",
+        file: "/biz/跨境支付/浅析业务/15_线上支付全流程-PC收银台与H5",
         title: "线上支付全流程：PC收银台、H5与APP内支付",
         wordCount: 548,
         readMinutes: 2,
@@ -276,7 +276,7 @@ const sections: Section[] = [
         tags: ["跨境支付","线上支付","收银台","H5","APP","业务知识"],
       },
       {
-        file: "/biz/跨境支付/业务从零开始学习/16_POS刷卡支付-终端与卡组织",
+        file: "/biz/跨境支付/浅析业务/16_POS刷卡支付-终端与卡组织",
         title: "POS刷卡支付：终端、EMV芯片与卡组织交互",
         wordCount: 429,
         readMinutes: 1,
@@ -386,6 +386,22 @@ const sections: Section[] = [
         readMinutes: 1,
         excerpt: "K8s 不只是容器调度器，是一整套声明式运维系统。 K8s 调度的最小单位，可以包含 1 个或多个容器： 声明期望状态，K8s 自动维护： 把一组 Pod 暴露…",
         tags: ["Kubernetes","云原生"],
+      },
+    ],
+  },
+  {
+    key: 'practice',
+    icon: '⚙',
+    label: "工程实践",
+    description: "Git、测试、Code Review、调试、编码规范与工具链。",
+    articles: [
+      {
+        file: "/practice/tools/1工具安装",
+        title: "hermes",
+        wordCount: 19,
+        readMinutes: 1,
+        excerpt: "curl fsSL https://raw.githubusercontent.com/NousResearch/hermesagent/main/script…",
+        tags: [],
       },
     ],
   },

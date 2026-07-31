@@ -1,10 +1,10 @@
 ---
-title: 跨境支付收单
-wordCount: 70
+title: 跨境支付
+wordCount: 68
 readMinutes: 1
 ---
 
-# 跨境支付收单
+# 跨境支付
 
 > 从零开始系统性学习跨境支付收单业务。
 
