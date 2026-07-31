@@ -20,6 +20,7 @@ const titleMap = {
   reading: '读书笔记',
   career: '个人成长',
   biz: '业务知识',
+  '跨境支付': '跨境支付',
 }
 const iconMap = {
   backend: '⌬',
