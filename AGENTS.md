@@ -83,6 +83,74 @@ chore: 构建/工具链
 
 **🔴 铁律**：CHANGELOG 记录 feature 级变更（新增模块、架构决策、方法论更新）。日常改文章、修 typo 只用 commit message，不写 CHANGELOG。CHANGELOG 不是 commit log。
 
+## 🤖 AI 工作流标准（任务完成时必走）
+
+> **任何 AI 切换到本仓库工作（Cursor / Claude Code / Codex / Qoder / Hermes / 其他大模型），都按这套标准走。**
+> 详细规则见 `docs/conventions/AI-workflow-guide.md`（gitignore，本地维护）。
+
+### 任务完成时必走的 6 项自检
+
+| # | 自检项 | 标准 |
+|---|---|---|
+| 1 | **完美状态报告** | 用 ✅ ⚠️ ❌ 🚫 明确标记每项状态 |
+| 2 | **分项自检** | 按任务类型选检查项（写文章 6 Loop + 画像锚点、写代码编译测试等） |
+| 3 | **文件清单分组** | 新建/修改/删除 分组列，每组标明行数/字节数/变更说明 |
+| 4 | **git 状态明确** | 已 commit（hash + message）/ staged / untracked / pushed 区分清楚 |
+| 5 | **下一步 + 用户决策** | 列 2-3 个下一步选项 + 等用户决策项 |
+| 6 | **关键决策回顾** | 任务超过 2-3 个关键决策时回顾「为什么这么做 / 为什么不做另一种」 |
+
+### 交付报告格式（每个任务完成时）
+
+```
+## ✅ [任务名] 已完成
+
+[一句话总结]
+
+**新建文件（N）：**
+- path/to/file1.md（N 行）
+
+**修改文件（N）：**
+- path/to/file2.md（修改说明）
+
+**删除文件（N）：**
+- path/to/file3.md
+
+**Git 状态：**
+- ✅ 已 commit（hash: xxxxxxx）
+- ⚠️ 未 push / hold 在本地
+
+**6 项自检：**
+| 项 | 结果 |
+|---|---|
+| 1 完美状态 | ✅ |
+| 2 分项自检 | ✅ |
+| 3 文件清单 | ✅ |
+| 4 git 状态 | ✅ |
+| 5 下一步 | ✅ |
+| 6 决策回顾 | ✅ |
+
+**下一步建议：**
+- [ ] A：xxx
+- [ ] B：xxx
+- [ ] C：xxx
+```
+
+### 边界纪律（绝对红线）
+
+- ❌ **不读 SOP 直接动笔**——必须先加载对应 SOP（biz / tech）和画像锚点
+- ❌ **文章里暴露画像标签**（P7/P8/资深/全局架构师 等）—— 深度按画像但叙述照顾入门读者
+- ❌ **自动 commit / push**——必须等用户点头
+- ❌ **暴露公司名/真实数据**——postar/星驿付/满帮/小贷/xiaobo 等
+- ❌ **批量删除前不 show 文件清单**——必须先列清单让用户确认
+- ❌ **跳过自检直接说「完成」**——6 项自检全过才能说完成
+
+### 切换其他大模型时
+
+1. 让 AI 先读本文件（AGENTS.md，公开精简版）
+2. 让 AI 再读 `docs/writing-skills/README.md`（写作入口）
+3. 让 AI 根据任务加载对应 SOP（业务/技术）+ 画像锚点
+4. AI 按 `docs/conventions/AI-workflow-guide.md` 的 6 项自检 + 交付报告格式执行
+
 ## 不允许的事情
 
 - ❌ 不读 `docs/writing-skills/README.md` 就开始写文章
@@ -90,6 +158,7 @@ chore: 构建/工具链
 - ❌ 改 3 个配置文件不同时改（utils / KnowledgeRail / sync-toc）
 - ❌ 不跑 6 Loop 验证就 commit
 - ❌ 不跑 `npm run docs:build` 就 push
+- ❌ **不读 AI 工作流标准就交任务**——任何 AI 切换过来必须先读本节
 
 ## 必跑命令
 
