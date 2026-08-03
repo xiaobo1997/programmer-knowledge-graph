@@ -19,9 +19,9 @@ const checks = [
   ['工程实践', 'practice/index.html'],
   ['读书笔记', 'reading/index.html'],
   ['个人成长', 'career/index.html'],
-  ['后端示例文章', 'backend/spring-boot/1_hello-world.html'],
-  ['DevOps 示例文章', 'devops/docker/1_getting-started.html'],
-  ['凤凰架构笔记', 'reading/凤凰架构/1_笔记.html'],
+  ['后端示例文章', 'backend/java/java17特性/1.17的亮点.html'],
+  ['DevOps 子主题入口', 'devops/cicd/index.html'],
+  ['读书笔记首页', 'reading/index.html'],
 ]
 
 const failures = []
