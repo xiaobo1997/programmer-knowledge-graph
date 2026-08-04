@@ -228,6 +228,14 @@ const sections: Section[] = [
         tags: ["跨境支付","收单","业务知识"],
       },
       {
+        file: "/biz/跨境支付/清结算体系/11_清分引擎设计与规则引擎-深度",
+        title: "清分引擎设计与规则引擎（深度）",
+        wordCount: 5800,
+        readMinutes: 16,
+        excerpt: "系列第 11 篇 · 深度  上一篇 10清结算系统架构与模块边界 讲了五大模块边界。本篇深入清分引擎怎么从 0 到 1 实现——规则引擎（自研 DSL vs …",
+        tags: [],
+      },
+      {
         file: "/biz/国内支付/1_清结算体系",
         title: "清结算体系：一笔支付钱的\"后半场",
         wordCount: 3473,
@@ -238,8 +246,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/清结算体系/PROGRESS",
         title: "清结算体系专题进度与画像深度",
-        wordCount: 3000,
-        readMinutes: 8,
+        wordCount: 3344,
+        readMinutes: 10,
         excerpt: "专题进度文档（与 19 篇文章同目录）  这份文档沉淀「19 篇清结算专题」的整体规划、已完成 10 篇的一句话核心、画像锚点深度统计、写作方法论沉淀，以及后续…",
         tags: [],
       },
