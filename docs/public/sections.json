@@ -134,8 +134,8 @@
       {
         "file": "/biz/跨境支付/清结算体系/7_跨境清分模型与MDR拆解-深度",
         "title": "跨境清分模型与 MDR 拆解（侧重收单）",
-        "wordCount": 5800,
-        "readMinutes": 16,
+        "wordCount": 5399,
+        "readMinutes": 17,
         "excerpt": "系列第 7 篇 · 深度  上一篇 6多币种账户体系与头寸管理 讲了商户账户和公司头寸。本篇深入「钱进来之后怎么分」——一笔支付从商户看是 2.5% 的总成本，…",
         "tags": [],
         "isTest": false
@@ -207,6 +207,15 @@
           "分润",
           "业务知识"
         ],
+        "isTest": false
+      },
+      {
+        "file": "/biz/跨境支付/清结算体系/8_跨境账务体系四态模型-深度",
+        "title": "跨境账务体系四态模型（侧重收单）",
+        "wordCount": 4926,
+        "readMinutes": 15,
+        "excerpt": "系列第 8 篇 · 深度  上一篇 7跨境清分模型与 MDR 拆解 讲了钱怎么分（interchange / assessment / processor / …",
+        "tags": [],
         "isTest": false
       },
       {

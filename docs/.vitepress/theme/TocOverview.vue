@@ -134,8 +134,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/清结算体系/7_跨境清分模型与MDR拆解-深度",
         title: "跨境清分模型与 MDR 拆解（侧重收单）",
-        wordCount: 5800,
-        readMinutes: 16,
+        wordCount: 5399,
+        readMinutes: 17,
         excerpt: "系列第 7 篇 · 深度  上一篇 6多币种账户体系与头寸管理 讲了商户账户和公司头寸。本篇深入「钱进来之后怎么分」——一笔支付从商户看是 2.5% 的总成本，…",
         tags: [],
       },
@@ -178,6 +178,14 @@ const sections: Section[] = [
         readMinutes: 4,
         excerpt: "一句话定义：跨境收单有三种主流模式——聚合收单（如 Stripe）、直连卡组织（如直接签约 VISA）、本地收单（在当地有牌照）。选哪种取决于你的交易量、技术能…",
         tags: ["跨境支付","收单","业务模式","费率","分润","业务知识"],
+      },
+      {
+        file: "/biz/跨境支付/清结算体系/8_跨境账务体系四态模型-深度",
+        title: "跨境账务体系四态模型（侧重收单）",
+        wordCount: 4926,
+        readMinutes: 15,
+        excerpt: "系列第 8 篇 · 深度  上一篇 7跨境清分模型与 MDR 拆解 讲了钱怎么分（interchange / assessment / processor / …",
+        tags: [],
       },
       {
         file: "/biz/跨境支付/浅析业务/18_多币种路径-4层币种口径",
