@@ -83,6 +83,19 @@ chore: 构建/工具链
 
 **🔴 铁律**：CHANGELOG 记录 feature 级变更（新增模块、架构决策、方法论更新）。日常改文章、修 typo 只用 commit message，不写 CHANGELOG。CHANGELOG 不是 commit log。
 
+## 🤖 AI 工作流 trigger（精简版）
+
+任何 AI 切换到本仓库工作（Cursor / Claude Code / Codex / Qoder / Hermes / 其他大模型），按以下 trigger 执行任务：
+
+- ✅ **不自动 commit / push**——必须等用户点头
+- ✅ **写文章前必须读对应 SOP**（业务 / 技术）+ 画像锚点
+- ✅ **任务完成时输出 6 项自检 + 交付报告**（完美状态 / 分项自检 / 文件清单 / git 状态 / 下一步 / 决策回顾）
+- ✅ **不暴露公司名 / 真实数据 / 内部代号**——具体名单见本地 SOP（**不公开**）
+- ✅ **不暴露画像标签**（P7 / P8 / 资深 / 全局架构师 / 业务架构师 等）——文章里禁止出现
+- ✅ **不编造精确数字**——必须标注「行业认知」或「公开报道」
+
+**详细工作流标准、必读 SOP、画像锚点、写作纪律**——见本地维护的 `.ai/ONBOARDING.md` 和 `docs/conventions/` 下 SOP 文件（**默认不 commit 到远程**）。
+
 ## 不允许的事情
 
 - ❌ 不读 `docs/writing-skills/README.md` 就开始写文章
