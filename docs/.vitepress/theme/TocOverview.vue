@@ -166,8 +166,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/清结算体系/16_跨境合规与监管口径演变-全景",
         title: "跨境合规与监管口径演变（全景）",
-        wordCount: 5800,
-        readMinutes: 16,
+        wordCount: 5970,
+        readMinutes: 19,
         excerpt: "系列第 16 篇 · 全景  上一篇 15拒付、退款与资金逆向 讲了拒付与退款怎么管。本篇是第五层 · 风险与合规的最后一篇——讲跨境合规——217 号文 / …",
         tags: [],
       },
@@ -185,6 +185,14 @@ const sections: Section[] = [
         wordCount: 4924,
         readMinutes: 15,
         excerpt: "系列第 1 篇 · 深度  上一篇 0全局架构与专家视角 给出了跨境清结算的整体心智模型。本篇把它展开——从「跨境 vs 国内」的 12 个本质差异，到「收单侧…",
+        tags: [],
+      },
+      {
+        file: "/biz/跨境支付/清结算体系/17_跨境清结算十大踩坑实录-实战",
+        title: "跨境清结算十大踩坑实录（实战）",
+        wordCount: 5900,
+        readMinutes: 19,
+        excerpt: "系列第 17 篇 · 实战  上一篇 16跨境合规与监管口径演变 讲了跨境合规五大监管口径。本篇是第六层 · 踩坑与演进的第一篇——讲跨境清结算十大踩坑实录——…",
         tags: [],
       },
       {
@@ -278,8 +286,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/清结算体系/PROGRESS",
         title: "清结算体系专题进度与画像深度",
-        wordCount: 3660,
-        readMinutes: 11,
+        wordCount: 3710,
+        readMinutes: 12,
         excerpt: "专题进度文档（与 19 篇文章同目录）  这份文档沉淀「19 篇清结算专题」的整体规划、已完成 15 篇的一句话核心、画像锚点深度统计、写作方法论沉淀，以及后续…",
         tags: [],
       },
