@@ -278,7 +278,7 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/清结算体系/PROGRESS",
         title: "清结算体系专题进度与画像深度",
-        wordCount: 3608,
+        wordCount: 3660,
         readMinutes: 11,
         excerpt: "专题进度文档（与 19 篇文章同目录）  这份文档沉淀「19 篇清结算专题」的整体规划、已完成 15 篇的一句话核心、画像锚点深度统计、写作方法论沉淀，以及后续…",
         tags: [],
