@@ -68,6 +68,14 @@ const sections: Section[] = [
     description: "互联网金融、支付体系、跨境收单等业务领域的全维度认知。",
     articles: [
       {
+        file: "/biz/跨境支付/浅析业务/1_参与方全景与利益博弈-深度",
+        title: "参与方全景与利益博弈（深度）",
+        wordCount: 6000,
+        readMinutes: 20,
+        excerpt: "系列第 1 篇 · 深度  上一篇 0跨境支付全景与核心概念全景 讲了 12 维差异 + 5 卡组织 + 7 段链路 + 4 独有概念。本篇是第一层 · 导览与…",
+        tags: [],
+      },
+      {
         file: "/biz/跨境支付/浅析业务/17_代付Payout-资金流出",
         title: "代付Payout：资金流出的逆向全流程",
         wordCount: 431,
@@ -302,8 +310,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/浅析业务/PROGRESS",
         title: "浅析业务进度（PROGRESS）",
-        wordCount: 4500,
-        readMinutes: 15,
+        wordCount: 3213,
+        readMinutes: 10,
         excerpt: "19 篇专题 · 业务入门 · 从零开始  上一篇 清结算体系进度 — 19 篇清结算专题已完成（19/19 = 100%）  本篇是浅析业务 19 篇专题的进…",
         tags: [],
       },
