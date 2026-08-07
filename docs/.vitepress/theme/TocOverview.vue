@@ -126,8 +126,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/浅析业务/7_多币种账户体系-深度",
         title: "多币种账户体系（深度）",
-        wordCount: 5800,
-        readMinutes: 19,
+        wordCount: 5023,
+        readMinutes: 16,
         excerpt: "系列第 7 篇 · 深度  上一篇 6跨境对账与结算体系深度 讲了 5 类差异 + 换汇 3 决策 + 外管申报。本篇是第三层 · 架构与系统的第四篇——讲多币…",
         tags: [],
       },
@@ -137,6 +137,14 @@ const sections: Section[] = [
         wordCount: 5529,
         readMinutes: 17,
         excerpt: "系列第 6 篇 · 深度  上一篇 5多币种与汇率定价权 讲了 5 币种 + 3 汇率策略。本篇深入跨境支付公司如何为商户设计账户——单钱包 / 多钱包 / 单…",
+        tags: [],
+      },
+      {
+        file: "/biz/跨境支付/浅析业务/8_风控与合规框架-深度",
+        title: "风控与合规框架（深度）",
+        wordCount: 5082,
+        readMinutes: 16,
+        excerpt: "系列第 8 篇 · 深度  上一篇 7多币种账户体系深度 讲了 4 类账户 + 5 状态机 + 3 换汇策略。本篇是第三层 · 架构与系统的第五篇——讲风控与合…",
         tags: [],
       },
       {
