@@ -390,8 +390,8 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/浅析业务/10_全局架构设计与决策清单-全景",
         title: "全局架构设计与决策清单（全景）",
-        wordCount: 6000,
-        readMinutes: 20,
+        wordCount: 5163,
+        readMinutes: 16,
         excerpt: "系列第 10 篇 · 全景  上一篇 8风控与合规框架深度 讲了风控 3 层 + 3DS v2 + AML/KYC + 8 项国际合规。本篇是第四层 · 架构与…",
         tags: [],
       },
@@ -473,6 +473,14 @@ const sections: Section[] = [
         wordCount: 5440,
         readMinutes: 17,
         excerpt: "系列第 4 篇 · 深度  上一篇 3跨境参与方全景与利益博弈 讲了 9 类参与方怎么博弈。本篇把它落到具体时序——讲清一笔跨境支付从买家点击支付到卖家收到人民…",
+        tags: [],
+      },
+      {
+        file: "/biz/跨境支付/浅析业务/11_支付方式与交易类型矩阵-深度",
+        title: "支付方式与交易类型矩阵（深度）",
+        wordCount: 5800,
+        readMinutes: 19,
+        excerpt: "系列第 11 篇 · 深度  上一篇 10全局架构设计与决策清单全景 讲了 4 大决策 + 8 项必备 + 5 年视角。本篇是第五层 · 业务场景与用例的第一篇…",
         tags: [],
       },
       {
