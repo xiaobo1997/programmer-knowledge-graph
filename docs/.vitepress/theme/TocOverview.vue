@@ -78,9 +78,17 @@ const sections: Section[] = [
       {
         file: "/biz/跨境支付/浅析业务/15_POS刷卡支付-终端与卡组织-深度",
         title: "15. POS 刷卡支付：终端、卡组织与四方清算模型深度解析",
-        wordCount: 6768,
-        readMinutes: 41,
+        wordCount: 8107,
+        readMinutes: 25,
         excerpt: "状态：深度 · 第六层业务场景 · 与 14线上支付 / 16代付 / 17多币种路径并列  阅读时长：约 60 分钟 · 字数规模 50007000 字 · …",
+        tags: [],
+      },
+      {
+        file: "/biz/跨境支付/浅析业务/16_代付Payout-资金流出-深度",
+        title: "16. 代付 Payout：跨境资金流出、商户提现与多级分账深度解析",
+        wordCount: 7609,
+        readMinutes: 44,
+        excerpt: "状态：深度 · 第六层业务场景 · 与 14线上支付 / 15POS / 17多币种路径并列  阅读时长：约 60 分钟 · 字数规模 50007000 字 ·…",
         tags: [],
       },
       {
