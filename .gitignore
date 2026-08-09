@@ -38,3 +38,6 @@ docs/adr/
 docs/writing-skills/
 docs/conventions/
 docs/adr/
+
+# 跨大模型一致性 SOP（本地维护，不公开）
+_internal/

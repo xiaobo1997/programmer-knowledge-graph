@@ -1,6 +1,6 @@
 # AGENTS.md
 
-> 🔴 **任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes / 任何编辑器 / 任何大模型）进入本仓库，第一时间必须读这个文件，然后读 `docs/writing-skills/README.md`。没有例外。**
+> 🔴 **任何 AI（Cursor / Claude Code / Codex / Qoder / Hermes / 任何编辑器 / 任何大模型）进入本仓库，第一时间必须读这个文件，然后读 `_internal/SOP-触发决策树.md`（跨大模型统一入口，含完整 SOP 加载链路）。没有例外。**
 
 ## 五层栈覆盖
 
@@ -20,10 +20,11 @@
 ## AI 进入后执行顺序
 
 1. **本文件（AGENTS.md）** — 仓库总览、规范体系、边界
-2. **`docs/writing-skills/README.md`** — 🔴 写作方法论入口（必读！）
-3. **`docs/conventions/README.md`** — 🔴 规范入口：文章格式、图片、分类、UI、验证
-4. **`docs/adr/README.md`** — 架构决策历史
-5. **`CHANGELOG.md`** — 最近改了什么、为什么改
+2. **`_internal/SOP-触发决策树.md`** — 🔴 跨大模型统一入口（含路径映射表 + 加载顺序）
+3. **`docs/writing-skills/README.md`** — 🔴 写作方法论入口（必读！）
+4. **`docs/conventions/README.md`** — 🔴 规范入口：文章格式、图片、分类、UI、验证
+5. **`docs/adr/README.md`** — 架构决策历史
+6. **`CHANGELOG.md`** — 最近改了什么、为什么改
 
 ## 这是什么
 
@@ -95,6 +96,11 @@ chore: 构建/工具链
 - ✅ **不编造精确数字**——必须标注「行业认知」或「公开报道」
 
 **详细工作流标准、必读 SOP、画像锚点、写作纪律**——见本地维护的 `.ai/ONBOARDING.md` 和 `docs/conventions/` 下 SOP 文件（**默认不 commit 到远程**）。
+
+**跨大模型一致性 SOP**（坑 1+2+3 修复方案，2026-08-09 沉淀）：
+- 入口：`_internal/SOP-触发决策树.md`（任何大模型必读第一份）
+- 路径映射表：见决策树「二、路径映射表」
+- 目标 + 产出 + Loop 校验：`_internal/cross-model/goal-output-loop.md`
 
 ## 不允许的事情
 
