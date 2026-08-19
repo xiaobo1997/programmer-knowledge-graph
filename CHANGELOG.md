@@ -63,6 +63,48 @@
 
 - MermaidBlock.vue：新增 `<Teleport>` 全屏 overlay + 暗黑模式跟随
 
+## [0.4.0] — 2026-08-19
+
+### Added
+
+- **AI 域 L1 入门层收官（14 篇完整收尾 · docs/ai/入门层/从零开始认识AI系列/）**：
+  - 0_系列导读-全景 — 5W 速记卡 + 阅读路径 + 与其他 AI 域专题关系
+  - 1_什么是LLM — concept，模型/训练/推理 3 概念 + 主流模型家谱
+  - 2_为什么需要Agent — concept，agent vs 单纯 LLM 的 5 个差异
+  - 3_Agent生态与版图 — concept，编排 / 工具 / 记忆 / 评测 / 框架 5 层全景
+  - 4_Agent为什么会思考 — concept，CoT / ReAct 论文编号 + 思考链路推演
+  - 5_Agent怎么动手（Function Calling）— concept，FC 三件套 + strict 模式 + tool search
+  - 6_Agent怎么记事（记忆）— concept，working / episodic / semantic 三层记忆
+  - 7_Agent怎么规划（规划）— concept，Plan-and-Execute / ReWOO / Reflexion / LATS 四模式
+  - 8_端到端串成完整Agent调用流程 — 全景，9 步 trace + BrewTrace 实测数据
+  - 9_Harness是什么 — concept，agent 操作系统层 + 检查点/容错/可观测
+  - 10_MCP协议与生态 — concept，MCP 三件套 + registry/pulsemcp/glama 生态
+  - 11_Prompt与Context — concept，Context Engineering + ACE / Manus 案例
+  - 12_多Agent与Subagent — concept，6 种协作模式 + token 乘数 + 5 大失败模式
+  - 13_收官与能力地图 — 全景，2022-2026 五年演进 timeline + 5 层能力地图 + 选型决策
+
+- **AI 域 L2 特性层启动（5 大方向 10 篇规划 · docs/ai/特性层/深入理解Agent工程化特性系列/）**：
+  - 0_系列导读-全景 — 轻量化全景（10 篇总览表 + 5 大方向 Mermaid 全景图 + 3 类阅读路径）
+  - 1_四家编排引擎架构横评-深度 — LangGraph / CrewAI / AutoGen / OpenAI Agents SDK 四家架构对比 + 范式漂移（Chain → ReAct → Graph → SDK 派）+ claude-code 14w star 工程化壁垒解读
+
+- **新增 scripts/ 工具**：
+  - scripts/verify-6-loop.py — 6 Loop 一键验证（Loop 1-6 完整性/Mermaid/隐私/画像锚点/标签红线/字数），按 frontmatter type 自动适配（concept/deep-dive/overview/biz/practice）
+  - scripts/fix-mermaid-fullwidth.py — Mermaid 全角标点批量修复（10 字符黑名单），可重跑、幂等
+
+### Changed
+
+- RocketMQ 实践类文件名 + 内容清理 SOP 后缀（遵循 2026-08-14 公开文章禁 SOP 后缀规则）：
+  - `0_SpringBoot接入RocketMQSOP.md` → `0_SpringBoot接入RocketMQ.md`（frontmatter title 去「实战 SOP」、type practice-sop → practice、tags 去「实战SOP」字段）
+  - `1_消费线程池选型SOP.md` → `1_消费线程池选型.md`（文件内交叉引用同步更新）
+  - 删除 `场景实践/0_系列导读-全景.md`（重复，与 RocketMQ 实践类全局导读重复）
+
+### Fixed
+
+- 篇 13 收官与能力地图 2.1 三个拐点 timeline 子行修复：
+  - L73「论文爆发：CoT / ReAct」全角冒号 → 连字符（避免 Mermaid 渲染失败）
+  - L15「从"模型之争"转向"上下文与 Harness 之争"」ASCII 双引号 → 直接去除（Mermaid timeline 事件文本中 `"` 是语法杀手）
+  - 教训沉淀：扫 Mermaid 必须逐行扫全部子行（含 timeline 缩进子行），不能只看主行
+
 ## [0.3.0] — 2026-07-27
 
 ### Added
