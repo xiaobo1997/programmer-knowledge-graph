@@ -1,13 +1,13 @@
 ---
-title: "Spring Boot 接入 RocketMQ 实战 SOP · 5 步跑通生产者/消费者 + 假配置陷阱规避"
-type: practice-sop
-tags: [RocketMQ, SpringBoot, 实战SOP, 接入, L4实践层, 假配置陷阱]
+title: "Spring Boot 接入 RocketMQ · 5 步跑通生产者/消费者 + 假配置陷阱规避"
+type: practice
+tags: [RocketMQ, SpringBoot, 接入, L4实践层, 假配置陷阱]
 date: 2026-08-11
 wordCount: 5500
 readMinutes: 18
 ---
 
-# Spring Boot 接入 RocketMQ 实战 SOP
+# Spring Boot 接入 RocketMQ · 5 步跑通生产者/消费者
 
 > 一句话目标：**5 步完成 Spring Boot 项目接入 RocketMQ（含生产者 + 消费者），30 分钟从 0 到能跑通**，含 5 大假配置陷阱清单与三种使用姿势选择决策。
 
@@ -294,7 +294,7 @@ mvn spring-boot:run
     topic = "TEST_TOPIC",
     consumerGroup = "DEMO_CONSUMER_GROUP",
     selectorExpression = "TAG_A",
-    // 关键参数（参考《消费线程池选型 SOP》）
+    // 关键参数（参考《消费线程池选型》）
     consumeThreadNumber        = 20,
     consumeThreadMax           = 64,
     consumeMessageBatchMaxSize = 1,
@@ -496,7 +496,7 @@ private long consumeTimeout = 15;  // 单位是分钟
 
 **解决**：
 - 以较小值为准——这是预期行为
-- 详细机制见《消费线程池选型 SOP》§4 踩坑 #4
+- 详细机制见《消费线程池选型》§4 踩坑 #4
 
 ---
 
@@ -516,7 +516,7 @@ pullBatchSize               = 32;
 ```
 
 **解决**：
-- **不要用默认**——按《消费线程池选型 SOP》重新计算 4 参数
+- **不要用默认**——按《消费线程池选型》重新计算 4 参数
 
 ---
 
@@ -548,170 +548,63 @@ pullBatchSize               = 32;
 
 ---
 
-## 附录 A：术语速查
+## 附录 B：完整配置与命令速查
 
-- **`rocketmq-spring-boot-starter`** — RocketMQ 官方 Spring Boot 集成包
-- **`RocketMQTemplate`** — Spring 风格的生产者客户端
-- **`@RocketMQMessageListener`** — Spring 风格的消费者注解
-- **`RocketMQListener<T>`** — 消费者接口（实现 onMessage 方法）
-- **`SendResult.getSendStatus()`** — 发送状态（SEND_OK / FLUSH_DISK_TIMEOUT 等）
-- **`MessageBuilder`** — 消息构造器（设 payload / header）
-- **`ConsumeMode`** — 消费模式（CONCURRENTLY 并发 / ORDERLY 顺序）
-- **`MessageModel`** — 消息模型（CLUSTERING 集群 / BROADCASTING 广播）
-
----
-
-## 附录 B：完整命令清单（一键复制）
+### B.1 完整命令清单（一键复制）
 
 ```bash
-# === 1. 启动 RocketMQ ===
-docker run -d -p 9876:9876 -p 10909:10909 -p 10911:10911 \
-  --name rmq \
-  apache/rocketmq:5.3.1 \
-  sh mqbroker -n localhost:9876
+# 启动 RocketMQ（Docker）
+docker run -d --name rmq -p 9876:9876 -p 10911:10911 -p 10909:10909 \
+  apache/rocketmq:5.1.0
 
-# === 2. 创建 Topic ===
-docker exec -it rmq sh -c "sh mqadmin updateTopic -n localhost:9876 -t TEST_TOPIC -c DefaultCluster"
+# 创建 Topic
+docker exec rmq sh mqadmin updateTopic -n localhost:9876 \
+  -t TEST_TOPIC -c DefaultCluster
 
-# === 3. 创建项目 ===
-mvn archetype:generate -DarchetypeGroupId=org.springframework.boot \
-  -DarchetypeArtifactId=spring-boot-starter-parent -DarchetypeVersion=2.7.18
-
-# === 4. 编译 ===
-mvn clean compile -DskipTests
-
-# === 5. 启动 ===
-mvn spring-boot:run
-
-# === 6. 测试发送 ===
-curl 'http://localhost:8080/send?msg=hello'
-
-# === 7. 看消费日志 ===
-# 应用控制台输出 "Received: hello"
-
-# === 8. 停止 RocketMQ（测重试） ===
-docker stop rmq
-curl 'http://localhost:8080/send?msg=will_fail'
-# 看日志：重试 16 次后进 DLQ
+# 看消费进度
+docker exec rmq sh mqadmin consumerProgress -n localhost:9876 \
+  -g DEMO_CONSUMER_GROUP
 ```
 
----
+### B.2 版本升级矩阵
 
-## 附录 C：版本升级矩阵
-
-| 升级路径 | 注意事项 |
-|---|---|
-| 2.2.x → 2.3.x | 无破坏性改动，新增多注解参数 |
-| 2.3.x → 3.0.x | 需要 Spring Boot 3.0+（JDK 17）|
-| Apache 4.x → 5.x | 5.x 默认开启 Proxy，推荐用 5.x |
-| Apache → 阿里云 | 增加 access-key/secret-key 配置 |
-
----
-
-## 附录 D：3 大贯穿维度扩展（v1.1.0 新增）
-
-**用户原话**（2026-08-11）：
-> "解决一类场景问题，通过实践、通过设计的代码，但不要局限于代码层面：参数、配置、**互联网大厂实际实现的取舍、设计思想、设计方案**。"
-
-本附录是 3 大贯穿维度在**本篇 Spring Boot 接入 SOP** 中的集中体现。
-
-### D.1 设计思想（Design Philosophy）
-
-**Spring Boot 接入 RocketMQ 的核心设计思想**：**"约定优于配置" + "starter 简化接入 + 注解驱动"**。
-
-| 思想流派 | 主张 | Spring Boot 实现 |
-|---|---|---|
-| Spring"约定优先" | 通过 starter 自动装配 + 注解声明 | `rocketmq-spring-boot-starter` |
-| RocketMQ"原生优先" | 完全控制 Consumer / Producer 行为 | `DefaultMQPushConsumer` 原生 API |
-| Dubbo"配置优先" | 所有参数通过 yaml 配置 | 不适用（无注解） |
-
-**为什么 Spring Boot 是 99% 场景的最佳选择**：
-- ✅ starter 自动装配，少写 100 行配置
-- ✅ `@RocketMQMessageListener` 注解声明消费者，少写 50 行 boilerplate
-- ❌ 原生 API 只在 5% 高级场景才用（顺序消费 / 事务消息高级用法）
-
-### D.2 设计方案（Design Solution）
-
-**Spring Boot 接入 RocketMQ 有 3 种方案**：
-
-| 方案 | 描述 | 适用 | 代码量 |
+| Spring Boot | rocketmq-spring-boot-starter | RocketMQ | JDK |
 |---|---|---|---|
-| **方案 A：RocketMQTemplate** | Spring 风格，自动注入，send() 一行调用 | 99% 生产场景 | 50 行 |
-| **方案 B：@RocketMQMessageListener 注解** | 注解声明消费者，自动注册 | 99% 消费场景 | 30 行 |
-| **方案 C：原生 DefaultMQProducer + DefaultMQPushConsumer** | 完全控制 producer / consumer 行为 | 5% 高级场景（顺序消费 / 事务消息高级用法）| 200+ 行 |
+| 3.2.x | 2.3.1 | 5.1.x | JDK 17 |
+| 3.1.x | 2.2.3 | 5.0.x | JDK 17 |
+| 2.7.x | 2.1.1 | 4.9.x | JDK 8 |
 
-**本 SOP 默认走方案 A + B**——99% 场景都是这两个方案。
+### B.3 核心配置推荐值
 
-**边界**：
-- 普通消息收发：方案 A + B
-- 顺序消息 / 事务消息：方案 C（需要严格控制 producer 行为）
-- 自定义负载均衡策略：方案 C
-
-### D.3 互联网大厂取舍（Big-Tech Trade-off）
-
-**4 大厂的具体做法**（基于公开演讲 / 博客 / 演讲）：
-
-| 厂商 | 接入方式 | starter 选型 | 取舍逻辑 |
-|---|---|---|---|
-| 阿里 | Spring Boot + RocketMQTemplate | `rocketmq-spring-boot-starter` 官方 | 阿里系标配，深度定制 starter |
-| 字节 | Spring Boot + 自研 starter | 自研 starter（基于官方） | 内部定制，加监控 + 限流 |
-| 美团 | Spring Boot + 美团内部框架 | 自研 wrapper | 美团内部有 RPC 框架，配合定制 |
-| Netflix | Spring Boot + 自研客户端 | Ribbon + 自研 Consumer | 多语言支持，不依赖 Java 生态 |
-
-**你的场景该学谁**（决策树）：
-
-```
-Q1: 用阿里云 RocketMQ 吗？
-   ├─ 是 → 学阿里（官方 starter）
-   ├─ 否 → Q2
-Q2: 需要对接内部监控 / 限流吗？
-   ├─ 是 → 学字节（自研 starter 加监控）
-   ├─ 否 → Q3
-Q3: 业务有定制需求吗？（如自定义路由）
-   ├─ 是 → 学美团（自研 wrapper）
-   ├─ 否 → 官方 starter 即可（4 大厂以外的公司）
+```yaml
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    group: PRODUCER_GROUP
+    send-message-timeout: 3000
+    retry-times-when-send-failed: 3
+    retry-times-when-send-async-failed: 3
+    max-message-size: 4194304  # 4MB
+  consumer:
+    group: DEMO_CONSUMER_GROUP
+    listener-container-concurrently: false
 ```
 
-### D.4 维度反思段（贯穿全篇的实例）
+### B.4 3 大贯穿维度对照表
 
-**在原 SOP "5 步接入"中，每一步都体现 3 个维度**：
-
-| 步骤 | 设计思想 | 设计方案 | 大厂取舍 |
+| 步骤 | 设计思想 | 设计方案 | 取舍依据 |
 |---|---|---|---|
-| 1. 环境准备 | 快速验证优先 | Docker 一键起 vs 本地 binary | 阿里用 Docker，Netflix 用 K8s |
-| 2. Maven 依赖 | 官方 starter 优先 | rocketmq-spring-boot-starter vs 自研 | 4 大厂都用官方或基于官方 |
-| 3. 生产者代码 | Spring 风格 | RocketMQTemplate vs 原生 API | 阿里用 RocketMQTemplate |
-| 4. 消费者代码 | 注解驱动 | @RocketMQMessageListener vs 原生 | 4 大厂都用注解 |
-| 5. 验证测试 | 端到端优先 | curl + 日志 + dashboard | 阿里有完整 dashboard |
+| 1. 环境准备 | 快速验证优先 | Docker 一键起 vs 本地 binary | Docker 起集群最省事，本地 binary 适合离线环境 |
+| 2. Maven 依赖 | 官方 starter 优先 | rocketmq-spring-boot-starter vs 自研 | 官方 starter 开箱即用，自研封装只有大团队才值得 |
+| 3. 生产者代码 | Spring 风格 | RocketMQTemplate vs 原生 API | RocketMQTemplate 一行发送，原生 API 更灵活但代码多 |
+| 4. 消费者代码 | 注解驱动 | @RocketMQMessageListener vs 原生 | 注解最简洁，原生适合特殊消费逻辑 |
+| 5. 验证测试 | 端到端优先 | curl + 日志 + dashboard | 三者配合：curl 验证发送，日志验证消费，dashboard 看指标 |
 
-**这就是"3 大贯穿维度"在实战 SOP 中的落地**——不是塞在某节，而是每步都要回答"为什么 / 怎么做 / 大厂怎么取舍"。
+**这就是"3 大贯穿维度"在本实践中的落地**——不是塞在某节，而是每步都要回答"为什么这样做 / 怎么做 / 权衡了什么"。不同团队的取舍不同，按自己的场景定。
 
----
+### B.5 实战检验清单（10 项必勾选）
 
-## 附录 E：常见问题 Q&A
-
-### Q1：启动报 `RocketMQTemplate not found`？
-
-- 检查 `application.yml` 是否写错了 starter 字段（参考步骤 2.2）
-- 检查 pom.xml 中是否有 `rocketmq-spring-boot-starter` 依赖
-
-### Q2：消费者没收到消息？
-
-- 检查 `application.yml` 是否漏配 `rocketmq.consumer.group`
-- 检查 Topic 是否已创建（用 `mqadmin topicList`）
-- 检查 Tag 是否一致（Tag 默认是 `*`）
-
-### Q3：发送消息报 `No route info`？
-
-- Topic 不存在 → 用 mqadmin 创建
-- namesrv 地址写错 → 检查 `rocketmq.name-server`
-- broker 还没启动完 → 等 30 秒再试
-
----
-
-## 附录 F：Spring Boot 接入 SOP 的实战检验清单
-
-跑完本 SOP 后，**用以下清单自我验证**：
+完成后，**用以下清单自我验证**：
 
 - [ ] 步骤 1：RocketMQ 服务端启动成功（Docker 或本地 binary）
 - [ ] 步骤 1：Topic 已创建（mqadmin topicList 能看到）
@@ -724,24 +617,16 @@ Q3: 业务有定制需求吗？（如自定义路由）
 - [ ] 失败场景：consumeTimeout 触发后消息进 DLQ
 - [ ] 失败场景：maxReconsumeTimes=8 后消息不再重试
 
-**任何一项没勾等于 SOP 没做完**。
+**任何一项没勾等于实践没做完**。
 
 ---
 
-## 附录 G：Spring Boot 接入 RocketMQ 的下一步
+## 附录 C：参考资料
 
-跑完本 SOP 后，你可以：
+- [rocketmq-spring-boot-starter 文档](https://github.com/apache/rocketmq-spring)
+- [RocketMQ 官方文档](https://rocketmq.apache.org/)
+- [Spring Boot 官方文档](https://spring.io/projects/spring-boot)
+- [RocketMQ 5.x Producer 文档](https://rocketmq.apache.org/docs/5.x/producer/)
+- [RocketMQ 5.x Consumer 文档](https://rocketmq.apache.org/docs/5.x/consumer/)
+- [阿里云 RocketMQ 接入指南](https://help.aliyun.com/document_detail/295866.html)
 
-- 接入 Prometheus 监控（参考《RocketMQ 7 维监控指标体系》）
-- 配置 AlertManager 告警（参考《RocketMQ 监控告警 SOP》）
-- 进行混沌工程演练（参考《RocketMQ 混沌工程演练体系》）
-
-这三块都有现成 SOP 可复用。
-
-**实战经验**：跑完 Spring Boot 接入 SOP 后，下一步最常做的是加监控——这是从"能跑"到"敢上线"的关键一跳。没有监控的 MQ 是定时炸弹。
-
----
-
-> 整理：Hermes (MiniMax-M3) @ 2026-08-11
-> 状态：✅ 已完成 + v1.1.0 改造（3 大贯穿维度落地）
-> 字数：5500+ 字（实操指南）
