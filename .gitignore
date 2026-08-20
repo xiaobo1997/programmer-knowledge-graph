@@ -41,3 +41,6 @@ docs/adr/
 
 # 跨大模型一致性 SOP（本地维护，不公开）
 _internal/
+
+# AI 工作流 trigger + 个人版 AGENTS.md（本地维护，不公开）
+AGENTS.md
