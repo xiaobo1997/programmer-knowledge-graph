@@ -11,6 +11,10 @@ const titleMap: Record<string, string> = {
   'rest': 'REST 设计',
   'spring-boot': 'Spring Boot 实战',
   'java': 'Java 实战',
+  'ecosystem': '语言生态',
+  'system-design': '系统设计',
+  'service-governance': '服务治理',
+  'engineering': '工程治理',
   'java17特性': 'Java 17 新特性',
   '1.17的亮点': 'Java 17 亮点速览',
   'docker': 'Docker 基础',
@@ -24,10 +28,11 @@ const titleMap: Record<string, string> = {
   '薪资谈判': '薪资谈判',
   'tech-lead': 'Tech Lead 转型',
 
-  // 9 大类（按工程师工作场景划分）
+  // 11 大类（按工程师工作场景划分）
   backend: '后端开发',
   frontend: '前端开发',
-  data: '数据 & 中间件',
+  data: '数据存储',
+  middleware: '中间件',
   devops: 'DevOps & 云原生',
   ai: 'AI & 大模型',
   architecture: '架构 & 性能',

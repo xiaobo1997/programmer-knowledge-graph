@@ -13,12 +13,12 @@ function joinPath(base: string, file: string): string {
 }
 const base = computed(() => joinPath(site.value.base || '/', ''))
 
-// 9 大类：shields.io badge 配色风格
-// 9 大类：shields.io badge 配色风格
+// 11 大类：shields.io badge 配色风格
 const sections = [
   { key: 'backend',      label: 'backend',   name: '后端开发',     color: '#f97316', text: '#fff' },
   { key: 'frontend',     label: 'frontend',  name: '前端开发',     color: '#06b6d4', text: '#fff' },
-  { key: 'data',         label: 'data',      name: '数据 & 中间件', color: '#eab308', text: '#fff' },
+  { key: 'data',         label: 'data',      name: '数据存储',     color: '#eab308', text: '#fff' },
+  { key: 'middleware',   label: 'middleware', name: '中间件',      color: '#84cc16', text: '#fff' },
   { key: 'devops',       label: 'devops',    name: 'DevOps',     color: '#0ea5e9', text: '#fff' },
   { key: 'ai',           label: 'ai',        name: 'AI & 大模型', color: '#a855f7', text: '#fff' },
   { key: 'architecture', label: 'arch',      name: '架构 & 性能', color: '#14b8a6', text: '#fff' },

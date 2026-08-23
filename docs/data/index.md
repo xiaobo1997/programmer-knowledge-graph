@@ -1,7 +1,7 @@
 ---
-title: 数据 & 中间件
+title: 数据存储
 aside: false
-wordCount: 85
+wordCount: 82
 readMinutes: 1
 ---
 
@@ -9,15 +9,14 @@ readMinutes: 1
 import TocOverview from '../.vitepress/theme/TocOverview.vue'
 </script>
 
-# ▥ 数据 & 中间件
+# ▥ 数据存储
 
-> MySQL、Redis、Elasticsearch、消息队列、缓存设计。
+> MySQL、PostgreSQL、MongoDB、Elasticsearch 等数据存储与检索。
 
 <TocOverview filter="data" />
 
 ## 沉淀原则
 
 - 写「值得保留的认知」，不写 1+1=2
-- 真实项目案例 > 教程摘抄
-- 配图优先使用 Mermaid / 截图，不堆文字
-- 文章前缀 `[test]` 表示测试占位，正式内容不加
+- 消息队列（MQ）、缓存（Redis）等中间件已拆分到 `middleware/` 分类，不在此目录沉淀
+- 大数据（Flink、HBase 等）规划在 `big-data/` 分类（待建）

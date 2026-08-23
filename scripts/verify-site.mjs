@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = resolve(root, 'docs/.vitepress/dist')
 
-// 9 大类 + 总目录 + 首页 = 11 个关键产物
+// 11 大类 + 总目录 + 首页 + 关键子页面 = 16 个关键产物
 const checks = [
   ['首页', 'index.html'],
   ['总目录', 'readme.html'],
@@ -13,13 +13,15 @@ const checks = [
   ['后端', 'backend/index.html'],
   ['前端', 'frontend/index.html'],
   ['数据', 'data/index.html'],
+  ['中间件', 'middleware/index.html'],
   ['DevOps', 'devops/index.html'],
   ['AI', 'ai/index.html'],
   ['架构', 'architecture/index.html'],
   ['工程实践', 'practice/index.html'],
   ['读书笔记', 'reading/index.html'],
   ['个人成长', 'career/index.html'],
-  ['后端示例文章', 'backend/java/java17特性/1.17的亮点.html'],
+  ['业务知识', 'biz/index.html'],
+  ['后端示例文章', 'backend/java/use-java/特性/java17特性/1.17的亮点.html'],
   ['DevOps 子主题入口', 'devops/cicd/index.html'],
   ['读书笔记首页', 'reading/index.html'],
 ]

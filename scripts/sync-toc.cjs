@@ -8,11 +8,12 @@ const VUE_PATH = 'docs/.vitepress/theme/TocOverview.vue'
 const JSON_PATH = 'docs/.vitepress/theme/sections.json'
 const PUBLIC_PATH = 'docs/public/sections.json'
 
-// 9 大类：按工程师工作场景划分
+// 11 大类：按工程师工作场景划分
 const titleMap = {
   backend: '后端开发',
   frontend: '前端开发',
-  data: '数据 & 中间件',
+  data: '数据存储',
+  middleware: '中间件',
   devops: 'DevOps & 云原生',
   ai: 'AI & 大模型',
   architecture: '架构 & 性能',
@@ -26,6 +27,7 @@ const iconMap = {
   backend: '⌬',
   frontend: '⌘',
   data: '▥',
+  middleware: '▣',
   devops: '◉',
   ai: '✦',
   architecture: '⬡',
@@ -35,13 +37,14 @@ const iconMap = {
   biz: '◈',
 }
 const descMap = {
-  backend: 'Java/Go/Python、数据库、消息队列、分布式、JVM 调优。',
+  backend: 'Java/Go/Python 等开发语言、语言生态与框架。',
   frontend: 'JS/TS、Vue/React、构建工具、Web 性能、跨端。',
-  data: 'MySQL、Redis、Elasticsearch、消息队列、缓存设计。',
-  devops: 'Linux、Docker、Kubernetes、CICD、监控、应急响应等工程交付。',
+  data: 'MySQL、PostgreSQL、MongoDB、Elasticsearch 等数据存储。',
+  middleware: 'RocketMQ、Kafka 等消息队列，Redis 缓存及通用基础设施中间件。',
+  devops: 'Kubernetes、Docker、CICD、Service Mesh、云原生等工程交付。',
   ai: 'LLM、Agent、RAG、向量数据库、Prompt 工程。',
-  architecture: '系统设计、高并发、容量规划、稳定性工程。',
-  practice: 'Git、测试、Code Review、调试、编码规范与工具链。',
+  architecture: '系统设计、服务治理、工程治理、稳定性工程等工程化思想。',
+  practice: 'Git、测试、Code Review、调试、问题排查、性能调优方法论与工具链。',
   reading: '整本书学习心得、跨领域阅读。',
   career: '软技能、Career、面试、薪资谈判、心理建设。',
   biz: '互联网金融、支付体系、跨境收单等业务领域的全维度认知。',

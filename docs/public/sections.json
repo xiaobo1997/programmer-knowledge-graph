@@ -1,12 +1,545 @@
 [
   {
+    "key": "ai",
+    "icon": "✦",
+    "label": "AI & 大模型",
+    "description": "LLM、Agent、RAG、向量数据库、Prompt 工程。",
+    "articles": [
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/1_为什么写",
+        "title": "§1 为什么写：从零复刻 claude-code 的价值论证",
+        "wordCount": 1726,
+        "readMinutes": 5,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程） AI 编程助手是 2026 年最热的开发者工具赛道。claudecode 作为其中的…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/10_Trade-off与生产演进",
+        "title": "§10 Trade-off 与生产演进",
+        "wordCount": 1083,
+        "readMinutes": 3,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  模板：projectdemotemplate.md v3.1（§10 = Trad…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/2_调研和对参考的思考",
+        "title": "§2 调研和对参考的思考",
+        "wordCount": 1438,
+        "readMinutes": 4,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测（gh CLI + 本地 claude 命令）…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/3_系统架构与技术选型",
+        "title": "§3 系统架构与技术选型",
+        "wordCount": 4295,
+        "readMinutes": 13,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测（gh CLI star 数）  定位：这是本…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/4_可以学会什么",
+        "title": "§4 可以学会什么",
+        "wordCount": 681,
+        "readMinutes": 2,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  能做什么：从零写出\"思考 → 行动 → 观察\"的自主循环，让 LLM 不再是\"一次…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/5_实现方案与思考",
+        "title": "§5 实现方案与思考",
+        "wordCount": 6418,
+        "readMinutes": 20,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  目标：带读者从零到一写出一个能跑的 CLI agent——每阶段有可运行结果，理解…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/6_从demo到生产工具",
+        "title": "§6 从 demo 到生产工具的演进之路思考",
+        "wordCount": 1932,
+        "readMinutes": 6,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  定位：我们的 demo 是学习用（麻雀虽小五脏俱全），生产版是真实产品（claud…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/7_项目架构和亮点",
+        "title": "§7 项目架构和亮点",
+        "wordCount": 1033,
+        "readMinutes": 3,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  注意：§3 是设计架构（计划），§7 是实际实现的架构（最终成果）——两者应该一致…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/8_项目文档建设",
+        "title": "§8 项目文档建设",
+        "wordCount": 823,
+        "readMinutes": 3,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  说明：项目文档 = 读者上手的第一入口，也是项目可持续的基础。本 demo 虽小，…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/9_数据与事实声明与参考资料",
+        "title": "§9 数据与事实声明 + 参考资料",
+        "wordCount": 568,
+        "readMinutes": 2,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  原则：所有数字标注来源 + 日期，参考资料可查证。 | 数据 | 值 | 来源 |…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/2_编排引擎状态管理与选型决策树-深度",
+        "title": "编排引擎状态管理与选型决策树：什么时候该用哪个",
+        "wordCount": 5115,
+        "readMinutes": 16,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 1：编排引擎 · 篇 2 / 共 10 篇  前置阅读：建议先看篇 1《四家编排引擎架构横评》（理解 4 家…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "编排引擎",
+          "状态管理",
+          "选型决策"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/0_系列导读-全景",
+        "title": "从零开始认识 AI 系列 · L1 入门层系列导读 · AI 是什么到 Agent 工程化全景",
+        "wordCount": 4094,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：AI 工程的元认知 = \"智能（Agency）来自模型训练，不是来自代码；你能写出来的，是 Harness（让模型能干活的基础设施）\"——过去两年所…",
+        "tags": [
+          "AI",
+          "LLM",
+          "Agent",
+          "L1入门层",
+          "系列导读",
+          "全景"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/0_导读-全景",
+        "title": "从零开始写一个 claude-code-cli · 系列导读",
+        "wordCount": 672,
+        "readMinutes": 2,
+        "excerpt": "本文是哪个系列的导读：整合层 agent demo 工程「从零开始写一个 claudecodecli」的入口。  配套代码：programcodeexample…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/8_端到端一次完整的Agent调用流程",
+        "title": "端到端：一次完整的 Agent 调用流程",
+        "wordCount": 2371,
+        "readMinutes": 7,
+        "excerpt": "一句话摘要：把四问（思考/动手/记事/规划）串起来——一个真实请求从进来到出去，到底走了几轮？每轮 LLM 收到什么、返回什么？用一条真实 Jaeger tra…",
+        "tags": [
+          "AI",
+          "Agent",
+          "端到端",
+          "调用流程",
+          "Trace",
+          "OpenTelemetry",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/12_多Agent与Subagent",
+        "title": "多 Agent 与 Subagent：何时用、何时不用",
+        "wordCount": 3880,
+        "readMinutes": 12,
+        "excerpt": "一句话摘要：2026 年多 Agent 是被过度开方的架构——生产团队 6070% 的\"多 Agent 需求\"其实一个带并行工具的 Agent 就够。什么时候真…",
+        "tags": [
+          "AI",
+          "Agent",
+          "多Agent",
+          "Subagent",
+          "编排",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/7_记忆系统架构横评-深度",
+        "title": "记忆系统架构横评：向量 / 图 / episodic / hybrid 四种范式",
+        "wordCount": 4091,
+        "readMinutes": 13,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 4：记忆系统 · 篇 7 / 共 10 篇  前置阅读：建议先看入门层篇 6《Agent 怎么记事》（理解记…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "记忆系统",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/8_记忆系统选型决策树与反模式-深度",
+        "title": "记忆系统选型决策树与反模式",
+        "wordCount": 4015,
+        "readMinutes": 13,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 4：记忆系统 · 篇 8 / 共 10 篇  前置阅读：建议先看篇 7《记忆系统架构横评》（理解 4 范式）…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "记忆系统",
+          "选型",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/10_权限设计与人机协作决策树-深度",
+        "title": "权限设计与人机协作决策树",
+        "wordCount": 4033,
+        "readMinutes": 13,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 5：安全治理 · 篇 10 / 共 10 篇（收官篇）  前置阅读：建议先看篇 9《Agent 安全治理：6…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "安全治理",
+          "权限",
+          "HITL",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/0_系列导读-全景",
+        "title": "深入理解 Agent 工程化特性系列 · 全景导读",
+        "wordCount": 2748,
+        "readMinutes": 9,
+        "excerpt": "这是「深入理解 Agent 工程化特性」系列的第 0 篇全景导读。  本系列共 10 篇 deepdive，覆盖 Agent 工程化的 5 大方向：编排引擎 /…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "特性层",
+          "系列导读"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/1_什么是LLM",
+        "title": "什么是 LLM：从'预测下一个词'到'能干活的大脑'",
+        "wordCount": 2209,
+        "readMinutes": 7,
+        "excerpt": "一句话摘要：LLM 是一个被训练出来\"能说人话、能写代码\"的大模型——它的本质是\"预测下一个词\"，但当你把足够多的参数、足够多的数据、足够聪明的训练方法叠在一起…",
+        "tags": [
+          "AI",
+          "LLM",
+          "Token",
+          "Context",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/13_收官与能力地图",
+        "title": "收官与能力地图：从 AI 是什么到 Agent 工程化",
+        "wordCount": 2346,
+        "readMinutes": 7,
+        "excerpt": "一句话摘要：14 篇收官。这一篇把全景串起来：20222026 五年演进（能力翻番 + 主角从模型变 Agent）、5 层架构能力地图（模型/Tool+Loop…",
+        "tags": [
+          "AI",
+          "Agent",
+          "能力地图",
+          "选型",
+          "演进",
+          "L1入门层",
+          "收官"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/1_四家编排引擎架构横评-深度",
+        "title": "四家编排引擎架构横评：从图驱动到 SDK 派的范式漂移",
+        "wordCount": 5226,
+        "readMinutes": 16,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 1：编排引擎 · 篇 1 / 共 10 篇  本文能给你什么：4 家主流编排框架（LangGraph / C…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "编排引擎",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/2_为什么需要Agent",
+        "title": "为什么需要 Agent：从'只会续写'到'能干活'",
+        "wordCount": 2259,
+        "readMinutes": 7,
+        "excerpt": "一句话摘要：LLM 是\"大脑\"，不是\"身体\"——它只会生成文本，不会查库、不会发请求、不会操作电脑。Agent = LLM + 工具 + 循环：让模型自己决定\"…",
+        "tags": [
+          "AI",
+          "Agent",
+          "Workflow",
+          "Tool",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/9_Agent安全治理-深度",
+        "title": "Agent 安全治理：6 层政策栈与 OWASP ASI Top10 威胁地图",
+        "wordCount": 4099,
+        "readMinutes": 13,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 5：安全治理 · 篇 9 / 共 10 篇  前置阅读：建议先看入门层篇 9《Harness 是什么》（理解…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "安全治理",
+          "OWASP",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/3_Agent生态与版图",
+        "title": "Agent 生态与版图：8 大角色 + 5 大框架，一张图看清整个生态",
+        "wordCount": 1952,
+        "readMinutes": 6,
+        "excerpt": "一句话摘要：Agent 不是单一产品，是一个生态——上游有模型和工具，中游有框架和平台，下游有直接能用的应用。看懂这个生态的 4 层结构，你就知道每个新名词属于…",
+        "tags": [
+          "AI",
+          "Agent",
+          "生态",
+          "框架",
+          "LangGraph",
+          "CrewAI",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/5_Agent特有的5类失败模式与Eval三层-深度",
+        "title": "Agent 特有的 5 类失败模式 + Eval 三层设计",
+        "wordCount": 5578,
+        "readMinutes": 17,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 3：可观测与评测 · 篇 5 / 共 10 篇  前置阅读：建议先看入门层篇 9《Harness 是什么》（…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "可观测",
+          "Eval",
+          "失败模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/4_Agent为什么会思考",
+        "title": "Agent 为什么会'思考'：CoT 与 ReAct 推理原理",
+        "wordCount": 2252,
+        "readMinutes": 7,
+        "excerpt": "一句话摘要：所谓 Agent 的\"思考\"，是一场精心设计的文本接龙——模型每生成一段，代码就解析、执行、回填，循环往复。ChainofThought（CoT）让…",
+        "tags": [
+          "AI",
+          "Agent",
+          "CoT",
+          "ReAct",
+          "推理",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/5_Agent怎么动手",
+        "title": "Agent 怎么'动手'：Function Calling 原理与完整调用流程",
+        "wordCount": 1883,
+        "readMinutes": 6,
+        "excerpt": "一句话摘要：Agent 会\"思考\"了（CoT/ReAct），但它怎么\"动手\"调工具？答案是 Function Calling（工具调用）——把函数的 JSON …",
+        "tags": [
+          "AI",
+          "Agent",
+          "Function Calling",
+          "Tool",
+          "JSON Schema",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/7_Agent怎么规划",
+        "title": "Agent 怎么'规划'：ReAct / Plan-and-Execute / Reflexion / ToT 四模式",
+        "wordCount": 2617,
+        "readMinutes": 8,
+        "excerpt": "一句话摘要：Agent 面对复杂任务时怎么决定\"先做什么、后做什么\"？答案是四种规划模式——ReAct（边想边做）、PlanandExecute（先计划后执行）…",
+        "tags": [
+          "AI",
+          "Agent",
+          "规划",
+          "ReAct",
+          "Plan-and-Execute",
+          "Reflexion",
+          "ToT",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/6_Agent怎么记事",
+        "title": "Agent 怎么'记事'：从短期拼 prompt 到长期记忆库",
+        "wordCount": 2063,
+        "readMinutes": 6,
+        "excerpt": "一句话摘要：Agent 天生\"健忘\"——每次调用都是独立的。让它\"记事\"靠三个层次：短期记忆（把上下文拼进 prompt）、长期记忆（提取关键事实存向量库/记忆…",
+        "tags": [
+          "AI",
+          "Agent",
+          "Memory",
+          "RAG",
+          "向量库",
+          "Context",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/ai-knowledge-map_OLD",
+        "title": "AI 概念地图：从名词到体系",
+        "wordCount": 2647,
+        "readMinutes": 8,
+        "excerpt": "写给\"每天被新名词淹没\"的人——把今天 AI 工程领域的概念，按为什么会出现串成一张图。  智能（Agency）来自模型训练，不是来自代码。你能写出来的，是 H…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/code-link",
+        "title": "code-link（文档 → 代码）",
+        "wordCount": 197,
+        "readMinutes": 1,
+        "excerpt": "本文档：PKG wiki「从零开始写一个 claudecodecli」→ 代码仓库的链接。 仓库：programcodeexample 目录：agent/cla…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/9_Harness是什么",
+        "title": "Harness 是什么：从模型到生产的所有基础设施",
+        "wordCount": 4652,
+        "readMinutes": 15,
+        "excerpt": "一句话摘要：模型负责\"智力\"，Harness 负责\"纪律\"。它夹在 LLM 与现实世界之间——决定模型能调什么工具、怎么循环、怎么记事、什么操作要人批准、失败怎…",
+        "tags": [
+          "AI",
+          "Agent",
+          "Harness",
+          "运行时",
+          "插件",
+          "DeepSeek",
+          "Cordis",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/4_MCP无状态化改造与生态选型-深度",
+        "title": "MCP 无状态化改造深读 + 生态选型与生产化路径",
+        "wordCount": 4916,
+        "readMinutes": 15,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 2：MCP 协议 · 篇 4 / 共 10 篇  前置阅读：建议先看篇 3《MCP 协议设计思想与 spec…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "MCP",
+          "协议",
+          "stateless",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/3_MCP协议设计思想与spec演进-深度",
+        "title": "MCP 协议深度：设计思想 + spec 演进 + 生态选型",
+        "wordCount": 5298,
+        "readMinutes": 17,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 2：MCP 协议 · 篇 3 / 共 10 篇  前置阅读：建议先看入门层篇 10《MCP 协议与生态》（理…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "MCP",
+          "协议",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/10_MCP协议与生态",
+        "title": "MCP 协议与生态：工具的 USB-C",
+        "wordCount": 2500,
+        "readMinutes": 8,
+        "excerpt": "一句话摘要：MCP（Model Context Protocol）是 Anthropic 2024 年 11 月开源的\"AI 工具接入标准\"，解决\"每个 Age…",
+        "tags": [
+          "AI",
+          "Agent",
+          "MCP",
+          "协议",
+          "工具",
+          "生态",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/入门层/从零开始认识AI系列/11_Prompt与Context",
+        "title": "Prompt 与 Context：提示工程到上下文工程",
+        "wordCount": 3189,
+        "readMinutes": 10,
+        "excerpt": "一句话摘要：2025 年 Karpathy 和 Shopify CEO 同时说\"真正该叫的名字是 Context Engineering（上下文工程）\"。202…",
+        "tags": [
+          "AI",
+          "Agent",
+          "Prompt",
+          "Context",
+          "上下文工程",
+          "L1入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/ai/特性层/深入理解Agent工程化特性系列/6_Trace设计思想与指标选型决策树-深度",
+        "title": "Trace 设计思想与指标选型决策树",
+        "wordCount": 4331,
+        "readMinutes": 14,
+        "excerpt": "本系列：深入理解 Agent 工程化特性 · 方向 3：可观测与评测 · 篇 6 / 共 10 篇  前置阅读：建议先看篇 5《Agent 特有的 5 类失败模…",
+        "tags": [
+          "AI",
+          "Agent",
+          "工程化",
+          "可观测",
+          "Trace",
+          "指标选型",
+          "特性层"
+        ],
+        "isTest": false
+      }
+    ]
+  },
+  {
     "key": "backend",
     "icon": "⌬",
     "label": "后端开发",
-    "description": "Java/Go/Python、数据库、消息队列、分布式、JVM 调优。",
+    "description": "Java/Go/Python 等开发语言、语言生态与框架。",
     "articles": [
       {
-        "file": "/backend/java/java17特性/1.17的亮点",
+        "file": "/backend/java/use-java/特性/java17特性/1.17的亮点",
         "title": "1.17 的亮点：Java 17 五大新特性速览",
         "wordCount": 991,
         "readMinutes": 3,
@@ -18,6 +551,15 @@
           "新特性",
           "速览"
         ],
+        "isTest": false
+      },
+      {
+        "file": "/backend/python/use-python/基础/从零开始玩转python",
+        "title": "从零开始玩转python",
+        "wordCount": 0,
+        "readMinutes": 1,
+        "excerpt": "",
+        "tags": [],
         "isTest": false
       }
     ]
@@ -61,6 +603,15 @@
         "wordCount": 8424,
         "readMinutes": 26,
         "excerpt": "状态：深度 · 第六层业务场景 · 与 14线上支付 / 15POS / 16代付并列 · 浅析业务专题收官之作  阅读时长：约 60 分钟 · 字数规模 50…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/biz/跨境支付/浅析业务/18_跨境支付进化论与未来展望-全景",
+        "title": "18. 跨境支付进化论与未来展望-全景",
+        "wordCount": 9800,
+        "readMinutes": 31,
+        "excerpt": "状态：全景 · 第六层 · 终极收官 · 浅析业务 19 篇专题收官之作（19/19 = 100%）  阅读时长：约 60 分钟 · 字数规模 50007000…",
         "tags": [],
         "isTest": false
       },
@@ -453,8 +1004,8 @@
       {
         "file": "/biz/跨境支付/浅析业务/PROGRESS",
         "title": "浅析业务进度（PROGRESS）",
-        "wordCount": 3213,
-        "readMinutes": 10,
+        "wordCount": 4112,
+        "readMinutes": 13,
         "excerpt": "19 篇专题 · 业务入门 · 从零开始  上一篇 清结算体系进度 — 19 篇清结算专题已完成（19/19 = 100%）  本篇是浅析业务 19 篇专题的进…",
         "tags": [],
         "isTest": false
@@ -674,22 +1225,718 @@
     ]
   },
   {
-    "key": "data",
-    "icon": "▥",
-    "label": "数据 & 中间件",
-    "description": "MySQL、Redis、Elasticsearch、消息队列、缓存设计。",
+    "key": "middleware",
+    "icon": "▣",
+    "label": "中间件",
+    "description": "RocketMQ、Kafka 等消息队列，Redis 缓存及通用基础设施中间件。",
     "articles": [
       {
-        "file": "/data/rocketmq/事务消息/1_transactional-message",
-        "title": "RocketMQ 事务消息：分布式事务的工程实践",
-        "wordCount": 2753,
-        "readMinutes": 9,
-        "excerpt": "在「写业务单 + 通知下游」必须强一致的链路里，事务消息是工程上最常用的解法。  这篇文章讲清楚 RocketMQ 事务消息怎么解决这个问题，包括原理、实战、踩…",
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/0_系列导读-全景",
+        "title": "从零开始认识 RocketMQ 系列 · 入门导读",
+        "wordCount": 1325,
+        "readMinutes": 4,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 0 篇导读。本系列共 10 篇，覆盖 RocketMQ 入门必备的 10 个核心模块。  学完本系列能会：从「消…",
         "tags": [
-          "数据 & 中间件",
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/1_什么是RocketMQ-全景",
+        "title": "什么是 RocketMQ · 入门全景",
+        "wordCount": 3551,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 1 篇。用一篇文章把 RocketMQ 的「出身、定位、核心能力、与同类差异」讲清楚，建立后续 9 篇学习的认知…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/5_生产者与消费者基础-全景",
+        "title": "生产者与消费者基础 · 入门全景",
+        "wordCount": 3627,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 5 篇。讲清 Producer 和 Consumer 的「5 步生命周期 + 4 大参数 + 3 种语义保证」，…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/11_收官与能力地图-全景",
+        "title": "收官与能力地图 · 入门全景",
+        "wordCount": 3655,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的收官篇。10 篇内容覆盖后，用一张「能力地图」把全系列串联起来——你能做什么、不能做什么、什么场景用、什么场景不用。…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/9_顺序消息与定时消息-全景",
+        "title": "顺序消息与定时消息 · 入门全景",
+        "wordCount": 3577,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 9 篇。讲清 RocketMQ 的两类「特殊消息」——顺序消息（严格按发送顺序消费）和定时消息（延迟到指定时间投…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/2_为什么需要消息队列-全景",
+        "title": "为什么需要消息队列 · 入门全景",
+        "wordCount": 3515,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 2 篇。不讲 RocketMQ 怎么用，先讲「消息队列这个品类为什么存在」——理解它的设计动机，比会用 API …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/8_消息发送与投递语义-全景",
+        "title": "消息发送与投递语义 · 入门全景",
+        "wordCount": 3812,
+        "readMinutes": 12,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 8 篇。讲清消息从「发送到投递」的完整语义——3 种发送结果、3 种投递语义、3 种重复场景、3 种丢失场景，建…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/6_Broker与路由机制-全景",
+        "title": "Broker 与路由机制 · 入门全景",
+        "wordCount": 3711,
+        "readMinutes": 12,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 6 篇。深入讲清 Broker 的「内部结构 + 启动流程 + 主从复制 + 高可用机制」，以及 NameSer…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/10_RocketMQ5.x新特性-深度",
+        "title": "RocketMQ 5.x 新特性全景：Controller + Pop + Proxy + IoT + gRPC 五大能力的架构穿透",
+        "wordCount": 10005,
+        "readMinutes": 31,
+        "excerpt": "一句话摘要：RocketMQ 5.x 不是小版本升级，而是从「消息中间件」走向「消息+事件+流」融合平台的架构跃迁。五大新特性——Controller（自动主从…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "RocketMQ 5.x",
+          "Controller",
+          "Pop",
+          "Proxy",
+          "IoT",
+          "gRPC",
+          "云原生"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/生产配置深度/1_大厂生产配置实战-深度",
+        "title": "RocketMQ 大厂生产配置实战：Consumer / Producer / Topic / 线程模型 12 项核心参数推荐值",
+        "wordCount": 4867,
+        "readMinutes": 15,
+        "excerpt": "一句话摘要：RocketMQ 生产配置 = Consumer（消费模式 + 并发线程 + 批量拉取 + 位点提交）+ Producer（路由键 + 重试 + 压…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "生产配置",
+          "Consumer",
+          "ProducerGroup",
+          "Topic"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/2_共享CommitLog的存储真相-深度",
+        "title": "RocketMQ 共享 CommitLog 的存储真相：从顺序写 + 索引分离看 Topic 隔离的物理基础",
+        "wordCount": 7155,
+        "readMinutes": 22,
+        "excerpt": "一句话摘要：所有 Topic 共享一个 CommitLog，消费侧通过 ConsumeQueue 索引按 Queue 拉取。这是 RocketMQ Topic …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "存储"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/4_RocketMQ核心架构-全景",
+        "title": "RocketMQ 核心架构 · 入门全景",
+        "wordCount": 3646,
+        "readMinutes": 11,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 4 篇。深入讲清 RocketMQ 的「4 大角色 + 4 层协作 + 5 条核心链路」，建立理解后续所有特性的…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/4_批量消息原理-深度",
+        "title": "RocketMQ 批量消息原理：从合并发送到拆分消费的 4MB 边界",
+        "wordCount": 6623,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：RocketMQ 批量消息 = Producer 合并多条（≤4MB）+ Consumer 拆分多条。本质是用「一次网络往返」换「多条消息传输」，不…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "批量消息",
+          "合并发送"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/生产配置深度/0_系列导读-全景",
+        "title": "RocketMQ 生产配置深度：Consumer / Producer / Topic / 线程模型 · 系列导读",
+        "wordCount": 768,
+        "readMinutes": 2,
+        "excerpt": "一句话摘要：RocketMQ 生产配置实战 = Consumer（消费模式 + 线程数 + 拉取上限）+ ProducerGroup（路由键 + 重试 + 压缩…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "生产配置",
+          "Consumer",
+          "ProducerGroup"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/3_RocketMQ生态与版图-全景",
+        "title": "RocketMQ 生态与版图 · 入门全景",
+        "wordCount": 3695,
+        "readMinutes": 12,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 3 篇。讲清 RocketMQ 在消息中间件大版图中的位置、上下游生态、与 Apache 社区的关系，以及 5.…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/1_事务问题域与3种解法对比-深度",
+        "title": "RocketMQ 事务消息深度 1：事务问题域与 3 种解法对比",
+        "wordCount": 5579,
+        "readMinutes": 17,
+        "excerpt": "一句话摘要：RocketMQ 事务消息 = 半消息 + 本地事务状态表 + Broker 主动回查三件套，把\"写 DB + 通知下游\"的分布式事务延迟从「定时扫…",
+        "tags": [
+          "中间件",
           "分布式事务",
           "RocketMQ",
-          "消息中间件"
+          "消息中间件",
+          "事务消息",
+          "最终一致性"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/2_Half主题与回查机制源码穿透-深度",
+        "title": "RocketMQ 事务消息深度 2：Half 主题与回查机制源码穿透",
+        "wordCount": 4213,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：Half 主题（RMQSYSTRANSHALFTOPIC）是 RocketMQ 事务消息的核心设计——Broker 通过 Half Topic + …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "HalfMessage",
+          "源码"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/3_事务消息的反模式与事故案例-深度",
+        "title": "RocketMQ 事务消息深度 3：5 个生产反模式与真实事故案例库",
+        "wordCount": 6689,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：事务消息生产事故 90% 集中在 5 个反模式：本地事务里调远程、回查里写业务、HalfTopic 堆积、回查永远 UNKNOWN、跨业务共用事务消…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "反模式",
+          "生产事故"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/4_与本地消息表_TCC_Saga对比与选型-深度",
+        "title": "RocketMQ 事务消息深度 4：与本地消息表 / TCC / Saga 的对比与选型决策",
+        "wordCount": 7955,
+        "readMinutes": 25,
+        "excerpt": "一句话摘要：分布式事务 4 种解法 = RocketMQ 事务消息（异步通知 + 秒级）/ 本地消息表（低 QPS + 历史包袱）/ TCC（强一致 + 资金扣…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "分布式事务",
+          "TCC",
+          "Saga",
+          "本地消息表"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/5_事务消息的监控告警与混沌工程-深度",
+        "title": "RocketMQ 事务消息深度 5：监控 + 告警 + 混沌工程完整体系",
+        "wordCount": 5894,
+        "readMinutes": 18,
+        "excerpt": "一句话摘要：事务消息生产稳定性 = 7 大监控指标 + 4 级告警 + 3 类混沌工程演练。没有监控告警的事务消息 = 定时炸弹——大促期一旦炸开就是 P0 资…",
+        "tags": [
+          "数据 & 中件间",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "监控告警",
+          "混沌工程"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/事务消息深度/0_系列导读-全景",
+        "title": "RocketMQ 事务消息深度：分布式事务工程解法 · 系列导读",
+        "wordCount": 414,
+        "readMinutes": 1,
+        "excerpt": "本系列共 7 篇，专门深挖「RocketMQ 事务消息」这个分布式事务工程解法。  半消息 + 回查机制 + 状态机 + 5 种踩坑 + 选型对比。 | 维度 …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "分布式事务"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/3_事务消息原理-深度",
+        "title": "RocketMQ 事务消息原理：从 Half 主题到反向回查的两阶段提交",
+        "wordCount": 6657,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：RocketMQ 事务消息 = Half 主题（待确认）+ 本地事务 + 反向回查（补偿），本质是用「两阶段 + 反查」模拟分布式事务的最终一致性。…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "事务消息",
+          "Half主题"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/1_顺序消息原理-深度",
+        "title": "RocketMQ 顺序消息原理：从 MessageQueueSelector 到全局有序的真相",
+        "wordCount": 6949,
+        "readMinutes": 22,
+        "excerpt": "一句话摘要：顺序消息的本质是「同业务 key 路由到同一 Queue + 单线程消费」，不是全局有序，而是分区有序。理解这两个边界，才能用对顺序消息。  学完能…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "顺序消息",
+          "MessageQueueSelector"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/11_收官与能力地图-深度",
+        "title": "RocketMQ 特性层能力地图收官：从 1 顺序消息到 10 5.x 新特性的 11 篇 deep-dive 综合",
+        "wordCount": 7364,
+        "readMinutes": 23,
+        "excerpt": "一句话摘要：这 11 篇特性层 deepdive 不是孤立罗列，而是一条「生产侧 → 消费侧 → 存储 / 高可用 → 可观测性 → 演进视角」的递进主线——每…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "能力地图",
+          "综合收官",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/稳定性体系深度/1_稳定性体系全景与4维稳定性-深度",
+        "title": "RocketMQ 稳定性体系深度 1：4 维稳定性（可用性 / 可靠性 / 可观测性 / 韧性）全景",
+        "wordCount": 5779,
+        "readMinutes": 18,
+        "excerpt": "一句话摘要：RocketMQ 稳定性 = 4 维（可用性 99.99% + 可靠性 99.95% 不丢不重 + 可观测性全链路 + 韧性故障自愈）+ SRE 视…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "稳定性",
+          "SRE",
+          "可用性",
+          "L4"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/稳定性体系深度/2_7维监控指标体系-深度",
+        "title": "RocketMQ 稳定性体系深度 2：7 维监控指标体系（30 个核心指标 + 4 级告警阈值）",
+        "wordCount": 5937,
+        "readMinutes": 19,
+        "excerpt": "一句话摘要：RocketMQ 监控 = 7 维（Producer / Broker / Consumer / Topic / NameServer / Cont…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "稳定性",
+          "SRE",
+          "监控告警",
+          "7维指标",
+          "L4"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/稳定性体系深度/3_混沌工程演练体系-深度",
+        "title": "RocketMQ 稳定性体系深度 3：6 类混沌工程演练体系（Broker GC / 磁盘满 / Producer 挂 / 网络分区 / Controller 选举 / 雪崩）",
+        "wordCount": 6616,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：RocketMQ 混沌工程 = 6 类故障演练（Broker GC / 磁盘满 / Producer 挂 / 网络分区 / Controller 选…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "稳定性",
+          "SRE",
+          "混沌工程",
+          "Chaos Engineering",
+          "L4"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/稳定性体系深度/0_系列导读-全景",
+        "title": "RocketMQ 稳定性体系深度：4 维稳定性 + 7 维监控 + 混沌工程 · L4 整合层",
+        "wordCount": 837,
+        "readMinutes": 3,
+        "excerpt": "一句话摘要：RocketMQ 稳定性体系 = 4 维稳定性（可用性 / 可靠性 / 可观测性 / 韧性）+ 7 维监控指标 + 6 类混沌工程演练。本专题定位 …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "稳定性",
+          "SRE",
+          "监控告警",
+          "混沌工程",
+          "L4"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/场景实践/1_消费线程池选型",
+        "title": "RocketMQ 消费线程池选型 · 4 参数联动调优（线程数/批量大小/超时/重试）",
+        "wordCount": 3516,
+        "readMinutes": 11,
+        "excerpt": "一句话目标：5 步确定你的 RocketMQ 消费线程池参数（线程数 / 批量大小 / 超时 / 重试次数），含 6 大踩坑清单与决策树，30 分钟跑完压测验证…",
+        "tags": [
+          "RocketMQ",
+          "消费线程池",
+          "调优",
+          "L4实践层",
+          "实战"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/6_消费重试与死信队列-深度",
+        "title": "RocketMQ 消费重试与死信队列：从 RECONSUME_LATER 到 DLQ 的 16 级阶梯",
+        "wordCount": 7775,
+        "readMinutes": 24,
+        "excerpt": "一句话摘要：RocketMQ 消费重试 = RECONSUMELATER 状态返回 + 重试队列（%RETRY%+group）+ 16 级阶梯退避 + 死信队列…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "消费重试",
+          "死信队列",
+          "DLQ"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/5_消息过滤设计-深度",
+        "title": "RocketMQ 消息过滤设计：从 Tag 到 SQL92 的 3 种过滤机制",
+        "wordCount": 6896,
+        "readMinutes": 22,
+        "excerpt": "一句话摘要：RocketMQ 消息过滤 = Tag（hash 过滤）+ SQL92（属性过滤）+ 类过滤（Java 类），本质是「Consumer 端按条件过滤…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "消息过滤",
+          "Tag",
+          "SQL92"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/2_延迟消息原理-深度",
+        "title": "RocketMQ 延迟消息原理：从 DelayLevel 到 ScheduleMessageService 的 18 级定时",
+        "wordCount": 6787,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：RocketMQ 延迟消息 = 替换 Topic + 定时扫描 + 18 级 DelayLevel。不是「定时投递」魔法，而是「先存到 SCHEDU…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "延迟消息",
+          "ScheduleMessageService"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/生产配置深度/2_一条消息的完整生命周期-深度",
+        "title": "RocketMQ 一条消息的完整生命周期：从 Producer.send 到 Consumer.ACK 的 12 个步骤穿透",
+        "wordCount": 5307,
+        "readMinutes": 17,
+        "excerpt": "一句话摘要：一条消息的生命周期 = Producer（选 Queue + send）→ NameServer（路由）→ Broker（写 CommitLog +…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "ProducerGroup",
+          "ConsumerGroup",
+          "生命周期"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/10_RocketMQ运维入门-全景",
+        "title": "RocketMQ 运维入门 · 入门全景",
+        "wordCount": 4057,
+        "readMinutes": 13,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 10 篇。讲清 RocketMQ 运维的「5 大模块 + 12 项核心监控 + 4 类常见事故 + 应急处置 S…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/7_Broker主从同步机制-深度",
+        "title": "RocketMQ Broker 主从同步机制：从 SYNC_MASTER 到 DLedger Raft 的 5 阶段演进",
+        "wordCount": 7323,
+        "readMinutes": 23,
+        "excerpt": "一句话摘要：RocketMQ 主从同步 = Master 写成功 + Slave 异步复制（默认 ASYNCMASTER）或同步复制（SYNCMASTER）+ …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "主从同步",
+          "SYNC_MASTER",
+          "DLedger"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/8_Controller模式与多集群-深度",
+        "title": "RocketMQ Controller 模式与多集群：5.x 核心架构演进 · 含 DLedger 选主机制",
+        "wordCount": 8176,
+        "readMinutes": 26,
+        "excerpt": "一句话摘要：RocketMQ 5.x Controller 模式 = 无 NameServer + DLedger Raft 选主 + Broker 智能感知 …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Controller模式",
+          "DLedger",
+          "多集群",
+          "Raft"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/9_Pop消费与长轮询-深度",
+        "title": "RocketMQ Pop 消费与长轮询：5.x 消费模式革新全解析",
+        "wordCount": 7146,
+        "readMinutes": 22,
+        "excerpt": "一句话摘要：Pop 消费 = 短轮询 + 服务端排队 + 长轮询（Long Polling）三种模式融合。 比传统 Push 模式提升 5 倍消费效率，比 Pu…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Pop消费",
+          "长轮询",
+          "5.x"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/5_4层隔离的踩坑实战-深度",
+        "title": "RocketMQ Topic 隔离 10 个真实踩坑实战：从生产事故到 SOP 沉淀",
+        "wordCount": 6872,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：10 个真实踩坑 = 10 个 SOP 沉淀 = 防御成本下降 90%。 本文不讲理论，只讲血泪。  学完能会：10 个真实踩坑全貌 + 每坑根因 …",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "实战复盘"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/4_隔离的反模式与防御-深度",
+        "title": "RocketMQ Topic 隔离 12 个反模式与防御：从生产事故看常见错误",
+        "wordCount": 6440,
+        "readMinutes": 20,
+        "excerpt": "一句话摘要：Topic 隔离的反模式都是「想偷懒」或「认知不全」造成的。本文讲 12 个反模式 + 防御策略 + 真实事故，让你少踩 90% 的坑。  学完能会…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "反模式"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/3_4层隔离维度全景-深度",
+        "title": "RocketMQ Topic 隔离 4 层维度全景：业务/逻辑/物理/合规 4 维深度拆解",
+        "wordCount": 6567,
+        "readMinutes": 21,
+        "excerpt": "一句话摘要：Topic 隔离不是单一维度，而是业务 / 逻辑 / 物理 / 合规 4 层维度的叠加。 每一层独立设计，才能保证整体隔离。  学完能会：4 层维度…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "架构"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/6_Topic隔离的演进与未来-深度",
+        "title": "RocketMQ Topic 隔离的演进与未来：从 4.x 到 AI 化的 5 阶段路线",
+        "wordCount": 7367,
+        "readMinutes": 23,
+        "excerpt": "一句话摘要：Topic 隔离的演进 = 5 阶段路线（4.x → 5.x → 云原生 → Serverless → AI 化）。 每阶段穿透 4 层架构。  学…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "演进"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/0_系列导读-全景",
+        "title": "RocketMQ Topic 隔离深度：4 层架构 + 3 个常见误区 · 系列导读",
+        "wordCount": 442,
+        "readMinutes": 1,
+        "excerpt": "本系列共 7 篇，专门深挖「RocketMQ Topic 隔离」这个常见被误解的话题。  4 层架构 + 3 个常见误区 + 量级演进视角下的真实代价。 按目录…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/7_Topic隔离深度收官与能力地图-深度",
+        "title": "RocketMQ Topic 隔离深度收官与能力地图：7 篇综合 + 4 层穿透全景",
+        "wordCount": 7319,
+        "readMinutes": 23,
+        "excerpt": "一句话摘要：7 篇深度专题综合成 1 张能力地图——4 层架构 × 6 大维度 × 5 阶段演进 = Topic 隔离完整能力。  学完能会：4 层架构全景 +…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离",
+          "收官"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/Topic隔离深度/1_Topic模型与Queue映射-深度",
+        "title": "RocketMQ Topic 模型与 Queue 映射：从 1 Topic : N Queue 设计看隔离真相",
+        "wordCount": 7046,
+        "readMinutes": 22,
+        "excerpt": "一句话摘要：Topic 是逻辑概念，Queue 才是物理并行单位。RocketMQ 的 1 Topic : N Queue 设计，决定了 Topic 隔离的真正…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "Topic隔离"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/代码接入/0_SpringBoot接入RocketMQ",
+        "title": "Spring Boot 接入 RocketMQ · 5 步跑通生产者/消费者 + 假配置陷阱规避",
+        "wordCount": 2664,
+        "readMinutes": 8,
+        "excerpt": "一句话目标：5 步完成 Spring Boot 项目接入 RocketMQ（含生产者 + 消费者），30 分钟从 0 到能跑通，含 5 大假配置陷阱清单与三种使…",
+        "tags": [
+          "RocketMQ",
+          "SpringBoot",
+          "接入",
+          "L4实践层",
+          "假配置陷阱"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/7_Topic与Queue基础-全景",
+        "title": "Topic 与 Queue 基础 · 入门全景",
+        "wordCount": 4297,
+        "readMinutes": 13,
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 7 篇。讲清 Topic 和 Queue 的「概念模型 → 创建方式 → 路由分配 → 数量规划 → 最佳实践」…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "入门系列"
         ],
         "isTest": false
       }
@@ -699,7 +1946,7 @@
     "key": "practice",
     "icon": "⚙",
     "label": "工程实践",
-    "description": "Git、测试、Code Review、调试、编码规范与工具链。",
+    "description": "Git、测试、Code Review、调试、问题排查、性能调优方法论与工具链。",
     "articles": [
       {
         "file": "/practice/tools/1工具安装",
