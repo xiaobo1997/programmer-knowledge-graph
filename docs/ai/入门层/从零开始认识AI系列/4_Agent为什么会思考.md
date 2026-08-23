@@ -3,8 +3,8 @@ title: "Agent 为什么会'思考'：CoT 与 ReAct 推理原理"
 type: concept
 tags: [AI, Agent, CoT, ReAct, 推理, L1入门层]
 date: 2026-08-17
-wordCount: 4800
-readMinutes: 15
+wordCount: 2252
+readMinutes: 7
 ---
 
 # Agent 为什么会"思考"：CoT 与 ReAct 推理原理

@@ -3,8 +3,8 @@ title: "什么是 LLM：从'预测下一个词'到'能干活的大脑'"
 type: concept
 tags: [AI, LLM, Token, Context, L1入门层]
 date: 2026-08-14
-wordCount: 3800
-readMinutes: 12
+wordCount: 2209
+readMinutes: 7
 ---
 
 # 什么是 LLM：从"预测下一个词"到"能干活的大脑"

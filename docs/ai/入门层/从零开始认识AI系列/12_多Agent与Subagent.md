@@ -3,8 +3,8 @@ title: "多 Agent 与 Subagent：何时用、何时不用"
 type: concept
 tags: [AI, Agent, 多Agent, Subagent, 编排, L1入门层]
 date: 2026-08-17
-wordCount: 6500
-readMinutes: 21
+wordCount: 3880
+readMinutes: 12
 ---
 
 # 多 Agent 与 Subagent：何时用、何时不用

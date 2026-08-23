@@ -3,8 +3,8 @@ title: "Agent 怎么'动手'：Function Calling 原理与完整调用流程"
 type: concept
 tags: [AI, Agent, Function Calling, Tool, JSON Schema, L1入门层]
 date: 2026-08-17
-wordCount: 5000
-readMinutes: 16
+wordCount: 1883
+readMinutes: 6
 ---
 
 # Agent 怎么"动手"：Function Calling 原理与完整调用流程

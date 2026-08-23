@@ -1,6 +1,6 @@
 ---
-wordCount: 3213
-readMinutes: 10
+wordCount: 4112
+readMinutes: 13
 title: 浅析业务进度（PROGRESS）
 ---
 

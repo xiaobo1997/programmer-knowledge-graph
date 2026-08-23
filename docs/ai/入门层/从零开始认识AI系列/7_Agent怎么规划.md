@@ -3,8 +3,8 @@ title: "Agent 怎么'规划'：ReAct / Plan-and-Execute / Reflexion / ToT 四模
 type: concept
 tags: [AI, Agent, 规划, ReAct, Plan-and-Execute, Reflexion, ToT, L1入门层]
 date: 2026-08-17
-wordCount: 5600
-readMinutes: 18
+wordCount: 2617
+readMinutes: 8
 ---
 
 # Agent 怎么"规划"：ReAct / Plan-and-Execute / Reflexion / ToT 四模式

@@ -3,8 +3,8 @@ title: "端到端：一次完整的 Agent 调用流程"
 type: concept
 tags: [AI, Agent, 端到端, 调用流程, Trace, OpenTelemetry, L1入门层]
 date: 2026-08-17
-wordCount: 5600
-readMinutes: 18
+wordCount: 2371
+readMinutes: 7
 ---
 
 # 端到端：一次完整的 Agent 调用流程

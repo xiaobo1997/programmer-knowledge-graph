@@ -3,8 +3,8 @@ title: "MCP 协议与生态：工具的 USB-C"
 type: concept
 tags: [AI, Agent, MCP, 协议, 工具, 生态, L1入门层]
 date: 2026-08-17
-wordCount: 6200
-readMinutes: 20
+wordCount: 2500
+readMinutes: 8
 ---
 
 # MCP 协议与生态：工具的 USB-C

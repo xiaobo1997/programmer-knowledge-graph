@@ -3,8 +3,8 @@ title: "为什么需要 Agent：从'只会续写'到'能干活'"
 type: concept
 tags: [AI, Agent, Workflow, Tool, L1入门层]
 date: 2026-08-14
-wordCount: 4000
-readMinutes: 13
+wordCount: 2259
+readMinutes: 7
 ---
 
 # 为什么需要 Agent：从"只会续写"到"能干活"

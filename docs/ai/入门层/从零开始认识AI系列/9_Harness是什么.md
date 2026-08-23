@@ -3,8 +3,8 @@ title: "Harness 是什么：从模型到生产的所有基础设施"
 type: deep-dive
 tags: [AI, Agent, Harness, 运行时, 插件, DeepSeek, Cordis, L1入门层]
 date: 2026-08-17
-wordCount: 7500
-readMinutes: 25
+wordCount: 4652
+readMinutes: 15
 ---
 
 # Harness 是什么：从模型到生产的所有基础设施

@@ -3,8 +3,8 @@ title: "Agent 生态与版图：8 大角色 + 5 大框架，一张图看清整�
 type: concept
 tags: [AI, Agent, 生态, 框架, LangGraph, CrewAI, L1入门层]
 date: 2026-08-17
-wordCount: 4200
-readMinutes: 14
+wordCount: 1952
+readMinutes: 6
 ---
 
 # Agent 生态与版图：8 大角色 + 5 大框架，一张图看清整个生态

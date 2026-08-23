@@ -3,8 +3,8 @@ title: "Agent 怎么'记事'：从短期拼 prompt 到长期记忆库"
 type: concept
 tags: [AI, Agent, Memory, RAG, 向量库, Context, L1入门层]
 date: 2026-08-17
-wordCount: 5200
-readMinutes: 17
+wordCount: 2063
+readMinutes: 6
 ---
 
 # Agent 怎么"记事"：从短期拼 prompt 到长期记忆库
