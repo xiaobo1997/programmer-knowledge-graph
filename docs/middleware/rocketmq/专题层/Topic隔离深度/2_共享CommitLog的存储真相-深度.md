@@ -3,7 +3,7 @@ title: RocketMQ 共享 CommitLog 的存储真相：从顺序写 + 索引分离�
 type: deep-dive
 tags: [中间件, RocketMQ, 消息中间件, Topic隔离, 存储]
 date: 2026-08-09
-wordCount: 7155
+wordCount: 7158
 readMinutes: 22
 ---
 
@@ -1104,7 +1104,7 @@ flushDiskType = SYNC_FLUSH
 - 上一篇：[1_Topic 模型与 Queue 映射-深度](./1_Topic模型与Queue映射-深度)
 - 下一篇：[3_4 层隔离维度全景-深度](./3_4层隔离维度全景-深度)（待写）
 - 同专题：[Topic隔离深度/index](./index)
-- 同层：[深入理解 RocketMQ 特性系列](../深入理解RocketMQ特性系列/index)
+- 同层：[深入理解 RocketMQ 特性系列](../../特性层/深入理解RocketMQ特性系列/index)
 
 ---
 

@@ -173,7 +173,17 @@ function buildSections() {
                   isTest,
                 }
       })
-      .sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'))
+      .sort((a, b) => {
+        // 标题以「§N」开头的系列：先按章节数字排序（§2 < §10，字符串序会排错）
+        const ma = a.title.match(/^§(\d+)/)
+        const mb = b.title.match(/^§(\d+)/)
+        if (ma && mb) {
+          if (ma[1] !== mb[1]) return parseInt(ma[1], 10) - parseInt(mb[1], 10)
+          // 同一章节拆多篇（如 §5 上/中/下）：按文件路径排序，配合 5-1_/5-2_/5-3_ 数字前缀
+          return a.file.localeCompare(b.file, 'zh-CN', { numeric: true })
+        }
+        return a.title.localeCompare(b.title, 'zh-CN')
+      })
     sections.push({
       key: dir,
       icon: iconMap[dir],

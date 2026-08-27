@@ -8,18 +8,18 @@
       {
         "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/1_为什么写",
         "title": "§1 为什么写：从零复刻 claude-code 的价值论证",
-        "wordCount": 1726,
-        "readMinutes": 5,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程） AI 编程助手是 2026 年最热的开发者工具赛道。claudecode 作为其中的…",
+        "wordCount": 2299,
+        "readMinutes": 7,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程） 后端工程师的一天，大量时间耗在重复的机械操作上：读代码找 bug、改文件、跑命令、搜…",
         "tags": [],
         "isTest": false
       },
       {
-        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/10_Trade-off与生产演进",
-        "title": "§10 Trade-off 与生产演进",
-        "wordCount": 1083,
-        "readMinutes": 3,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  模板：projectdemotemplate.md v3.1（§10 = Trad…",
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/1_为什么写",
+        "title": "§1 为什么写：跨境收单支付业务问答 RAG 的价值论证",
+        "wordCount": 2865,
+        "readMinutes": 9,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程） 跨境收单支付是 2026 年最典型的「业务知识密集型」行业之一：费率怎么算、结算…",
         "tags": [],
         "isTest": false
       },
@@ -33,11 +33,29 @@
         "isTest": false
       },
       {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/2_调研和对参考的思考",
+        "title": "§2 调研和对参考的思考",
+        "wordCount": 2242,
+        "readMinutes": 7,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天实测（gh CLI + GitHub 仓库 +…",
+        "tags": [],
+        "isTest": false
+      },
+      {
         "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/3_系统架构与技术选型",
         "title": "§3 系统架构与技术选型",
         "wordCount": 4295,
         "readMinutes": 13,
         "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测（gh CLI star 数）  定位：这是本…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/3_系统架构与技术选型",
+        "title": "§3 系统架构与技术选型",
+        "wordCount": 2575,
+        "readMinutes": 8,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天实测（gh CLI star 数）  定位：这…",
         "tags": [],
         "isTest": false
       },
@@ -51,11 +69,47 @@
         "isTest": false
       },
       {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/4_可以学会什么",
+        "title": "§4 可以学会什么",
+        "wordCount": 2799,
+        "readMinutes": 9,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：读完 wiki + 代码 + 四件套，你能获得的能力清单——每项能力都有…",
+        "tags": [],
+        "isTest": false
+      },
+      {
         "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/5_实现方案与思考",
         "title": "§5 实现方案与思考",
         "wordCount": 6418,
         "readMinutes": 20,
         "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  目标：带读者从零到一写出一个能跑的 CLI agent——每阶段有可运行结果，理解…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/5-1_实现方案与思考-上",
+        "title": "§5 实现方案与思考·上：从最小闭环到知识库",
+        "wordCount": 3209,
+        "readMinutes": 10,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：带你把 §4 列出的能力一项项做出来。上篇先解决两件事——跑通最小闭环建…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/5-2_实现方案与思考-中",
+        "title": "§5 实现方案与思考·中：向量化与检索",
+        "wordCount": 2974,
+        "readMinutes": 9,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：上篇把业务文档切成了 20 个 chunk，但检索器还是关键词匹配——「…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/5-3_实现方案与思考-下",
+        "title": "§5 实现方案与思考·下：组装、评估与验收",
+        "wordCount": 2931,
+        "readMinutes": 9,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：中篇检索出了 top3，但答案还没出来。本篇走完最后一段：5.5 把检索…",
         "tags": [],
         "isTest": false
       },
@@ -69,11 +123,29 @@
         "isTest": false
       },
       {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/6_从demo到生产工具的演进之路思考",
+        "title": "§6 从 demo 到生产工具的演进之路思考",
+        "wordCount": 3322,
+        "readMinutes": 10,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§5 做出了能跑的 CLI demo，但它是「麻雀」——单机、单轮、20…",
+        "tags": [],
+        "isTest": false
+      },
+      {
         "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/7_项目架构和亮点",
         "title": "§7 项目架构和亮点",
         "wordCount": 1033,
         "readMinutes": 3,
         "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  注意：§3 是设计架构（计划），§7 是实际实现的架构（最终成果）——两者应该一致…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/7_项目架构和亮点",
+        "title": "§7 项目架构和亮点",
+        "wordCount": 3118,
+        "readMinutes": 10,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：前面六篇把 RAG 从「为什么写」到「怎么实现」讲完了，本篇回头审视这个…",
         "tags": [],
         "isTest": false
       },
@@ -87,11 +159,38 @@
         "isTest": false
       },
       {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/8_项目文档建设",
+        "title": "§8 项目文档建设",
+        "wordCount": 2857,
+        "readMinutes": 9,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§7 讲完了代码层面的架构和亮点，本篇把视角从代码切到文档——一个能跑的…",
+        "tags": [],
+        "isTest": false
+      },
+      {
         "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/9_数据与事实声明与参考资料",
         "title": "§9 数据与事实声明 + 参考资料",
         "wordCount": 568,
         "readMinutes": 2,
         "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  原则：所有数字标注来源 + 日期，参考资料可查证。 | 数据 | 值 | 来源 |…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个payment-rag-agent/9_数据与事实声明和参考资料",
+        "title": "§9 数据与事实声明 + 参考资料",
+        "wordCount": 1480,
+        "readMinutes": 5,
+        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：全系列的收尾汇总页。把散落在各篇的数据声明和参考资料收敛到一处——读者或…",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/ai/整合层/agent/从零开始写一个claude-code-cli/10_Trade-off与生产演进",
+        "title": "§10 Trade-off 与生产演进",
+        "wordCount": 1083,
+        "readMinutes": 3,
+        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  模板：projectdemotemplate.md v3.1（§10 = Trad…",
         "tags": [],
         "isTest": false
       },
@@ -1231,7 +1330,7 @@
     "description": "RocketMQ、Kafka 等消息队列，Redis 缓存及通用基础设施中间件。",
     "articles": [
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/0_系列导读-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/0_系列导读-全景",
         "title": "从零开始认识 RocketMQ 系列 · 入门导读",
         "wordCount": 1325,
         "readMinutes": 4,
@@ -1245,7 +1344,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/1_什么是RocketMQ-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/1_什么是RocketMQ-全景",
         "title": "什么是 RocketMQ · 入门全景",
         "wordCount": 3551,
         "readMinutes": 11,
@@ -1259,7 +1358,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/5_生产者与消费者基础-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/5_生产者与消费者基础-全景",
         "title": "生产者与消费者基础 · 入门全景",
         "wordCount": 3627,
         "readMinutes": 11,
@@ -1273,7 +1372,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/11_收官与能力地图-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/11_收官与能力地图-全景",
         "title": "收官与能力地图 · 入门全景",
         "wordCount": 3655,
         "readMinutes": 11,
@@ -1287,7 +1386,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/9_顺序消息与定时消息-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/9_顺序消息与定时消息-全景",
         "title": "顺序消息与定时消息 · 入门全景",
         "wordCount": 3577,
         "readMinutes": 11,
@@ -1301,7 +1400,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/2_为什么需要消息队列-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/2_为什么需要消息队列-全景",
         "title": "为什么需要消息队列 · 入门全景",
         "wordCount": 3515,
         "readMinutes": 11,
@@ -1315,7 +1414,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/8_消息发送与投递语义-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/8_消息发送与投递语义-全景",
         "title": "消息发送与投递语义 · 入门全景",
         "wordCount": 3812,
         "readMinutes": 12,
@@ -1329,7 +1428,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/6_Broker与路由机制-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/6_Broker与路由机制-全景",
         "title": "Broker 与路由机制 · 入门全景",
         "wordCount": 3711,
         "readMinutes": 12,
@@ -1343,7 +1442,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/10_RocketMQ5.x新特性-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/10_RocketMQ5.x新特性-深度",
         "title": "RocketMQ 5.x 新特性全景：Controller + Pop + Proxy + IoT + gRPC 五大能力的架构穿透",
         "wordCount": 10005,
         "readMinutes": 31,
@@ -1363,7 +1462,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/生产配置深度/1_大厂生产配置实战-深度",
+        "file": "/middleware/rocketmq/专题层/生产配置深度/1_大厂生产配置实战-深度",
         "title": "RocketMQ 大厂生产配置实战：Consumer / Producer / Topic / 线程模型 12 项核心参数推荐值",
         "wordCount": 4867,
         "readMinutes": 15,
@@ -1380,9 +1479,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/2_共享CommitLog的存储真相-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/2_共享CommitLog的存储真相-深度",
         "title": "RocketMQ 共享 CommitLog 的存储真相：从顺序写 + 索引分离看 Topic 隔离的物理基础",
-        "wordCount": 7155,
+        "wordCount": 7158,
         "readMinutes": 22,
         "excerpt": "一句话摘要：所有 Topic 共享一个 CommitLog，消费侧通过 ConsumeQueue 索引按 Queue 拉取。这是 RocketMQ Topic …",
         "tags": [
@@ -1395,7 +1494,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/4_RocketMQ核心架构-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/4_RocketMQ核心架构-全景",
         "title": "RocketMQ 核心架构 · 入门全景",
         "wordCount": 3646,
         "readMinutes": 11,
@@ -1409,7 +1508,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/4_批量消息原理-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/4_批量消息原理-深度",
         "title": "RocketMQ 批量消息原理：从合并发送到拆分消费的 4MB 边界",
         "wordCount": 6623,
         "readMinutes": 21,
@@ -1424,9 +1523,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/生产配置深度/0_系列导读-全景",
+        "file": "/middleware/rocketmq/专题层/生产配置深度/0_系列导读-全景",
         "title": "RocketMQ 生产配置深度：Consumer / Producer / Topic / 线程模型 · 系列导读",
-        "wordCount": 768,
+        "wordCount": 771,
         "readMinutes": 2,
         "excerpt": "一句话摘要：RocketMQ 生产配置实战 = Consumer（消费模式 + 线程数 + 拉取上限）+ ProducerGroup（路由键 + 重试 + 压缩…",
         "tags": [
@@ -1440,7 +1539,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/3_RocketMQ生态与版图-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/3_RocketMQ生态与版图-全景",
         "title": "RocketMQ 生态与版图 · 入门全景",
         "wordCount": 3695,
         "readMinutes": 12,
@@ -1454,7 +1553,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/1_事务问题域与3种解法对比-深度",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/1_事务问题域与3种解法对比-深度",
         "title": "RocketMQ 事务消息深度 1：事务问题域与 3 种解法对比",
         "wordCount": 5579,
         "readMinutes": 17,
@@ -1470,7 +1569,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/2_Half主题与回查机制源码穿透-深度",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/2_Half主题与回查机制源码穿透-深度",
         "title": "RocketMQ 事务消息深度 2：Half 主题与回查机制源码穿透",
         "wordCount": 4213,
         "readMinutes": 13,
@@ -1486,7 +1585,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/3_事务消息的反模式与事故案例-深度",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/3_事务消息的反模式与事故案例-深度",
         "title": "RocketMQ 事务消息深度 3：5 个生产反模式与真实事故案例库",
         "wordCount": 6689,
         "readMinutes": 21,
@@ -1502,7 +1601,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/4_与本地消息表_TCC_Saga对比与选型-深度",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/4_与本地消息表_TCC_Saga对比与选型-深度",
         "title": "RocketMQ 事务消息深度 4：与本地消息表 / TCC / Saga 的对比与选型决策",
         "wordCount": 7955,
         "readMinutes": 25,
@@ -1520,7 +1619,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/5_事务消息的监控告警与混沌工程-深度",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/5_事务消息的监控告警与混沌工程-深度",
         "title": "RocketMQ 事务消息深度 5：监控 + 告警 + 混沌工程完整体系",
         "wordCount": 5894,
         "readMinutes": 18,
@@ -1536,7 +1635,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/事务消息深度/0_系列导读-全景",
+        "file": "/middleware/rocketmq/专题层/事务消息深度/0_系列导读-全景",
         "title": "RocketMQ 事务消息深度：分布式事务工程解法 · 系列导读",
         "wordCount": 414,
         "readMinutes": 1,
@@ -1551,7 +1650,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/3_事务消息原理-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/3_事务消息原理-深度",
         "title": "RocketMQ 事务消息原理：从 Half 主题到反向回查的两阶段提交",
         "wordCount": 6657,
         "readMinutes": 21,
@@ -1566,7 +1665,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/1_顺序消息原理-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/1_顺序消息原理-深度",
         "title": "RocketMQ 顺序消息原理：从 MessageQueueSelector 到全局有序的真相",
         "wordCount": 6949,
         "readMinutes": 22,
@@ -1581,9 +1680,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/11_收官与能力地图-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/11_收官与能力地图-深度",
         "title": "RocketMQ 特性层能力地图收官：从 1 顺序消息到 10 5.x 新特性的 11 篇 deep-dive 综合",
-        "wordCount": 7364,
+        "wordCount": 7370,
         "readMinutes": 23,
         "excerpt": "一句话摘要：这 11 篇特性层 deepdive 不是孤立罗列，而是一条「生产侧 → 消费侧 → 存储 / 高可用 → 可观测性 → 演进视角」的递进主线——每…",
         "tags": [
@@ -1597,7 +1696,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/稳定性体系深度/1_稳定性体系全景与4维稳定性-深度",
+        "file": "/middleware/rocketmq/整合层/稳定性体系深度/1_稳定性体系全景与4维稳定性-深度",
         "title": "RocketMQ 稳定性体系深度 1：4 维稳定性（可用性 / 可靠性 / 可观测性 / 韧性）全景",
         "wordCount": 5779,
         "readMinutes": 18,
@@ -1614,7 +1713,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/稳定性体系深度/2_7维监控指标体系-深度",
+        "file": "/middleware/rocketmq/整合层/稳定性体系深度/2_7维监控指标体系-深度",
         "title": "RocketMQ 稳定性体系深度 2：7 维监控指标体系（30 个核心指标 + 4 级告警阈值）",
         "wordCount": 5937,
         "readMinutes": 19,
@@ -1632,7 +1731,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/稳定性体系深度/3_混沌工程演练体系-深度",
+        "file": "/middleware/rocketmq/整合层/稳定性体系深度/3_混沌工程演练体系-深度",
         "title": "RocketMQ 稳定性体系深度 3：6 类混沌工程演练体系（Broker GC / 磁盘满 / Producer 挂 / 网络分区 / Controller 选举 / 雪崩）",
         "wordCount": 6616,
         "readMinutes": 21,
@@ -1650,7 +1749,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/稳定性体系深度/0_系列导读-全景",
+        "file": "/middleware/rocketmq/整合层/稳定性体系深度/0_系列导读-全景",
         "title": "RocketMQ 稳定性体系深度：4 维稳定性 + 7 维监控 + 混沌工程 · L4 整合层",
         "wordCount": 837,
         "readMinutes": 3,
@@ -1668,7 +1767,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/场景实践/1_消费线程池选型",
+        "file": "/middleware/rocketmq/整合层/场景实践/1_消费线程池选型",
         "title": "RocketMQ 消费线程池选型 · 4 参数联动调优（线程数/批量大小/超时/重试）",
         "wordCount": 3516,
         "readMinutes": 11,
@@ -1683,7 +1782,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/6_消费重试与死信队列-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/6_消费重试与死信队列-深度",
         "title": "RocketMQ 消费重试与死信队列：从 RECONSUME_LATER 到 DLQ 的 16 级阶梯",
         "wordCount": 7775,
         "readMinutes": 24,
@@ -1699,7 +1798,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/5_消息过滤设计-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/5_消息过滤设计-深度",
         "title": "RocketMQ 消息过滤设计：从 Tag 到 SQL92 的 3 种过滤机制",
         "wordCount": 6896,
         "readMinutes": 22,
@@ -1715,7 +1814,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/2_延迟消息原理-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/2_延迟消息原理-深度",
         "title": "RocketMQ 延迟消息原理：从 DelayLevel 到 ScheduleMessageService 的 18 级定时",
         "wordCount": 6787,
         "readMinutes": 21,
@@ -1730,7 +1829,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/生产配置深度/2_一条消息的完整生命周期-深度",
+        "file": "/middleware/rocketmq/专题层/生产配置深度/2_一条消息的完整生命周期-深度",
         "title": "RocketMQ 一条消息的完整生命周期：从 Producer.send 到 Consumer.ACK 的 12 个步骤穿透",
         "wordCount": 5307,
         "readMinutes": 17,
@@ -1746,7 +1845,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/10_RocketMQ运维入门-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/10_RocketMQ运维入门-全景",
         "title": "RocketMQ 运维入门 · 入门全景",
         "wordCount": 4057,
         "readMinutes": 13,
@@ -1760,7 +1859,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/7_Broker主从同步机制-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/7_Broker主从同步机制-深度",
         "title": "RocketMQ Broker 主从同步机制：从 SYNC_MASTER 到 DLedger Raft 的 5 阶段演进",
         "wordCount": 7323,
         "readMinutes": 23,
@@ -1776,7 +1875,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/8_Controller模式与多集群-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/8_Controller模式与多集群-深度",
         "title": "RocketMQ Controller 模式与多集群：5.x 核心架构演进 · 含 DLedger 选主机制",
         "wordCount": 8176,
         "readMinutes": 26,
@@ -1793,7 +1892,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/深入理解RocketMQ特性系列/9_Pop消费与长轮询-深度",
+        "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/9_Pop消费与长轮询-深度",
         "title": "RocketMQ Pop 消费与长轮询：5.x 消费模式革新全解析",
         "wordCount": 7146,
         "readMinutes": 22,
@@ -1809,9 +1908,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/5_4层隔离的踩坑实战-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/5_4层隔离的踩坑实战-深度",
         "title": "RocketMQ Topic 隔离 10 个真实踩坑实战：从生产事故到 SOP 沉淀",
-        "wordCount": 6872,
+        "wordCount": 6875,
         "readMinutes": 21,
         "excerpt": "一句话摘要：10 个真实踩坑 = 10 个 SOP 沉淀 = 防御成本下降 90%。 本文不讲理论，只讲血泪。  学完能会：10 个真实踩坑全貌 + 每坑根因 …",
         "tags": [
@@ -1824,9 +1923,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/4_隔离的反模式与防御-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/4_隔离的反模式与防御-深度",
         "title": "RocketMQ Topic 隔离 12 个反模式与防御：从生产事故看常见错误",
-        "wordCount": 6440,
+        "wordCount": 6443,
         "readMinutes": 20,
         "excerpt": "一句话摘要：Topic 隔离的反模式都是「想偷懒」或「认知不全」造成的。本文讲 12 个反模式 + 防御策略 + 真实事故，让你少踩 90% 的坑。  学完能会…",
         "tags": [
@@ -1839,9 +1938,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/3_4层隔离维度全景-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/3_4层隔离维度全景-深度",
         "title": "RocketMQ Topic 隔离 4 层维度全景：业务/逻辑/物理/合规 4 维深度拆解",
-        "wordCount": 6567,
+        "wordCount": 6570,
         "readMinutes": 21,
         "excerpt": "一句话摘要：Topic 隔离不是单一维度，而是业务 / 逻辑 / 物理 / 合规 4 层维度的叠加。 每一层独立设计，才能保证整体隔离。  学完能会：4 层维度…",
         "tags": [
@@ -1854,9 +1953,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/6_Topic隔离的演进与未来-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/6_Topic隔离的演进与未来-深度",
         "title": "RocketMQ Topic 隔离的演进与未来：从 4.x 到 AI 化的 5 阶段路线",
-        "wordCount": 7367,
+        "wordCount": 7370,
         "readMinutes": 23,
         "excerpt": "一句话摘要：Topic 隔离的演进 = 5 阶段路线（4.x → 5.x → 云原生 → Serverless → AI 化）。 每阶段穿透 4 层架构。  学…",
         "tags": [
@@ -1869,7 +1968,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/0_系列导读-全景",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/0_系列导读-全景",
         "title": "RocketMQ Topic 隔离深度：4 层架构 + 3 个常见误区 · 系列导读",
         "wordCount": 442,
         "readMinutes": 1,
@@ -1883,9 +1982,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/7_Topic隔离深度收官与能力地图-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/7_Topic隔离深度收官与能力地图-深度",
         "title": "RocketMQ Topic 隔离深度收官与能力地图：7 篇综合 + 4 层穿透全景",
-        "wordCount": 7319,
+        "wordCount": 7325,
         "readMinutes": 23,
         "excerpt": "一句话摘要：7 篇深度专题综合成 1 张能力地图——4 层架构 × 6 大维度 × 5 阶段演进 = Topic 隔离完整能力。  学完能会：4 层架构全景 +…",
         "tags": [
@@ -1898,9 +1997,9 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/Topic隔离深度/1_Topic模型与Queue映射-深度",
+        "file": "/middleware/rocketmq/专题层/Topic隔离深度/1_Topic模型与Queue映射-深度",
         "title": "RocketMQ Topic 模型与 Queue 映射：从 1 Topic : N Queue 设计看隔离真相",
-        "wordCount": 7046,
+        "wordCount": 7049,
         "readMinutes": 22,
         "excerpt": "一句话摘要：Topic 是逻辑概念，Queue 才是物理并行单位。RocketMQ 的 1 Topic : N Queue 设计，决定了 Topic 隔离的真正…",
         "tags": [
@@ -1912,7 +2011,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/代码接入/0_SpringBoot接入RocketMQ",
+        "file": "/middleware/rocketmq/整合层/代码接入/0_SpringBoot接入RocketMQ",
         "title": "Spring Boot 接入 RocketMQ · 5 步跑通生产者/消费者 + 假配置陷阱规避",
         "wordCount": 2664,
         "readMinutes": 8,
@@ -1927,7 +2026,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/从零开始认识RocketMQ系列/7_Topic与Queue基础-全景",
+        "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/7_Topic与Queue基础-全景",
         "title": "Topic 与 Queue 基础 · 入门全景",
         "wordCount": 4297,
         "readMinutes": 13,

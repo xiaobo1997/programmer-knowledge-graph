@@ -3,7 +3,7 @@ title: RocketMQ Topic 隔离的演进与未来：从 4.x 到 AI 化的 5 阶段�
 type: deep-dive
 tags: [中间件, RocketMQ, 消息中间件, Topic隔离, 演进]
 date: 2026-08-09
-wordCount: 7367
+wordCount: 7370
 readMinutes: 23
 ---
 
@@ -1332,7 +1332,7 @@ flowchart TD
 - 上一篇：[5_4 层隔离的踩坑实战-深度](./5_4层隔离的踩坑实战-深度)
 - 下一篇：[7_Topic隔离深度收官与能力地图-深度](./7_Topic隔离深度收官与能力地图-深度)（待写）
 - 同专题：[Topic隔离深度/index](./index)
-- 同层：[深入理解 RocketMQ 特性系列](../深入理解RocketMQ特性系列/index)
+- 同层：[深入理解 RocketMQ 特性系列](../../特性层/深入理解RocketMQ特性系列/index)
 
 ---
 
