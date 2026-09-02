@@ -3,7 +3,7 @@ title: RocketMQ Pop 消费与长轮询：5.x 消费模式革新全解析
 type: deep-dive
 tags: [中间件, RocketMQ, 消息中间件, Pop消费, 长轮询, 5.x]
 date: 2026-08-09
-wordCount: 7146
+wordCount: 7148
 readMinutes: 22
 ---
 
@@ -1375,7 +1375,7 @@ Stream 探索
 5 阶段：积压 Broker + 风险低
 ```
 
-### 附录 F：Pop 消费 5 阶段 5 维度 跨公司
+### 附录 F：Pop 消费 5 阶段 5 维度 跨业务形态
 
 ```
 1. 业务量 5 万以下 → Push

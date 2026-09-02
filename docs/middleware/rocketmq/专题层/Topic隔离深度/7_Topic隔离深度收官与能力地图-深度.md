@@ -3,7 +3,7 @@ title: RocketMQ Topic 隔离深度收官与能力地图：7 篇综合 + 4 层穿
 type: deep-dive
 tags: [中间件, RocketMQ, 消息中间件, Topic隔离, 收官]
 date: 2026-08-09
-wordCount: 7325
+wordCount: 7329
 readMinutes: 23
 ---
 
@@ -1238,7 +1238,7 @@ flowchart TD
 - 上一篇：[6_Topic隔离的演进与未来-深度](./6_Topic隔离的演进与未来-深度)
 - 同专题：[Topic隔离深度/index](./index)
 - 同层：[深入理解 RocketMQ 特性系列](../../特性层/深入理解RocketMQ特性系列/index)
-- 入门层：[从零开始认识 RocketMQ 系列](../../入门层/从零开始认识RocketMQ系列/index)
+- 入门层：[从零开始认识 RocketMQ 系列](../../入门层/从零开始认识RocketMQ系列/0_系列导读-全景)
 
 ---
 

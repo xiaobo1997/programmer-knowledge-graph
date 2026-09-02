@@ -724,41 +724,12 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/17_代付Payout-资金流出",
-        "title": "代付Payout：资金流出的逆向全流程",
-        "wordCount": 431,
-        "readMinutes": 1,
-        "excerpt": "一句话定义：代付（Payout）= 收单的反向——把钱从平台打出去，而不是收进来。典型场景包括商户提现、供应商付款、分账打款、工资代发。 | 维度 | 收单（P…",
-        "tags": [
-          "跨境支付",
-          "代付",
-          "Payout",
-          "资金流出",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/12_订单生命周期与状态机-深度",
         "title": "订单生命周期与状态机（深度）",
         "wordCount": 5110,
         "readMinutes": 16,
         "excerpt": "系列第 12 篇 · 深度  上一篇 11支付方式与交易类型矩阵深度 讲了 4 大支付方式 + 6 类交易类型。本篇是第五层 · 业务场景与用例的第二篇——讲订…",
         "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/10_端到端实战-境外卡全链路",
-        "title": "端到端实战：境外 VISA 卡在中国商户的全链路走查",
-        "wordCount": 721,
-        "readMinutes": 2,
-        "excerpt": "一句话定义：用一个真实场景走通跨境收单的全链路——新加坡用户用 VISA 卡买 100 SGD 的 SaaS 软件，钱怎么一步步到深圳商户的账上。 | 步骤 |…",
-        "tags": [
-          "跨境支付",
-          "端到端",
-          "实战",
-          "业务知识"
-        ],
         "isTest": false
       },
       {
@@ -786,21 +757,6 @@
         "readMinutes": 17,
         "excerpt": "系列第 5 篇 · 深度  上一篇 4一笔跨境支付的 13 个时点 讲过从授权到入账的 13 个时点。本篇聚焦其中最容易被忽略的一环——币种和汇率。一笔跨境支付…",
         "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/8_多币种账户体系-设计原理",
-        "title": "多币种账户体系：从模型到状态机的设计原理",
-        "wordCount": 513,
-        "readMinutes": 2,
-        "excerpt": "一句话定义：跨境收单的账户体系 = 每个商户有多个币种子账户 + 一个分润账户 + 一个保证金账户。核心挑战不是存钱，而是汇率波动时怎么记账和怎么对账。 | 策…",
-        "tags": [
-          "跨境支付",
-          "账户",
-          "多币种",
-          "数据模型",
-          "业务知识"
-        ],
         "isTest": false
       },
       {
@@ -876,44 +832,12 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/7_跨境对账与结算-架构设计",
-        "title": "跨境对账与结算：三方模型、换汇与差异处理",
-        "wordCount": 1021,
-        "readMinutes": 3,
-        "excerpt": "一句话定义：跨境对账 = 收单机构 vs 卡组织 vs 收单行 三方逐笔核对。任何一方对不平都不能结算。跨境结算比国内多两件事：换汇和外管申报。 | 维度 | …",
-        "tags": [
-          "跨境支付",
-          "对账",
-          "结算",
-          "换汇",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/6_跨境对账与结算体系-深度",
         "title": "跨境对账与结算体系（深度）",
         "wordCount": 4913,
         "readMinutes": 15,
         "excerpt": "系列第 6 篇 · 深度  上一篇 5通道管理与路由策略深度 讲了 4 类通道 + 5 大属性 + 6 阶段生命周期。本篇是第三层 · 架构与系统的第三篇——讲…",
         "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/9_风控与合规-跨境监管框架",
-        "title": "跨境风控与合规：3DS、拒付率、反洗钱与制裁筛查",
-        "wordCount": 936,
-        "readMinutes": 3,
-        "excerpt": "一句话定义：跨境风控 = 3DS 认证（事前）+ 实时风控（事中）+ 拒付处理（事后）。合规 = AML/KYC + 制裁名单筛查 + 外管申报。风控太松 → …",
-        "tags": [
-          "跨境支付",
-          "风控",
-          "3DS",
-          "拒付",
-          "AML",
-          "合规",
-          "业务知识"
-        ],
         "isTest": false
       },
       {
@@ -971,102 +895,12 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/2_参与方全景-9类角色拆解",
-        "title": "跨境收单的 9 类参与者：谁在赚钱，谁在扛风险",
-        "wordCount": 1879,
-        "readMinutes": 6,
-        "excerpt": "一句话定义：跨境收单不是两个人（用户和商户）的事。一笔 VISA 卡交易跨越 3 个国家、经过 6 个机构、涉及 9 类参与者。搞懂每个角色干什么、赚什么钱、扛…",
-        "tags": [
-          "跨境支付",
-          "收单",
-          "角色",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/13_订单生命周期-状态机与逆向",
-        "title": "跨境收单订单生命周期：从下单到销户的完整状态机",
-        "wordCount": 822,
-        "readMinutes": 3,
-        "excerpt": "一句话定义：一笔跨境订单不是「付了就是成功」。它有正向（下单→支付→结算）和逆向（取消/退款/撤销/冲正/拒付）两条路径，共 9+ 个关键状态节点。 | | 正…",
-        "tags": [
-          "跨境支付",
-          "订单",
-          "状态机",
-          "退款",
-          "拒付",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/14_核心功能用例-12个场景",
-        "title": "跨境收单核心功能用例：12 个标准化场景",
-        "wordCount": 569,
-        "readMinutes": 2,
-        "excerpt": "一句话定义：跨境收单平台提供 12 个核心功能——进件、配置、支付、退款、对账、提款、发票、报表、风控、通知、汇率、查单。每个功能一个标准用例模板。 |  | …",
-        "tags": [
-          "跨境支付",
-          "功能用例",
-          "产品",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/4_业务模式-费率与分润深度",
-        "title": "跨境收单业务模式：聚合 vs 直连，费率与分润深度拆解",
-        "wordCount": 1390,
-        "readMinutes": 4,
-        "excerpt": "一句话定义：跨境收单有三种主流模式——聚合收单（如 Stripe）、直连卡组织（如直接签约 VISA）、本地收单（在当地有牌照）。选哪种取决于你的交易量、技术能…",
-        "tags": [
-          "跨境支付",
-          "收单",
-          "业务模式",
-          "费率",
-          "分润",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/清结算体系/8_跨境账务体系四态模型-深度",
         "title": "跨境账务体系四态模型（侧重收单）",
         "wordCount": 4926,
         "readMinutes": 15,
         "excerpt": "系列第 8 篇 · 深度  上一篇 7跨境清分模型与 MDR 拆解 讲了钱怎么分（interchange / assessment / processor / …",
         "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/18_多币种路径-4层币种口径",
-        "title": "跨境支付多币种路径：4层币种口径与换汇流转",
-        "wordCount": 719,
-        "readMinutes": 2,
-        "excerpt": "一句话定义：一笔跨境交易涉及 4 层币种——交易币种、清算币种、结算币种、入账币种。每一层换汇都产生汇损，理解这 4 层才能算清一笔跨境交易到底多少钱。 | 层…",
-        "tags": [
-          "跨境支付",
-          "多币种",
-          "换汇",
-          "DCC",
-          "币种",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/12_支付方式与交易类型矩阵",
-        "title": "跨境支付能力全景：7 种支付方式 × 10 种交易类型",
-        "wordCount": 1033,
-        "readMinutes": 3,
-        "excerpt": "一句话定义：跨境支付不止 VISA 卡。7 种支付方式（钱包/卡/网银/BNPL/现金/转账/加密）× 3 种场景（线上/线下/O2O）× 10 种交易类型（P…",
-        "tags": [
-          "跨境支付",
-          "支付方式",
-          "能力矩阵",
-          "业务知识"
-        ],
         "isTest": false
       },
       {
@@ -1088,22 +922,9 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/1_概述-10分钟入门",
-        "title": "跨境支付收单：技术人 10 分钟入门",
-        "wordCount": 1348,
-        "readMinutes": 4,
-        "excerpt": "一句话定义：跨境支付收单 = 让境外消费者用他们习惯的支付方式（VISA、Mastercard、本地钱包），在中国商户的网站或 App 上付款，钱最后换成人民币…",
-        "tags": [
-          "跨境支付",
-          "收单",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/PROGRESS",
         "title": "浅析业务进度（PROGRESS）",
-        "wordCount": 4112,
+        "wordCount": 4106,
         "readMinutes": 13,
         "excerpt": "19 篇专题 · 业务入门 · 从零开始  上一篇 清结算体系进度 — 19 篇清结算专题已完成（19/19 = 100%）  本篇是浅析业务 19 篇专题的进…",
         "tags": [],
@@ -1135,7 +956,7 @@
       {
         "file": "/biz/跨境支付/清结算体系/PROGRESS",
         "title": "清结算体系专题进度与画像深度",
-        "wordCount": 3955,
+        "wordCount": 3960,
         "readMinutes": 12,
         "excerpt": "专题进度文档（与 19 篇文章同目录）  这份文档沉淀「19 篇清结算专题」的整体规划、已完成 15 篇的一句话核心、画像锚点深度统计、写作方法论沉淀，以及后续…",
         "tags": [],
@@ -1160,21 +981,6 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/11_全局架构设计-跨境收单系统全景",
-        "title": "全局架构设计：跨境收单系统全景与从零搭建决策清单",
-        "wordCount": 923,
-        "readMinutes": 3,
-        "excerpt": "一句话定义：跨境收单系统 = 接入层 + 交易层 + 通道层 + 风控层 + 结算层 + 商户层。每层独立演进、独立部署、独立故障隔离。从零搭建的核心决策：直连…",
-        "tags": [
-          "跨境支付",
-          "架构设计",
-          "系统设计",
-          "技术架构",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/10_全局架构设计与决策清单-全景",
         "title": "全局架构设计与决策清单（全景）",
         "wordCount": 5163,
@@ -1184,41 +990,12 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/5_收单系统架构-模块与部署",
-        "title": "收单系统架构：从功能模块到部署拓扑",
-        "wordCount": 1482,
-        "readMinutes": 5,
-        "excerpt": "一句话定义：收单系统不是一块巨石。它至少分 6 层——接入层、交易层、通道层、风控层、结算层、商户层。每一层独立演进、独立故障隔离。 | 组件 | 职责 | 技…",
-        "tags": [
-          "跨境支付",
-          "收单",
-          "系统架构",
-          "技术架构",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/4_收单系统架构全景-全景",
         "title": "收单系统架构全景（全景）",
         "wordCount": 5650,
         "readMinutes": 18,
         "excerpt": "系列第 4 篇 · 全景  上一篇 3业务模式与费率分润深度 讲了 3 大模式 + 5 项费率 + 分账模型。本篇是第三层 · 架构与系统的第一篇——讲收单系统…",
         "tags": [],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/6_通道管理与路由-深度",
-        "title": "通道管理与路由：从原理到实践的深度拆解",
-        "wordCount": 1142,
-        "readMinutes": 4,
-        "excerpt": "一句话定义：通道 = 收单系统对接的「具体支付路径」。选错通道 = 多花钱、少覆盖、高故障率。通道管理 = 接入 → 测试 → 上线 → 监控 → 降级 → 下…",
-        "tags": [
-          "跨境支付",
-          "通道",
-          "路由",
-          "业务知识"
-        ],
         "isTest": false
       },
       {
@@ -1249,36 +1026,6 @@
         "isTest": false
       },
       {
-        "file": "/biz/跨境支付/浅析业务/3_外卡支付链路-从授权到结算",
-        "title": "外卡支付全流程：一笔 VISA 卡的钱怎么到你账上",
-        "wordCount": 1493,
-        "readMinutes": 5,
-        "excerpt": "一句话定义：外卡支付 = 境外消费者用 VISA/Mastercard 在中国商户网站付款，钱经过 6 个机构、换一次汇，T+3~T+7 到商户账上。 很多人以…",
-        "tags": [
-          "跨境支付",
-          "收单",
-          "交易流程",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
-        "file": "/biz/跨境支付/浅析业务/15_线上支付全流程-PC收银台与H5",
-        "title": "线上支付全流程：PC收银台、H5与APP内支付",
-        "wordCount": 548,
-        "readMinutes": 2,
-        "excerpt": "一句话定义：线上支付分三种形态——PC收银台（浏览器跳转）、H5支付（移动网页）、APP内支付（JSAPI唤起钱包）。每种形态的技术实现和用户体验完全不同。 |…",
-        "tags": [
-          "跨境支付",
-          "线上支付",
-          "收银台",
-          "H5",
-          "APP",
-          "业务知识"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/biz/跨境支付/浅析业务/3_业务模式与费率分润-深度",
         "title": "业务模式与费率分润（深度）",
         "wordCount": 5378,
@@ -1304,21 +1051,22 @@
         "excerpt": "系列第 11 篇 · 深度  上一篇 10全局架构设计与决策清单全景 讲了 4 大决策 + 8 项必备 + 5 年视角。本篇是第五层 · 业务场景与用例的第一篇…",
         "tags": [],
         "isTest": false
-      },
+      }
+    ]
+  },
+  {
+    "key": "data",
+    "icon": "▥",
+    "label": "数据存储",
+    "description": "MySQL、PostgreSQL、MongoDB、Elasticsearch 等数据存储。",
+    "articles": [
       {
-        "file": "/biz/跨境支付/浅析业务/16_POS刷卡支付-终端与卡组织",
-        "title": "POS刷卡支付：终端、EMV芯片与卡组织交互",
-        "wordCount": 429,
-        "readMinutes": 1,
-        "excerpt": "一句话定义：POS刷卡支付 = CP（Card Present）模式。和线上卡支付最大的区别是多了物理终端——POS机负责读卡、输PIN、和卡组织交互。EMV芯…",
-        "tags": [
-          "跨境支付",
-          "POS",
-          "EMV",
-          "NFC",
-          "线下支付",
-          "业务知识"
-        ],
+        "file": "/data/mysql/入门层/从零开始认识MySQL系列/0_系列导读-全景",
+        "title": "MySQL 系列导读",
+        "wordCount": 2211,
+        "readMinutes": 7,
+        "excerpt": "📖 本系列共 16 篇（0导读 + 115 正文），覆盖 MySQL 整个知识面：架构、存储引擎、字符集、schema 设计、索引、事务、MVCC、锁、日志、…",
+        "tags": [],
         "isTest": false
       }
     ]
@@ -1332,9 +1080,9 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/0_系列导读-全景",
         "title": "从零开始认识 RocketMQ 系列 · 入门导读",
-        "wordCount": 1325,
+        "wordCount": 1231,
         "readMinutes": 4,
-        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 0 篇导读。本系列共 10 篇，覆盖 RocketMQ 入门必备的 10 个核心模块。  学完本系列能会：从「消…",
+        "excerpt": "这是「从零开始认识 RocketMQ」系列的第 0 篇导读。本系列共 11 篇，覆盖 RocketMQ 入门必备的 11 个核心模块。  学完本系列能会：从「消…",
         "tags": [
           "中间件",
           "RocketMQ",
@@ -1346,7 +1094,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/1_什么是RocketMQ-全景",
         "title": "什么是 RocketMQ · 入门全景",
-        "wordCount": 3551,
+        "wordCount": 3558,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 1 篇。用一篇文章把 RocketMQ 的「出身、定位、核心能力、与同类差异」讲清楚，建立后续 9 篇学习的认知…",
         "tags": [
@@ -1360,7 +1108,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/5_生产者与消费者基础-全景",
         "title": "生产者与消费者基础 · 入门全景",
-        "wordCount": 3627,
+        "wordCount": 3632,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 5 篇。讲清 Producer 和 Consumer 的「5 步生命周期 + 4 大参数 + 3 种语义保证」，…",
         "tags": [
@@ -1374,7 +1122,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/11_收官与能力地图-全景",
         "title": "收官与能力地图 · 入门全景",
-        "wordCount": 3655,
+        "wordCount": 3665,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的收官篇。10 篇内容覆盖后，用一张「能力地图」把全系列串联起来——你能做什么、不能做什么、什么场景用、什么场景不用。…",
         "tags": [
@@ -1388,7 +1136,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/9_顺序消息与定时消息-全景",
         "title": "顺序消息与定时消息 · 入门全景",
-        "wordCount": 3577,
+        "wordCount": 3587,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 9 篇。讲清 RocketMQ 的两类「特殊消息」——顺序消息（严格按发送顺序消费）和定时消息（延迟到指定时间投…",
         "tags": [
@@ -1402,7 +1150,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/2_为什么需要消息队列-全景",
         "title": "为什么需要消息队列 · 入门全景",
-        "wordCount": 3515,
+        "wordCount": 3519,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 2 篇。不讲 RocketMQ 怎么用，先讲「消息队列这个品类为什么存在」——理解它的设计动机，比会用 API …",
         "tags": [
@@ -1416,7 +1164,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/8_消息发送与投递语义-全景",
         "title": "消息发送与投递语义 · 入门全景",
-        "wordCount": 3812,
+        "wordCount": 3832,
         "readMinutes": 12,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 8 篇。讲清消息从「发送到投递」的完整语义——3 种发送结果、3 种投递语义、3 种重复场景、3 种丢失场景，建…",
         "tags": [
@@ -1430,7 +1178,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/6_Broker与路由机制-全景",
         "title": "Broker 与路由机制 · 入门全景",
-        "wordCount": 3711,
+        "wordCount": 3721,
         "readMinutes": 12,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 6 篇。深入讲清 Broker 的「内部结构 + 启动流程 + 主从复制 + 高可用机制」，以及 NameSer…",
         "tags": [
@@ -1462,23 +1210,6 @@
         "isTest": false
       },
       {
-        "file": "/middleware/rocketmq/专题层/生产配置深度/1_大厂生产配置实战-深度",
-        "title": "RocketMQ 大厂生产配置实战：Consumer / Producer / Topic / 线程模型 12 项核心参数推荐值",
-        "wordCount": 4867,
-        "readMinutes": 15,
-        "excerpt": "一句话摘要：RocketMQ 生产配置 = Consumer（消费模式 + 并发线程 + 批量拉取 + 位点提交）+ Producer（路由键 + 重试 + 压…",
-        "tags": [
-          "中间件",
-          "RocketMQ",
-          "消息中间件",
-          "生产配置",
-          "Consumer",
-          "ProducerGroup",
-          "Topic"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/middleware/rocketmq/专题层/Topic隔离深度/2_共享CommitLog的存储真相-深度",
         "title": "RocketMQ 共享 CommitLog 的存储真相：从顺序写 + 索引分离看 Topic 隔离的物理基础",
         "wordCount": 7158,
@@ -1496,7 +1227,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/4_RocketMQ核心架构-全景",
         "title": "RocketMQ 核心架构 · 入门全景",
-        "wordCount": 3646,
+        "wordCount": 3652,
         "readMinutes": 11,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 4 篇。深入讲清 RocketMQ 的「4 大角色 + 4 层协作 + 5 条核心链路」，建立理解后续所有特性的…",
         "tags": [
@@ -1525,7 +1256,7 @@
       {
         "file": "/middleware/rocketmq/专题层/生产配置深度/0_系列导读-全景",
         "title": "RocketMQ 生产配置深度：Consumer / Producer / Topic / 线程模型 · 系列导读",
-        "wordCount": 771,
+        "wordCount": 767,
         "readMinutes": 2,
         "excerpt": "一句话摘要：RocketMQ 生产配置实战 = Consumer（消费模式 + 线程数 + 拉取上限）+ ProducerGroup（路由键 + 重试 + 压缩…",
         "tags": [
@@ -1539,9 +1270,26 @@
         "isTest": false
       },
       {
+        "file": "/middleware/rocketmq/专题层/生产配置深度/1_生产配置实战-深度",
+        "title": "RocketMQ 生产配置实战：Consumer / Producer / Topic / 线程模型 12 项核心参数推荐值",
+        "wordCount": 4892,
+        "readMinutes": 15,
+        "excerpt": "一句话摘要：RocketMQ 生产配置 = Consumer（消费模式 + 并发线程 + 批量拉取 + 位点提交）+ Producer（路由键 + 重试 + 压…",
+        "tags": [
+          "中间件",
+          "RocketMQ",
+          "消息中间件",
+          "生产配置",
+          "Consumer",
+          "ProducerGroup",
+          "Topic"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/3_RocketMQ生态与版图-全景",
         "title": "RocketMQ 生态与版图 · 入门全景",
-        "wordCount": 3695,
+        "wordCount": 3704,
         "readMinutes": 12,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 3 篇。讲清 RocketMQ 在消息中间件大版图中的位置、上下游生态、与 Apache 社区的关系，以及 5.…",
         "tags": [
@@ -1555,7 +1303,7 @@
       {
         "file": "/middleware/rocketmq/专题层/事务消息深度/1_事务问题域与3种解法对比-深度",
         "title": "RocketMQ 事务消息深度 1：事务问题域与 3 种解法对比",
-        "wordCount": 5579,
+        "wordCount": 5599,
         "readMinutes": 17,
         "excerpt": "一句话摘要：RocketMQ 事务消息 = 半消息 + 本地事务状态表 + Broker 主动回查三件套，把\"写 DB + 通知下游\"的分布式事务延迟从「定时扫…",
         "tags": [
@@ -1571,7 +1319,7 @@
       {
         "file": "/middleware/rocketmq/专题层/事务消息深度/2_Half主题与回查机制源码穿透-深度",
         "title": "RocketMQ 事务消息深度 2：Half 主题与回查机制源码穿透",
-        "wordCount": 4213,
+        "wordCount": 4228,
         "readMinutes": 13,
         "excerpt": "一句话摘要：Half 主题（RMQSYSTRANSHALFTOPIC）是 RocketMQ 事务消息的核心设计——Broker 通过 Half Topic + …",
         "tags": [
@@ -1587,7 +1335,7 @@
       {
         "file": "/middleware/rocketmq/专题层/事务消息深度/3_事务消息的反模式与事故案例-深度",
         "title": "RocketMQ 事务消息深度 3：5 个生产反模式与真实事故案例库",
-        "wordCount": 6689,
+        "wordCount": 6703,
         "readMinutes": 21,
         "excerpt": "一句话摘要：事务消息生产事故 90% 集中在 5 个反模式：本地事务里调远程、回查里写业务、HalfTopic 堆积、回查永远 UNKNOWN、跨业务共用事务消…",
         "tags": [
@@ -1603,7 +1351,7 @@
       {
         "file": "/middleware/rocketmq/专题层/事务消息深度/4_与本地消息表_TCC_Saga对比与选型-深度",
         "title": "RocketMQ 事务消息深度 4：与本地消息表 / TCC / Saga 的对比与选型决策",
-        "wordCount": 7955,
+        "wordCount": 8008,
         "readMinutes": 25,
         "excerpt": "一句话摘要：分布式事务 4 种解法 = RocketMQ 事务消息（异步通知 + 秒级）/ 本地消息表（低 QPS + 历史包袱）/ TCC（强一致 + 资金扣…",
         "tags": [
@@ -1621,8 +1369,8 @@
       {
         "file": "/middleware/rocketmq/专题层/事务消息深度/5_事务消息的监控告警与混沌工程-深度",
         "title": "RocketMQ 事务消息深度 5：监控 + 告警 + 混沌工程完整体系",
-        "wordCount": 5894,
-        "readMinutes": 18,
+        "wordCount": 5931,
+        "readMinutes": 19,
         "excerpt": "一句话摘要：事务消息生产稳定性 = 7 大监控指标 + 4 级告警 + 3 类混沌工程演练。没有监控告警的事务消息 = 定时炸弹——大促期一旦炸开就是 P0 资…",
         "tags": [
           "数据 & 中件间",
@@ -1682,7 +1430,7 @@
       {
         "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/11_收官与能力地图-深度",
         "title": "RocketMQ 特性层能力地图收官：从 1 顺序消息到 10 5.x 新特性的 11 篇 deep-dive 综合",
-        "wordCount": 7370,
+        "wordCount": 7384,
         "readMinutes": 23,
         "excerpt": "一句话摘要：这 11 篇特性层 deepdive 不是孤立罗列，而是一条「生产侧 → 消费侧 → 存储 / 高可用 → 可观测性 → 演进视角」的递进主线——每…",
         "tags": [
@@ -1698,7 +1446,7 @@
       {
         "file": "/middleware/rocketmq/整合层/稳定性体系深度/1_稳定性体系全景与4维稳定性-深度",
         "title": "RocketMQ 稳定性体系深度 1：4 维稳定性（可用性 / 可靠性 / 可观测性 / 韧性）全景",
-        "wordCount": 5779,
+        "wordCount": 5812,
         "readMinutes": 18,
         "excerpt": "一句话摘要：RocketMQ 稳定性 = 4 维（可用性 99.99% + 可靠性 99.95% 不丢不重 + 可观测性全链路 + 韧性故障自愈）+ SRE 视…",
         "tags": [
@@ -1715,7 +1463,7 @@
       {
         "file": "/middleware/rocketmq/整合层/稳定性体系深度/2_7维监控指标体系-深度",
         "title": "RocketMQ 稳定性体系深度 2：7 维监控指标体系（30 个核心指标 + 4 级告警阈值）",
-        "wordCount": 5937,
+        "wordCount": 5980,
         "readMinutes": 19,
         "excerpt": "一句话摘要：RocketMQ 监控 = 7 维（Producer / Broker / Consumer / Topic / NameServer / Cont…",
         "tags": [
@@ -1733,7 +1481,7 @@
       {
         "file": "/middleware/rocketmq/整合层/稳定性体系深度/3_混沌工程演练体系-深度",
         "title": "RocketMQ 稳定性体系深度 3：6 类混沌工程演练体系（Broker GC / 磁盘满 / Producer 挂 / 网络分区 / Controller 选举 / 雪崩）",
-        "wordCount": 6616,
+        "wordCount": 6650,
         "readMinutes": 21,
         "excerpt": "一句话摘要：RocketMQ 混沌工程 = 6 类故障演练（Broker GC / 磁盘满 / Producer 挂 / 网络分区 / Controller 选…",
         "tags": [
@@ -1831,7 +1579,7 @@
       {
         "file": "/middleware/rocketmq/专题层/生产配置深度/2_一条消息的完整生命周期-深度",
         "title": "RocketMQ 一条消息的完整生命周期：从 Producer.send 到 Consumer.ACK 的 12 个步骤穿透",
-        "wordCount": 5307,
+        "wordCount": 5324,
         "readMinutes": 17,
         "excerpt": "一句话摘要：一条消息的生命周期 = Producer（选 Queue + send）→ NameServer（路由）→ Broker（写 CommitLog +…",
         "tags": [
@@ -1847,7 +1595,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/10_RocketMQ运维入门-全景",
         "title": "RocketMQ 运维入门 · 入门全景",
-        "wordCount": 4057,
+        "wordCount": 4067,
         "readMinutes": 13,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 10 篇。讲清 RocketMQ 运维的「5 大模块 + 12 项核心监控 + 4 类常见事故 + 应急处置 S…",
         "tags": [
@@ -1894,7 +1642,7 @@
       {
         "file": "/middleware/rocketmq/特性层/深入理解RocketMQ特性系列/9_Pop消费与长轮询-深度",
         "title": "RocketMQ Pop 消费与长轮询：5.x 消费模式革新全解析",
-        "wordCount": 7146,
+        "wordCount": 7148,
         "readMinutes": 22,
         "excerpt": "一句话摘要：Pop 消费 = 短轮询 + 服务端排队 + 长轮询（Long Polling）三种模式融合。 比传统 Push 模式提升 5 倍消费效率，比 Pu…",
         "tags": [
@@ -1984,7 +1732,7 @@
       {
         "file": "/middleware/rocketmq/专题层/Topic隔离深度/7_Topic隔离深度收官与能力地图-深度",
         "title": "RocketMQ Topic 隔离深度收官与能力地图：7 篇综合 + 4 层穿透全景",
-        "wordCount": 7325,
+        "wordCount": 7329,
         "readMinutes": 23,
         "excerpt": "一句话摘要：7 篇深度专题综合成 1 张能力地图——4 层架构 × 6 大维度 × 5 阶段演进 = Topic 隔离完整能力。  学完能会：4 层架构全景 +…",
         "tags": [
@@ -2028,7 +1776,7 @@
       {
         "file": "/middleware/rocketmq/入门层/从零开始认识RocketMQ系列/7_Topic与Queue基础-全景",
         "title": "Topic 与 Queue 基础 · 入门全景",
-        "wordCount": 4297,
+        "wordCount": 4316,
         "readMinutes": 13,
         "excerpt": "这是「从零开始认识 RocketMQ」系列的第 7 篇。讲清 Topic 和 Queue 的「概念模型 → 创建方式 → 路由分配 → 数量规划 → 最佳实践」…",
         "tags": [
