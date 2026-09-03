@@ -21,7 +21,7 @@ const checks = [
   ['读书笔记', 'reading/index.html'],
   ['个人成长', 'career/index.html'],
   ['业务知识', 'biz/index.html'],
-  ['后端示例文章', 'backend/java/use-java/特性/java17特性/1.17的亮点.html'],
+  ['后端示例文章', 'backend/java/use-java/特性层/深入理解并发系列/2_AQS源码走读与ReentrantLock-深度.html'],
   ['DevOps 子主题入口', 'devops/cicd/index.html'],
   ['读书笔记首页', 'reading/index.html'],
 ]

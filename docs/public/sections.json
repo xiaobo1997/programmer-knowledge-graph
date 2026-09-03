@@ -638,21 +638,6 @@
     "description": "Java/Go/Python 等开发语言、语言生态与框架。",
     "articles": [
       {
-        "file": "/backend/java/use-java/特性/java17特性/1.17的亮点",
-        "title": "1.17 的亮点：Java 17 五大新特性速览",
-        "wordCount": 991,
-        "readMinutes": 3,
-        "excerpt": "5 个新特性 + 1 张图 + 10 行代码，5 分钟搞懂 Java 17 为什么值得升级。  这是 Java 17 新特性系列第 1 篇：亮点速览。 Java…",
-        "tags": [
-          "后端",
-          "Java",
-          "LTS",
-          "新特性",
-          "速览"
-        ],
-        "isTest": false
-      },
-      {
         "file": "/backend/python/use-python/基础/从零开始玩转python",
         "title": "从零开始玩转python",
         "wordCount": 0,
