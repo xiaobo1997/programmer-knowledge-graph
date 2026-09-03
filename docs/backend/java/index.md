@@ -1,62 +1,38 @@
 ---
-title: Java 实战
-type: concept
-tags: [后端, Java]
-wordCount: 325
-readMinutes: 1
+title: Java
+date: 2026-09-03
+aside: false
+wordCount: 0
+readMinutes: 0
 ---
 
-# Java 实战
+# ▥ Java
 
-> Java 工程实践 + 版本演进 + 特性学习。
+> JVM 生态核心语言与框架分类入口：左侧是 Java 语言本体（use-java）的 L1-L4 完整体系，右侧是语言生态（ecosystem）里的框架系列。知识分层统一走「入门层铺全 → 特性层深入 → 专题层组合 → 整合层收束」。
 
-## 子主题
+## Java 语言本体（use-java）
 
-- [Java 17 新特性](./java17特性/) — LTS 长期支持版本，至少支持到 2029 年
+> 从对象与内存布局，到并发与虚拟线程：Java 17 LTS 主线 + 21 演进的完整知识面。
 
-## 生态定位
-
-### 在哪里
-
-- JVM 生态核心语言之一
-- 后端服务主流选型（Spring Boot / Quarkus / Helidon）
-- Android 开发首选
-
-### 现在怎么样
-
-- Java 发布节奏：每 6 个月一个版本，每 2 年一个 LTS
-- 版本时间线：Java 8（2014 LTS）/ 11（2018 LTS）/ 17（2021 LTS）/ 21（2023 LTS）/ 25（2025 LTS）
-
-### 能干什么
-
-| 场景 | Java 适合度 |
+| 系列 | 入口 |
 |---|---|
-| 后端微服务 | ⭐⭐⭐⭐⭐ |
-| 大数据处理 | ⭐⭐⭐⭐（Scala 也在用） |
-| 云原生 | ⭐⭐⭐⭐（Quarkus / Micronaut） |
-| AI/ML | ⭐⭐（Python 为主） |
-| Android | ⭐⭐⭐⭐⭐ |
+| 入门层（7 组 41 篇） | [从零开始认识 Java 系列](./use-java/入门层/从零开始认识Java系列/0_系列导读-全景) |
+| 特性层（4 子系列 11 篇） | [集合源码](./use-java/特性层/深入理解集合源码系列/index) / [并发](./use-java/特性层/深入理解并发系列/index) / [JVM](./use-java/特性层/深入理解JVM系列/index) / [新特性](./use-java/特性层/深入理解新特性系列/index) |
+| 专题层（3 专题 9 篇） | [JVM 调优与排障实战](./use-java/专题层/JVM调优与排障实战/index) / [高并发编程实战](./use-java/专题层/高并发编程实战/index) / [Java 工程实践](./use-java/专题层/Java工程实践/index) |
+| 整合层（1 篇） | [Java 应用性能演进之路](./use-java/整合层/index) |
 
-### 怎么配合
+## 语言生态（ecosystem）
 
-- Spring Boot 3（要求 17+）
-- GraalVM Native Image
-- Kotlin（Android 官方推荐）
+> Java 语言强相关的框架系列，独立立项、独立 L1-L4（分类归属见 classification.md：框架生态 → backend/<语言>/ecosystem/）。
 
-### 类似什么
+| 框架 | 入口 | 状态 |
+|---|---|---|
+| Spring Boot | [Spring Boot 实战](./ecosystem/spring-boot/index) | 23 篇立项（入门层落盘中） |
+| MyBatis-Plus | [MyBatis-Plus 实战](./ecosystem/mybatis-plus/index) | 16 篇立项（特性/专题层大纲已定） |
 
-| 方案 | 类型 | 优势 | 劣势 |
-|---|---|---|---|
-| Java | 编译型 | 生态最大 / 性能稳定 | 代码啰嗦 |
-| Kotlin | JVM 语言 | 简洁 / 兼容 Java | 学习曲线 |
-| Go | 编译型 | 部署简单 / 性能强 | 生态较小 |
-| Scala | JVM 语言 | 函数式 / 大数据强 | 学习曲线陡 |
+## 沉淀原则
 
-### 怎么演进
-
-- Java 8 → 11 → 17 → 21 → 25（LTS 节奏）
-- 现代化特性：lambda → records → sealed → virtual threads
-
-## 一句话总结
-
-> Java 是后端工程的「默认选项」——生态最大、LTS 稳定、现代特性逐步补齐。
+- Java 语言本体与 Spring Boot 生态**分开独立系列**：语言管语法/JVM/并发底层，框架管工程能力
+- 版本锚点：Java 17 LTS（工作主线）+ 21 LTS（演进方向）；旧机制标注「历史版本视角」
+- 对标书目：Java 核心技术卷I / Effective Java / 深入理解 Java 虚拟机 / Java 并发编程实战；框架对标官方文档 + 源码
+- 面试问答不在此仓库沉淀（见 interview 仓库）
