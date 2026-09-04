@@ -44,3 +44,6 @@ _internal/
 
 # AI 工作流 trigger + 个人版 AGENTS.md（本地维护，不公开）
 AGENTS.md
+
+# 本地构建/部署脚本（个人工作流，含 deploy 自动 commit/push + 凭据读取，不公开）
+scripts/
