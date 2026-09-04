@@ -2,7 +2,7 @@
 title: MyBatis-Plus
 date: 2026-09-02
 aside: false
-wordCount: 857
+wordCount: 977
 readMinutes: 3
 ---
 
@@ -74,4 +74,3 @@ readMinutes: 3
 - 版本锚点：MyBatis-Plus 3.5.x 主线（v3.5.17，2026-07-08）+ MyBatis 3.5.x 底座
 - 与 Spring Boot 系列分工：15 讲原生 MyBatis 接入与选型，本系列讲 MP 增强全家桶；复杂 SQL/存储过程仍走原生 XML
 - 依赖 Java 语言系列（泛型/反射）与 MySQL 系列（索引/事务/SQL）
-- 面试问答不在此仓库沉淀（见 interview 仓库）

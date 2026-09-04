@@ -2,7 +2,7 @@
 title: Java 语言
 date: 2026-09-02
 aside: false
-wordCount: 1517
+wordCount: 1651
 readMinutes: 5
 ---
 
@@ -108,4 +108,3 @@ readMinutes: 5
 - 入门层对标权威书目 + 官方文档铺全知识面（Java 核心技术卷I / Effective Java / 深入理解 Java 虚拟机 / Java 并发编程实战 / JavaGuide）
 - 入门层「多、广、覆盖全」，读到疑问再沿特性/专题/整合层深入（L1-L4 从点到面）
 - 对标 Java 17 LTS（工作主线）+ 21 LTS（演进方向）；旧机制标注「历史版本视角」
-- 面试问答不在此仓库沉淀（见 interview 仓库）

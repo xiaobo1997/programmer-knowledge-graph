@@ -2,8 +2,8 @@
 title: Redis
 date: 2026-09-02
 aside: false
-wordCount: 887
-readMinutes: 3
+wordCount: 1153
+readMinutes: 4
 ---
 
 # ▥ Redis
@@ -91,4 +91,3 @@ readMinutes: 3
 - 入门层对标 5 本权威书目 + 官方文档铺全知识面（设计与实现 / 深度历险 / 开发与运维 / 核心技术与实战 / Redis 8 官方文档）
 - 入门层「多、广、覆盖全」，读到疑问再沿特性/专题/整合层深入（L1-L4 从点到面）
 - 对标 Redis 8.x（2026-09 最新 8.10.1）；书中旧机制（如 ziplist）标注「历史版本视角」
-- 面试问答不在此仓库沉淀（见 interview 仓库）

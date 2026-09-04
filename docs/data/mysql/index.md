@@ -2,8 +2,8 @@
 title: MySQL
 date: 2026-09-03
 aside: false
-wordCount: 645
-readMinutes: 2
+wordCount: 868
+readMinutes: 3
 ---
 
 <script setup lang="ts">
@@ -53,4 +53,3 @@ import TocOverview from '../.vitepress/theme/TocOverview.vue'
 
 - 入门层对标 5 本权威书目铺全知识面（高性能 MySQL / MySQL 是怎样运行的 / 深入理解 MySQL 主从原理 / MySQL 45 讲 / MySQL 排错指南）
 - 每篇带 tips 知识落差点（背书记忆技巧 + 工作易错细节 + 开发习惯约定）
-- 面试问答不在此仓库沉淀（见 interview 仓库）

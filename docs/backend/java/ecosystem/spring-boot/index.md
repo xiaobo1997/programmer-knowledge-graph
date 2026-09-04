@@ -2,8 +2,8 @@
 title: Spring Boot
 date: 2026-09-02
 aside: false
-wordCount: 967
-readMinutes: 3
+wordCount: 1209
+readMinutes: 4
 ---
 
 # ▥ Spring Boot
@@ -91,4 +91,3 @@ readMinutes: 3
 - 版本锚点：Spring Boot 3.5.x 主线（工作栈）+ 4.x 演进标注（4.1.1 要求 Java 17+ 兼容至 26）
 - 依赖 Java 语言系列（并发/JVM/反射基础）与中间件系列（Redis 缓存）
 - Spring Security 不在本系列（鉴权体系留待未来独立立项）
-- 面试问答不在此仓库沉淀（见 interview 仓库）
