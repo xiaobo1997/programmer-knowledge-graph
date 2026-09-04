@@ -3,8 +3,8 @@ title: "版本演进与 KRaft 时代"
 type: concept
 tags: [Kafka, 版本, KRaft, 演进, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 213
+readMinutes: 1
 ---
 
 # 版本演进与 KRaft 时代

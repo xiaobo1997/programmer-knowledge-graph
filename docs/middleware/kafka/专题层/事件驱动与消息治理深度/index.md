@@ -2,8 +2,8 @@
 title: "事件驱动与消息治理深度（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 481
+readMinutes: 2
 ---
 
 # 事件驱动与消息治理深度（横向组合拳）
@@ -35,7 +35,7 @@ readMinutes: 0
 
 ## 三、阅读建议
 
-- 前置：入门 19（Connect）/ 20（Streams）/ 21（Schema）/ 23（信贷地图）
+- 前置：入门 19（Connect）/ 20（Streams）/ 21（Schema）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：kafka.apache.org 官方文档 + GitHub apache/kafka（版本细节写正文时核实）
 - 关联：正文落盘前，先在本目录写单篇写作大纲（对照官方文档核结构/行为）

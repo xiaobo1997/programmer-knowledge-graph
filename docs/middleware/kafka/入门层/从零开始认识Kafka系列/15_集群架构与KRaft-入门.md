@@ -3,8 +3,8 @@ title: "集群架构与 KRaft"
 type: concept
 tags: [Kafka, 集群, KRaft, 控制器, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 201
+readMinutes: 1
 ---
 
 # 集群架构与 KRaft
@@ -28,7 +28,7 @@ readMinutes: 0
 ### 3. 机制：KRaft 取代 ZK
 
 - 元数据日志 + quorum 控制器
-- Raft 协议直觉 / 版本演进（24 篇展开）
+- Raft 协议直觉 / 版本演进（23 篇展开）
 
 ### 4. 实践：集群形态选型
 
