@@ -3,8 +3,8 @@ title: "Topic 与 Partition"
 type: concept
 tags: [Kafka, Topic, Partition, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 234
+readMinutes: 1
 ---
 
 # Topic 与 Partition

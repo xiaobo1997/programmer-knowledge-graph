@@ -3,8 +3,8 @@ title: SQL 注入器架构与启动注册（BaseMapper 方法从哪来）
 type: deep-dive
 tags: [MyBatis-Plus, SQL注入器, BaseMapper, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 221
+readMinutes: 1
 ---
 
 # SQL 注入器架构与启动注册（BaseMapper 方法从哪来）

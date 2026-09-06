@@ -3,8 +3,8 @@ title: "Redis 是什么与数据模型"
 type: concept
 tags: [Redis, 认知, 数据模型, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 241
+readMinutes: 1
 ---
 
 # Redis 是什么与数据模型

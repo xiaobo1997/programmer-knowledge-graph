@@ -3,8 +3,8 @@ title: "版本演进与 Redis 8 新特性"
 type: concept
 tags: [Redis, 版本演进, Redis8, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 209
+readMinutes: 1
 ---
 
 # 版本演进与 Redis 8 新特性

@@ -2,8 +2,8 @@
 title: "主从与高可用深度（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 417
+readMinutes: 1
 ---
 
 # 主从与高可用深度（横向组合拳）
@@ -38,4 +38,3 @@ readMinutes: 0
 - 前置：串入门 12（主从）/ 13（高可用）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照官方文档：dev.mysql.com（8.0/8.4 LTS）+ 5 本权威书目（对标《高性能 MySQL》《MySQL 是怎样运行的》等）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照官方文档核机制/行为）

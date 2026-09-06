@@ -3,8 +3,8 @@ title: "Profile 多环境"
 type: concept
 tags: [Spring Boot, 配置, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 221
+readMinutes: 1
 ---
 
 # Profile 多环境

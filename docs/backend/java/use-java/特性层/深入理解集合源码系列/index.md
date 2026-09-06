@@ -2,8 +2,8 @@
 title: 深入理解集合源码系列（源码走读）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 502
+readMinutes: 2
 ---
 
 # 深入理解集合源码系列（源码走读）

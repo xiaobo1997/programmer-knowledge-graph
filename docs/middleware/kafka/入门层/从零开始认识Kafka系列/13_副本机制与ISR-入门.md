@@ -3,8 +3,8 @@ title: "副本机制与 ISR"
 type: concept
 tags: [Kafka, 副本, ISR, 高可用, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 195
+readMinutes: 1
 ---
 
 # 副本机制与 ISR

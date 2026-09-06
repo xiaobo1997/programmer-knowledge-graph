@@ -3,8 +3,8 @@ title: "Pipeline 与批量操作"
 type: concept
 tags: [Redis, Pipeline, 性能, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 184
+readMinutes: 1
 ---
 
 # Pipeline 与批量操作

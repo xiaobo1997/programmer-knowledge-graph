@@ -2,8 +2,8 @@
 title: 整合层（Java 应用性能演进之路）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 472
+readMinutes: 1
 ---
 
 # 整合层（Java 应用性能演进之路）

@@ -3,8 +3,8 @@ title: "事务与 Lua 脚本"
 type: concept
 tags: [Redis, 事务, Lua, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 177
+readMinutes: 1
 ---
 
 # 事务与 Lua 脚本

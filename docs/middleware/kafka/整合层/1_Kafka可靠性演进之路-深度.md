@@ -3,8 +3,8 @@ title: "Kafka 可靠性演进之路"
 type: deep-dive
 tags: [Kafka, 可靠性, 演进, 整合, L4整合层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 182
+readMinutes: 1
 ---
 
 # Kafka 可靠性演进之路

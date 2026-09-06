@@ -3,8 +3,8 @@ title: "MySQL 架构与一条 SQL 的一生"
 type: concept
 tags: [MySQL, 架构, 执行链路, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 234
+readMinutes: 1
 ---
 
 # MySQL 架构与一条 SQL 的一生

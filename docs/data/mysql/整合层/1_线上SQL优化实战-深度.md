@@ -3,8 +3,8 @@ title: "线上 SQL 优化实战"
 type: deep-dive
 tags: [MySQL, SQL优化, 实战, 整合, L4整合层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 176
+readMinutes: 1
 ---
 
 # 线上 SQL 优化实战

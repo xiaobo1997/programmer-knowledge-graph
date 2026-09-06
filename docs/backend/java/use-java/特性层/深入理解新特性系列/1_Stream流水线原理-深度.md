@@ -3,8 +3,8 @@ title: Stream 流水线原理：从惰性求值到并行流
 type: deep-dive
 tags: [Java, Stream, 函数式, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 259
+readMinutes: 1
 ---
 
 # Stream 流水线原理：从惰性求值到并行流

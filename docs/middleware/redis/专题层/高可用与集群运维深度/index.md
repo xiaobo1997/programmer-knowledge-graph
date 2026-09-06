@@ -2,8 +2,8 @@
 title: "高可用与集群运维深度（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 425
+readMinutes: 1
 ---
 
 # 高可用与集群运维深度（横向组合拳）
@@ -38,4 +38,3 @@ readMinutes: 0
 - 前置：串入门 15（主从）/ 16（哨兵）/ 17（集群）/ 21（监控）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：redis.io 官方文档 + GitHub redis/redis（tag 8.x）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照源码核结构/行为）

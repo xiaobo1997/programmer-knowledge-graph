@@ -3,8 +3,8 @@ title: "Schema Registry 与序列化治理"
 type: concept
 tags: [Kafka, Schema, Avro, 治理, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 196
+readMinutes: 1
 ---
 
 # Schema Registry 与序列化治理

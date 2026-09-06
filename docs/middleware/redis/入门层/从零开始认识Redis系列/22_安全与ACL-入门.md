@@ -3,8 +3,8 @@ title: "安全与 ACL"
 type: concept
 tags: [Redis, 安全, ACL, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 180
+readMinutes: 1
 ---
 
 # 安全与 ACL

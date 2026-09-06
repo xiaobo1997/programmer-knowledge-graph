@@ -3,8 +3,8 @@ title: "Kafka Connect：数据集成"
 type: concept
 tags: [Kafka, Connect, 数据集成, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 201
+readMinutes: 1
 ---
 
 # Kafka Connect：数据集成

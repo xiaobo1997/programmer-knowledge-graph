@@ -3,8 +3,8 @@ title: "单线程模型与 IO 多路复用"
 type: concept
 tags: [Redis, IO模型, 单线程, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 216
+readMinutes: 1
 ---
 
 # 单线程模型与 IO 多路复用

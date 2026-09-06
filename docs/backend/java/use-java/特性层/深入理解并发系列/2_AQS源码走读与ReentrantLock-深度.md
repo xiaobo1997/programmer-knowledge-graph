@@ -3,8 +3,8 @@ title: AQS 源码走读与 ReentrantLock
 type: deep-dive
 tags: [Java, 并发, AQS, ReentrantLock, 源码, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 214
+readMinutes: 1
 ---
 
 # AQS 源码走读与 ReentrantLock

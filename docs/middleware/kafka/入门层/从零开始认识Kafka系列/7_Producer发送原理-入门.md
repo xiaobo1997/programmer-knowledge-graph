@@ -3,8 +3,8 @@ title: "Producer 发送原理"
 type: concept
 tags: [Kafka, Producer, 发送链路, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 217
+readMinutes: 1
 ---
 
 # Producer 发送原理

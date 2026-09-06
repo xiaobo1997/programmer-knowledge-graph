@@ -3,8 +3,8 @@ title: 条件构造器与自定义 SQL 的协作（customSqlSegment 原理）
 type: deep-dive
 tags: [MyBatis-Plus, 条件构造器, XML, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 218
+readMinutes: 1
 ---
 
 # 条件构造器与自定义 SQL 的协作（customSqlSegment 原理）

@@ -3,8 +3,8 @@ title: MybatisPlusInterceptor 与 InnerInterceptor 链架构
 type: deep-dive
 tags: [MyBatis-Plus, 插件机制, 拦截器, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 188
+readMinutes: 1
 ---
 
 # MybatisPlusInterceptor 与 InnerInterceptor 链架构

@@ -3,8 +3,8 @@ title: Java 应用性能演进之路
 type: deep-dive
 tags: [Java, 性能, 演进, 整合, L4整合层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 271
+readMinutes: 1
 ---
 
 # Java 应用性能演进之路

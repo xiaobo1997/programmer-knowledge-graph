@@ -3,8 +3,8 @@ title: ArrayList 扩容与迭代器机制源码走读
 type: deep-dive
 tags: [Java, 集合, ArrayList, LinkedList, 源码, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 287
+readMinutes: 1
 ---
 
 # ArrayList 扩容与迭代器机制源码走读

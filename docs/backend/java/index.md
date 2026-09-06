@@ -2,8 +2,8 @@
 title: Java
 date: 2026-09-03
 aside: false
-wordCount: 527
-readMinutes: 2
+wordCount: 407
+readMinutes: 1
 ---
 
 # ▥ Java
@@ -29,9 +29,3 @@ readMinutes: 2
 |---|---|---|
 | Spring Boot | [Spring Boot 实战](./ecosystem/spring-boot/index) | 23 篇立项（入门层落盘中） |
 | MyBatis-Plus | [MyBatis-Plus 实战](./ecosystem/mybatis-plus/index) | 16 篇立项（特性/专题层大纲已定） |
-
-## 沉淀原则
-
-- Java 语言本体与 Spring Boot 生态**分开独立系列**：语言管语法/JVM/并发底层，框架管工程能力
-- 版本锚点：Java 17 LTS（工作主线）+ 21 LTS（演进方向）；旧机制标注「历史版本视角」
-- 对标书目：Java 核心技术卷I / Effective Java / 深入理解 Java 虚拟机 / Java 并发编程实战；框架对标官方文档 + 源码

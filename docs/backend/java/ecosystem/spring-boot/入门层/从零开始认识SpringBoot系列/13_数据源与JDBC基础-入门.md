@@ -3,8 +3,8 @@ title: "数据源与 JDBC 基础"
 type: concept
 tags: [Spring Boot, 数据访问, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 235
+readMinutes: 1
 ---
 
 # 数据源与 JDBC 基础

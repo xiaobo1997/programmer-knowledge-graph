@@ -2,8 +2,8 @@
 title: "缓存三兄弟与热点治理（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 424
+readMinutes: 1
 ---
 
 # 缓存三兄弟与热点治理（横向组合拳）
@@ -38,4 +38,3 @@ readMinutes: 0
 - 前置：串入门 7（布隆）/ 13（Pipeline）/ 18（三大问题）/ 19（一致性）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：redis.io 官方文档 + GitHub redis/redis（tag 8.x）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照源码核结构/行为）

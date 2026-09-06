@@ -3,8 +3,8 @@ title: Lambda 条件构造器与列名解析
 type: deep-dive
 tags: [MyBatis-Plus, 条件构造器, Lambda, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 199
+readMinutes: 1
 ---
 
 # Lambda 条件构造器与列名解析

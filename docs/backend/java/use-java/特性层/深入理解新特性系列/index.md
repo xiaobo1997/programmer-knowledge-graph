@@ -2,8 +2,8 @@
 title: 深入理解新特性系列（原理与迁移）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 437
+readMinutes: 1
 ---
 
 # 深入理解新特性系列（原理与迁移）
@@ -34,5 +34,4 @@ readMinutes: 0
 
 - 前置：入门 36-41（Lambda / Stream / Optional / 日期 / Java 17 新特性 / Java 21 虚拟线程）
 - 顺序：1 → 2（计算范式 → 并发范式）
-- 对照：Core Java 卷II + JEP 官方（JEP 428 虚拟线程）
 - 关联：整合层「Java 应用性能演进之路」的虚拟线程落地章节

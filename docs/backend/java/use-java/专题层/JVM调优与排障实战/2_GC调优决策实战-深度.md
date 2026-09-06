@@ -3,8 +3,8 @@ title: GC 调优决策实战
 type: deep-dive
 tags: [Java, JVM, GC调优, G1, L3专题层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 278
+readMinutes: 1
 ---
 
 # GC 调优决策实战

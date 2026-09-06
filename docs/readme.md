@@ -21,13 +21,6 @@ import TocOverview from './.vitepress/theme/TocOverview.vue'
 - 顶部 `⌘ K` → 全站全文搜索
 - 左侧「知识分类」→ 按分类快速切换
 
-## 沉淀原则
-
-- 一篇文章对应一个具体知识点
-- 不抄原文，写自己的思考
-- 测试占位文章加 `test: true` frontmatter 标记，正式内容不加
-- 链接到示例代码仓库，不在文档里贴大段代码
-
 ## 仓库治理
 
 - [AGENTS.md](../../AGENTS.md) — AI 入口（必读）

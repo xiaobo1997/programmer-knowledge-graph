@@ -3,7 +3,7 @@ title: Topic 与 Queue 基础 · 入门全景
 type: concept
 tags: [中间件, RocketMQ, 消息中间件, 入门系列]
 date: 2026-08-09
-wordCount: 4316
+wordCount: 4308
 readMinutes: 13
 ---
 
@@ -196,7 +196,7 @@ Trade-off 跨期：当年选「Queue 数量 = 4」是合理 Trade-off（默认�
 
 ## 八、反思：Topic 与 Queue 学习路径建议
 
-入门者最该记住的 4 个关键认知：
+4 个关键认知：
 
 1. **Topic 是逻辑分类，Queue 是物理并行度**——两者职责不同
 2. **Queue 数量一旦设定就不可修改**——所以宁可一开始多设

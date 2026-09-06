@@ -3,8 +3,8 @@ title: "ORM 全景与 MyBatis-Plus 定位：从 JDBC 手写 SQL 到只增强不�
 type: concept
 tags: [MyBatis-Plus, ORM, MyBatis, JPA, L1入门层]
 date: 2026-09-02
-wordCount: 3185
-readMinutes: 10
+wordCount: 2845
+readMinutes: 9
 ---
 
 # ORM 全景与 MyBatis-Plus 定位：从 JDBC 手写 SQL 到只增强不改变

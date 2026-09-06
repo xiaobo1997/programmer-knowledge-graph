@@ -3,8 +3,8 @@ title: "MyBatis 集成"
 type: concept
 tags: [Spring Boot, 数据访问, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 232
+readMinutes: 1
 ---
 
 # MyBatis 集成

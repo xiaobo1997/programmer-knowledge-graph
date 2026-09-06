@@ -3,8 +3,8 @@ title: "Kafka 是什么与生态全景"
 type: concept
 tags: [Kafka, 认知, 生态, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 271
+readMinutes: 1
 ---
 
 # Kafka 是什么与生态全景

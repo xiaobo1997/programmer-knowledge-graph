@@ -2,7 +2,7 @@
 title: MyBatis-Plus 生产实战深度（专题）
 date: 2026-09-02
 aside: false
-wordCount: 523
+wordCount: 643
 readMinutes: 2
 ---
 

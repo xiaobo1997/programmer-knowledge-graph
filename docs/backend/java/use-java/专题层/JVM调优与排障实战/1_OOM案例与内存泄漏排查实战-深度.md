@@ -3,8 +3,8 @@ title: OOM 案例与内存泄漏排查实战
 type: deep-dive
 tags: [Java, JVM, OOM, 内存泄漏, 排障, L3专题层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 253
+readMinutes: 1
 ---
 
 # OOM 案例与内存泄漏排查实战

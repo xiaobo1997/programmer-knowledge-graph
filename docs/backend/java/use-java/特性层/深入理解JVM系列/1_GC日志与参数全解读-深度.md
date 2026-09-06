@@ -3,8 +3,8 @@ title: GC 日志与参数全解读
 type: deep-dive
 tags: [Java, JVM, GC日志, 调优, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 282
+readMinutes: 1
 ---
 
 # GC 日志与参数全解读

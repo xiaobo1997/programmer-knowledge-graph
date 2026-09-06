@@ -3,7 +3,7 @@ title: RocketMQ 核心架构 · 入门全景
 type: concept
 tags: [中间件, RocketMQ, 消息中间件, 入门系列]
 date: 2026-08-09
-wordCount: 3652
+wordCount: 3644
 readMinutes: 11
 ---
 
@@ -177,7 +177,7 @@ Trade-off 跨期：当年选「NameServer 无状态」是合理 Trade-off（运�
 
 ## 八、反思：理解 RocketMQ 架构的 3 个关键认知
 
-入门者最该记住的 3 个关键认知：
+3 个关键认知：
 
 1. **NameServer 是 AP 模型**——它不保证强一致，但能保证高可用
 2. **Broker 是核心中的核心**——所有可靠性和高可用设计都围绕它

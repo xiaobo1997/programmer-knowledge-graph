@@ -3,8 +3,8 @@ title: ConcurrentHashMap 源码走读：锁粒度与并发扩容
 type: deep-dive
 tags: [Java, 集合, ConcurrentHashMap, 源码, 并发, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 260
+readMinutes: 1
 ---
 
 # ConcurrentHashMap 源码走读：锁粒度与并发扩容

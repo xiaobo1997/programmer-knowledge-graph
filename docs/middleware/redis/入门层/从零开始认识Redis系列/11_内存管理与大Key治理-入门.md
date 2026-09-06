@@ -3,8 +3,8 @@ title: "内存管理与大 Key 治理"
 type: concept
 tags: [Redis, 内存管理, 大Key, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 196
+readMinutes: 1
 ---
 
 # 内存管理与大 Key 治理

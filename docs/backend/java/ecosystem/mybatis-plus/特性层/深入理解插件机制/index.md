@@ -2,7 +2,7 @@
 title: 深入理解插件机制（源码走读）
 date: 2026-09-02
 aside: false
-wordCount: 484
+wordCount: 590
 readMinutes: 2
 ---
 

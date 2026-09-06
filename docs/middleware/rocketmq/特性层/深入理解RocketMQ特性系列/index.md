@@ -2,7 +2,7 @@
 title: 深入理解 RocketMQ 特性系列 · L2 特性层深度专题
 date: 2026-08-27
 aside: false
-wordCount: 1973
+wordCount: 1968
 readMinutes: 6
 ---
 
@@ -16,7 +16,7 @@ readMinutes: 6
 
 ## 一、本系列在 4 层架构中的位置
 
-RocketMQ 知识图谱按 `_internal/cross-model/directory-layering.md` 的标准组织为 4 层：
+RocketMQ 知识图谱按 4 层组织：
 
 | 层 | 定位 | 字数 | 读者画像 | 本系列位置 |
 |---|---|---|---|---|

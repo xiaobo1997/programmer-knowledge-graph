@@ -3,7 +3,7 @@ title: RocketMQ 生态与版图 · 入门全景
 type: concept
 tags: [中间件, RocketMQ, 消息中间件, 入门系列]
 date: 2026-08-09
-wordCount: 3704
+wordCount: 3696
 readMinutes: 12
 ---
 
@@ -196,7 +196,7 @@ Trade-off 跨期：当年选「3.x 稳定版」是合理 Trade-off（生态成�
 
 ## 八、反思：如何看 RocketMQ 的生态位
 
-入门者最该记住的 4 个判断：
+4 个判断：
 
 1. **不要孤立看 MQ**——它是分布式系统的「事件总线」，上下游生态决定它的可用性
 2. **不要忽视周边工具**——Console、Exporter、CLI 是日常运维必备

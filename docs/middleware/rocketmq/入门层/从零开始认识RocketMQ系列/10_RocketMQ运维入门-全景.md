@@ -3,7 +3,7 @@ title: RocketMQ 运维入门 · 入门全景
 type: concept
 tags: [中间件, RocketMQ, 消息中间件, 入门系列]
 date: 2026-08-09
-wordCount: 4067
+wordCount: 4059
 readMinutes: 13
 ---
 
@@ -240,7 +240,7 @@ Trade-off：容量规划有 4 个核心 Trade-off——「**磁盘大 vs 成本�
 
 ## 八、反思：运维入门学习路径建议
 
-入门者最该记住的 4 个关键认知：
+4 个关键认知：
 
 1. **监控先行**——没有监控的 MQ 集群等于「**裸奔**」
 2. **容量规划提前**——至少提前 3 个月评估扩容

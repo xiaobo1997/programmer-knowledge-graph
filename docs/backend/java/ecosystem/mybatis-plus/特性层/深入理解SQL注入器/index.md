@@ -2,8 +2,8 @@
 title: 深入理解 SQL 注入器（源码走读）
 date: 2026-09-02
 aside: false
-wordCount: 415
-readMinutes: 1
+wordCount: 490
+readMinutes: 2
 ---
 
 # 深入理解 SQL 注入器（源码走读）

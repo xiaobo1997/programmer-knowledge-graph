@@ -2,8 +2,8 @@
 title: 整合层（Kafka 可靠性演进之路）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 497
+readMinutes: 2
 ---
 
 # 整合层（Kafka 可靠性演进之路）

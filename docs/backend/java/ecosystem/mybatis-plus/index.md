@@ -2,7 +2,7 @@
 title: MyBatis-Plus
 date: 2026-09-02
 aside: false
-wordCount: 977
+wordCount: 854
 readMinutes: 3
 ---
 
@@ -67,10 +67,3 @@ readMinutes: 3
 - 新手：从 0_系列导读-全景 开始，按 1-16 顺序读入门层（5 组顺读，知识面全覆盖）
 - 进阶：按兴趣进特性层源码走读（条件构造器 / 插件机制 / SQL 注入器）
 - 实战：读专题层 + 整合层（等真实业务实践主题落位）
-
-## 沉淀原则
-
-- 入门层对标官方文档 baomidou.com（MP 无权威中文书）+ MyBatis 原理书《深入浅出 MyBatis》铺全知识面
-- 版本锚点：MyBatis-Plus 3.5.x 主线（v3.5.17，2026-07-08）+ MyBatis 3.5.x 底座
-- 与 Spring Boot 系列分工：15 讲原生 MyBatis 接入与选型，本系列讲 MP 增强全家桶；复杂 SQL/存储过程仍走原生 XML
-- 依赖 Java 语言系列（泛型/反射）与 MySQL 系列（索引/事务/SQL）

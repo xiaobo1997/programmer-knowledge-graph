@@ -3,8 +3,8 @@ title: "Schema 设计与数据类型"
 type: concept
 tags: [MySQL, Schema设计, 数据类型, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 195
+readMinutes: 1
 ---
 
 # Schema 设计与数据类型

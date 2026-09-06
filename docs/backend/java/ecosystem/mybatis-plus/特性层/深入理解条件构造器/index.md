@@ -2,8 +2,8 @@
 title: 深入理解条件构造器（源码走读）
 date: 2026-09-02
 aside: false
-wordCount: 437
-readMinutes: 1
+wordCount: 535
+readMinutes: 2
 ---
 
 # 深入理解条件构造器（源码走读）

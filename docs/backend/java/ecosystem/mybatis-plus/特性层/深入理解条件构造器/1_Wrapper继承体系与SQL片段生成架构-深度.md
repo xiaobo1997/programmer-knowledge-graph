@@ -3,8 +3,8 @@ title: Wrapper 继承体系与 SQL 片段生成架构
 type: deep-dive
 tags: [MyBatis-Plus, 条件构造器, Wrapper, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 217
+readMinutes: 1
 ---
 
 # Wrapper 继承体系与 SQL 片段生成架构

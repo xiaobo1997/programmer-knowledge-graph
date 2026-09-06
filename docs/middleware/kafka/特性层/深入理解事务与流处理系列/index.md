@@ -2,8 +2,8 @@
 title: "深入理解事务与流处理系列（原理深挖）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 391
+readMinutes: 1
 ---
 
 # 深入理解事务与流处理系列（原理深挖）
@@ -37,4 +37,3 @@ readMinutes: 0
 - 前置：入门 9（事务）+ 20（Streams）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：kafka.apache.org 官方文档 + GitHub apache/kafka（版本细节写正文时核实）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照官方文档核结构/行为）

@@ -2,8 +2,8 @@
 title: MySQL
 date: 2026-09-03
 aside: false
-wordCount: 868
-readMinutes: 3
+wordCount: 776
+readMinutes: 2
 ---
 
 <script setup lang="ts">
@@ -48,8 +48,3 @@ import TocOverview from '../.vitepress/theme/TocOverview.vue'
 - 新手：从 [0_系列导读-全景](./入门层/从零开始认识MySQL系列/0_系列导读-全景.md) 开始，按 1-15 顺序读入门层
 - 进阶：按兴趣进 [特性层](./特性层/深入理解索引系列/index) 深挖（索引/事务/锁/日志/主从）
 - 实战：读 [专题层](./专题层/索引优化深度/index) + [整合层](./整合层/index)
-
-## 沉淀原则
-
-- 入门层对标 5 本权威书目铺全知识面（高性能 MySQL / MySQL 是怎样运行的 / 深入理解 MySQL 主从原理 / MySQL 45 讲 / MySQL 排错指南）
-- 每篇带 tips 知识落差点（背书记忆技巧 + 工作易错细节 + 开发习惯约定）

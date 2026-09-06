@@ -3,8 +3,8 @@ title: ThreadPoolExecutor 源码走读
 type: deep-dive
 tags: [Java, 并发, 线程池, ThreadPoolExecutor, 源码, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 239
+readMinutes: 1
 ---
 
 # ThreadPoolExecutor 源码走读

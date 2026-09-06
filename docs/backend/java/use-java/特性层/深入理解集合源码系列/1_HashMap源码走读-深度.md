@@ -3,8 +3,8 @@ title: HashMap 源码走读：从散列到红黑树化
 type: deep-dive
 tags: [Java, 集合, HashMap, 源码, L2特性层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 274
+readMinutes: 1
 ---
 
 # HashMap 源码走读：从散列到红黑树化

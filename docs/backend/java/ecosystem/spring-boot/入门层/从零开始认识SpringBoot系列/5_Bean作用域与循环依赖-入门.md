@@ -3,8 +3,8 @@ title: "Bean 作用域与循环依赖"
 type: concept
 tags: [Spring Boot, IoC, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 253
+readMinutes: 1
 ---
 
 # Bean 作用域与循环依赖

@@ -3,8 +3,8 @@ title: "List 与 Set"
 type: concept
 tags: [Redis, 数据结构, List, Set, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 190
+readMinutes: 1
 ---
 
 # List 与 Set

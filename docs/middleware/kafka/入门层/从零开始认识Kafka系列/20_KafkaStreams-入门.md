@@ -3,8 +3,8 @@ title: "Kafka Streams：流处理"
 type: concept
 tags: [Kafka, Streams, 流处理, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 189
+readMinutes: 1
 ---
 
 # Kafka Streams：流处理

@@ -3,8 +3,8 @@ title: "String 与 Hash"
 type: concept
 tags: [Redis, 数据结构, String, Hash, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 184
+readMinutes: 1
 ---
 
 # String 与 Hash

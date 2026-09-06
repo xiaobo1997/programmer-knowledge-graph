@@ -2,8 +2,8 @@
 title: Spring Boot
 date: 2026-09-02
 aside: false
-wordCount: 1209
-readMinutes: 4
+wordCount: 1089
+readMinutes: 3
 ---
 
 # ▥ Spring Boot
@@ -84,10 +84,3 @@ readMinutes: 4
 - 新手：从 [0_系列导读-全景](./入门层/从零开始认识SpringBoot系列/0_系列导读-全景) 开始，按 1-23 顺序读入门层（7 组顺读，知识面全覆盖）
 - 进阶：按兴趣进 [特性层](./特性层/深入理解自动装配与启动流程/index) 源码走读（自动装配/IoC/AOP/Web MVC）
 - 实战：读 [专题层](./专题层/SpringBoot工程实战深度/index)（工程实战真实）；整合层主题待定，等真实业务实践落位
-
-## 沉淀原则
-
-- 入门层对标官方双文档（Spring Boot + Spring Framework）+ 中文主线书《深入浅出 Spring Boot 3.x》铺全知识面
-- 版本锚点：Spring Boot 3.5.x 主线（工作栈）+ 4.x 演进标注（4.1.1 要求 Java 17+ 兼容至 26）
-- 依赖 Java 语言系列（并发/JVM/反射基础）与中间件系列（Redis 缓存）
-- Spring Security 不在本系列（鉴权体系留待未来独立立项）

@@ -2,8 +2,8 @@
 title: "深入理解事务与MVCC系列（原理深挖）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 393
+readMinutes: 1
 ---
 
 # 深入理解事务与MVCC系列（原理深挖）
@@ -37,4 +37,3 @@ readMinutes: 0
 - 前置：入门 6 / 7（事务与 MVCC）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照官方文档：dev.mysql.com（8.0/8.4 LTS）+ 5 本权威书目（对标《高性能 MySQL》《MySQL 是怎样运行的》等）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照官方文档核机制/行为）

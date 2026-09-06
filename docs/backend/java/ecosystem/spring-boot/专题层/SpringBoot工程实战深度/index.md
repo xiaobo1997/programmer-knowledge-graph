@@ -2,8 +2,8 @@
 title: "SpringBoot工程实战深度（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 458
+readMinutes: 1
 ---
 
 # SpringBoot工程实战深度（横向组合拳）
@@ -38,4 +38,3 @@ readMinutes: 0
 - 前置：串入门 10（参数绑定）/ 12（异常与响应）/ 17（配置体系）/ 18（Profile）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：Spring Boot / Spring Framework 官方文档（3.5 主线 + 4.x 差异标注）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照源码核类名/行为）

@@ -3,8 +3,8 @@ title: "消费模型与 Offset"
 type: concept
 tags: [Kafka, Consumer, Offset, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 205
+readMinutes: 1
 ---
 
 # 消费模型与 Offset

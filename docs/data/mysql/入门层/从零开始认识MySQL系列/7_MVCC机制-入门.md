@@ -3,8 +3,8 @@ title: "MVCC 机制"
 type: concept
 tags: [MySQL, MVCC, ReadView, L1入门层]
 date: 2026-09-03
-wordCount: 0
-readMinutes: 0
+wordCount: 187
+readMinutes: 1
 ---
 
 # MVCC 机制

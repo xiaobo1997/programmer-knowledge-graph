@@ -3,7 +3,7 @@ title: Broker 与路由机制 · 入门全景
 type: concept
 tags: [中间件, RocketMQ, 消息中间件, 入门系列]
 date: 2026-08-09
-wordCount: 3721
+wordCount: 3713
 readMinutes: 12
 ---
 
@@ -206,7 +206,7 @@ Trade-off 跨期：当年选「同步双写 + NameServer」是合理 Trade-off�
 
 ## 八、反思：理解 Broker 的 3 个关键认知
 
-入门者最该记住的 3 个关键认知：
+3 个关键认知：
 
 1. **Broker 是 RocketMQ 的核心**——所有可靠性和高可用设计都围绕它
 2. **顺序写 + 索引分离**——是 RocketMQ 高性能的根本设计

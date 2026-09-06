@@ -2,8 +2,8 @@
 title: 整合层（线上 SQL 优化实战 + 亿级量级演进）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 518
+readMinutes: 2
 ---
 
 # 整合层（线上 SQL 优化实战 + 亿级量级演进）

@@ -2,8 +2,8 @@
 title: MyBatis-Plus 性能与大数据量深度（专题）
 date: 2026-09-02
 aside: false
-wordCount: 460
-readMinutes: 1
+wordCount: 580
+readMinutes: 2
 ---
 
 # MyBatis-Plus 性能与大数据量深度（专题）

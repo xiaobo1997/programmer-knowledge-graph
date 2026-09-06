@@ -2,8 +2,8 @@
 title: 深入理解并发系列（源码走读）
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 475
+readMinutes: 1
 ---
 
 # 深入理解并发系列（源码走读）

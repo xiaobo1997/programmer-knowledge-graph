@@ -2,8 +2,8 @@
 title: "深入理解缓存一致性系列（源码走读）"
 date: 2026-09-03
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 367
+readMinutes: 1
 ---
 
 # 深入理解缓存一致性系列（源码走读）
@@ -37,4 +37,3 @@ readMinutes: 0
 - 前置：入门 19（缓存一致性）
 - 顺序：按方向编号顺序读，每个方向独立成篇
 - 对照源码：redis.io 官方文档 + GitHub redis/redis（tag 8.x）
-- 关联：正文落盘前，先在本目录写单篇写作大纲（对照源码核结构/行为）

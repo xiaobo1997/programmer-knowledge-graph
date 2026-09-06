@@ -3,8 +3,8 @@ title: 分页插件 PaginationInnerInterceptor 源码
 type: deep-dive
 tags: [MyBatis-Plus, 插件机制, 分页, L2特性层]
 date: 2026-09-02
-wordCount: 0
-readMinutes: 0
+wordCount: 194
+readMinutes: 1
 ---
 
 # 分页插件 PaginationInnerInterceptor 源码
