@@ -13,6 +13,8 @@ readMinutes: 9
 
 > **本文核心**：run() 是一条**六阶段流水线**（实例化 SpringApplication → 环境准备 → 上下文创建 → prepareContext → refresh 核心 → 就绪回调），核心在 **refresh() 的 13 个步骤**（IoC 容器的真正引擎）。**机制链**：run() → configureIgnoreBeanInfo/环境 Abstraction → createApplicationContext → prepareContext（listeners + beanDefinitionLoader）→ refreshContext（invokeBeanFactoryPostProcessors 加载 Bean 定义 → onRefresh 启动内嵌 WebServer → finishBeanFactoryInitialization 实例化单例）→ runners 回调。
 
+从架构上下游看：启动流程是「配置层与容器层」的桥梁——上游传入 Environment/Profile，下游产出可用的 ApplicationContext，模块边界即「配置语义 vs Bean 语义」的分界线。
+
 ## 一句话摘要
 
 启动的本质是「**把应用从静态描述（类 + 配置）变成运行时对象图（容器内活着的 Bean）**」：SpringApplication 承担流程编排（推论出应用类型 SERVLET/REACTIVE/NONE 决定上下文类型），环境阶段产出 `Environment`（配置的统一抽象），refresh 阶段完成 Bean 定义的发现与解析（ConfigurationClassPostProcessor 扫描 @Configuration 与自动装配文件）和单例实例化，最后内嵌 Tomcat（或 Jetty/Undertow）在 `onRefresh` 中启动、ApplicationRunner/CommandLineRunner 在容器就绪后回调。**读懂这条链，启动类的一切行为（banner、profile、延迟初始化、启动失败）都可定位到具体阶段**。
@@ -159,6 +161,8 @@ onRefresh 是留给子类的扩展模板方法（设计上「上下文特有的�
 - 💡 启动失败先归阶段（环境/定义/实例化）再看异常栈，别一上来读业务代码
 - 💡 决策口径：何时用懒加载——边缘 Bean 懒、核心链路急，全局懒加载只用于明显启动瓶颈的场景
 - 💡 启动速度与首请求延迟的取舍：急加载启动慢但首个请求快、懒加载反之——按流量形态（常驻服务 vs 突发任务型）选边
+
+量级分档：10 万级启动 <5s 可接受；千万级多模块启动 30s+ 需要优化（lazy init/AOT）；亿级必须 Serverless 冷启动 <100ms——量级决定启动策略。
 
 ## 📌 数据与事实声明
 

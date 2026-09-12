@@ -3,8 +3,8 @@ title: ThreadLocal
 date: 2026-09-09
 type: concept
 tags: [Java, 并发]
-wordCount: 3226
-readMinutes: 10
+wordCount: 3436
+readMinutes: 11
 ---
 
 # ThreadLocal
@@ -163,3 +163,15 @@ ThreadLocalMap 反向存储与弱引用键、过期条目清理（expungeStaleEn
 | 图书 | Effective Java 第 3 版 / Java 并发编程实战（ThreadLocal 章节） | respective |
 | 项目 | alibaba/transmittable-thread-local（TTL） | github.com |
 | 系列文章 | 线程池与异步编程（下一篇） | 本仓库同系列 |
+
+
+## 质疑者追问链
+
+**质疑：ThreadLocal 为什么设计成这样，不那样设计？**
+ThreadLocal 的设计是在「易用性、安全性、性能」三者之间做取舍——没有完美的选择，只有场景匹配的选择。理解取舍比记住结论更有价值。
+
+**追问一层：如果换个场景，这个设计还成立吗？**
+不完全成立——内存泄漏 从十万级涨到千万级时，很多默认假设失效；理解设计边界，才能判断「什么时候需要换方案」。
+
+**再深一层：底层原理和上层 API 之间是什么关系？**
+上层 API 是底层机制的抽象封装——机制不变，API 可以演进；反过来，机制变了 API 必须跟着变。这就是为什么「理解机制」比「记住 API」更保值。

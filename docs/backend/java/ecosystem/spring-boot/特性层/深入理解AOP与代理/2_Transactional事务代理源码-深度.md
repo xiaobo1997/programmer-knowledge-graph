@@ -3,7 +3,7 @@ title: "@Transactional 事务代理源码：拦截器、传播行为与回滚判
 type: deep-dive
 tags: [Spring, 事务, Transactional, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 2871
+wordCount: 3027
 readMinutes: 9
 ---
 
@@ -12,6 +12,8 @@ readMinutes: 9
 > @Transactional 是 AOP 的第一应用：**事务拦截器截住方法 → 按「传播行为 + 隔离级别」获取连接开事务 → 放行业务 → 按异常判定提交或回滚**。这篇拆事务代理的完整机制，把「事务失效八大场景」从背诵清单还原成可推演的源码事实。
 
 > **本文核心**：TransactionInterceptor 的四步——**① 解析属性**（AnnotationTransactionAttributeSource：传播/隔离/回滚规则/超时/只读）→ **② 开事务**（PlatformTransactionManager.getTransaction：按传播行为决定「新开/加入/挂起当前」）→ **③ 放行业务**（invocation.proceedWithInvocation）→ **④ 判定收尾**（completeTransactionAfterThrowing：RuntimeException/Error 回滚、受检异常默认提交，rollbackFor 可改）。**机制链**：代理调用 → 拦截器 → 事务管理器（连接与 DataSource 绑定在 ThreadLocal 的 TransactionSynchronizationManager）→ 业务 → 提交/回滚。
+
+从架构上下游看：事务拦截器在代理层与数据层之间，上游是业务方法的调用方，下游是 DataSource——模块边界即「事务语义 vs SQL 执行」的分界线。
 
 ## 一句话摘要
 
@@ -159,6 +161,23 @@ TransactionInterceptor.invoke()
 - 💡 事务方法只包数据一致性边界：RPC/大计算移出去，连接池和锁会感谢你
 - 💡 决策口径：REQUIRES_NEW vs NESTED——要「完全独立」用前者（付双连接代价），要「局部回滚」用后者（同连接保存点）
 - 💡 声明式便利与显式可控的权衡：注解事务让边界一目了然但隐式生效条件多——失效场景的排查成本是便利性的隐含对价，规范模板能压低它
+
+
+## 量级分档视角
+
+## 事务传播行为对照图
+
+```mermaid
+flowchart LR
+    OUTER["外层事务"] --> INNER["内层 @Transactional"]
+    INNER -->|"REQUIRED 默认"| JOIN["加入外层事务<br/>同生共死"]
+    INNER -->|"REQUIRES_NEW"| NEW["挂起外层 开新事务<br/>独立提交/回滚"]
+    INNER -->|"NESTED"| SAVE["保存点<br/>内层可独立回滚"]
+    style JOIN fill:#a8e6a3
+    style NEW fill:#ffd3a5
+```
+
+10 万 QPS 单体：REQUIRED 默认传播够用；千万级微服务：REQUIRES_NEW 的连接占用（挂起外层 + 开新事务 = 双连接）成为连接池容量设计变量；亿级：跨服务事务走分布式事务方案，本地传播行为不再是核心矛盾。
 
 ## 📌 数据与事实声明
 

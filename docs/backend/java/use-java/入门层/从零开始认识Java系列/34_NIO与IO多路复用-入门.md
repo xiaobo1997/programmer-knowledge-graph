@@ -3,8 +3,8 @@ title: NIO与IO多路复用
 date: 2026-09-09
 type: concept
 tags: [Java, NIO, IO]
-wordCount: 3251
-readMinutes: 10
+wordCount: 3472
+readMinutes: 11
 ---
 
 # NIO 与 IO 多路复用
@@ -155,3 +155,15 @@ Selector/Buffer/Channel 语义为 JDK NIO 官方文档；select/poll/epoll 机�
 | 文档 | Netty 官方用户指南 | netty.io |
 | 文档 | Java NIO 官方教程 | docs.oracle.com |
 | 系列文章 | 网络编程与 HTTP（下一篇） | 本仓库同系列 |
+
+
+## 质疑者追问链
+
+**质疑：NIO 与 IO 多路复用 为什么设计成这样，不那样设计？**
+NIO 与 IO 多路复用 的设计是在「易用性、安全性、性能」三者之间做取舍——没有完美的选择，只有场景匹配的选择。理解取舍比记住结论更有价值。
+
+**追问一层：如果换个场景，这个设计还成立吗？**
+不完全成立——连接数 从十万级涨到千万级时，很多默认假设失效；理解设计边界，才能判断「什么时候需要换方案」。
+
+**再深一层：底层原理和上层 API 之间是什么关系？**
+上层 API 是底层机制的抽象封装——机制不变，API 可以演进；反过来，机制变了 API 必须跟着变。这就是为什么「理解机制」比「记住 API」更保值。

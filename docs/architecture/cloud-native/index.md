@@ -1,40 +1,37 @@
 ---
 title: 云原生架构与实践
 date: 2026-09-11
+type: overview
 aside: false
-wordCount: 175
-readMinutes: 1
+wordCount: 489
+readMinutes: 2
 ---
 
 # ⬡ 云原生
 
-> 云原生架构与实践：容器化、微服务、Service Mesh、Serverless、K8s 编排。
+> 云原生 = 「容器 × 声明式 × 微服务 × 不可变」的架构范式集合——本域按 CNCF 版图铺开：理念、编排、网格、Serverless、可观测、存储、安全、多租户、FinOps、多云，全部 L1-L4 四层。
 
-## 文章
+## 系列结构（L1-L4 从点到面）
 
-### 待建方向
-
-| 方向 | 内容 | 规模 |
+| 层级 | 内容 | 规模 |
 |---|---|---|
-| 容器化基础 | Docker / 镜像 / 编排 | 待建 |
-| Kubernetes | Pod/Service/Deployment/StatefulSet | 待建 |
-| Service Mesh | Istio/Envoy/mTLS | 待建 |
-| Serverless | FaaS/BaaS/冷启动 | 待建 |
-| CI/CD | 流水线/镜像构建/灰度发布 | 待建 |
-| 可观测性 | Prometheus/Grafana/OpenTelemetry | 待建 |
-
-## 说明
-
-云原生是现代基础设施的核心——从容器到编排到服务网格。
+| 入门层 | [从零开始认识云原生系列](./入门层/从零开始认识云原生系列/0_系列导读-全景)——13 个方向全覆盖（理念/容器/K8s 心智/不可变/网格/Serverless/可观测/存储/安全/多租户/FinOps/多云/演进） | 14 文件 |
+| 特性层 | 4 个深挖子系列——[服务网格](./特性层/深入理解服务网格系列/index)、[Serverless](./特性层/深入理解Serverless系列/index)、[GitOps](./特性层/深入理解GitOps系列/index)、[云原生可观测](./特性层/深入理解云原生可观测系列/index) | 4 子系列 |
+| 专题层 | 2 个横向专题——[传统应用云原生改造实战](./专题层/传统应用云原生改造实战/index)、[云原生成本与可靠性实战](./专题层/云原生成本与可靠性实战/index) | 2 专题 |
+| 整合层 | [云原生架构全景与演进决策](./整合层/云原生架构全景与演进决策-深度.md)——体系收束 | 1 篇 |
 
 ## 阅读路径
 
-- 先学 Docker 基础
-- 再学 K8s 核心概念
-- 然后 Service Mesh 和可观测性
+- 新手：入门层 0-13 顺序读（每天 2-3 篇，一周建立全景）
+- 上云实践者：入门层 4/5/6 + 特性层按使用组件挑
+- 架构决策者：入门层 11-13（FinOps/多云/演进）+ 整合层
 
-## 开放问题
+## 边界（tips 互指）
 
-1. K8s 和传统部署怎么选？
-2. Service Mesh 什么时候引入？
-3. Serverless 适合什么场景？
+- Kubernetes 细节 / Docker 机制 → devops/kubernetes、devops/docker 两域（本域只讲云原生视角）
+- 微服务治理 → service-governance 子域；稳定性 → stability 子域
+- 数据库/存储产品 → data、middleware 域
+
+## 📌 数据与事实声明
+
+本页为云原生域的大纲与导航；CNCF 版图与各方向定义为 CNCF 官方公开资料，随正文落盘持续校准。

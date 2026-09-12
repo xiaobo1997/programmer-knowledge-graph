@@ -3,7 +3,7 @@ title: DispatcherServlet 分发与参数解析源码：一次请求的完整调�
 type: deep-dive
 tags: [Spring, WebMVC, DispatcherServlet, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 2445
+wordCount: 2500
 readMinutes: 8
 ---
 
@@ -12,6 +12,8 @@ readMinutes: 8
 > HTTP 请求进入 Boot 应用后到 Controller 返回，中间是一条**精确的调度流水线**：`DispatcherServlet.doDispatch` → 处理器映射 → 处理器适配器 → 参数解析链 → 方法调用 → 返回值处理链 → 内容协商渲染。这篇以 Framework 7.0 源码走读全链——参数绑定异常、404、内容协商的排障都以它为地图。
 
 > **本文核心**：doDispatch 五步——**① getHandler**（HandlerMapping 找「URL + 方法」对应的 HandlerExecutionChain，含拦截器）→ **② getHandlerAdapter**（按 Handler 类型选适配器）→ **③ invokeHandlerMethod**（参数解析器链逐个解析参数 → 反射调用 Controller 方法）→ **④ 返回值处理**（HandlerReturnValueHandler 链：@ResponseBody 走 JSON、ModelAndView 走视图）→ **⑤ 异常处理回卷**（任何环节抛异常 → HandlerExceptionResolver 链兜底）。**机制链**：请求 → Filter 链（Servlet 规范层）→ DispatcherServlet → HandlerMapping → 参数解析（注解/类型转换/校验）→ 方法 → 返回值处理 → 响应。
+
+从架构上下游看：DispatcherServlet 是「HTTP 层与业务层」的中间层——上游是网关/过滤器，下游是 Controller 方法，模块边界即「HTTP 语义 vs 业务语义」的分界线。
 
 ## 一句话摘要
 
@@ -149,6 +151,11 @@ MultipartResolver 在 DispatcherServlet 入口前置（把 multipart 请求解�
 - 💡 自定义参数解析器（登录用户注入）优于拦截器塞 attribute——类型安全且自带文档
 - 💡 决策口径：Filter vs Interceptor vs ArgumentResolver——字节流/拿到 Handler 语义/组装参数，三层各归其位
 - 💡 注解式与函数式端点的取舍：声明密度 vs 组合灵活——常规 CRUD 注解式，动态路由/轻网关语义选函数式
+
+
+## 量级分档视角
+
+10 万 QPS 以内的请求量，框架层的拦截/解析开销可忽略；千万级以上需要关注 DispatcherServlet 的 handler mapping 耗时与拦截器链长度对 P99 的影响。
 
 ## 📌 数据与事实声明
 

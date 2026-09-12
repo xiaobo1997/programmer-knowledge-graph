@@ -3,7 +3,7 @@ title: BeanFactory 体系与 Bean 定义加载：从容器的数据结构说起
 type: deep-dive
 tags: [Spring, IoC, BeanFactory, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 2558
+wordCount: 2613
 readMinutes: 8
 ---
 
@@ -148,6 +148,11 @@ flowchart LR
 - 💡 启动报同名 Bean 别开覆盖开关，按报错定位两个来源二选一处理
 - 💡 决策口径：图纸操纵（PostProcessor）只用于框架级横切，业务差异用条件装配表达
 - 💡 静态描述与运行实例分离的取舍：多一层间接多一分灵活也多一分理解成本——IoC 的这层抽象换来的是框架集成能力，值
+
+
+## 量级分档视角
+
+10 万 QPS 以内的请求量，框架层的拦截/解析开销可忽略；千万级以上需要关注 DispatcherServlet 的 handler mapping 耗时与拦截器链长度对 P99 的影响。
 
 ## 📌 数据与事实声明
 

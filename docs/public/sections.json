@@ -640,8 +640,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/7_10万QPS接口工程-深度",
         "title": "10 万 QPS 接口工程：单接口性能极限的架构设计",
-        "wordCount": 2804,
-        "readMinutes": 9,
+        "wordCount": 3067,
+        "readMinutes": 10,
         "excerpt": "单接口 10 万 QPS——商品详情页、秒杀倒计时、热点活动页的真实形态。这个量级下，一次数据库查询都是灾难、一个锁都是瓶颈、一次缓存穿透都是事故。本篇讲清楚：…",
         "tags": [
           "架构",
@@ -655,7 +655,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/16_1000服务生产级维稳与AI治理-深度",
         "title": "1000+ 服务的生产级维稳与 AI 治理：规模时代的全体系收拢",
-        "wordCount": 3047,
+        "wordCount": 3257,
         "readMinutes": 10,
         "excerpt": "1000+ 服务是什么概念？任何「逐个检查」的人工动作都不可行了——一次全链路发布涉及 30 个团队，一个根因排查要穿过 8 层依赖，一份服务清单打印出来是十几…",
         "tags": [
@@ -671,8 +671,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/4_1024张表后的多维查询大盘与全链路日志-深度",
         "title": "1024 张表之后：多维查询、缓存、大盘与全链路日志",
-        "wordCount": 3802,
-        "readMinutes": 12,
+        "wordCount": 4073,
+        "readMinutes": 13,
         "excerpt": "用户命题原话：「大盘呢，全链路日志呢，异步，缓存，分表，1024表，用户怎么查询，商家怎么查询，表怎么数据，什么维度」——分库分表解决的是写入扩展，但它立刻制造…",
         "tags": [
           "架构",
@@ -766,6 +766,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/4_不可变基础设施与声明式配置-入门",
+        "title": "不可变基础设施与声明式配置",
+        "wordCount": 3578,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：不可变基础设施 = 「服务器与部署只创建和替换，绝不原地修改」——消灭配置漂移、雪藏服务器与「这台机器特殊」的玄学；声明式配置是它的实现载体（Git…",
+        "tags": [
+          "云原生",
+          "不可变基础设施"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始稳定性系统性建设系列/4_超时与重试-入门",
         "title": "超时与重试：最容易被设错的两个参数",
         "wordCount": 2468,
@@ -776,6 +788,41 @@
           "超时",
           "重试",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/特性层/深入理解Serverless系列/3_成本模型与陷阱-深度",
+        "title": "成本模型与陷阱",
+        "wordCount": 204,
+        "readMinutes": 1,
+        "excerpt": "按量计费的精确模型/成本优化的参数级方案/绑定的迁移债务评估。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  成本优化的参数级方案  预留与混合…",
+        "tags": [
+          "Serverless"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/0_系列导读-全景",
+        "title": "从零开始认识防资损系列导读",
+        "wordCount": 941,
+        "readMinutes": 3,
+        "excerpt": "资损是资金密集型系统的「P0 事故」——服务挂了损失可用性，资损直接丢钱且往往是复利式的（错误账滚进对账、进报表、进监管报送）。这个系列按 ADR0012 工程…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "系列导读"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/0_系列导读-全景",
+        "title": "从零开始认识云原生 系列导读",
+        "wordCount": 1314,
+        "readMinutes": 4,
+        "excerpt": "本系列 14 篇（0 导读 + 13 正文），按云原生版图 13 个方向全覆盖：理念、容器、K8s 心智、不可变、网格、Serverless、可观测、存储、安全…",
+        "tags": [
+          "云原生"
         ],
         "isTest": false
       },
@@ -821,6 +868,20 @@
           "Raft",
           "实践",
           "源码"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/整合层/从零实现对账系统Demo/主篇-从零实现对账系统-整合",
+        "title": "从零实现对账系统：可运行的 Demo 全工程",
+        "wordCount": 7500,
+        "readMinutes": 20,
+        "excerpt": "这是防资损系列的整合层 Demo：把入门层的概念、特性层的机制收束成一个可运行的迷你对账系统——双通道采集、窗口核对、差错台账、告警联动，约 500 行核心代码…",
+        "tags": [
+          "防资损",
+          "对账",
+          "整合层",
+          "Demo"
         ],
         "isTest": false
       },
@@ -919,8 +980,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/8_存储兵器谱-1024张表HBase与ES选型-深度",
         "title": "存储兵器谱：1024 张表、HBase 与 ES 的选型决策",
-        "wordCount": 2488,
-        "readMinutes": 8,
+        "wordCount": 2751,
+        "readMinutes": 9,
         "excerpt": "MySQL 分表、HBase、ES 是大规模系统的三大存储兵器：MySQL 管事务与关联查询，HBase 管海量写入与宽表扫描，ES 管全文检索与多维聚合。三者…",
         "tags": [
           "架构",
@@ -995,7 +1056,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/10_大数据链路-从binlog到数仓分层-深度",
         "title": "大数据链路：从 binlog 到数仓分层的全量数据体系",
-        "wordCount": 2457,
+        "wordCount": 2716,
         "readMinutes": 8,
         "excerpt": "业务库里的每一条变更，如何在分钟级出现在数仓、报表与算法特征里？大数据链路 = 采集（binlog/CDC）→ 传输（MQ）→ 落地（ODS）→ 加工（分层建模…",
         "tags": [
@@ -1066,6 +1127,19 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/6_对账体系入门-入门",
+        "title": "对账体系入门：流水、总账与差错的三层核对",
+        "wordCount": 2781,
+        "readMinutes": 9,
+        "excerpt": "对账是防线二的主武器，但它不是一个动作而是一套体系：流水对账查「每笔对不对」，总账对账查「加起来对不对」，差错管理查「发现之后怎么办」。三层各有各的对象、频率与…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/service-versioning/入门层/从零开始认识服务分组与版本系列/4_多版本灰度机制-入门",
         "title": "多版本灰度机制：流量切版本与版本回退",
         "wordCount": 1933,
@@ -1076,6 +1150,19 @@
           "服务治理",
           "多版本灰度",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/12_多云与混合云架构-入门",
+        "title": "多云与混合云架构",
+        "wordCount": 3778,
+        "readMinutes": 12,
+        "excerpt": "一句话摘要：多云 = 同时使用多个云厂商——动机决定形态：防锁定（可迁移）、合规（数据驻留）、容灾（厂商级故障）、能力互补（各取所长）；混合云 = 云与本地的组…",
+        "tags": [
+          "云原生",
+          "多云",
+          "混合云"
         ],
         "isTest": false
       },
@@ -1095,9 +1182,33 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/专题层/云原生成本与可靠性实战/2_多租户隔离实战-深度",
+        "title": "多租户隔离实战",
+        "wordCount": 193,
+        "readMinutes": 1,
+        "excerpt": "租户开通模板/配额治理/吵闹邻居根治的编号步骤与参数表。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  配额: 三件套参数表  吵闹邻居: 根治…",
+        "tags": [
+          "云原生",
+          "多租户"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/10_多租户与资源隔离-入门",
+        "title": "多租户与资源隔离",
+        "wordCount": 3558,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：多租户 = 多个「租户」（团队/客户/业务）共享同一平台且互不干扰——隔离的维度有三：资源隔离（谁也不能吃光）、安全隔离（谁也不能越界）、故障隔离（…",
+        "tags": [
+          "云原生",
+          "多租户"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/12_发布体系-流量发布灰度与代码合并-深度",
         "title": "发布体系：流量发布、灰度发布与代码合并",
-        "wordCount": 2743,
+        "wordCount": 2959,
         "readMinutes": 9,
         "excerpt": "每一次发布都是一次潜在的故障——行业数据公开共识：相当比例的线上故障由变更引发（发布/配置/基础设施变更）。发布体系的目标不是「发布不出错」（不可能），而是「任…",
         "tags": [
@@ -1106,6 +1217,19 @@
           "灰度",
           "CI/CD",
           "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/7_防资损方法论总结-入门",
+        "title": "防资损方法论总结：从单点到体系的路线图",
+        "wordCount": 2779,
+        "readMinutes": 9,
+        "excerpt": "系列入门层收束：把「定义—矩阵—三道防线—对账体系」收成一张路线图——你现在在哪一档、下一步建什么、怎么判断建成没。这一篇是全系列的导航与自检清单。 防资损体系…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
         ],
         "isTest": false
       },
@@ -1501,6 +1625,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/5_服务网格-Sidecar与东西向治理-入门",
+        "title": "服务网格-Sidecar与东西向治理",
+        "wordCount": 3417,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：服务网格 = 把「服务间通信的重试/熔断/mTLS/灰度/观测」从业务代码里抽出来，下沉到独立的代理层（Sidecar 或 Ambient）——业务…",
+        "tags": [
+          "云原生",
+          "服务网格"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/7_服务治理架构总结-特性",
         "title": "服务治理架构总结",
         "wordCount": 1559,
@@ -1624,6 +1760,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/专题层/传统应用云原生改造实战/1_评估与选型-深度",
+        "title": "改造评估与选型",
+        "wordCount": 187,
+        "readMinutes": 1,
+        "excerpt": "应用画像四维评估(架构/状态/依赖/团队)+7R 框架+优先级矩阵。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  7R 框架: 重托管到重写 …",
+        "tags": [
+          "云原生",
+          "改造"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-system-design/专题层/高并发架构决策树/1_高并发架构决策树-专题",
         "title": "高并发架构决策树：从十万 QPS 到亿级",
         "wordCount": 1417,
@@ -1708,7 +1856,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/13_观测体系运营-ELK指标告警与值守-深度",
         "title": "观测体系运营：ELK、指标、告警与值守的常态化",
-        "wordCount": 2771,
+        "wordCount": 2970,
         "readMinutes": 9,
         "excerpt": "工具装好只是观测体系的起点——ELK 集群会膨胀、告警会泛滥、值班会疲惫。观测体系的「运营」阶段要回答：日志怎么管成本、告警怎么治理噪音、值班怎么可持续。这一篇…",
         "tags": [
@@ -1880,10 +2028,21 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/特性层/深入理解GitOps系列/2_渐进式交付与策略-深度",
+        "title": "渐进式交付与策略",
+        "wordCount": 191,
+        "readMinutes": 1,
+        "excerpt": "金丝雀/蓝绿在 GitOps 中的落地——Argo Rollouts 与指标驱动的自动发布决策。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  …",
+        "tags": [
+          "GitOps"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/3_交易链路技术决策全景-深度",
         "title": "交易链路技术决策全景：同步异步、事务选型、RPC/REST 与错误处理",
-        "wordCount": 4557,
-        "readMinutes": 14,
+        "wordCount": 4867,
+        "readMinutes": 15,
         "excerpt": "用户命题原话：「技术面感觉深度一点，并且结合业务，RT，99线，降级处理，数据治理，数据一致性，哪些是同步，哪些是异步，mq，redis，抢优惠券，哪些有事务，…",
         "tags": [
           "架构",
@@ -1899,8 +2058,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/11_接口治理与系统治理-深度",
         "title": "接口治理与系统治理：让规模不变成混乱",
-        "wordCount": 2922,
-        "readMinutes": 9,
+        "wordCount": 3150,
+        "readMinutes": 10,
         "excerpt": "服务的数量会自己长大：今天 50 个服务，明年 300 个。治理回答的问题是——规模翻倍时，协作成本是线性增长还是失控增长？接口治理管「服务对外的契约」（谁提供…",
         "tags": [
           "架构",
@@ -1952,6 +2111,51 @@
           "服务发现",
           "可观测性",
           "链路追踪"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/特性层/深入理解服务网格系列/3_控制面与多集群-深度",
+        "title": "控制面与多集群",
+        "wordCount": 190,
+        "readMinutes": 1,
+        "excerpt": "istiod 机制/证书轮换/多集群组网(多控制面vs单控制面)的架构与决策。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  多集群组网: 互信…",
+        "tags": [
+          "服务网格"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/特性层/深入理解Serverless系列/1_冷启动与并发模型-深度",
+        "title": "冷启动与并发模型",
+        "wordCount": 203,
+        "readMinutes": 1,
+        "excerpt": "冷启动分解(沙箱/代码/运行时/函数初始化)与各平台优化手段(快照/预留/微观优化)。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  快照恢复与…",
+        "tags": [
+          "Serverless"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/专题层/传统应用云原生改造实战/3_流量切换与回退-深度",
+        "title": "流量切换与回退",
+        "wordCount": 197,
+        "readMinutes": 1,
+        "excerpt": "新旧架构的流量切换策略(灰度/双跑/回退)与切换演练的完整方案。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  数据同步: 新旧双写期  回退:…",
+        "tags": [
+          "云原生",
+          "改造"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/特性层/深入理解服务网格系列/2_流量治理规则-深度",
+        "title": "流量治理规则深度",
+        "wordCount": 196,
+        "readMinutes": 1,
+        "excerpt": "VirtualService/DestinationRule 的路由韧性策略三层规则机制与实战参数。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。…",
+        "tags": [
+          "服务网格"
         ],
         "isTest": false
       },
@@ -2146,8 +2350,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/1_千万订单系统从零搭建-深度",
         "title": "千万订单系统从零搭建：分片、状态机与一致性取舍",
-        "wordCount": 3873,
-        "readMinutes": 12,
+        "wordCount": 4230,
+        "readMinutes": 13,
         "excerpt": "日订单 1000 万（峰值 3 万单/秒）是什么概念？订单表一年 36 亿行，单库单表第一天就是死路。本篇从零做这套架构：分片键怎么选、订单号怎么发、状态机怎么…",
         "tags": [
           "架构",
@@ -2257,6 +2461,30 @@
           "容量规划",
           "压测",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/专题层/传统应用云原生改造实战/2_容器化改造步骤级-深度",
+        "title": "容器化改造步骤级",
+        "wordCount": 195,
+        "readMinutes": 1,
+        "excerpt": "从配置外置到镜像构建到部署验证的编号步骤(前置/命令/验证/回退)。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  步骤: 配置外置(编号步骤)…",
+        "tags": [
+          "云原生",
+          "改造"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/2_容器化基石-镜像与运行时-入门",
+        "title": "容器化基石-镜像与运行时",
+        "wordCount": 3223,
+        "readMinutes": 10,
+        "excerpt": "一句话摘要：容器化 = 「镜像（不可变交付物）+ 运行时（标准执行环境）」的交付单位革命——OCI 标准让镜像与运行时解耦（构建一次、任何兼容运行时执行）；本篇…",
+        "tags": [
+          "云原生",
+          "容器"
         ],
         "isTest": false
       },
@@ -2386,6 +2614,56 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/1_什么是资损-入门",
+        "title": "什么是资损：定义、分类与三道防线总览",
+        "wordCount": 3043,
+        "readMinutes": 10,
+        "excerpt": "「服务挂了」损失的是可用性，「资损」丢的是钱——而且往往是复利式的：一笔错账滚进对账、滚进报表、滚进监管报送，越晚发现越难追。这一篇把「什么算资损」的边界、两大…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/5_事后追回-入门",
+        "title": "事后追回：冲正、补偿与追回的边界",
+        "wordCount": 2862,
+        "readMinutes": 9,
+        "excerpt": "防线三是兜底——但它不是「想办法把钱要回来」这么简单：每一笔追回本身也是一次资金操作，做错就是二次资损。这一篇讲追回的手段分层（冲正/补偿/人工）、自动化的授权…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/特性层/深入理解Serverless系列/2_事件驱动与状态管理-深度",
+        "title": "事件驱动与状态管理",
+        "wordCount": 200,
+        "readMinutes": 1,
+        "excerpt": "事件源绑定/幂等/状态外置/函数编排(工作流)的完整工程方案。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  幂等: 至少一次的配套  状态外置…",
+        "tags": [
+          "Serverless"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/3_事前拦截-入门",
+        "title": "事前拦截：幂等键与规则中心的落地方案",
+        "wordCount": 2858,
+        "readMinutes": 9,
+        "excerpt": "事前拦截是三道防线里唯一「不让损失发生」的一道——它由两件武器构成：幂等键（同一笔操作只执行一次）与规则中心（不合规的操作直接拒绝）。这一篇给到参数怎么配、代码…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/10_事务消息-入门",
         "title": "事务消息",
         "wordCount": 3281,
@@ -2395,6 +2673,19 @@
           "架构",
           "分布式",
           "事务"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/4_事中预警-入门",
+        "title": "事中预警：对账发现与告警止损的联动",
+        "wordCount": 2793,
+        "readMinutes": 9,
+        "excerpt": "防线二回答两个问题：错了吗（发现）和怎么办（止损）——发现的时效决定损失的规模，止损的速度决定损失是否扩散。这一篇讲「对账发现 → 告警分级 → 止损动作」的联…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
         ],
         "isTest": false
       },
@@ -2411,9 +2702,20 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/特性层/深入理解服务网格系列/1_数据面Sidecar原理-深度",
+        "title": "数据面 Sidecar 原理",
+        "wordCount": 194,
+        "readMinutes": 1,
+        "excerpt": "Envoy 的拦截机制/xDS 协议/流量镜像与转发路径的完整机制。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  流量拦截机制(iptable…",
+        "tags": [
+          "服务网格"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/9_数据面建设-实时订单大盘与后台数据大盘-深度",
         "title": "数据面建设：实时订单大盘、后台数据大盘与字段级数据治理",
-        "wordCount": 3121,
+        "wordCount": 3359,
         "readMinutes": 10,
         "excerpt": "数据面回答两个问题：「现在正不正常」（实时订单大盘）与「生意做得怎么样」（后台数据大盘/基本面）——外加一个底层支撑：字段级数据治理（哪些数据要一致、哪些不需要…",
         "tags": [
@@ -2467,6 +2769,21 @@
           "服务治理",
           "服务路由",
           "条件路由",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/4_通信协议与传输-入门",
+        "title": "通信协议与传输：TCP、HTTP/2 与长连接",
+        "wordCount": 3300,
+        "readMinutes": 12,
+        "excerpt": "RPC 框架用什么协议传输数据？TCP 原生（Dubbo 协议）、HTTP/2（gRPC/Triple）、还是 HTTP/1.1（Feign）？不同协议的性能与…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "通信协议",
           "入门层"
         ],
         "isTest": false
@@ -2651,8 +2968,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/14_稳定性武器库-SLA降级与熔断的场景化部署-深度",
         "title": "稳定性武器库：SLA、降级与熔断的场景化部署",
-        "wordCount": 2509,
-        "readMinutes": 8,
+        "wordCount": 2729,
+        "readMinutes": 9,
         "excerpt": "限流、熔断、降级、超时、重试、隔离的原理与机制，稳定性系统性建设系列已经完整讲透（七环节 + 流量防护三件套）。本篇不重复原理，讲大规模实战的武器部署地图：在千…",
         "tags": [
           "架构",
@@ -2789,6 +3106,21 @@
         "isTest": false
       },
       {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/3_序列化协议全景-入门",
+        "title": "序列化协议全景：JSON、Hessian、Protobuf 的取舍",
+        "wordCount": 3300,
+        "readMinutes": 12,
+        "excerpt": "序列化是 RPC 中「对象 ↔ 字节流」的翻译官——选对协议直接影响吞吐、延迟与跨语言能力。这篇讲主流序列化协议的设计取舍与选型决策。  本文核心：序列化协议的…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "序列化",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/rpc/特性层/深入理解序列化与协议系列/1_序列化协议深度解析-特性",
         "title": "序列化协议深度解析",
         "wordCount": 1413,
@@ -2861,8 +3193,8 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/5_业务发展与数据迁移-不停机迁移发券一致性与防资损-深度",
         "title": "业务发展与数据迁移：不停机迁移、发券一致性与防资损体系",
-        "wordCount": 4727,
-        "readMinutes": 15,
+        "wordCount": 5009,
+        "readMinutes": 16,
         "excerpt": "业务命题原文：「业务发展。技术面。数据迁移，比如优惠订单表是64，在业务发展中，不停机迁移，然后4千万优惠券，1个小时，40万用户如何发完，每个人一张，不多不少…",
         "tags": [
           "架构",
@@ -2878,7 +3210,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/2_业务线全景与分工协作-深度",
         "title": "业务线全景：几十个链路的分工、协作与数据一致性",
-        "wordCount": 3682,
+        "wordCount": 3962,
         "readMinutes": 12,
         "excerpt": "用户命题原话：「支付，下单，库存，订单，购物车，优惠券，风控，交易，等等，几十个链路的分工合作，数据一致性」——本篇就是这句话的展开：一笔交易从购物车到退款，穿…",
         "tags": [
@@ -2887,6 +3219,20 @@
           "电商交易",
           "数据一致性",
           "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/2_一个RPC调用的一生-入门",
+        "title": "一个 RPC 调用的一生：从 send 到 response 的完整旅程",
+        "wordCount": 3200,
+        "readMinutes": 11,
+        "excerpt": "调用方写下 userService.getUser(42) 一行代码——背后是代理拦截、序列化、寻址、网络传输、反序列化、方法执行、结果回传的完整链路。这篇按时…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "入门层"
         ],
         "isTest": false
       },
@@ -2992,10 +3338,24 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/stability/专题层/资损防控亿级实战/1_亿级交易对账性能-深度",
+        "title": "亿级交易对账性能：窗口、分片与存储的三档工程账",
+        "wordCount": 6600,
+        "readMinutes": 18,
+        "excerpt": "日流水一亿笔的对账，不是「把千万级的引擎调大点」——窗口再短数据就绪率就崩、分片再细调度就散、存储再省核对就慢。这一篇把亿级对账的工程账算透：每个瓶颈给量化推演…",
+        "tags": [
+          "防资损",
+          "对账",
+          "性能",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/6_亿级流量接入架构-DNS网关与防护-深度",
         "title": "亿级流量接入架构：从 DNS 到网关的流量入口设计",
-        "wordCount": 2858,
-        "readMinutes": 9,
+        "wordCount": 3140,
+        "readMinutes": 10,
         "excerpt": "亿级日 PV 的流量入口是什么形态？日均 1 亿 PV，峰值系数按 510 倍计——入口层要稳稳接住 10 万+ QPS 的瞬时洪峰，还要在机房故障时把流量引到…",
         "tags": [
           "架构",
@@ -3134,10 +3494,80 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/9_云原生安全-零信任与供应链-入门",
+        "title": "云原生安全-零信任与供应链",
+        "wordCount": 3603,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：云原生把安全边界「打散」了——没有固定边界可守，安全必须从「边界防御」转向「零信任」（永不信任、持续验证）+「供应链安全」（每个环节可验证）+「运行…",
+        "tags": [
+          "云原生",
+          "安全"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/8_云原生存储-有状态应用的持久化-入门",
+        "title": "云原生存储-有状态应用的持久化",
+        "wordCount": 3530,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：容器默认「无状态」（销毁即消失）——有状态应用上云的关键是存储解耦：PV/PVC 把「存储申请」声明化，CSI 把任意存储系统插件化接入 K8s；本…",
+        "tags": [
+          "云原生",
+          "存储"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/整合层/1_云原生架构全景与演进决策-深度",
+        "title": "云原生架构全景与演进决策",
+        "wordCount": 222,
+        "readMinutes": 1,
+        "excerpt": "全系列的体系收束——五大理念/版图分层/演进四波/反模式清单/5年视角的终局判断与决策框架。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  决策…",
+        "tags": [
+          "云原生"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/7_云原生可观测-三大支柱与OpenTelemetry-入门",
+        "title": "云原生可观测-三大支柱与OpenTelemetry",
+        "wordCount": 3673,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：可观测 = 从系统外部信号推断内部状态的能力——三大信号各司其职：Metrics（指标：知道不对了）、Logs（日志：看到细节）、Traces（链路…",
+        "tags": [
+          "云原生",
+          "可观测"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/1_云原生是什么-范式迁移-入门",
+        "title": "云原生是什么-范式迁移",
+        "wordCount": 3218,
+        "readMinutes": 10,
+        "excerpt": "一句话摘要：云原生不是「把应用搬上云」，是重构应用的构建与运行方式，让应用天生利用云的弹性、分布式与托管能力——五大理念（容器化、声明式、不可变、微服务网格、弹…",
+        "tags": [
+          "云原生"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/13_云原生演进路线-迁移策略与反模式-入门",
+        "title": "云原生演进路线-迁移策略与反模式",
+        "wordCount": 3810,
+        "readMinutes": 12,
+        "excerpt": "一句话摘要：云原生迁移不是「重写」，是分阶段的渐进演进——按「容器化 → 声明式 → 弹性化 → 深度云原生」四波推进，每波有明确的准入条件与退出标准；最大的风…",
+        "tags": [
+          "云原生",
+          "演进"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/15_早高峰与流量突发治理-深度",
         "title": "早高峰与流量突发治理：可预测与不可预测的洪峰应对",
-        "wordCount": 2854,
-        "readMinutes": 9,
+        "wordCount": 3091,
+        "readMinutes": 10,
         "excerpt": "流量洪峰分两种：早高峰（每天 810 点定时脉冲，可预测、可预案、可预热）与流量突发（热搜/裂变/攻击，不可预测、不可预案、只能靠弹性与纪律）。两者的架构应对完…",
         "tags": [
           "架构",
@@ -3165,6 +3595,20 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/stability/特性层/深入理解资损防控机制系列/4_止损与应急冻结-深度",
+        "title": "止损与应急冻结：自动化执行的授权边界",
+        "wordCount": 6200,
+        "readMinutes": 17,
+        "excerpt": "止损是防资损里「手起刀落」的动作：冻结渠道、暂停场景、切换开关——每一下都在止血，每一下也可能误伤无辜交易。自动化止损的难点从来不是「怎么停」，而是「谁授权停、…",
+        "tags": [
+          "防资损",
+          "止损",
+          "稳定性",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/cluster-fault-tolerance/入门层/从零开始认识集群容错系列/5_重试与幂等-入门",
         "title": "重试与幂等：自动重试的安全前提",
         "wordCount": 2082,
@@ -3175,6 +3619,21 @@
           "服务治理",
           "集群容错",
           "幂等",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/12_主流RPC框架对比-入门",
+        "title": "主流 RPC 框架对比：Dubbo、gRPC、Thrift、Spring Cloud",
+        "wordCount": 3200,
+        "readMinutes": 11,
+        "excerpt": "本文核心：四大框架按「语言生态 × 协议 × 治理面」三轴区分：Dubbo——Java 生态/多协议(Triple)/治理面最完善/国内微服务标配；gRPC——…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "框架对比",
           "入门层"
         ],
         "isTest": false
@@ -3330,6 +3789,89 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/stability/特性层/深入理解资损防控机制系列/1_准实时对账引擎-深度",
+        "title": "准实时对账引擎：分钟级发现资损的完整实现",
+        "wordCount": 4138,
+        "readMinutes": 13,
+        "excerpt": "「分钟级发现一笔错账」背后是一条完整的工程链：binlog 双通道采集 → 滚动窗口组装 → 逐键核对 → 差错路由。窗口设 5 分钟还是 15 分钟？核对任务…",
+        "tags": [
+          "防资损",
+          "对账",
+          "稳定性",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/2_资损场景全景与矩阵-入门",
+        "title": "资损场景全景与资损矩阵：每个场景都要有防线覆盖",
+        "wordCount": 2725,
+        "readMinutes": 9,
+        "excerpt": "「防资损做得好不好」不是一个感觉题，是一道覆盖题：把全部资金场景列出来，逐格回答「这条防线接得住吗」——接不住的格子就是定时炸弹。资损矩阵是防资损体系的底座设计…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/专题层/资损防控亿级实战/3_资损与可用性的取舍-深度",
+        "title": "资损防控与可用性的取舍：当「拦住」与「跑通」打架",
+        "wordCount": 6300,
+        "readMinutes": 17,
+        "excerpt": "防资损的每一个组件都在消耗可用性：规则拦截可能误杀（可用性损失）、对账旁路要资源（容量挤占）、止损冻结直接停交易（可用性重锤）。资损防控与可用性不是两个目标，是…",
+        "tags": [
+          "防资损",
+          "稳定性",
+          "架构取舍",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/特性层/深入理解资损防控机制系列/2_资损规则中心-深度",
+        "title": "资损规则中心：决策引擎与灰度影子机制",
+        "wordCount": 3537,
+        "readMinutes": 11,
+        "excerpt": "规则中心是事前拦截的「大脑」：百千条规则在 50ms 内完成决策，规则变更要灰度、要影子对比、要秒级回退——它同时是一个决策引擎、一个发布系统、一个风控级的变更…",
+        "tags": [
+          "防资损",
+          "规则引擎",
+          "稳定性",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/特性层/深入理解资损防控机制系列/3_资损监控大盘与告警分级-深度",
+        "title": "资损监控大盘与告警分级：让资损状态一眼可见",
+        "wordCount": 6200,
+        "readMinutes": 17,
+        "excerpt": "对账引擎产出数据，规则中心拦截请求——但「现在资损状态健康吗」这个问题需要一面墙来回答。资损大盘不是把指标画上去就完了：指标选错，大盘就是装饰品；告警分错级，P…",
+        "tags": [
+          "防资损",
+          "可观测性",
+          "稳定性",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/stability/专题层/资损防控亿级实战/2_资损预案演练与红蓝对抗-深度",
+        "title": "资损预案演练与红蓝对抗：防线有效性的验证方法",
+        "wordCount": 6400,
+        "readMinutes": 18,
+        "excerpt": "防线上线不等于防线有效——规则配置错了、对账断流了、止损开关失灵了，这些「防线失效」在真实资损发生前完全不可见。演练是唯一的验证手段：注入一次受控的假差错，检验…",
+        "tags": [
+          "防资损",
+          "混沌工程",
+          "演练",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/rest/入门层/从零开始认识REST设计系列/3_资源建模与URI设计-入门",
         "title": "资源建模与URI设计",
         "wordCount": 3019,
@@ -3414,6 +3956,17 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/特性层/深入理解GitOps系列/1_ArgoCD机制与漂移治理-深度",
+        "title": "Argo CD 机制与漂移治理",
+        "wordCount": 190,
+        "readMinutes": 1,
+        "excerpt": "Argo CD 的同步机制/健康评估/漂移检测与自动纠偏/ApplicationSet 的规模化。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。 …",
+        "tags": [
+          "GitOps"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/8_AT自动补偿模式-入门",
         "title": "AT自动补偿模式",
         "wordCount": 3391,
@@ -3482,6 +4035,30 @@
         "isTest": false
       },
       {
+        "file": "/architecture/cloud-native/专题层/云原生成本与可靠性实战/1_FinOps落地步骤级-深度",
+        "title": "FinOps 落地步骤级",
+        "wordCount": 194,
+        "readMinutes": 1,
+        "excerpt": "FinOps 三阶段的编号落地步骤(标签门禁/看板/右规格/预算)与工具配置。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  阶段2: 看板与归…",
+        "tags": [
+          "FinOps"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/11_FinOps云成本治理-入门",
+        "title": "FinOps云成本治理",
+        "wordCount": 3574,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：FinOps = 让「云成本」成为可归集、可归因、可优化的运营学科——三阶段闭环（可见性：谁花了多少 → 优化：怎么花更少 → 运营：持续治理）；云…",
+        "tags": [
+          "云原生",
+          "FinOps",
+          "成本"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/rest/入门层/从零开始认识REST设计系列/2_HTTP语义用对-入门",
         "title": "HTTP语义用对",
         "wordCount": 3175,
@@ -3491,6 +4068,34 @@
           "架构",
           "REST",
           "HTTP"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/5_IO模型与Netty-入门",
+        "title": "IO 模型与 Netty：RPC 通信的引擎",
+        "wordCount": 3300,
+        "readMinutes": 12,
+        "excerpt": "RPC 框架为什么都基于 Netty？因为 Netty 封装了 Java NIO 的复杂 API，提供了事件驱动 + 非阻塞 IO 的高性能通信能力——一个线程…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "Netty",
+          "IO 模型",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/3_Kubernetes心智模型-声明式与控制循环-入门",
+        "title": "Kubernetes心智模型-声明式与控制循环",
+        "wordCount": 3415,
+        "readMinutes": 11,
+        "excerpt": "一句话摘要：K8s 的全部行为可以浓缩为两大机制——声明式 API（你描述期望终态，不描述步骤）+ 控制循环（控制器持续对比「期望态 vs 实际态」并收敛差距）…",
+        "tags": [
+          "云原生",
+          "Kubernetes"
         ],
         "isTest": false
       },
@@ -3571,6 +4176,96 @@
         "isTest": false
       },
       {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/6_服务发现与注册中心-入门",
+        "title": "RPC 的服务发现：调用方视角的地址解析",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 调用方视角的服务发现——「我要调 orderservice，地址列表从哪来、变了怎么感知、挂了怎么办」。机制链：启动订阅 → 首拉全量 → 本…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "服务发现",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/8_服务路由与灰度-入门",
+        "title": "RPC 的服务路由与灰度：定向分发的调用方语义",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 的路由 = 调用方按规则过滤地址列表的子集（在负载均衡之前缩小候选集）——条件路由（按调用方/参数/标签匹配）与标签路由（实例打标 + 按标筛…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "路由",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/7_负载均衡策略-入门",
+        "title": "RPC 的负载均衡策略：调用方视角的选择算法",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 客户端的负载均衡——「从地址列表中选一个实例发起调用」。机制链：地址列表（服务发现产出）→ 负载均衡策略（随机/轮询/加权/一致性哈希/最少活…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "负载均衡",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/9_集群容错与重试-入门",
+        "title": "RPC 的集群容错与重试：失败后的调用方语义",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 调用方的容错语义——failover（失败换节点重试：幂等读场景）、failfast（快速失败不重试：写场景防重复）、failsafe（失败忽…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "容错",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/11_可观测与链路追踪-入门",
+        "title": "RPC 的可观测与链路追踪：调用链的透明化",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 调用的三根可观测支柱——指标（QPS/RT/错误率的 Red 方法）、日志（traceId 串联跨服务日志）、链路追踪（Span 树形结构可视…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "可观测",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/10_限流熔断降级-入门",
+        "title": "RPC 的限流熔断降级：调用链上的稳定性三件套",
+        "wordCount": 3000,
+        "readMinutes": 10,
+        "excerpt": "本文核心：RPC 场景下的稳定性三件套——限流（provider 侧自保：本机容量超限时快速拒绝）、熔断（consumer 侧自保：下游持续失败时停止调用走降级…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "稳定性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/rpc/专题层/RPC框架选型决策/1_RPC框架选型决策-专题",
         "title": "RPC 框架选型决策",
         "wordCount": 1210,
@@ -3582,6 +4277,20 @@
           "选型",
           "Dubbo",
           "gRPC"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/1_RPC是什么与为什么需要-入门",
+        "title": "RPC 是什么：从本地调用到远程调用的抽象",
+        "wordCount": 3200,
+        "readMinutes": 11,
+        "excerpt": "本文核心：RPC 的本质是把远程调用伪装成本地调用——屏蔽网络通信/序列化/寻址的复杂度，让开发者像调本地方法一样调远程服务。机制链：本地调用（进程内方法栈）→…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "入门层"
         ],
         "isTest": false
       },
@@ -3607,6 +4316,21 @@
         "readMinutes": 6,
         "excerpt": "📖 本系列共 14 篇（0导读 + 13 正文），覆盖 RPC 机制整个知识面：认知心智、序列化传输、发现路由、容错治理、对比演进。  本篇是第 0 篇导读：…",
         "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/13_RPC协议与选型-入门",
+        "title": "RPC 协议与选型：dubbo://、triple:// 与技术决策",
+        "wordCount": 3200,
+        "readMinutes": 11,
+        "excerpt": "全系列收束篇：RPC 协议（dubbo:///triple:///grpc://）是 Dubbo 3.x 的协议矩阵——从私有 TCP 到 Triple（HTT…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "协议选型",
+          "入门层"
+        ],
         "isTest": false
       },
       {
@@ -3649,6 +4373,18 @@
           "Seata",
           "AT",
           "一致性"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/6_Serverless与FaaS-从常驻到按需-入门",
+        "title": "Serverless与FaaS-从常驻到按需",
+        "wordCount": 3698,
+        "readMinutes": 12,
+        "excerpt": "一句话摘要：Serverless 把「常驻服务」换成「事件触发的按需执行」——无服务器管理、按调用计费、自动弹性到零；FaaS（函数即服务）是它的函数形态。它用…",
+        "tags": [
+          "云原生",
+          "Serverless"
         ],
         "isTest": false
       },
@@ -3732,7 +4468,7 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解AOP与代理/2_Transactional事务代理源码-深度",
         "title": "@Transactional 事务代理源码：拦截器、传播行为与回滚判定",
-        "wordCount": 2871,
+        "wordCount": 3027,
         "readMinutes": 9,
         "excerpt": "@Transactional 是 AOP 的第一应用：事务拦截器截住方法 → 按「传播行为 + 隔离级别」获取连接开事务 → 放行业务 → 按异常判定提交或回滚…",
         "tags": [
@@ -3759,8 +4495,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/31_编译与执行-入门",
         "title": "编译与执行",
-        "wordCount": 3423,
-        "readMinutes": 11,
+        "wordCount": 3770,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：Java 的「编译 + 执行」是双引擎——javac 前端编译（源码→字节码，做语法糖脱糖）+ JVM 后端执行（解释器逐条跑 + JIT 热点编译…",
         "tags": [
           "Java",
@@ -3784,8 +4520,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/23_并发工具类-入门",
         "title": "并发工具类",
-        "wordCount": 2937,
-        "readMinutes": 9,
+        "wordCount": 3289,
+        "readMinutes": 10,
         "excerpt": "一句话摘要：JUC 的同步工具家族按「等什么」分工——CountDownLatch 等固定次数的事件（计数归零开闸）、CyclicBarrier 等一组线程到齐…",
         "tags": [
           "Java",
@@ -3796,8 +4532,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/16_并发集合与线程安全容器-入门",
         "title": "并发集合与线程安全容器",
-        "wordCount": 3195,
-        "readMinutes": 10,
+        "wordCount": 3539,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：并发容器的演进史是一条「锁粒度越来越细、读越来越无锁」的路——Hashtable 全表锁 → Collections.synchronized 包装…",
         "tags": [
           "Java",
@@ -3860,7 +4596,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/14_插件机制与拦截器链-入门",
         "title": "插件机制与拦截器链",
-        "wordCount": null,
+        "wordCount": 121,
         "readMinutes": 1,
         "excerpt": "MybatisPlusInterceptor/InnerInterceptor 与多租户动态表名。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。 …",
         "tags": [
@@ -3936,8 +4672,8 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解AOP与代理/1_代理创建与切点匹配源码-深度",
         "title": "代理创建与切点匹配源码：从注解切面到代理对象",
-        "wordCount": 2661,
-        "readMinutes": 8,
+        "wordCount": 2825,
+        "readMinutes": 9,
         "excerpt": "@Aspect 一标、@Around 一写，方法就被拦截了——中间发生了什么？这条链路是「自动代理创建器在生命周期尾段扫描每个 Bean → 切点匹配 → 选中…",
         "tags": [
           "Spring",
@@ -3951,7 +4687,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/11_代码生成器与MyBatisX-入门",
         "title": "代码生成器与 MyBatisX",
-        "wordCount": null,
+        "wordCount": 123,
         "readMinutes": 1,
         "excerpt": "AutoGenerator、模板与 IDEA 插件的工程规范。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  模板定制  MyBatisX 插件…",
         "tags": [
@@ -3990,8 +4726,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/27_对象的一生-入门",
         "title": "对象的一生",
-        "wordCount": 3378,
-        "readMinutes": 11,
+        "wordCount": 3730,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：new Object() 的完整旅程——类加载检查 → 堆分配（指针碰撞/TLAB）→ 零值初始化 → 构造器 → 对象头（Mark Word + …",
         "tags": [
           "Java",
@@ -4002,7 +4738,7 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/3_对象与类-入门",
         "title": "对象与类",
-        "wordCount": 3182,
+        "wordCount": 3314,
         "readMinutes": 10,
         "excerpt": "一句话摘要：类是模板、对象是实例——但工程上真正要建立的是内存直觉：对象在堆上、引用在栈上、类元数据在方法区；构造器/this/static/封装纪律都长在这条…",
         "tags": [
@@ -4040,8 +4776,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/8_泛型-入门",
         "title": "泛型",
-        "wordCount": 3249,
-        "readMinutes": 10,
+        "wordCount": 3592,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：泛型 = 编译期类型检查的参数化类型——但 Java 泛型是「编译期温柔、运行期不存在」的类型擦除实现：List<String 与 List<Int…",
         "tags": [
           "Java"
@@ -4080,7 +4816,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/7_分页插件-入门",
         "title": "分页插件",
-        "wordCount": null,
+        "wordCount": 125,
         "readMinutes": 1,
         "excerpt": "PaginationInnerInterceptor/Page 对象与物理分页原理。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  物理分页的 …",
         "tags": [
@@ -4131,8 +4867,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/11_集合框架总览-入门",
         "title": "集合框架总览",
-        "wordCount": 2825,
-        "readMinutes": 9,
+        "wordCount": 3180,
+        "readMinutes": 10,
         "excerpt": "一句话摘要：集合框架 = 「 Collection（单值）与 Map（键值）两大根系 + 迭代器统一遍历 + 快速失败/安全失败两种并发姿态」——五大接口（Li…",
         "tags": [
           "Java",
@@ -4143,8 +4879,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/4_继承与多态-入门",
         "title": "继承与多态",
-        "wordCount": 3268,
-        "readMinutes": 10,
+        "wordCount": 3402,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：继承 = 「isa」的机制复用与类型统一，多态 = 同一调用在运行期落到不同实现（动态绑定）——它是框架扩展点（模板方法/策略/回调）的全部机制基础…",
         "tags": [
           "Java"
@@ -4169,8 +4905,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/5_接口与抽象类-入门",
         "title": "接口与抽象类",
-        "wordCount": 3134,
-        "readMinutes": 10,
+        "wordCount": 3489,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：接口是「纯行为契约」（可多实现、无状态），抽象类是「半成品骨架」（单继承、带状态与实现）——Java 8 之后接口长出 default/static…",
         "tags": [
           "Java"
@@ -4206,8 +4942,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/28_垃圾回收算法-入门",
         "title": "垃圾回收算法",
-        "wordCount": 3417,
-        "readMinutes": 11,
+        "wordCount": 3767,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：GC 的全部算法只有三种基本款——标记清除（快但有碎片）、复制（无碎片但浪费一半空间、只适合存活率低的新生代）、标记整理（无碎片但要搬移，适合老年代…",
         "tags": [
           "Java",
@@ -4219,7 +4955,7 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解WebMVC/2_拦截器与异常处理源码-深度",
         "title": "拦截器与异常处理源码：调度链上的治理位",
-        "wordCount": 2432,
+        "wordCount": 2487,
         "readMinutes": 8,
         "excerpt": "拦截器（Interceptor）与全局异常处理（@ControllerAdvice）是 Web 层治理的两大挂载位——一个截获正常流转的请求做横切，一个兜住全链…",
         "tags": [
@@ -4250,7 +4986,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/9_乐观锁-入门",
         "title": "乐观锁插件",
-        "wordCount": null,
+        "wordCount": 119,
         "readMinutes": 1,
         "excerpt": "@Version、OptimisticLockerInnerInterceptor 与重试语义。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  …",
         "tags": [
@@ -4262,8 +4998,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/30_类加载机制-入门",
         "title": "类加载机制",
-        "wordCount": 3707,
-        "readMinutes": 12,
+        "wordCount": 4064,
+        "readMinutes": 13,
         "excerpt": "一句话摘要：类加载 = 把 class 文件变成可执行的方法区结构——五阶段（加载 → 验证 → 准备 → 解析 → 初始化）+ 双亲委派（加载请求逐级上交：A…",
         "tags": [
           "Java",
@@ -4330,7 +5066,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/8_逻辑删除-入门",
         "title": "逻辑删除",
-        "wordCount": null,
+        "wordCount": 133,
         "readMinutes": 1,
         "excerpt": "@TableLogic、全局配置、查询自动过滤与注意点。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  查询自动拼接过滤  唯一索引与逻辑删除的…",
         "tags": [
@@ -4357,8 +5093,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/10_枚举与金额精度-入门",
         "title": "枚举与金额精度",
-        "wordCount": 3482,
-        "readMinutes": 11,
+        "wordCount": 3844,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：两个「金融级代码」的地基件——枚举（enum）是类型安全常量的终极形态（编译期穷举 + 单例天然保证 + 自带行为），BigDecimal 是金额的…",
         "tags": [
           "Java",
@@ -4516,10 +5252,10 @@
       },
       {
         "file": "/backend/java/ecosystem/spring-boot/专题层/SpringBoot数据与事务深度/1_事务失效场景排查手册-深度",
-        "title": "事务失效场景排查手册：从清单背诵到机制推演",
-        "wordCount": 2703,
-        "readMinutes": 8,
-        "excerpt": "「事务没生效」是数据一致性的第一杀手。特性层《@Transactional 事务代理源码》给了两个机制事实（拦截器在方法外层 + ThreadLocal 连接租…",
+        "title": "事务失效场景排查手册：八场景逐个击穿（本质/写法/坑）",
+        "wordCount": 5377,
+        "readMinutes": 17,
+        "excerpt": "「事务没生效」是数据一致性的第一杀手。特性层《@Transactional 事务代理源码》给了两个机制事实——本篇把八类失效场景逐个拆到本质：每个场景都按固定五…",
         "tags": [
           "Spring Boot",
           "事务",
@@ -4559,7 +5295,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/5_条件构造器Wrapper体系-入门",
         "title": "条件构造器 Wrapper 体系",
-        "wordCount": null,
+        "wordCount": 122,
         "readMinutes": 1,
         "excerpt": "QueryWrapper/UpdateWrapper/Lambda 版与防注入原理。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  Query …",
         "tags": [
@@ -4612,8 +5348,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/35_网络编程与HTTP-入门",
         "title": "网络编程与HTTP",
-        "wordCount": 3328,
-        "readMinutes": 10,
+        "wordCount": 3678,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：Java 网络编程两层——Socket 层（TCP/UDP 的原始通信原语：连接/读写/关闭）与应用层协议（HTTP 客户端）；现代 Java 的 …",
         "tags": [
           "Java",
@@ -4652,8 +5388,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/25_线程池与异步编程-入门",
         "title": "线程池与异步编程",
-        "wordCount": 3327,
-        "readMinutes": 10,
+        "wordCount": 3692,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：线程池 = 「线程复用 + 数量管控 + 队列缓冲 + 拒绝策略」的四件套治理——7 参数（core/max/keepAlive/队列/工厂/拒绝策…",
         "tags": [
           "Java",
@@ -4665,8 +5401,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/17_线程基础与生命周期-入门",
         "title": "线程基础与生命周期",
-        "wordCount": 3211,
-        "readMinutes": 10,
+        "wordCount": 3601,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：线程 = 调度与执行的独立单位——创建四种方式（本质只有 Runnable/Callable 两种任务形态）+ 六状态机（NEW→RUNNABLE→…",
         "tags": [
           "Java",
@@ -4677,8 +5413,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/18_线程协作与阻塞队列-入门",
         "title": "线程协作与阻塞队列",
-        "wordCount": 3034,
-        "readMinutes": 9,
+        "wordCount": 3385,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：线程协作的两代机制——wait/notify（必须在 synchronized 内、wait 释放锁、notify 随机唤醒，条件必须用 while…",
         "tags": [
           "Java",
@@ -4736,8 +5472,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/39_新日期时间API-入门",
         "title": "新日期时间API",
-        "wordCount": 3264,
-        "readMinutes": 10,
+        "wordCount": 3619,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：java.time（JSR310）是对老 Date/Calendar 的全面替代——不可变设计 + 职责分离（LocalDate 只管日期/Loca…",
         "tags": [
           "Java",
@@ -4817,8 +5553,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/7_异常体系与最佳实践-入门",
         "title": "异常体系与最佳实践",
-        "wordCount": 3115,
-        "readMinutes": 10,
+        "wordCount": 3464,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：异常体系是一张「失败语义的分类表」——Throwable 分 Error（JVM 级不可救）与 Exception；Exception 分 chec…",
         "tags": [
           "Java"
@@ -4844,7 +5580,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/15_与MyBatisJPA选型-入门",
         "title": "与 MyBatis/JPA/Spring Data 选型",
-        "wordCount": null,
+        "wordCount": 138,
         "readMinutes": 1,
         "excerpt": "单表 CRUD vs 复杂查询、团队习惯与组合使用边界。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  单表增强的边界  复杂查询的归宿  选型…",
         "tags": [
@@ -4871,8 +5607,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/26_运行时内存区域-入门",
         "title": "运行时内存区域",
-        "wordCount": 3185,
-        "readMinutes": 10,
+        "wordCount": 3538,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：JVM 运行时数据区按「线程私有 vs 线程共享」二分——私有区：程序计数器、虚拟机栈、本地方法栈（随线程生灭）；共享区：堆（对象实例）、方法区/元…",
         "tags": [
           "Java",
@@ -4883,7 +5619,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/6_注解映射与主键策略-入门",
         "title": "注解映射与主键策略",
-        "wordCount": null,
+        "wordCount": 134,
         "readMinutes": 1,
         "excerpt": "@TableName/@TableId/@TableField 与雪花UUID自增的取舍。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  主键策…",
         "tags": [
@@ -4895,8 +5631,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/9_注解与反射-入门",
         "title": "注解与反射",
-        "wordCount": 3230,
-        "readMinutes": 10,
+        "wordCount": 3582,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：注解是「贴在代码上的元数据」，反射是「运行期打开类的能力」——两者组合（注解标记 + 反射读取 + 动态代理增强）构成了整个 Java 框架世界的机…",
         "tags": [
           "Java"
@@ -4931,7 +5667,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/10_字段自动填充-入门",
         "title": "字段自动填充",
-        "wordCount": null,
+        "wordCount": 119,
         "readMinutes": 1,
         "excerpt": "MetaObjectHandler 与 createtime/updatetime 审计字段。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  i…",
         "tags": [
@@ -4954,19 +5690,23 @@
       },
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/6_字符串与常量池-入门",
-        "title": "字符串与常量池",
-        "wordCount": 3189,
-        "readMinutes": 10,
-        "excerpt": "一句话摘要：String 的不可变设计（final char/byte 数组 + 无暴露修改口）是字符串一切行为的根源——安全（作 Map 键/常量池复用）、性…",
+        "title": "字符串与常量池：不可变设计的代价与红利",
+        "wordCount": 2644,
+        "readMinutes": 8,
+        "excerpt": "一句话摘要：String 的不可变设计（final 类 + final 数组 + 无修改口）是字符串一切行为的总根源——安全（防 TOCTOU）、性能（哈希缓存…",
         "tags": [
-          "Java"
+          "Java",
+          "String",
+          "常量池",
+          "不可变",
+          "L1入门层"
         ],
         "isTest": false
       },
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/12_自定义SQL与XML混用-入门",
         "title": "自定义 SQL 与 XML 混用",
-        "wordCount": null,
+        "wordCount": 126,
         "readMinutes": 1,
         "excerpt": "@Select 注解、XML 文件与 ew.customSqlSegment 传参。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  与 Base…",
         "tags": [
@@ -5035,8 +5775,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/22_AQS与JUC锁-入门",
         "title": "AQS与JUC锁",
-        "wordCount": 3070,
-        "readMinutes": 10,
+        "wordCount": 3413,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：AQS（AbstractQueuedSynchronizer）= JUC 锁与同步器的公共骨架——一个 volatile int state（同步状…",
         "tags": [
           "Java",
@@ -5075,7 +5815,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/3_BaseMapper通用CRUD-入门",
         "title": "BaseMapper 通用 CRUD",
-        "wordCount": null,
+        "wordCount": 119,
         "readMinutes": 1,
         "excerpt": "select/insert/update/delete 全家桶、参数语义与返回值。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  insert …",
         "tags": [
@@ -5087,8 +5827,8 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解IoC容器/2_Bean生命周期与三级缓存源码-深度",
         "title": "Bean 生命周期与三级缓存源码：doCreateBean 全流程与循环依赖解析",
-        "wordCount": 2772,
-        "readMinutes": 9,
+        "wordCount": 4098,
+        "readMinutes": 13,
         "excerpt": "「Bean 怎么从图纸变成对象、循环依赖为什么能解、@Autowired 的注入发生在哪一毫秒」——答案全在 doCreateBean 这一个方法里。这篇以 F…",
         "tags": [
           "Spring",
@@ -5117,7 +5857,7 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解IoC容器/1_BeanFactory体系与Bean定义加载-深度",
         "title": "BeanFactory 体系与 Bean 定义加载：从容器的数据结构说起",
-        "wordCount": 2558,
+        "wordCount": 2613,
         "readMinutes": 8,
         "excerpt": "IoC 容器不是黑盒，是「一张 BeanDefinition 注册表 + 一套按需创建的工厂体系」。这篇从 BeanFactory 接口层级下到 Default…",
         "tags": [
@@ -5132,8 +5872,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/21_CAS与原子类-入门",
         "title": "CAS与原子类",
-        "wordCount": 3022,
-        "readMinutes": 9,
+        "wordCount": 3369,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：CAS（CompareAndSwap）= 「值还是我读到的旧值就换成新值，否则失败重试」的 CPU 原子指令——无锁并发的基石：Atomic 家族（…",
         "tags": [
           "Java",
@@ -5160,7 +5900,7 @@
       {
         "file": "/backend/java/ecosystem/spring-boot/特性层/深入理解WebMVC/1_DispatcherServlet分发与参数解析源码-深度",
         "title": "DispatcherServlet 分发与参数解析源码：一次请求的完整调度",
-        "wordCount": 2445,
+        "wordCount": 2500,
         "readMinutes": 8,
         "excerpt": "HTTP 请求进入 Boot 应用后到 Controller 返回，中间是一条精确的调度流水线：DispatcherServlet.doDispatch → 处…",
         "tags": [
@@ -5175,7 +5915,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/13_版本演进-入门",
         "title": "Dubbo 版本演进",
-        "wordCount": null,
+        "wordCount": 143,
         "readMinutes": 1,
         "excerpt": "2.x 接口级 → 3.0 应用级服务发现 + Triple 协议——演进的动因与迁移。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  应用级服…",
         "tags": [
@@ -5187,7 +5927,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/5_服务暴露-入门",
         "title": "Dubbo 服务暴露",
-        "wordCount": null,
+        "wordCount": 145,
         "readMinutes": 1,
         "excerpt": "export 流程全解——本地暴露/远程暴露/注册中心登记的完整时序。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  本地暴露 injvm  远…",
         "tags": [
@@ -5198,7 +5938,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/6_服务引用-入门",
         "title": "Dubbo 服务引用",
-        "wordCount": null,
+        "wordCount": 146,
         "readMinutes": 1,
         "excerpt": "refer 流程——代理生成/订阅注册中心/集群Invoker 的组装。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  订阅注册中心与地址通知 …",
         "tags": [
@@ -5209,7 +5949,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/12_服务治理-入门",
         "title": "Dubbo 服务治理",
-        "wordCount": null,
+        "wordCount": 142,
         "readMinutes": 1,
         "excerpt": "Admin 控制台/限流降级/条件路由/灰度——治理体系的全景。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  动态配置与限流降级  Dubbo…",
         "tags": [
@@ -5221,7 +5961,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/10_负载均衡-入门",
         "title": "Dubbo 负载均衡",
-        "wordCount": null,
+        "wordCount": 157,
         "readMinutes": 1,
         "excerpt": "内置策略全景——随机/轮询/最少活跃/一致性哈希与平滑加权。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  平滑加权轮询的实现  最少活跃优先的…",
         "tags": [
@@ -5232,7 +5972,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/3_核心概念与架构-入门",
         "title": "Dubbo 核心概念与架构",
-        "wordCount": null,
+        "wordCount": 141,
         "readMinutes": 1,
         "excerpt": "Provider/Consumer/Registry/Monitor 五角色与调用链路——Dubbo 的架构总图。  本文为系列规划大纲页：篇目结构已定，正文按…",
         "tags": [
@@ -5244,7 +5984,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/11_集群容错-入门",
         "title": "Dubbo 集群容错",
-        "wordCount": null,
+        "wordCount": 131,
         "readMinutes": 1,
         "excerpt": "Cluster/Failover/Failfast/Failsafe/Failback/Forking——失败兜底策略谱系。  本文为系列规划大纲页：篇目结构已…",
         "tags": [
@@ -5255,7 +5995,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/2_快速上手-入门",
         "title": "Dubbo 快速上手",
-        "wordCount": null,
+        "wordCount": 130,
         "readMinutes": 1,
         "excerpt": "第一个 Dubbo 服务 + Spring Boot 集成——Provider/Consumer 一个工程跑通。  本文为系列规划大纲页：篇目结构已定，正文按下…",
         "tags": [
@@ -5267,7 +6007,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/1_Dubbo是什么与生态全景-入门",
         "title": "Dubbo 是什么与生态全景",
-        "wordCount": null,
+        "wordCount": 148,
         "readMinutes": 1,
         "excerpt": "RPC 定位 / 微服务生态 / Apache 顶级项目——Dubbo 在Java 系统里承担什么角色。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落…",
         "tags": [
@@ -5279,7 +6019,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/8_通信协议-入门",
         "title": "Dubbo 通信协议",
-        "wordCount": null,
+        "wordCount": 125,
         "readMinutes": 1,
         "excerpt": "dubbo:// 与 triple://——协议头/编解码/HTTP2 化的演进。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  telnet …",
         "tags": [
@@ -5300,7 +6040,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/9_线程模型-入门",
         "title": "Dubbo 线程模型",
-        "wordCount": null,
+        "wordCount": 153,
         "readMinutes": 1,
         "excerpt": "Netty IO 线程 + 业务线程池——派发策略与线程池隔离。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  Dispatcher 派发策略 …",
         "tags": [
@@ -5312,7 +6052,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/7_注册中心集成-入门",
         "title": "Dubbo 注册中心集成",
-        "wordCount": null,
+        "wordCount": 140,
         "readMinutes": 1,
         "excerpt": "Nacos/ZooKeeper 的注册发现——URL 订阅/通知/地址缓存与容灾。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  Nacos 与…",
         "tags": [
@@ -5324,7 +6064,7 @@
       {
         "file": "/backend/java/ecosystem/dubbo/入门层/从零开始认识Dubbo系列/4_SPI扩展机制-入门",
         "title": "Dubbo SPI 扩展机制",
-        "wordCount": null,
+        "wordCount": 140,
         "readMinutes": 1,
         "excerpt": "Dubbo 可扩展性基石——@SPI/@Adaptive/@Activate 与扩展加载流程。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  D…",
         "tags": [
@@ -5381,8 +6121,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/29_GC收集器全景-入门",
         "title": "GC收集器全景",
-        "wordCount": 3261,
-        "readMinutes": 10,
+        "wordCount": 3621,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：收集器演进 = 停顿时间的四代压缩——Serial（秒级全停）→ Parallel（吞吐优先多线程）→ CMS（并发标记但碎片致命，已死）→ G1（…",
         "tags": [
           "Java",
@@ -5423,7 +6163,7 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/13_HashMap原理与演进-入门",
         "title": "HashMap原理与演进",
-        "wordCount": 3189,
+        "wordCount": 3321,
         "readMinutes": 10,
         "excerpt": "一句话摘要：HashMap = 「哈希定位 + 链地址法解决冲突 + 8 树化 6 退化 + 2 倍扩容重哈希」的工程杰作——扰动函数让高位参与散列、容量恒为 …",
         "tags": [
@@ -5436,8 +6176,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/33_IO体系与序列化-入门",
         "title": "IO体系与序列化",
-        "wordCount": 3270,
-        "readMinutes": 10,
+        "wordCount": 3624,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：Java 传统 IO 是一座「装饰器搭建的塔」——字节流（InputStream/OutputStream）与字符流（Reader/Writer）两…",
         "tags": [
           "Java",
@@ -5462,7 +6202,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/4_IService与ServiceImpl-入门",
         "title": "IService 与 ServiceImpl",
-        "wordCount": null,
+        "wordCount": 125,
         "readMinutes": 1,
         "excerpt": "业务层封装、saveOrUpdate、批量操作与链式调用。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  saveBatch 与批量优化  sa…",
         "tags": [
@@ -5498,8 +6238,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/40_Java17新特性-入门",
         "title": "Java17新特性",
-        "wordCount": 3171,
-        "readMinutes": 10,
+        "wordCount": 3513,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：Java 17（2021 LTS）是「语法现代化集大成」——record（不可变数据载体一行定义）、sealed（封闭继承树）、switch 表达式…",
         "tags": [
           "Java",
@@ -5510,7 +6250,7 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/41_Java21与虚拟线程-入门",
         "title": "Java21与虚拟线程",
-        "wordCount": 4323,
+        "wordCount": 4547,
         "readMinutes": 14,
         "excerpt": "一句话摘要：虚拟线程（JDK 21 正式，JEP 444）是 Java 并发三十年最大的一次范式扩容——JVM 调度的轻量线程（M:N 映射），阻塞时「卸载」内…",
         "tags": [
@@ -5534,7 +6274,7 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/1_Java全景与运行机制-入门",
         "title": "Java全景与运行机制",
-        "wordCount": 3455,
+        "wordCount": 3592,
         "readMinutes": 11,
         "excerpt": "一句话摘要：Java 的全部竞争力浓缩在一句话——「一次编译，到处运行」：源码编译成字节码，由各平台的 JVM 解释与 JIT 执行；本篇建立全系列的地基：语言…",
         "tags": [
@@ -5546,8 +6286,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/19_JMM与volatile-入门",
         "title": "JMM与volatile",
-        "wordCount": 3380,
-        "readMinutes": 11,
+        "wordCount": 3727,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：JMM（Java 内存模型）回答「一个线程的写入，另一个线程什么时候、以什么顺序看到」——它用 happensbefore 规则定义可见性与有序性的…",
         "tags": [
           "Java",
@@ -5559,8 +6299,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/32_JVM调优与排查工具-入门",
         "title": "JVM调优与排查工具",
-        "wordCount": 3096,
-        "readMinutes": 10,
+        "wordCount": 3452,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：JVM 排障的工具链是「症状 → 数据 → 归因」的分诊系统——jps/jinfo 看身份、jstat 看趋势（GC 频率与代际水位）、jmap/j…",
         "tags": [
           "Java",
@@ -5586,7 +6326,7 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/36_Lambda与函数式接口-入门",
         "title": "Lambda与函数式接口",
-        "wordCount": 3169,
+        "wordCount": 3302,
         "readMinutes": 10,
         "excerpt": "一句话摘要：Lambda 是「行为作为参数」的语法——函数式接口（恰好一个抽象方法）是它的目标类型，invokedynamic 是它的实现机制（首次执行时生成实…",
         "tags": [
@@ -5598,8 +6338,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/14_Map与Set家族对照-入门",
         "title": "Map与Set家族对照",
-        "wordCount": 2742,
-        "readMinutes": 9,
+        "wordCount": 3088,
+        "readMinutes": 10,
         "excerpt": "一句话摘要：Map 与 Set 是同一枚硬币的两面——Set 的底层就是 Map（HashSet 包着 HashMap，元素当键、公用哑值）；家族选型的分界线只…",
         "tags": [
           "Java",
@@ -5646,8 +6386,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/34_NIO与IO多路复用-入门",
         "title": "NIO与IO多路复用",
-        "wordCount": 3251,
-        "readMinutes": 10,
+        "wordCount": 3472,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：BIO 的一线程一连接在万级连接下线程爆炸——NIO 的破局是三件套：Buffer（数据容器）+ Channel（双向通道）+ Selector（一…",
         "tags": [
           "Java",
@@ -5675,8 +6415,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/38_Optional与新API-入门",
         "title": "Optional与新API",
-        "wordCount": 3156,
-        "readMinutes": 10,
+        "wordCount": 3495,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：Optional 是「可能没有的返回值」的类型化表达——用类型系统替代「返回 null 然后祈祷调用方判空」；它的正确定位是「返回值/链式传递」，不…",
         "tags": [
           "Java"
@@ -5726,8 +6466,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/15_Queue与Deque与PriorityQueue-入门",
         "title": "Queue与Deque与PriorityQueue",
-        "wordCount": 2918,
-        "readMinutes": 9,
+        "wordCount": 3265,
+        "readMinutes": 10,
         "excerpt": "一句话摘要：队列家族按「语义」三分——Queue 的 FIFO（先进先出）、Deque 的双端（两头都可进出）、PriorityQueue 的按优先级出队（二叉…",
         "tags": [
           "Java",
@@ -5772,6 +6512,20 @@
         "isTest": false
       },
       {
+        "file": "/backend/java/ecosystem/spring-boot/整合层/SpringBoot生产化整合全景/1_SpringBoot生产化整合全景-深度",
+        "title": "SpringBoot 整合层本质：它是一台决策转移机，生产化就是决策审计",
+        "wordCount": 4300,
+        "readMinutes": 13,
+        "excerpt": "入门层给了用法、特性层给了机制、专题层给了实战——但三层都没回答一个只有把它们拼起来才能看见的问题：自从你引入 SpringBoot，有多少技术决策不再由你做了…",
+        "tags": [
+          "Spring Boot",
+          "整合层",
+          "决策审计",
+          "L4整合层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/backend/java/ecosystem/mybatis-plus/特性层/深入理解SQL注入器/1_SQL注入器架构与启动注册-深度",
         "title": "SQL 注入器架构与启动注册（BaseMapper 方法从哪来）",
         "wordCount": 221,
@@ -5788,7 +6542,7 @@
       {
         "file": "/backend/java/ecosystem/mybatis-plus/入门层/从零开始认识MyBatisPlus系列/13_SQL注入器与自定义方法-入门",
         "title": "SQL 注入器与自定义方法",
-        "wordCount": null,
+        "wordCount": 124,
         "readMinutes": 1,
         "excerpt": "ISqlInjector、AbstractMethod 与全局方法扩展。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  AbstractMeth…",
         "tags": [
@@ -5828,8 +6582,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/37_Stream流式编程-入门",
         "title": "Stream流式编程",
-        "wordCount": 3070,
-        "readMinutes": 10,
+        "wordCount": 3422,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：Stream = 「声明式数据流水线」——中间操作（filter/map/sorted）惰性描述、终端操作（collect/forEach）触发执行…",
         "tags": [
           "Java",
@@ -5855,8 +6609,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/20_synchronized与锁升级-入门",
         "title": "synchronized与锁升级",
-        "wordCount": 3150,
-        "readMinutes": 10,
+        "wordCount": 3499,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：synchronized 是 Java 内建的互斥原语——基于对象头 Mark Word + Monitor（监视器）实现互斥与可见性双保证；JDK…",
         "tags": [
           "Java",
@@ -5867,8 +6621,8 @@
       {
         "file": "/backend/java/use-java/入门层/从零开始认识Java系列/24_ThreadLocal-入门",
         "title": "ThreadLocal",
-        "wordCount": 3226,
-        "readMinutes": 10,
+        "wordCount": 3436,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：ThreadLocal = 「以线程为作用域的变量访问」——每个线程持有一份独立副本（互不干扰），实现无锁的线程封闭；它的实现是反向的（Thread…",
         "tags": [
           "Java",
@@ -7518,6 +8272,21 @@
     "description": "Kubernetes、Docker、CICD、Service Mesh、云原生等工程交付。",
     "articles": [
       {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/5_安全与可观测-mTLS与Mesh层指标-入门",
+        "title": "安全与可观测：mTLS 零信任与 Mesh 层黄金指标",
+        "wordCount": 2305,
+        "readMinutes": 7,
+        "excerpt": "Mesh 的两个「白拿」能力：安全（服务间自动 mTLS 加密——零代码改造）与可观测（全链路黄金指标——零埋点成本）。两者都源于同一个事实：全部流量都过 Si…",
+        "tags": [
+          "Service Mesh",
+          "mTLS",
+          "可观测",
+          "零信任",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/devops/cicd/入门层/从零开始认识CICD系列/6_部署策略与回滚-入门",
         "title": "部署策略与回滚",
         "wordCount": 3544,
@@ -7755,6 +8524,51 @@
         "isTest": false
       },
       {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/3_控制面与Istio-XDS协议与配置下发-入门",
+        "title": "控制面与 Istio：XDS 协议与配置下发",
+        "wordCount": 2445,
+        "readMinutes": 8,
+        "excerpt": "数据面（Envoy）这么强，但它怎么知道「该把流量转发到哪里、要不要重试、要不要加密」？答案是控制面 Istiod 通过 XDS 协议把配置推给每一个 Side…",
+        "tags": [
+          "Service Mesh",
+          "Istio",
+          "控制面",
+          "XDS",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/4_流量管理-金丝雀灰度与故障注入-入门",
+        "title": "流量管理：金丝雀灰度、故障注入与超时重试",
+        "wordCount": 2729,
+        "readMinutes": 9,
+        "excerpt": "Mesh 的流量管理是它最「值钱」的能力：按百分比切流量做金丝雀、按 header 做精准灰度、注入故障测韧性、声明式配超时重试——这些以前要写代码或改网关配置…",
+        "tags": [
+          "Service Mesh",
+          "流量管理",
+          "灰度",
+          "故障注入",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/特性层/深入理解ServiceMesh系列/2_流量规则与金丝雀发布实战-深度",
+        "title": "流量规则与金丝雀发布实战",
+        "wordCount": 4200,
+        "readMinutes": 18,
+        "excerpt": "金丝雀发布是 Mesh 流量管理的招牌能力——但生产级的金丝雀不只是「设个 10% 权重」。本篇从规则语法到发布流程、从指标守护到自动回滚，讲生产可用的完整金丝…",
+        "tags": [
+          "Service Mesh",
+          "Istio",
+          "流量管理",
+          "金丝雀",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/devops/cicd/特性层/深入理解流水线机制/1_流水线缓存机制与构建加速-深度",
         "title": "流水线缓存与构建加速：CI 流水线的性能工程",
         "wordCount": 2024,
@@ -7779,6 +8593,20 @@
           "DevOps",
           "CICD",
           "流水线"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/6_落地路径与代价-是否该上Mesh-入门",
+        "title": "落地路径与代价：是否该上 Service Mesh",
+        "wordCount": 2364,
+        "readMinutes": 7,
+        "excerpt": "前面五篇讲了 Mesh 的能力，本篇讲最难的决策：该不该上、怎么上、代价是什么。Mesh 不是技术信仰问题，是 ROI 问题——资源开销、运维复杂度、团队学习曲…",
+        "tags": [
+          "Service Mesh",
+          "落地",
+          "决策",
+          "入门层"
         ],
         "isTest": false
       },
@@ -7884,6 +8712,20 @@
         "isTest": false
       },
       {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/1_什么是ServiceMesh-Sidecar模式与治理下沉-入门",
+        "title": "什么是 Service Mesh：Sidecar 模式与治理下沉",
+        "wordCount": 2632,
+        "readMinutes": 8,
+        "excerpt": "服务间的每次调用都经过一个「看不见的代理」——这个代理管重试、管加密、管路由、管监控，业务代码对此毫无感知。这就是 Service Mesh：把微服务治理从「每…",
+        "tags": [
+          "Service Mesh",
+          "Istio",
+          "Sidecar",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/devops/kubernetes/专题层/K8s生产化深度/1_生产级集群搭建-深度",
         "title": "生产级 K8s 集群搭建：HA / 多 AZ / 网络规划",
         "wordCount": 1824,
@@ -7910,6 +8752,21 @@
           "Docker",
           "生产实践",
           "排障"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/2_数据面原理-透明劫持与转发-入门",
+        "title": "数据面原理：透明劫持与流量转发",
+        "wordCount": 2405,
+        "readMinutes": 8,
+        "excerpt": "业务容器「以为」自己在直连对方服务——实际上每个进出包都被 iptables 拦截转给了 Sidecar。数据面是 Mesh 的干活层：劫持怎么实现的、代理内部…",
+        "tags": [
+          "Service Mesh",
+          "Sidecar",
+          "Envoy",
+          "数据面",
+          "入门层"
         ],
         "isTest": false
       },
@@ -8081,6 +8938,20 @@
           "DevOps",
           "Docker",
           "Dockerfile"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/特性层/深入理解ServiceMesh系列/1_Envoy与XDS协议详解-深度",
+        "title": "Envoy 与 XDS 协议详解：Mesh 数据面的内核",
+        "wordCount": 2358,
+        "readMinutes": 7,
+        "excerpt": "Envoy 是 Mesh 数据面的发动机，XDS 是它的燃油管路——理解这两者，Mesh 的一切行为都可以从配置推导。本篇下钻到 Envoy 的配置模型、线程架…",
+        "tags": [
+          "Service Mesh",
+          "Envoy",
+          "XDS",
+          "特性层"
         ],
         "isTest": false
       },
@@ -8530,6 +9401,21 @@
         "isTest": false
       },
       {
+        "file": "/devops/servicemesh/特性层/深入理解ServiceMesh系列/3_mTLS与零信任安全-深度",
+        "title": "mTLS 与零信任安全：Mesh 层的完整安全体系",
+        "wordCount": 4200,
+        "readMinutes": 18,
+        "excerpt": "零信任的核心理念是「不信任网络位置，只验证身份」——Mesh 的 mTLS + AuthorizationPolicy 把这个理念从安全白皮书变成了基础设施层的…",
+        "tags": [
+          "Service Mesh",
+          "mTLS",
+          "零信任",
+          "安全",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/devops/kubernetes/特性层/深入理解K8s核心特性系列/子系列B-核心抽象机制/5_NetworkPolicy与零信任网络-深度",
         "title": "Network Policy 与零信任网络：东西流量的边界控制",
         "wordCount": 1656,
@@ -8629,6 +9515,20 @@
           "Kubernetes",
           "Service",
           "服务发现",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/devops/servicemesh/入门层/从零开始认识ServiceMesh系列/0_系列导读-全景",
+        "title": "Service Mesh 系列导读",
+        "wordCount": 1117,
+        "readMinutes": 3,
+        "excerpt": "Service Mesh 把微服务治理（流量管理/熔断/mTLS/可观测）从「业务代码里的 SDK」下沉到「基础设施层的 Sidecar 代理」——业务代码回归…",
+        "tags": [
+          "Service Mesh",
+          "Istio",
+          "微服务",
           "入门层"
         ],
         "isTest": false
