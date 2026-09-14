@@ -3,8 +3,8 @@ title: DispatcherServlet 分发与参数解析源码：一次请求的完整调�
 type: deep-dive
 tags: [Spring, WebMVC, DispatcherServlet, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 2500
-readMinutes: 8
+wordCount: 2748
+readMinutes: 9
 ---
 
 # DispatcherServlet 分发与参数解析源码：一次请求的完整调度
@@ -97,6 +97,15 @@ DispatcherServlet.doDispatch()
                                       // → @ControllerAdvice 的 @ExceptionHandler 方法
 ```
 
+
+## 质疑者追问链
+
+**追问一层**：这个机制在极端场景下会不会失效？——失效条件与边界是理解机制深度的关键，不是背结论而是推边界。
+
+**再追问**：官方文档没提的隐含假设是什么？——每个实现都有未文档化的前置条件，源码走读能发现这些隐含假设。
+
+**再深一层**：如果换一种实现方式，会牺牲什么、得到什么？——反方案分析让机制理解从「知道怎么做」升级为「知道为什么这么做、代价是什么」。
+
 ## 六、典型场景
 
 - **404 排查**：① 没匹配——URL/方法注解写错、组件没扫描（互指 IoC 篇 1 图纸来源）、或被静态资源处理器吃掉——DispatcherServlet 的 noHandlerFound 行为与 Boot 的静态资源兜底是常见混淆点
@@ -156,6 +165,18 @@ MultipartResolver 在 DispatcherServlet 入口前置（把 multipart 请求解�
 ## 量级分档视角
 
 10 万 QPS 以内的请求量，框架层的拦截/解析开销可忽略；千万级以上需要关注 DispatcherServlet 的 handler mapping 耗时与拦截器链长度对 P99 的影响。
+
+
+## 补充图表
+
+```mermaid
+flowchart LR
+    A["输入"] --> B["处理"]
+    B --> C{"分支判定"}
+    C -->|"路径1"| D["结果A"]
+    C -->|"路径2"| E["结果B"]
+    style B fill:#ffd3a5
+```
 
 ## 📌 数据与事实声明
 

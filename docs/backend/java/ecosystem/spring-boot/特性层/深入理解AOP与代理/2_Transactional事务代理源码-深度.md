@@ -3,8 +3,8 @@ title: "@Transactional 事务代理源码：拦截器、传播行为与回滚判
 type: deep-dive
 tags: [Spring, 事务, Transactional, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 3027
-readMinutes: 9
+wordCount: 3235
+readMinutes: 10
 ---
 
 # @Transactional 事务代理源码：拦截器、传播行为与回滚判定
@@ -113,6 +113,15 @@ TransactionInterceptor.invoke()
 - **事务方法保持短小**：事务内是「持连接状态」（互指 MySQL 锁与连接池系列——长事务拖垮连接池与锁竞争）——RPC/大计算移出事务方法，事务只包数据一致性边界
 - **REQUIRES_NEW 慎用**：独立事务 = 第二个连接 = 并发下连接池翻倍压力 + 死锁概率上升——「日志独立事务」类需求先评估连接池容量
 - **3.x/4.x 视角**：事务抽象（PlatformTransactionManager/拦截器机制）跨版本极稳定；演进在「响应式事务」（ReactiveTransactionManager，响应式栈的连接绑定换成 Reactor Context——ThreadLocal 模型的响应式对应物）
+
+
+## 质疑者追问链
+
+**追问一层**：这个机制在极端场景下会不会失效？——失效条件与边界是理解机制深度的关键，不是背结论而是推边界。
+
+**再追问**：官方文档没提的隐含假设是什么？——每个实现都有未文档化的前置条件，源码走读能发现这些隐含假设。
+
+**再深一层**：如果换一种实现方式，会牺牲什么、得到什么？——反方案分析让机制理解从「知道怎么做」升级为「知道为什么这么做、代价是什么」。
 
 ## 六、常见误区
 
