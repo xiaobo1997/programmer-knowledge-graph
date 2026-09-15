@@ -30,6 +30,7 @@ readMinutes: 1
 - `graceful-shutdown/` — 优雅上下线
 - `service-auth/` — 服务鉴权
 - `metadata-center/` — 元数据中心
+- `微服务拆分决策/` — 微服务拆分决策（专题层，骨架规划）
 
 ### 稳定性层（14 篇，已体系化）
 - `system-design/stability/` — 稳定性系统性建设
