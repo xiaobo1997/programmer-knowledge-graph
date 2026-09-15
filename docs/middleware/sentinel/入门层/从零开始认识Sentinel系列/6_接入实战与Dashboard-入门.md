@@ -3,8 +3,8 @@ title: Sentinel 接入实战与 Dashboard：从依赖到控制台
 type: concept
 tags: [中间件, Sentinel, 接入实战, Dashboard, 入门层]
 date: 2026-09-15
-wordCount: 3600
-readMinutes: 12
+wordCount: 4111
+readMinutes: 13
 ---
 
 # Sentinel 对外暴露的最后一公里：接入方式、控制台与规则推送

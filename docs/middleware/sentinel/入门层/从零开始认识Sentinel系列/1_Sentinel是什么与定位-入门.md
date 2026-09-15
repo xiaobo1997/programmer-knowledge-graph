@@ -3,8 +3,8 @@ title: Sentinel 是什么：流控防护组件的定位与全景
 type: concept
 tags: [中间件, Sentinel, 流控防护, 入门层]
 date: 2026-09-08
-wordCount: 3600
-readMinutes: 12
+wordCount: 3620
+readMinutes: 11
 ---
 
 # Sentinel 是什么：流控防护组件的定位与全景

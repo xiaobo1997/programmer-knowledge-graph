@@ -3,7 +3,7 @@ title: 主流 RPC 框架对比：Dubbo、gRPC、Thrift、Spring Cloud
 type: concept
 tags: [架构, 服务治理, RPC, 框架对比, 入门层]
 date: 2026-09-10
-wordCount: 3350
+wordCount: 3479
 readMinutes: 11
 ---
 

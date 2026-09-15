@@ -3,8 +3,8 @@ title: RPC 协议与选型：dubbo://、triple:// 与技术决策
 type: concept
 tags: [架构, 服务治理, RPC, 协议选型, 入门层]
 date: 2026-09-10
-wordCount: 1614
-readMinutes: 5
+wordCount: 3438
+readMinutes: 11
 ---
 
 # RPC 协议与选型：dubbo://、triple:// 与技术决策

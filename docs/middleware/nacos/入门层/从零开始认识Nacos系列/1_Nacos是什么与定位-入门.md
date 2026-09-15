@@ -3,8 +3,8 @@ title: Nacos 是什么：注册中心与配置中心的统一底座
 type: concept
 tags: [中间件, Nacos, 注册中心, 配置中心, 入门层]
 date: 2026-09-08
-wordCount: 3400
-readMinutes: 11
+wordCount: 3340
+readMinutes: 10
 ---
 
 # Nacos 是什么：注册中心与配置中心的统一底座
