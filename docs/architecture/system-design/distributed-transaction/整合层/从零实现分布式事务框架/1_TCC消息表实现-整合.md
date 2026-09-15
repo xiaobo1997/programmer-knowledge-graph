@@ -3,7 +3,7 @@ title: 从零实现分布式事务框架
 date: 2026-09-11
 type: demo
 tags: [架构, 分布式事务, 实践, TCC, 消息表]
-wordCount: 1537
+wordCount: 1632
 readMinutes: 5
 ---
 

@@ -3,7 +3,7 @@ title: CAP 定理
 date: 2026-09-09
 type: concept
 tags: [架构, 分布式, 理论]
-wordCount: 3601
+wordCount: 3651
 readMinutes: 11
 ---
 

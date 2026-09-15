@@ -3,7 +3,7 @@ title: XA规范与数据库支持
 date: 2026-09-09
 type: concept
 tags: [架构, 分布式, 事务]
-wordCount: 3043
+wordCount: 3093
 readMinutes: 10
 ---
 

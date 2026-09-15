@@ -687,7 +687,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/3_2PC两阶段提交-入门",
         "title": "2PC两阶段提交",
-        "wordCount": 3577,
+        "wordCount": 3627,
         "readMinutes": 11,
         "excerpt": "一句话摘要：2PC 用「先投票、后执行」的两阶段协议重建原子性——协调者先问全部参与者「能不能提交」（投票/准备阶段，资源已锁定），全票通过才统一令提交（执行阶…",
         "tags": [
@@ -700,13 +700,25 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/4_3PC三阶段提交-入门",
         "title": "3PC三阶段提交",
-        "wordCount": 3315,
-        "readMinutes": 10,
+        "wordCount": 3365,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：3PC 在 2PC 之间插入 CanCommit 预询阶段并引入超时放行——参与者超时未收到决定时可以自行提交（ presumed commit），…",
         "tags": [
           "架构",
           "分布式",
           "事务"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/11_安全与合规-零信任实践-入门",
+        "title": "安全与合规-零信任实践",
+        "wordCount": 2994,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：大规模系统的安全 = 零信任（永不信任，持续验证）+ 合规（监管要求的制度化落地）+ 审计（一切可追溯）——规模越大，攻击面越大，安全从「部署前检查…",
+        "tags": [
+          "大规模架构",
+          "安全"
         ],
         "isTest": false
       },
@@ -803,6 +815,29 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/9_成本与容量规划-FinOps实践-入门",
+        "title": "成本与容量规划-FinOps实践",
+        "wordCount": 3006,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：成本与容量规划 = 在「性能够用」与「成本可控」之间找到最优平衡点的持续过程——容量不足导致性能事故，容量过剩导致成本浪费；FinOps 的核心是「…",
+        "tags": [
+          "大规模架构",
+          "FinOps"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/0_系列导读-全景",
+        "title": "从零开始认识大规模架构 系列导读",
+        "wordCount": 1238,
+        "readMinutes": 4,
+        "excerpt": "本系列 13 篇（0 导读 + 12 正文），按大规模系统的「分层版图」全覆盖：接入层、服务层、数据层、中间件、可观测、稳定性、发布、成本、团队。每篇按「理念 …",
+        "tags": [
+          "大规模架构"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/0_系列导读-全景",
         "title": "从零开始认识防资损系列导读",
         "wordCount": 1006,
@@ -818,7 +853,7 @@
       {
         "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/0_系列导读-全景",
         "title": "从零开始认识容量规划系列导读",
-        "wordCount": 900,
+        "wordCount": 824,
         "readMinutes": 3,
         "excerpt": "「容量」不是拍脑袋的数字——是流量 × 单耗 ÷ 供给的持续求解。这个系列把容量规划从「大促前的恐慌」变成「常年的工程纪律」。 容量规划 = 测单耗（压测基准）…",
         "tags": [
@@ -830,8 +865,8 @@
       {
         "file": "/architecture/system-design/event-driven/入门层/从零开始认识事件驱动架构系列/0_系列导读-全景",
         "title": "从零开始认识事件驱动架构系列导读",
-        "wordCount": 900,
-        "readMinutes": 3,
+        "wordCount": 735,
+        "readMinutes": 2,
         "excerpt": "从「调用」到「事件」不只是换一种消息中间件——是架构因果关系的反转。这个系列从零建立 EDA 的完整心智模型：事件建模、投递语义、最终一致性的代价与治理。 ED…",
         "tags": [
           "系列规划",
@@ -883,7 +918,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/整合层/从零实现Raft/1_Raft选主日志复制-整合",
         "title": "从零实现 Raft（选主 + 日志复制）",
-        "wordCount": 1505,
+        "wordCount": 1599,
         "readMinutes": 5,
         "excerpt": "一句话摘要：用代码实现 Raft 的核心——选主 + 日志复制，从理论到实践的跨越。  本文核心：实现 = 状态机 + RPC + 持久化。 前置阅读：Raft…",
         "tags": [
@@ -912,8 +947,8 @@
       {
         "file": "/architecture/system-design/distributed-id/整合层/从零实现分布式ID生成器/1_号段雪花实现-整合",
         "title": "从零实现分布式 ID 生成器（号段 + 雪花）",
-        "wordCount": 1715,
-        "readMinutes": 5,
+        "wordCount": 1809,
+        "readMinutes": 6,
         "excerpt": "一句话摘要：用代码实现两种 ID 生成机制——号段（DB 分配）和雪花（本地生成），理解各自的工程实践。  本文核心：实现 = ID 生成器 + 分配策略 + …",
         "tags": [
           "架构",
@@ -927,7 +962,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/整合层/从零实现分布式事务框架/1_TCC消息表实现-整合",
         "title": "从零实现分布式事务框架",
-        "wordCount": 1537,
+        "wordCount": 1632,
         "readMinutes": 5,
         "excerpt": "一句话摘要：用代码实现分布式事务的两种核心模式——TCC（强一致）+ 本地消息表（最终一致）。  本文核心：实现 = 事务管理器 + 资源管理器 + 补偿机制。…",
         "tags": [
@@ -942,7 +977,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/整合层/从零实现服务发现系统/1_服务发现实现-整合",
         "title": "从零实现服务发现系统",
-        "wordCount": 1469,
+        "wordCount": 1583,
         "readMinutes": 5,
         "excerpt": "一句话摘要：用代码实现一个最小化服务发现系统——注册 + 发现 + 健康检查 + 负载均衡。  本文核心：实现 = 注册中心 + 客户端 + 心跳 + 负载均衡…",
         "tags": [
@@ -1078,6 +1113,17 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/1_大规模架构是什么与分层全景-入门",
+        "title": "大规模架构是什么与分层全景",
+        "wordCount": 2484,
+        "readMinutes": 8,
+        "excerpt": "一句话摘要：大规模架构 = 「当用户量/数据量/并发量跨越量级阈值时，系统每个层面必须做出的结构性改变」——不是加机器，是分层重构：接入层从单机到 CDN+多级…",
+        "tags": [
+          "大规模架构"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/10_大数据链路-从binlog到数仓分层-深度",
         "title": "大数据链路：从 binlog 到数仓分层的全量数据体系",
         "wordCount": 2716,
@@ -1090,6 +1136,19 @@
           "数仓",
           "CDC",
           "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/2_单机基准与水位线-入门",
+        "title": "单机基准与水位线：容量规划的地基",
+        "wordCount": 3316,
+        "readMinutes": 10,
+        "excerpt": "「这台机器到底能扛多少 QPS？」——所有容量推导的第一个数字。基准（Benchmark）给出单机的真实能力拐点，水位线（Watermark）告诉你离拐点还有多…",
+        "tags": [
+          "容量规划",
+          "压测",
+          "入门层"
         ],
         "isTest": false
       },
@@ -1111,7 +1170,7 @@
       {
         "file": "/architecture/system-design/distributed-id/入门层/从零开始认识分布式ID系列/8_订单号流水号设计实战-入门",
         "title": "订单号流水号设计实战",
-        "wordCount": 3476,
+        "wordCount": 3527,
         "readMinutes": 11,
         "excerpt": "一句话摘要：对外订单号/流水号是「另一个 ID」——它不追求唯一性算法（内部主键已保证），追求的是人类可读、防枚举、可定位、防伪：规则单号 = 「业务前缀 + …",
         "tags": [
@@ -1139,8 +1198,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/7_读写分离-入门",
         "title": "读写分离",
-        "wordCount": 3338,
-        "readMinutes": 10,
+        "wordCount": 3620,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：读写分离把读流量摊到多个从库、写流量集中在主库，是数据层最早的扩展手段；它的核心权衡只有一个——复制延迟带来的读旧数据问题，什么时候能忍、什么时候必…",
         "tags": [
           "架构",
@@ -1178,6 +1237,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/12_多活与容灾-同城双活与异地多活-入门",
+        "title": "多活与容灾-同城双活与异地多活",
+        "wordCount": 3285,
+        "readMinutes": 14,
+        "excerpt": "一句话摘要：容灾的终极形态是异地多活——多个地域同时对外服务，任一地域故障不影响用户；实现路径三阶：同城双活（低延迟同步，机房级容灾）→ 两地三中心（区域级容灾…",
+        "tags": [
+          "大规模架构",
+          "容灾"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/12_多云与混合云架构-入门",
         "title": "多云与混合云架构",
         "wordCount": 3778,
@@ -1193,7 +1264,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/7_多注册中心与高可用-入门",
         "title": "多注册中心与高可用",
-        "wordCount": 1845,
+        "wordCount": 1962,
         "readMinutes": 6,
         "excerpt": "一句话摘要：单机注册中心存在单点风险，多注册中心架构通过双活同步、故障切换、多集群部署来保证注册服务本身的高可用。  本文核心：注册中心高可用 = 多集群 + …",
         "tags": [
@@ -1245,6 +1316,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/8_发布与变更管理-灰度与回滚-入门",
+        "title": "发布与变更管理-灰度与回滚",
+        "wordCount": 2909,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：发布与变更管理 = 「代码从合并到用户手中的安全通道」——灰度发布（小流量验证新版本）、快速回滚（秒级退回稳定版本）、变更管控（审批/冻结/审计）三…",
+        "tags": [
+          "大规模架构",
+          "发布"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/7_防资损方法论总结-入门",
         "title": "防资损方法论总结：从单点到体系的路线图",
         "wordCount": 2779,
@@ -1290,7 +1373,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/9_分布式时钟-入门",
         "title": "分布式时钟",
-        "wordCount": 3604,
+        "wordCount": 3654,
         "readMinutes": 11,
         "excerpt": "一句话摘要：分布式系统的机器时钟各自漂移、且可能被回拨——「两台机器上谁的事件先发生」无法用墙钟回答；解法分三派：逻辑时钟（只定序不看时刻）、集中授时（全局唯一…",
         "tags": [
@@ -1312,8 +1395,8 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/2_分布式事务方案全景-入门",
         "title": "分布式事务方案全景",
-        "wordCount": 3317,
-        "readMinutes": 10,
+        "wordCount": 3367,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：所有分布式事务方案都在「一致性 × 性能 × 侵入性」三维谱系上占位——强一致极（2PC/3PC/XA）：一致最强、性能最差；柔性极（TCC/Sag…",
         "tags": [
           "架构",
@@ -1325,7 +1408,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/专题层/方案选型/1_方案选型决策-专题",
         "title": "分布式事务方案选型决策",
-        "wordCount": 1444,
+        "wordCount": 1539,
         "readMinutes": 5,
         "excerpt": "一句话摘要：选型 = 一致性需求 × 性能要求 × 复杂度——从强一致到最终一致的完整决策树。  本文核心：选型 = 业务场景 → 一致性级别 → 具体方案。 …",
         "tags": [
@@ -1340,8 +1423,8 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/1_分布式事务是什么与为什么难-入门",
         "title": "分布式事务是什么与为什么难",
-        "wordCount": 3654,
-        "readMinutes": 11,
+        "wordCount": 3704,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：分布式事务 = 跨多个服务/存储的「全做或全不做」——单机事务靠「同一个数据库的 undo log + 锁」轻松保证 ACID，跨了边界后「原子性」…",
         "tags": [
           "架构",
@@ -1353,7 +1436,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/12_分布式事务选型决策-入门",
         "title": "分布式事务选型决策",
-        "wordCount": 3530,
+        "wordCount": 3580,
         "readMinutes": 11,
         "excerpt": "一句话摘要：选型的全部决策变量只有四个——一致性语义（要什么档）、流程形态（短预留还是长流程）、改造成本（存量还是绿地）、运维成熟度（团队能管什么）——本篇把全…",
         "tags": [
@@ -1381,7 +1464,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/12_分布式锁与选主-入门",
         "title": "分布式锁与选主",
-        "wordCount": 3876,
+        "wordCount": 3926,
         "readMinutes": 12,
         "excerpt": "一句话摘要：分布式锁 = 跨机器的互斥（同一时刻只有一个客户端持有资源），选主 = 它的特例（互斥的对象是「Leader 身份」）；机制谱系两派——Redis …",
         "tags": [
@@ -1394,7 +1477,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/0_系列导读-全景",
         "title": "分布式系统设计 系列导读",
-        "wordCount": 2228,
+        "wordCount": 2258,
         "readMinutes": 7,
         "excerpt": "📖 本系列共 11 篇（0导读 + 10 正文），覆盖分布式系统设计整个知识面：认知全景、高并发、高可用、高扩展、容量规划与设计方法论。  本篇是第 0 篇导…",
         "tags": [],
@@ -1403,8 +1486,8 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/1_分布式系统是什么与为什么难-入门",
         "title": "分布式系统是什么与为什么难",
-        "wordCount": 3661,
-        "readMinutes": 11,
+        "wordCount": 3711,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：分布式系统是多台独立机器通过网络协作、对外表现为一个整体的系统；它难在一个根源——网络与机器都不可靠，且你无法同时看清全局。本文建立全系列的地基认知…",
         "tags": [
           "架构",
@@ -1466,6 +1549,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/3_服务层设计-微服务与服务治理-入门",
+        "title": "服务层设计-微服务与服务治理",
+        "wordCount": 2649,
+        "readMinutes": 9,
+        "excerpt": "一句话摘要：服务层 = 「业务逻辑的运行时组织」——从单体到微服务的拆分不是终点，是按业务边界将复杂度从代码内部转移到服务间通信的架构决策；微服务数量的增长带来…",
+        "tags": [
+          "大规模架构",
+          "微服务"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/专题层/可观测性与服务大盘深度/2_服务大盘分层设计-深度",
         "title": "服务大盘分层设计：从全局战情到实例指纹的四层体系",
         "wordCount": 2983,
@@ -1497,8 +1592,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/专题层/服务发现架构实战/1_服务发现架构实战-专题",
         "title": "服务发现架构实战",
-        "wordCount": 1424,
-        "readMinutes": 4,
+        "wordCount": 1574,
+        "readMinutes": 5,
         "excerpt": "一句话摘要：实战 = 选型 + 部署 + 治理——从理论到生产级服务发现系统的完整实践。  本文核心：实战 = Nacos/Etcd + 多注册中心 + 流量治…",
         "tags": [
           "架构",
@@ -1512,7 +1607,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/10_服务发现架构总结-入门",
         "title": "服务发现架构总结",
-        "wordCount": 1919,
+        "wordCount": 2067,
         "readMinutes": 6,
         "excerpt": "一句话摘要：服务发现 = 注册 + 查询 + 健康检查 + 负载均衡 + 流量治理 + 可观测性——六层协作构成完整的分布式寻址系统。  本文核心：选型决策树 …",
         "tags": [
@@ -1526,7 +1621,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/1_服务发现是什么与为什么需要-入门",
         "title": "服务发现是什么与为什么需要",
-        "wordCount": 2514,
+        "wordCount": 2637,
         "readMinutes": 8,
         "excerpt": "一句话摘要：服务发现是分布式系统的 DNS——让服务实例在动态变化的环境中自动找到彼此；它解决的核心问题是「调用方怎么知道被调用方在哪」，背后依赖心跳、注册表、…",
         "tags": [
@@ -1540,8 +1635,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/8_服务发现与K8s集成-入门",
         "title": "服务发现与 K8s 集成",
-        "wordCount": 1729,
-        "readMinutes": 5,
+        "wordCount": 1845,
+        "readMinutes": 6,
         "excerpt": "一句话摘要：K8s 原生提供了 Service + Endpoint + CoreDNS 的服务发现机制——理解了 K8s 服务发现，就理解了云原生架构的寻址层…",
         "tags": [
           "架构",
@@ -1555,7 +1650,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/0_系列导读-全景",
         "title": "服务发现与注册 系列导读",
-        "wordCount": 1596,
+        "wordCount": 1691,
         "readMinutes": 5,
         "excerpt": "📖 本系列共 11 篇（0导读 + 10 正文），覆盖服务发现与注册整个知识面：从基础概念到主流组件、从注册中心选型到高可用架构、从流量治理到可观测性。  本…",
         "tags": [],
@@ -1608,7 +1703,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/5_服务降级与容灾-特性",
         "title": "服务降级与容灾",
-        "wordCount": 1784,
+        "wordCount": 1956,
         "readMinutes": 6,
         "excerpt": "一句话摘要：降级是「主动放弃非核心功能」保住核心链路；容灾是「故障时快速切换」保证业务连续性——两者配合让系统从「能用」变成「韧性」。  本文核心：降级 = 功…",
         "tags": [
@@ -1663,7 +1758,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/7_服务治理架构总结-特性",
         "title": "服务治理架构总结",
-        "wordCount": 1559,
+        "wordCount": 1733,
         "readMinutes": 5,
         "excerpt": "一句话摘要：服务治理 = 限流 + 熔断 + 灰度 + 自适应 + 降级 + 热点——六层防护让系统从「能跑」变成「能扛」。  本文核心：治理 = 管控 + 韧…",
         "tags": [
@@ -1677,8 +1772,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/0_系列导读-全景",
         "title": "服务治理深化系列导读",
-        "wordCount": 1092,
-        "readMinutes": 3,
+        "wordCount": 1204,
+        "readMinutes": 4,
         "excerpt": "📖 本系列共 8 篇（0导读 + 7 正文），覆盖服务治理从基础到深入的完整知识面。  本篇是第 0 篇导读：先建立「治理 = 管控 + 韧性」的心智模型，再…",
         "tags": [],
         "isTest": false
@@ -1700,7 +1795,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/5_服务注册与发现实现-入门",
         "title": "服务注册与发现实现",
-        "wordCount": 2156,
+        "wordCount": 2275,
         "readMinutes": 7,
         "excerpt": "一句话摘要：服务发现的实现方式有两种——客户端自己查注册中心（客户端发现）或由中间层代理查询（服务端发现）；两者各有优劣，选型取决于「谁来做负载均衡」。  本文…",
         "tags": [
@@ -1715,7 +1810,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/4_负载均衡策略-入门",
         "title": "负载均衡策略",
-        "wordCount": 2210,
+        "wordCount": 2324,
         "readMinutes": 7,
         "excerpt": "一句话摘要：负载均衡决定「流量打给哪个实例」——从简单的轮询到自适应的一致性哈希，每种策略都有其适用场景和性能取舍。  本文核心：负载均衡 = 策略 + 权重 …",
         "tags": [
@@ -1798,8 +1893,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/专题层/高并发架构决策树/1_高并发架构决策树-专题",
         "title": "高并发架构决策树：从十万 QPS 到亿级",
-        "wordCount": 1417,
-        "readMinutes": 4,
+        "wordCount": 1520,
+        "readMinutes": 5,
         "excerpt": "本篇是高并发架构的专题层收束篇，提供从十万 QPS 到亿级请求的统一决策树与 Tradeoff 评估。 高并发架构 = 量级定形态 + 红线定时机 + 决策树定…",
         "tags": [
           "高并发",
@@ -1812,8 +1907,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/3_高并发设计-入门",
         "title": "高并发设计",
-        "wordCount": 3454,
-        "readMinutes": 11,
+        "wordCount": 3687,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：高并发设计的全部手段可以归纳为五板斧——缓存、异步、池化、无状态、水平扩展，每一板斧都在回答同一个问题：「怎么让一次请求更便宜，让一台机器能干更多事…",
         "tags": [
           "架构",
@@ -1825,8 +1920,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/6_高可用设计-入门",
         "title": "高可用设计",
-        "wordCount": 3571,
-        "readMinutes": 11,
+        "wordCount": 3854,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：高可用不是「系统不坏」，是「坏了能被快速接管」——冗余消灭单点、故障转移自动接管、限流熔断兜住异常、幂等保证重试安全；可用性数字（SLA）的背后是成…",
         "tags": [
           "架构",
@@ -1839,8 +1934,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/8_高扩展设计-入门",
         "title": "高扩展设计",
-        "wordCount": 3674,
-        "readMinutes": 11,
+        "wordCount": 3957,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：高扩展回答的是「业务涨了，系统怎么跟着涨」——应用层靠无状态化实现水平扩展，数据层靠分片突破单机上限；扩展性的每一步都是「把绑在实例上的东西解开」，…",
         "tags": [
           "架构",
@@ -1867,8 +1962,8 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/6_共识问题与Paxos-入门",
         "title": "共识问题与Paxos",
-        "wordCount": 3674,
-        "readMinutes": 11,
+        "wordCount": 3724,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：共识问题 = 一组节点在「消息会丢、节点会挂、还有故意捣乱缺席者」的环境下，对一个值达成不可推翻的一致——它是线性一致、选主、锁的机制地基；Paxo…",
         "tags": [
           "架构",
@@ -1908,8 +2003,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/4_缓存架构-入门",
         "title": "缓存架构",
-        "wordCount": 3854,
-        "readMinutes": 12,
+        "wordCount": 4136,
+        "readMinutes": 13,
         "excerpt": "一句话摘要：缓存是高并发第一手段——用「数据副本 + 一定的不一致容忍」换「快一到两个数量级的读性能」；本篇讲清多级缓存体系怎么分工、穿透/击穿/雪崩三大问题的…",
         "tags": [
           "架构",
@@ -1922,7 +2017,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/3_灰度发布全流程-特性",
         "title": "灰度发布全流程",
-        "wordCount": 1553,
+        "wordCount": 1725,
         "readMinutes": 5,
         "excerpt": "一句话摘要：灰度发布 = 按比例放量验证——新版本先小流量验证，通过后逐步放量，全量后老版本下线。  本文核心：灰度 = 分流 + 验证 + 放量 + 回滚——…",
         "tags": [
@@ -2024,7 +2119,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/3_健康检查与故障剔除-入门",
         "title": "健康检查与故障剔除",
-        "wordCount": 2431,
+        "wordCount": 2548,
         "readMinutes": 8,
         "excerpt": "一句话摘要：注册中心通过心跳和主动探活保证服务列表的准确性——心跳是「主动上报我还活着」，探活是「我主动看看你还有没有反应」；两者结合决定了故障剔除的速度和准确…",
         "tags": [
@@ -2097,7 +2192,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/13_金融场景实战-入门",
         "title": "金融场景实战",
-        "wordCount": 3807,
+        "wordCount": 3857,
         "readMinutes": 12,
         "excerpt": "一句话摘要：金融场景把分布式事务的要求推到极限——金额不能错、状态可审计、差错可追溯；行业的标准答案不是「最强的协议」而是「业务化强一致 + 双向对账 + 人工…",
         "tags": [
@@ -2105,6 +2200,18 @@
           "分布式",
           "事务",
           "金融"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/6_可观测体系-指标日志链路-入门",
+        "title": "可观测体系-指标日志链路",
+        "wordCount": 2735,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：可观测体系 = 从系统外部信号推断内部状态的能力——三大信号各司其职：Metrics（数值序列：知道不对了）→ Traces（调用链：定位哪层慢了）…",
+        "tags": [
+          "大规模架构",
+          "可观测"
         ],
         "isTest": false
       },
@@ -2126,7 +2233,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/9_可观测性与链路追踪-入门",
         "title": "可观测性与链路追踪",
-        "wordCount": 1806,
+        "wordCount": 1925,
         "readMinutes": 6,
         "excerpt": "一句话摘要：没有可观测性的服务发现是黑箱——链路追踪 + 指标监控 + 日志聚合，让分布式系统的调用链路变得可见。  本文核心：可观测性 = 链路追踪 + 指标…",
         "tags": [
@@ -2150,6 +2257,19 @@
         "isTest": false
       },
       {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/4_扩容模型-入门",
+        "title": "扩容模型：用 Little's Law 把容量算成数学题",
+        "wordCount": 3474,
+        "readMinutes": 11,
+        "excerpt": "「峰值 5 万 QPS，每台 2000，是不是 25 台？」——错，至少差三倍。并发数、QPS、RT 是被一条定理锁死的三个变量（Little's Law），扩…",
+        "tags": [
+          "容量规划",
+          "扩容",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/cloud-native/特性层/深入理解Serverless系列/1_冷启动与并发模型-深度",
         "title": "冷启动与并发模型",
         "wordCount": 203,
@@ -2157,6 +2277,18 @@
         "excerpt": "冷启动分解(沙箱/代码/运行时/函数初始化)与各平台优化手段(快照/预留/微观优化)。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  快照恢复与…",
         "tags": [
           "Serverless"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/2_流量接入与防护-DNS网关CDN-入门",
+        "title": "流量接入与防护-DNS网关CDN",
+        "wordCount": 2643,
+        "readMinutes": 9,
+        "excerpt": "一句话摘要：接入层 = 流量进入系统的四道防线——DNS（去哪拿）、CDN（就近拿）、网关（统一入口+路由+限流）、WAF（防攻击）；每道防线解决不同的问题，顺…",
+        "tags": [
+          "大规模架构",
+          "接入层"
         ],
         "isTest": false
       },
@@ -2186,7 +2318,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/6_流量治理与路由-入门",
         "title": "流量治理与路由",
-        "wordCount": 2210,
+        "wordCount": 2325,
         "readMinutes": 7,
         "excerpt": "一句话摘要：流量治理是在服务发现的基础上叠加的管控层——限流、熔断、灰度发布、权重路由，让系统从「能跑」变成「能扛」。  本文核心：流量治理 = 限流 + 熔断…",
         "tags": [
@@ -2244,8 +2376,8 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/10_幂等与去重-入门",
         "title": "幂等与去重",
-        "wordCount": 3677,
-        "readMinutes": 11,
+        "wordCount": 3727,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：分布式系统里重试不可避免，重试必然带来重复——幂等（同一操作执行多次与一次效果相同）就是让重复变安全的唯一武器；实现体系三层：天然幂等（按主键覆盖/…",
         "tags": [
           "架构",
@@ -2387,6 +2519,19 @@
         "isTest": false
       },
       {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/3_全链路压测入门-入门",
+        "title": "全链路压测入门：让容量验证贴近真实战争",
+        "wordCount": 3177,
+        "readMinutes": 10,
+        "excerpt": "单机基准各自漂亮，链路一压全露馅——「每层都对、整体崩了」的容量事故（篇 1 的事故推演）只有一种根治手段：全链路压测。把真实的调用链、真实的数据形态、真实的流…",
+        "tags": [
+          "容量规划",
+          "全链路压测",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/专题层/可观测性与服务大盘深度/3_全链路追踪机制与全链路大盘-深度",
         "title": "全链路追踪机制与全链路大盘：请求视角的完整还原",
         "wordCount": 3115,
@@ -2404,8 +2549,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/6_热点数据处理-特性",
         "title": "热点数据处理",
-        "wordCount": 1735,
-        "readMinutes": 5,
+        "wordCount": 1905,
+        "readMinutes": 6,
         "excerpt": "一句话摘要：热点数据 = 少数 Key 被大量访问——热点 Key 击穿缓存、打满数据库，需要特殊处理。  本文核心：热点 = Key 倾斜 + 解决方案。 前…",
         "tags": [
           "架构",
@@ -2461,10 +2606,23 @@
         "isTest": false
       },
       {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/6_容量规划方法论总结-入门",
+        "title": "容量规划方法论总结：四步闭环的路线图",
+        "wordCount": 3186,
+        "readMinutes": 10,
+        "excerpt": "系列入门层收束：测单耗（篇 2）、量流量、算供给（篇 4）、管水位与预案（篇 5）、全链路验证（篇 3）——收成一张成熟度路线图：你在哪一档、下一步建什么、建成…",
+        "tags": [
+          "容量规划",
+          "方法论",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/9_容量规划与性能评估-入门",
         "title": "容量规划与性能评估",
-        "wordCount": 3910,
-        "readMinutes": 12,
+        "wordCount": 4154,
+        "readMinutes": 13,
         "excerpt": "一句话摘要：容量规划把「感觉能扛」变成「数字能扛」——从业务指标推导 QPS、用压测找到系统拐点、按水位线定扩容预案；它是三大目标从设计走向工程的收口动作，也是…",
         "tags": [
           "架构",
@@ -2484,6 +2642,19 @@
           "稳定性",
           "容量规划",
           "压测",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/5_容量预案与降级水位-入门",
+        "title": "容量预案与降级水位：极限到来之前定好动作",
+        "wordCount": 3144,
+        "readMinutes": 10,
+        "excerpt": "容量推导算出「需要多少」，预案定义「不够的时候砍什么」——两者合起来才是完整的容量管理。没有预案的容量规划在峰值越线时只剩一个动作：看着它崩。这一篇讲降级水位的…",
+        "tags": [
+          "容量规划",
+          "降级预案",
           "入门层"
         ],
         "isTest": false
@@ -2515,7 +2686,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/2_熔断机制与降级策略-特性",
         "title": "熔断机制与降级策略",
-        "wordCount": 1867,
+        "wordCount": 2043,
         "readMinutes": 6,
         "excerpt": "一句话摘要：熔断是「自动切断故障链」——当下游故障时快速失败，防止级联雪崩；降级是「主动放弃非核心功能」——保住核心链路。  本文核心：熔断 = 三态切换 + …",
         "tags": [
@@ -2623,6 +2794,20 @@
         "isTest": false
       },
       {
+        "file": "/architecture/engineering/入门层/从零开始认识容量规划系列/1_什么是容量规划-入门",
+        "title": "什么是容量规划：从拍脑袋到工程纪律",
+        "wordCount": 3251,
+        "readMinutes": 10,
+        "excerpt": "「双促流量估计是我们的五倍，机器准备多少？」——这个问题如果靠拍脑袋回答，要么浪费一半预算，要么在大促当晚崩给你看。容量规划就是把这个问题的答案从「猜」变成「算…",
+        "tags": [
+          "容量规划",
+          "压测",
+          "工程治理",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始稳定性系统性建设系列/1_什么是系统稳定性-入门",
         "title": "什么是系统稳定性：把『稳定』变成可度量的数字",
         "wordCount": 2742,
@@ -2690,7 +2875,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/10_事务消息-入门",
         "title": "事务消息",
-        "wordCount": 3281,
+        "wordCount": 3331,
         "readMinutes": 10,
         "excerpt": "一句话摘要：事务消息把本地消息表的「消息暂存区」从业务库搬到 MQ——生产者先发半消息（对消费者不可见）、执行本地事务、提交或回滚半消息；MQ 定期回查失联的生…",
         "tags": [
@@ -2710,6 +2895,18 @@
           "防资损",
           "稳定性",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/4_数据层设计-分库分表与缓存-入门",
+        "title": "数据层设计-分库分表与缓存",
+        "wordCount": 3064,
+        "readMinutes": 10,
+        "excerpt": "一句话摘要：数据层 = 大规模架构的「最终瓶颈」——计算可以无限加机器，数据的一致性与容量受物理限制；数据层的演进路线是「单库 → 读写分离 → 分库分表 → …",
+        "tags": [
+          "大规模架构",
+          "数据层"
         ],
         "isTest": false
       },
@@ -2800,8 +2997,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/4_通信协议与传输-入门",
         "title": "通信协议与传输：TCP、HTTP/2 与长连接",
-        "wordCount": 2256,
-        "readMinutes": 7,
+        "wordCount": 3450,
+        "readMinutes": 11,
         "excerpt": "RPC 框架用什么协议传输数据？TCP 原生（Dubbo 协议）、HTTP/2（gRPC/Triple）、还是 HTTP/1.1（Feign）？不同协议的性能与…",
         "tags": [
           "架构",
@@ -2809,6 +3006,18 @@
           "RPC",
           "通信协议",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/10_团队与工程效率-平台工程实践-入门",
+        "title": "团队与工程效率-平台工程实践",
+        "wordCount": 2892,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：团队效率 = 「工程师的时间花在业务逻辑上而非基础设施的重复劳动上」——平台工程（Platform Engineering）把运维/部署/监控/安全…",
+        "tags": [
+          "大规模架构",
+          "团队"
         ],
         "isTest": false
       },
@@ -2976,6 +3185,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/7_稳定性保障-限流降级与容灾-入门",
+        "title": "稳定性保障-限流降级与容灾",
+        "wordCount": 2988,
+        "readMinutes": 14,
+        "excerpt": "一句话摘要：稳定性保障 = 「承认故障必然发生后的系统性应对」——事前预防（容量规划+代码质量+变更管控）、事中止血（限流+降级+熔断+切换）、事后恢复（回滚+…",
+        "tags": [
+          "大规模架构",
+          "稳定性"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始稳定性系统性建设系列/10_稳定性建设方法论总结-入门",
         "title": "稳定性建设方法论总结：从补丁到体系",
         "wordCount": 1936,
@@ -3037,7 +3258,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/2_系统架构演进全景-入门",
         "title": "系统架构演进全景",
-        "wordCount": 3111,
+        "wordCount": 3347,
         "readMinutes": 10,
         "excerpt": "一句话摘要：系统架构沿「单体 → 垂直拆分 → 分布式/服务化 → 微服务」演进，每一步都在解决上一阶段的问题、同时引入新问题；演进的依据是业务量与团队规模，不…",
         "tags": [
@@ -3050,8 +3271,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/10_系统设计方法论总结-入门",
         "title": "系统设计方法论总结",
-        "wordCount": 3585,
-        "readMinutes": 11,
+        "wordCount": 3872,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：全系列的收束——把三大目标、架构演进、高并发、缓存、异步、高可用、读写分离、扩展性、容量规划九个维度，装进一套「六步法」流程：从需求到方案、从方案到…",
         "tags": [
           "架构",
@@ -3064,8 +3285,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/1_系统设计是什么与三大目标-入门",
         "title": "系统设计是什么与三大目标",
-        "wordCount": 3158,
-        "readMinutes": 10,
+        "wordCount": 3448,
+        "readMinutes": 11,
         "excerpt": "一句话摘要：系统设计是把「业务需求」翻译成「技术方案」的工程过程，高并发、高可用、高扩展是贯穿始终的三大目标；三者天然互斥，设计的起点不是选组件，而是给目标排优…",
         "tags": [
           "架构",
@@ -3077,8 +3298,8 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/5_线性一致性与顺序一致性-入门",
         "title": "线性一致性与顺序一致性",
-        "wordCount": 3645,
-        "readMinutes": 11,
+        "wordCount": 3695,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：两者的分界线是「实时性」——线性一致要求操作结果对应真实的全局时刻（整个系统像一台机器），顺序一致只要求「所有节点看到的顺序一致」但不对应真实时间；…",
         "tags": [
           "架构",
@@ -3104,8 +3325,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/1_限流算法深度解析-特性",
         "title": "限流算法深度解析",
-        "wordCount": 2007,
-        "readMinutes": 6,
+        "wordCount": 2181,
+        "readMinutes": 7,
         "excerpt": "一句话摘要：限流的核心是「控制进入量」——令牌桶允许突发、漏桶强制均匀、滑动窗口平滑过渡；选择合适的算法才能精准保护系统。  本文核心：限流 = 算法 + 阈值…",
         "tags": [
           "架构",
@@ -3119,7 +3340,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/15_协调服务选型-入门",
         "title": "协调服务选型",
-        "wordCount": 3790,
+        "wordCount": 3840,
         "readMinutes": 12,
         "excerpt": "一句话摘要：三大协调服务都是「共识 + 租约 + 高阶原语」的组合体，差异在协议家族（Zab vs Raft）、数据模型（树形 vs 扁平）、生态代际（Hado…",
         "tags": [
@@ -3132,9 +3353,9 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/3_序列化协议全景-入门",
         "title": "序列化协议全景：JSON、Hessian、Protobuf 的取舍",
-        "wordCount": 2103,
-        "readMinutes": 7,
-        "excerpt": "序列化是 RPC 中「对象 ↔ 字节流」的翻译官——选对协议直接影响吞吐、延迟与跨语言能力。这篇讲主流序列化协议的设计取舍与选型决策。  本文核心：序列化协议的…",
+        "wordCount": 3180,
+        "readMinutes": 10,
+        "excerpt": "序列化是 RPC 中「对象 ↔ 字节流」的翻译官——选对协议直接影响吞吐、延迟与跨语言能力。这篇讲主流序列化协议的设计取舍与选型决策，并把「协议选型」放进量级演…",
         "tags": [
           "架构",
           "服务治理",
@@ -3178,7 +3399,7 @@
       {
         "file": "/architecture/system-design/distributed-id/入门层/从零开始认识分布式ID系列/6_雪花算法改进-入门",
         "title": "雪花算法改进",
-        "wordCount": 3529,
+        "wordCount": 3579,
         "readMinutes": 11,
         "excerpt": "一句话摘要：雪花的安全前提（时钟单调、机器位唯一）在真实机房里都会破——工程化的改进沿三条线展开：回拨防护（等待/拒绝/扩展位/混合逻辑时钟）、机器位管理（ZK…",
         "tags": [
@@ -3190,8 +3411,8 @@
       {
         "file": "/architecture/system-design/distributed-id/特性层/深入理解雪花系列/1_雪花算法深度解析-特性",
         "title": "雪花算法深度解析",
-        "wordCount": 1724,
-        "readMinutes": 5,
+        "wordCount": 1818,
+        "readMinutes": 6,
         "excerpt": "一句话摘要：雪花 = 64 位结构（时间戳 + 机器位 + 序列位）——分布式环境下生成趋势递增 ID。  本文核心：雪花 = 位运算 + 时钟回拨处理 + 机…",
         "tags": [
           "架构",
@@ -3205,12 +3426,24 @@
       {
         "file": "/architecture/system-design/distributed-id/入门层/从零开始认识分布式ID系列/5_雪花算法原理-入门",
         "title": "雪花算法原理",
-        "wordCount": 3393,
+        "wordCount": 3443,
         "readMinutes": 11,
         "excerpt": "一句话摘要：雪花算法（Snowflake）= 用一个 64 位 long 的位切分，把「时间戳 + 机器 ID + 序列号」拼进一个数字——本地毫秒级生成、趋势…",
         "tags": [
           "架构",
           "分布式ID"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/13_演进与反模式-大规模架构的终局思考-入门",
+        "title": "演进与反模式-大规模架构的终局思考",
+        "wordCount": 2805,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：大规模架构没有「终局」，只有持续演进的「当前最优解」——每一步演进都在解决上一个阶段的问题并引入新问题；反模式清单是演进路上的「护栏」——它们不会让…",
+        "tags": [
+          "大规模架构",
+          "演进"
         ],
         "isTest": false
       },
@@ -3249,8 +3482,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/2_一个RPC调用的一生-入门",
         "title": "一个 RPC 调用的一生：从 send 到 response 的完整旅程",
-        "wordCount": 2180,
-        "readMinutes": 7,
+        "wordCount": 3412,
+        "readMinutes": 11,
         "excerpt": "调用方写下 userService.getUser(42) 一行代码——背后是代理拦截、序列化、寻址、网络传输、反序列化、方法执行、结果回传的完整链路。这篇按时…",
         "tags": [
           "架构",
@@ -3263,7 +3496,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/专题层/一致性方案选型/1_一致性方案选型-专题",
         "title": "一致性方案选型",
-        "wordCount": 1539,
+        "wordCount": 1634,
         "readMinutes": 5,
         "excerpt": "一句话摘要：选型 = 需求 → 一致性级别 → 实现方案——没有最好的方案，只有最合适的。  本文核心：选型 = 业务需求 × 技术约束 × 成本。 前置阅读：…",
         "tags": [
@@ -3278,7 +3511,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/11_一致性方案选型-入门",
         "title": "一致性方案选型",
-        "wordCount": 3613,
+        "wordCount": 3663,
         "readMinutes": 11,
         "excerpt": "一句话摘要：本系列前十章的机制装进一棵决策树——选型的起点从来不是「哪个技术先进」，而是两个业务问题：「这笔数据不一致的代价是什么」（定档：强一致/会话级/最终…",
         "tags": [
@@ -3321,8 +3554,8 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/4_一致性模型全景-入门",
         "title": "一致性模型全景",
-        "wordCount": 3667,
-        "readMinutes": 11,
+        "wordCount": 3717,
+        "readMinutes": 12,
         "excerpt": "一句话摘要：「一致性」不是一档开关而是一条谱系——从线性一致（像只有一台机器）到顺序一致、因果一致、最终一致，约束逐级放松、性能逐级上升；一致性模型就是「多副本…",
         "tags": [
           "架构",
@@ -3334,7 +3567,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/特性层/深入理解一致性模型系列/2_一致性模型深挖-特性",
         "title": "一致性模型深挖",
-        "wordCount": 1950,
+        "wordCount": 2044,
         "readMinutes": 6,
         "excerpt": "一句话摘要：一致性 = 定义「读到的数据是什么版本」——从弱到强，线性一致最强、最终一致最弱。  本文核心：一致性 = 读的语义 + 写的语义。 前置阅读：一致…",
         "tags": [
@@ -3393,7 +3626,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统设计系列/5_异步削峰-入门",
         "title": "异步削峰",
-        "wordCount": 3390,
+        "wordCount": 3579,
         "readMinutes": 11,
         "excerpt": "一句话摘要：异步削峰用「队列 + 按能力消费」把瞬时洪峰摊平成平稳负载，用「消息解耦」把同步长链路拆短——代价是延迟可见和一套消息可靠性的新问题（丢失、重复、堆…",
         "tags": [
@@ -3633,6 +3866,18 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/5_中间件选型与治理-入门",
+        "title": "中间件选型与治理",
+        "wordCount": 3256,
+        "readMinutes": 13,
+        "excerpt": "一句话摘要：中间件 = 服务层与数据层之间的「基础设施胶水」——消息队列（异步解耦）、缓存（加速读取）、搜索（灵活查询）、配置中心（动态配置）、注册中心（服务发…",
+        "tags": [
+          "大规模架构",
+          "中间件"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/cluster-fault-tolerance/入门层/从零开始认识集群容错系列/5_重试与幂等-入门",
         "title": "重试与幂等：自动重试的安全前提",
         "wordCount": 2082,
@@ -3783,8 +4028,8 @@
       {
         "file": "/architecture/system-design/distributed-system-design/入门层/从零开始认识分布式系统服务发现系列/2_注册中心选型全景-入门",
         "title": "注册中心选型全景",
-        "wordCount": 2395,
-        "readMinutes": 7,
+        "wordCount": 2490,
+        "readMinutes": 8,
         "excerpt": "一句话摘要：主流注册中心 Nacos / Consul / Eureka / ZooKeeper 各有取舍——选型不是比功能，而是比「你的团队能运维什么」；Na…",
         "tags": [
           "架构",
@@ -3911,7 +4156,7 @@
       {
         "file": "/architecture/system-design/distributed-system-design/特性层/服务发现深化系列/4_自适应限流原理-特性",
         "title": "自适应限流原理",
-        "wordCount": 1818,
+        "wordCount": 1990,
         "readMinutes": 6,
         "excerpt": "一句话摘要：自适应限流 = 实时感知系统状态 + 动态调整阈值——与固定阈值限流不同，自适应让系统「自己决定」该限多少。  本文核心：自适应 = 实时指标 + …",
         "tags": [
@@ -3953,7 +4198,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/11_最终一致性与对账-入门",
         "title": "最终一致性与对账",
-        "wordCount": 3475,
+        "wordCount": 3525,
         "readMinutes": 11,
         "excerpt": "一句话摘要：最终一致的「最终」不是许愿是机制——传播保时效（消息/重试/幂等）、对账保完整（定时比对 + 差异修复）双轨并行；对账不是失败后的补救，是一等公民的…",
         "tags": [
@@ -4006,7 +4251,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/3_BASE理论-入门",
         "title": "BASE理论",
-        "wordCount": 3507,
+        "wordCount": 3558,
         "readMinutes": 11,
         "excerpt": "一句话摘要：BASE 是 CAP 中 AP 路线的工程化纲领——基本可用（Basically Available）、软状态（Soft State）、最终一致（E…",
         "tags": [
@@ -4019,7 +4264,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/2_CAP定理-入门",
         "title": "CAP 定理",
-        "wordCount": 3601,
+        "wordCount": 3651,
         "readMinutes": 11,
         "excerpt": "一句话摘要：CAP 定理说：网络分区发生时，一致性与可用性不可兼得——C 与 A 之间必须选一个，而分区容忍 P 是必选项不是选项；它是分布式系统设计的边界条件…",
         "tags": [
@@ -4098,8 +4343,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/5_IO模型与Netty-入门",
         "title": "IO 模型与 Netty：RPC 通信的引擎",
-        "wordCount": 1564,
-        "readMinutes": 5,
+        "wordCount": 3350,
+        "readMinutes": 11,
         "excerpt": "RPC 框架为什么都基于 Netty？因为 Netty 封装了 Java NIO 的复杂 API，提供了事件驱动 + 非阻塞 IO 的高性能通信能力——一个线程…",
         "tags": [
           "架构",
@@ -4153,7 +4398,7 @@
       {
         "file": "/architecture/system-design/distributed-theory/特性层/深入理解Raft系列/1_Raft共识算法深度解析-特性",
         "title": "Raft 共识算法深度解析",
-        "wordCount": 1641,
+        "wordCount": 1737,
         "readMinutes": 5,
         "excerpt": "一句话摘要：Raft = 可理解的共识算法——通过 Leader 选举 + 日志复制 + 安全性保证，让分布式节点对数据达成一致。  本文核心：Raft = 选…",
         "tags": [
@@ -4202,9 +4447,9 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/6_服务发现与注册中心-入门",
         "title": "RPC 的服务发现：调用方视角的地址解析",
-        "wordCount": 1173,
-        "readMinutes": 4,
-        "excerpt": "本文核心：RPC 调用方视角的服务发现——「我要调 orderservice，地址列表从哪来、变了怎么感知、挂了怎么办」。机制链：启动订阅 → 首拉全量 → 本…",
+        "wordCount": 3400,
+        "readMinutes": 11,
+        "excerpt": "调用方发起调用之前，框架必须先回答「目标服务现在有哪些实例在线」——这个答案不是每次调用时现查的，而是被一套三层机制维护在调用方本地。这篇拆解这条链路。  本文…",
         "tags": [
           "架构",
           "服务治理",
@@ -4216,15 +4461,16 @@
       },
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/8_服务路由与灰度-入门",
-        "title": "RPC 的服务路由与灰度：定向分发的调用方语义",
-        "wordCount": 725,
-        "readMinutes": 2,
-        "excerpt": "本文核心：RPC 的路由 = 调用方按规则过滤地址列表的子集（在负载均衡之前缩小候选集）——条件路由（按调用方/参数/标签匹配）与标签路由（实例打标 + 按标筛…",
+        "title": "RPC 的服务路由与灰度：流量去哪里的定向决策",
+        "wordCount": 3500,
+        "readMinutes": 11,
+        "excerpt": "本文核心：负载均衡管「摊匀」，服务路由管「定向」——在均衡选实例之前，先按规则把候选集缩小到目标子集。机制链：调用请求携带标签（接口/参数/调用方/环境标记） …",
         "tags": [
           "架构",
           "服务治理",
           "RPC",
           "路由",
+          "灰度发布",
           "入门层"
         ],
         "isTest": false
@@ -4232,9 +4478,9 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/7_负载均衡策略-入门",
         "title": "RPC 的负载均衡策略：调用方视角的选择算法",
-        "wordCount": 714,
-        "readMinutes": 2,
-        "excerpt": "本文核心：RPC 客户端的负载均衡——「从地址列表中选一个实例发起调用」。机制链：地址列表（服务发现产出）→ 负载均衡策略（随机/轮询/加权/一致性哈希/最少活…",
+        "wordCount": 3400,
+        "readMinutes": 11,
+        "excerpt": "本文核心：RPC 客户端负载均衡——进程内从地址列表按策略选一个实例发起调用。机制链：地址列表（服务发现产出）→ 负载均衡策略选实例 → 失败重选 → 发起调用…",
         "tags": [
           "架构",
           "服务治理",
@@ -4247,14 +4493,16 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/9_集群容错与重试-入门",
         "title": "RPC 的集群容错与重试：失败后的调用方语义",
-        "wordCount": 697,
-        "readMinutes": 2,
-        "excerpt": "本文核心：RPC 调用方的容错语义——failover（失败换节点重试：幂等读场景）、failfast（快速失败不重试：写场景防重复）、failsafe（失败忽…",
+        "wordCount": 3500,
+        "readMinutes": 11,
+        "excerpt": "本文核心：调用失败之后怎么办，是调用方必须回答的问题——RPC 框架把答案做成四种集群容错策略：failover（失败换节点重试：幂等读场景）、failfast…",
         "tags": [
           "架构",
           "服务治理",
           "RPC",
           "容错",
+          "重试",
+          "幂等",
           "入门层"
         ],
         "isTest": false
@@ -4307,8 +4555,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/1_RPC是什么与为什么需要-入门",
         "title": "RPC 是什么：从本地调用到远程调用的抽象",
-        "wordCount": 1987,
-        "readMinutes": 6,
+        "wordCount": 3400,
+        "readMinutes": 11,
         "excerpt": "本文核心：RPC 的本质是把远程调用伪装成本地调用——屏蔽网络通信/序列化/寻址的复杂度，让开发者像调本地方法一样调远程服务。机制链：本地调用（进程内方法栈）→…",
         "tags": [
           "架构",
@@ -4360,7 +4608,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/特性层/深入理解Saga系列/1_Saga长事务深度解析-特性",
         "title": "Saga 长事务深度解析",
-        "wordCount": 1781,
+        "wordCount": 1877,
         "readMinutes": 6,
         "excerpt": "一句话摘要：Saga = 一系列本地事务 + 补偿链——每个步骤都提交，一旦失败反向执行补偿。  本文核心：Saga = 正向执行 + 反向补偿 + 编排/协调…",
         "tags": [
@@ -4375,7 +4623,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/7_Saga长事务-入门",
         "title": "Saga长事务",
-        "wordCount": 3364,
+        "wordCount": 3414,
         "readMinutes": 11,
         "excerpt": "一句话摘要：Saga = 把长事务拆成一串本地事务 T1→T2→…→Tn，每个 Ti 配一个补偿动作 Ci——中途失败就按逆序执行 C(i1)…C1 撤销；没有…",
         "tags": [
@@ -4388,7 +4636,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/特性层/深入理解Seata系列/1_Seata_AT模式深度解析-特性",
         "title": "Seata AT 模式深度解析",
-        "wordCount": 1760,
+        "wordCount": 1856,
         "readMinutes": 6,
         "excerpt": "一句话摘要：Seata AT = 自动补偿模式——业务无侵入，通过全局锁 + undo log 自动管理分布式事务的提交与回滚。  本文核心：AT = 全局锁 …",
         "tags": [
@@ -4415,7 +4663,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/特性层/深入理解TCC系列/1_TCC补偿事务深度解析-特性",
         "title": "TCC 补偿事务深度解析",
-        "wordCount": 1637,
+        "wordCount": 1733,
         "readMinutes": 5,
         "excerpt": "一句话摘要：TCC = TryConfirmCancel——将事务拆为三个阶段，通过预留资源 + 确认 + 取消实现分布式事务。  本文核心：TCC = 资源预…",
         "tags": [
@@ -4430,7 +4678,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/6_TCC补偿事务-入门",
         "title": "TCC补偿事务",
-        "wordCount": 3233,
+        "wordCount": 3283,
         "readMinutes": 10,
         "excerpt": "一句话摘要：TCC 把 2PC 的两阶段搬到业务层——Try 预留资源（冻结额度/预占库存）、Confirm 确认（真扣）、Cancel 释放（解冻）；性能好、…",
         "tags": [
@@ -4458,7 +4706,7 @@
       {
         "file": "/architecture/system-design/distributed-transaction/入门层/从零开始认识分布式事务系列/5_XA规范与数据库支持-入门",
         "title": "XA规范与数据库支持",
-        "wordCount": 3043,
+        "wordCount": 3093,
         "readMinutes": 10,
         "excerpt": "一句话摘要：XA 是 2PC 在资源层的工业标准化——X/Open DTP 模型定义了「应用（AP）+ 事务管理器（TM）+ 资源管理器（RM）」三角，数据库通…",
         "tags": [
@@ -6618,15 +6866,15 @@
       {
         "file": "/backend/java/use-java/特性层/深入理解并发系列/1_synchronized与锁升级全解析-深度",
         "title": "synchronized 与锁升级全解析",
-        "wordCount": 245,
-        "readMinutes": 1,
-        "excerpt": "从对象头到重量级 monitor：synchronized 的锁升级路径是理解 JVM 并发设计的钥匙。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落…",
+        "wordCount": 1883,
+        "readMinutes": 6,
+        "excerpt": "本文核心：synchronized 的锁升级是 JVM 对并发性能的逐级优化——无锁 → 偏向锁 → 轻量级锁 → 重量级锁，每一级对应不同竞争场景。机制链：对…",
         "tags": [
           "Java",
           "并发",
           "synchronized",
           "锁升级",
-          "L2特性层"
+          "特性层"
         ],
         "isTest": false
       },
@@ -9568,7 +9816,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/5_泛型入门-入门",
         "title": "泛型入门",
-        "wordCount": 2419,
+        "wordCount": 2551,
         "readMinutes": 8,
         "excerpt": "泛型 = 类型的「参数化」：<T 是类型的形参，调用时传入具体类型。它解决的问题一句话——「写一份逻辑，保住精确的输入输出类型」。没有泛型，你要么写一堆重载，要…",
         "tags": [
@@ -9581,7 +9829,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/8_工具类型-入门",
         "title": "工具类型：Partial、Pick、Record 背后的类型编程",
-        "wordCount": 1762,
+        "wordCount": 1894,
         "readMinutes": 6,
         "excerpt": "Partial<T、Pick<T, K、Record<K, V 不是内建魔法——它们全是用 TS 的两个语法原语（映射类型 + 索引访问）写出来的普通类型。理解…",
         "tags": [
@@ -9593,9 +9841,9 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/4_函数类型与重载-入门",
         "title": "函数类型与重载",
-        "wordCount": 2406,
+        "wordCount": 2538,
         "readMinutes": 8,
-        "excerpt": "函数是 JS 应用的主体，也是类型标注密度最高的地方：参数、返回值、可选参数、剩余参数、重载签名——本篇把函数类型的完整写法一次收拢。 函数类型的三层：参数与返…",
+        "excerpt": "函数是 JS 应用的主体，也是类型标注密度最高的地方：参数、返回值、可选参数、剩余参数、重载签名——本篇把函数类型的完整写法一次收拢。  量级分档意识：本文方法…",
         "tags": [
           "TypeScript",
           "函数",
@@ -9607,7 +9855,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/3_接口与类型别名-入门",
         "title": "接口与类型别名",
-        "wordCount": 2168,
+        "wordCount": 2341,
         "readMinutes": 7,
         "excerpt": "对象类型怎么组织与复用？TS 给了两把刀：interface 与 type。90% 场景两者可互换，但各有独门能力——interface 可声明合并、type …",
         "tags": [
@@ -9634,7 +9882,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/6_联合类型与类型收窄-入门",
         "title": "联合类型与类型收窄",
-        "wordCount": 2478,
+        "wordCount": 2610,
         "readMinutes": 8,
         "excerpt": "拿到 string | number 类型的值，直接调用字符串方法会报错——因为编译器不知道它此刻是什么。类型收窄就是「用代码逻辑帮编译器确认具体类型」的过程：…",
         "tags": [
@@ -9648,7 +9896,7 @@
       {
         "file": "/frontend/typescript/特性层/类型编程系列/1_条件类型与infer-深度",
         "title": "条件类型与 infer：类型层面的 if 与解构",
-        "wordCount": 3165,
+        "wordCount": 3215,
         "readMinutes": 10,
         "excerpt": "T extends U ? X : Y 是类型世界的 if，infer R 是类型世界的解构赋值——这两个原语加上递归，构成了 TS 类型编程的全部骨架。Exc…",
         "tags": [
@@ -9661,7 +9909,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/10_学习路径总结-入门",
         "title": "学习路径总结：从会写 TS 到写好 TS",
-        "wordCount": 1917,
+        "wordCount": 2010,
         "readMinutes": 6,
         "excerpt": "十篇走完，收束一下：TS 的知识地图长什么样、日常八成的类型代码用什么、下一层（特性层）学什么。这一篇是路线图，也是自测清单——读完能定位「我在哪、下一步去哪」…",
         "tags": [
@@ -9673,7 +9921,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/7_any-unknown-never-入门",
         "title": "any、unknown 与 never：类型系统的三个特殊值",
-        "wordCount": 1846,
+        "wordCount": 1969,
         "readMinutes": 6,
         "excerpt": "三个「不是普通类型」的类型：any 放弃检查、unknown 延迟判断、never 表示「不存在」。它们分别对应类型系统的三种边界情况——关闭检查、待定检查、不…",
         "tags": [
@@ -9685,8 +9933,8 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/9_tsconfig与渐进迁移-入门",
         "title": "tsconfig 与渐进迁移：把 JS 项目 safely 变成 TS",
-        "wordCount": 1682,
-        "readMinutes": 5,
+        "wordCount": 1814,
+        "readMinutes": 6,
         "excerpt": "「要不要开 strict」与「JS 怎么一步步变 TS」是 TS 落地的两个真问题——配置不是越多越好，迁移不是重写。这一篇讲 tsconfig 关键项的机制、…",
         "tags": [
           "TypeScript",
@@ -9697,7 +9945,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/1_TypeScript是什么与为什么需要-入门",
         "title": "TypeScript 是什么与为什么需要",
-        "wordCount": 2473,
+        "wordCount": 2564,
         "readMinutes": 8,
         "excerpt": "TypeScript 不是新语言，是 JavaScript 的超集：JS 的代码都是合法的 TS，TS 额外加了一层「编译期类型检查」。理解这个定位，学习路线就…",
         "tags": [
@@ -9711,7 +9959,7 @@
       {
         "file": "/frontend/typescript/入门层/从零开始认识TypeScript系列/0_系列导读-全景",
         "title": "TypeScript 系列导读",
-        "wordCount": 1007,
+        "wordCount": 1057,
         "readMinutes": 3,
         "excerpt": "TypeScript = JavaScript + 类型系统。它不改变 JS 的运行时，只在编译期做类型检查——这个定位决定了它的全部学习路径：先补类型思维，再…",
         "tags": [
@@ -9875,7 +10123,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/redis/整合层/多级缓存架构/0_系列导读-全景",
+        "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/多级缓存架构/0_系列导读-全景",
         "title": "从零开始认识多级缓存架构系列",
         "wordCount": 1880,
         "readMinutes": 6,
@@ -9905,8 +10153,8 @@
       {
         "file": "/middleware/job-scheduling/入门层/从零开始认识分布式任务调度系列/0_系列导读-全景",
         "title": "从零开始认识分布式任务调度系列导读",
-        "wordCount": 900,
-        "readMinutes": 3,
+        "wordCount": 711,
+        "readMinutes": 2,
         "excerpt": "单机 cron 到分布式调度平台，跨过的不只是「多台机器」——分片、幂等、容错补偿、调度中心高可用，每一件都是分布式问题的调度域投影。 分布式调度 = 调度中心…",
         "tags": [
           "系列规划",
@@ -10007,7 +10255,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/redis/整合层/多级缓存架构/1_多级缓存是什么与为什么需要-入门",
+        "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/多级缓存架构/1_多级缓存是什么与为什么需要-入门",
         "title": "多级缓存是什么与为什么需要",
         "wordCount": 2184,
         "readMinutes": 7,
@@ -10141,7 +10389,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/redis/整合层/多级缓存架构/3_缓存穿透击穿雪崩机制深挖-入门",
+        "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/多级缓存架构/3_缓存穿透击穿雪崩机制深挖-入门",
         "title": "缓存穿透/击穿/雪崩机制深挖",
         "wordCount": 2629,
         "readMinutes": 8,
@@ -10186,7 +10434,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/redis/整合层/多级缓存架构/2_缓存三级架构L1-L2-L3-入门",
+        "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/多级缓存架构/2_缓存三级架构L1-L2-L3-入门",
         "title": "缓存三级架构（L1/L2/L3）",
         "wordCount": 2146,
         "readMinutes": 7,
@@ -10229,7 +10477,7 @@
         "isTest": false
       },
       {
-        "file": "/middleware/redis/整合层/多级缓存架构/4_缓存一致性协议与多级缓存同步机制-入门",
+        "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/多级缓存架构/4_缓存一致性协议与多级缓存同步机制-入门",
         "title": "缓存一致性协议与多级缓存同步机制",
         "wordCount": 2667,
         "readMinutes": 8,
@@ -10905,8 +11153,8 @@
       {
         "file": "/middleware/redis/专题层/缓存三兄弟与热点治理/3_雪崩打散与多级缓存-深度",
         "title": "雪崩、过期打散与多级缓存：把系统性风险摊开",
-        "wordCount": 3251,
-        "readMinutes": 10,
+        "wordCount": 5597,
+        "readMinutes": 17,
         "excerpt": "击穿是一个点的失效，雪崩是面的失效：大面积 key 同时过期、或缓存集群整体不可用，数据库在两分钟内被冲垮。雪崩的治理思想与击穿不同——不追求「拦住某一发」，而…",
         "tags": [
           "中间件",
@@ -10978,8 +11226,8 @@
       {
         "file": "/middleware/redis/特性层/深入理解高可用系列/1_主从复制同步细节-深度",
         "title": "主从复制同步细节：全量、增量与积压缓冲",
-        "wordCount": 3084,
-        "readMinutes": 10,
+        "wordCount": 5501,
+        "readMinutes": 17,
         "excerpt": "Redis 复制不是「从库连上就算完」：断线重连后是重新全量同步还是增量续传，取决于一个环形缓冲区（replbacklog）。这篇把全量同步的代价、增量同步的条…",
         "tags": [
           "中间件",
@@ -11369,8 +11617,8 @@
       {
         "file": "/middleware/redis/整合层/1_Redis高可用演进之路-深度",
         "title": "Redis 高可用演进之路：从单机到多活的完整叙事",
-        "wordCount": 3278,
-        "readMinutes": 10,
+        "wordCount": 6439,
+        "readMinutes": 20,
         "excerpt": "入门层讲了各形态「是什么怎么用」，特性层讲了「机制为什么这样」，专题层给了「场景怎么选怎么运维」——本篇是整合层收束：沿业务演进的时间线，把单机 → 主从 → …",
         "tags": [
           "Redis",
@@ -11384,8 +11632,8 @@
       {
         "file": "/middleware/redis/入门层/从零开始认识Redis系列/1_Redis是什么与数据模型-入门",
         "title": "Redis 是什么与数据模型：内存键值数据库的全景",
-        "wordCount": 2686,
-        "readMinutes": 8,
+        "wordCount": 3422,
+        "readMinutes": 11,
         "excerpt": "一句话：Redis 把数据放在内存里、用「全局字典 + 多态 value」的极简模型提供毫秒内的读写——它不是「更快的 MySQL」，而是一种以内存为前提、以简…",
         "tags": [
           "Redis",

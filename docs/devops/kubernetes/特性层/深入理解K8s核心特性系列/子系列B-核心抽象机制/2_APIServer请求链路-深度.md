@@ -229,7 +229,7 @@ K8s 1.22+ 默认启用 Priority & Fairness——不同请求有不同优先级�
 
 ### 4.3 监控指标
 
-```promql
+```txt
 # API Server QPS
 apiserver_request_total
 

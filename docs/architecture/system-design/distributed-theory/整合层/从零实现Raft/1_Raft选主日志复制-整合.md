@@ -3,7 +3,7 @@ title: 从零实现 Raft（选主 + 日志复制）
 date: 2026-09-11
 type: demo
 tags: [架构, 分布式理论, Raft, 实践, 源码]
-wordCount: 1505
+wordCount: 1599
 readMinutes: 5
 ---
 

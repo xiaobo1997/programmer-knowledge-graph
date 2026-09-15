@@ -128,7 +128,7 @@ node_network_receive_bytes_total
 
 ### 4.1 查询语法
 
-```promql
+```txt
 # 1. 简单查询
 node_cpu_seconds_total{mode="idle"}
 
@@ -144,7 +144,7 @@ sum(rate(node_cpu_seconds_total{mode!="idle"}[5m])) by (instance)
 
 ### 4.2 常用查询模板
 
-```promql
+```txt
 # 节点 CPU 利用率
 100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 

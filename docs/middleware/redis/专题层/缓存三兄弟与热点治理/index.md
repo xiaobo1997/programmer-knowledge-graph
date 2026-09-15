@@ -2,7 +2,7 @@
 title: "缓存三兄弟与热点治理（横向组合拳）"
 date: 2026-09-03
 aside: false
-wordCount: 517
+wordCount: 547
 readMinutes: 2
 ---
 

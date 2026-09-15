@@ -3,7 +3,7 @@ title: "TypeScript 是什么与为什么需要"
 type: concept
 tags: [TypeScript, JS, 类型系统, 入门层]
 date: 2026-09-10
-wordCount: 2473
+wordCount: 2564
 readMinutes: 8
 ---
 

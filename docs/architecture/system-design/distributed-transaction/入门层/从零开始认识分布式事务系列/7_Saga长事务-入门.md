@@ -3,7 +3,7 @@ title: Saga长事务
 date: 2026-09-09
 type: concept
 tags: [架构, 分布式, 事务]
-wordCount: 3364
+wordCount: 3414
 readMinutes: 11
 ---
 

@@ -3,7 +3,7 @@ title: Raft 共识算法深度解析
 date: 2026-09-11
 type: concept
 tags: [架构, 分布式理论, Raft, 共识, 选主]
-wordCount: 1641
+wordCount: 1737
 readMinutes: 5
 ---
 

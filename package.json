@@ -4,7 +4,7 @@
   "private": true,
   "description": "程序员的长期知识图谱：读书笔记、全栈学习、DevOps、Agent 开发等。",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "npm run toc:sync && npm run meta:inject && vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "docs:verify": "node scripts/verify-site.mjs",

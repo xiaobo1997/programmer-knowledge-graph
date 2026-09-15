@@ -3,8 +3,8 @@ title: synchronized 与锁升级全解析
 type: deep-dive
 tags: [Java, 并发, synchronized, 锁升级, 特性层]
 date: 2026-09-10
-wordCount: 5500
-readMinutes: 18
+wordCount: 1883
+readMinutes: 6
 ---
 
 # synchronized 与锁升级全解析

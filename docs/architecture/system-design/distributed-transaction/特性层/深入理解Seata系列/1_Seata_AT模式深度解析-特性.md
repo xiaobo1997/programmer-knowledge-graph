@@ -3,7 +3,7 @@ title: Seata AT 模式深度解析
 date: 2026-09-11
 type: concept
 tags: [架构, 分布式事务, Seata, AT, 一致性]
-wordCount: 1760
+wordCount: 1856
 readMinutes: 6
 ---
 

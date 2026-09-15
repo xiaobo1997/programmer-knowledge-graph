@@ -186,7 +186,7 @@ ready
 
 ### 4.4 监控指标
 
-```promql
+```txt
 # CoreDNS 请求数
 coredns_dns_requests_total
 

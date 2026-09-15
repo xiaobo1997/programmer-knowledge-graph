@@ -3,8 +3,8 @@ title: 共识问题与Paxos
 date: 2026-09-09
 type: concept
 tags: [架构, 分布式, 理论]
-wordCount: 3674
-readMinutes: 11
+wordCount: 3724
+readMinutes: 12
 ---
 
 # 共识问题与 Paxos

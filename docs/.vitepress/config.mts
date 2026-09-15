@@ -18,6 +18,7 @@ export default defineConfig({
   markdown: {
     html: true,
     image: { lazyLoading: true },
+    // 代码块语言纪律见 conventions/article-format.md（fence 语言须 Shiki 支持）
     config: (md) => {
       // 把 ```mermaid 代码块替换成 <MermaidBlock> 全局组件
       const defaultFenceRender = md.renderer.rules.fence!

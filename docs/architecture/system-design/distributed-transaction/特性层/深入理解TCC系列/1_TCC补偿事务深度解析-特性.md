@@ -3,7 +3,7 @@ title: TCC 补偿事务深度解析
 date: 2026-09-11
 type: concept
 tags: [架构, 分布式事务, TCC, 补偿, 幂等]
-wordCount: 1637
+wordCount: 1733
 readMinutes: 5
 ---
 

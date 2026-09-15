@@ -3,7 +3,7 @@ title: "any、unknown 与 never：类型系统的三个特殊值"
 type: concept
 tags: [TypeScript, 入门层]
 date: 2026-09-10
-wordCount: 1846
+wordCount: 1969
 readMinutes: 6
 ---
 

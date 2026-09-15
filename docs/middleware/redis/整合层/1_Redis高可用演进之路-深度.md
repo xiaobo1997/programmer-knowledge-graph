@@ -3,7 +3,7 @@ title: "Redis 高可用演进之路：从单机到多活的完整叙事"
 type: deep-dive
 tags: [Redis, 高可用, 演进, 多活, L4整合层]
 date: 2026-09-03
-wordCount: 6022
+wordCount: 6439
 readMinutes: 20
 ---
 

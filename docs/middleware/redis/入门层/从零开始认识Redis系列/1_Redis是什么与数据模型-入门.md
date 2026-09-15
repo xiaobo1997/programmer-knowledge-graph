@@ -3,7 +3,7 @@ title: "Redis 是什么与数据模型：内存键值数据库的全景"
 type: concept
 tags: [Redis, 数据模型, 缓存, L1入门层]
 date: 2026-09-03
-wordCount: 3071
+wordCount: 3422
 readMinutes: 11
 ---
 

@@ -3,7 +3,7 @@ title: 条件类型与 infer：类型层面的 if 与解构
 type: deep-dive
 tags: [TypeScript, 类型编程, 特性层]
 date: 2026-09-10
-wordCount: 3165
+wordCount: 3215
 readMinutes: 10
 ---
 

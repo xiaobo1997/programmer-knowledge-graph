@@ -3,7 +3,7 @@ title: Saga 长事务深度解析
 date: 2026-09-11
 type: concept
 tags: [架构, 分布式事务, Saga, 长事务, 编排]
-wordCount: 1781
+wordCount: 1877
 readMinutes: 6
 ---
 

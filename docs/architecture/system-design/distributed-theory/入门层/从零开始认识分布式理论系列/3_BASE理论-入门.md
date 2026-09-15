@@ -3,7 +3,7 @@ title: BASE理论
 date: 2026-09-09
 type: concept
 tags: [架构, 分布式, 理论]
-wordCount: 3507
+wordCount: 3558
 readMinutes: 11
 ---
 

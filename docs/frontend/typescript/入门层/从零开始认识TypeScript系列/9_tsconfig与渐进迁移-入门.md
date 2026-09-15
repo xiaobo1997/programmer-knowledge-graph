@@ -3,8 +3,8 @@ title: "tsconfig 与渐进迁移：把 JS 项目 safely 变成 TS"
 type: concept
 tags: [TypeScript, 入门层]
 date: 2026-09-10
-wordCount: 1682
-readMinutes: 5
+wordCount: 1814
+readMinutes: 6
 ---
 
 # tsconfig 与渐进迁移：把 JS 项目 safely 变成 TS
