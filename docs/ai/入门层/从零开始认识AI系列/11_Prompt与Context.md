@@ -3,7 +3,7 @@ title: "Prompt 与 Context：提示工程到上下文工程"
 type: concept
 tags: [AI, Agent, Prompt, Context, 上下文工程, L1入门层]
 date: 2026-08-17
-wordCount: 3189
+wordCount: 3254
 readMinutes: 10
 ---
 
@@ -12,6 +12,10 @@ readMinutes: 10
 > 一句话摘要：2025 年 Karpathy 和 Shopify CEO 同时说"真正该叫的名字是 Context Engineering（上下文工程）"。2026 年，生产级 Agent 的差距不在 prompt 措辞，而在上下文管理——ACE 系统用小模型+好上下文打败大模型+差上下文；同一信息换个结构呈现，准确率能掉 34 个百分点。本篇讲提示工程 vs 上下文工程、四根支柱、四大退化模式、四种架构响应。
 
 ---
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 1. 背景：为什么 Prompt 不再是主角
 
@@ -196,7 +200,7 @@ Anthropic 指南提出"right altitude"概念：系统 prompt 必须**具体到�
 ```mermaid
 flowchart TD
     subgraph Infra[2026 基础设施]
-        L[LangGraph<br/>框架级：checkpointing/state/memory/supervisor]
+        L[LangGraph<br/>框架级:checkpointing/state/memory/supervisor]
         H[Harness 类<br/>内置上下文管理 - Agent=无状态处理器]
         M[MCP<br/>工具支柱标准化 - Linux Foundation 托管]
         V[向量库<br/>Chroma/Weaviate/Pinecone<br/>知识支柱骨干 - Select 支柱需求]
@@ -245,6 +249,10 @@ flowchart TD
 > 本系列阅读路径：篇 0 [系列导读](0_系列导读-全景.md) → 篇 1-3（地基+生态）→ 篇 4-7 四问拆法 → 篇 8 端到端 → 篇 9 Harness → 篇 10 MCP → 本篇 Prompt 与 Context → 篇 12-13 工程化收官
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

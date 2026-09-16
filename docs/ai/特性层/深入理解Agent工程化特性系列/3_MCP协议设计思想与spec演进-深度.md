@@ -3,7 +3,7 @@ title: MCP 协议深度：设计思想 + spec 演进 + 生态选型
 type: deep-dive
 tags: [AI, Agent, 工程化, MCP, 协议, 特性层]
 date: 2026-08-19
-wordCount: 5298
+wordCount: 5362
 readMinutes: 17
 ---
 
@@ -13,6 +13,10 @@ readMinutes: 17
 > **前置阅读**：建议先看入门层篇 10《MCP 协议与生态》（理解 MCP 是什么、3 件套是什么）
 > **本文能给你什么**：MCP 为什么这么设计 + spec 演进时间线 + 生态分层 + vs Function Calling/OpenAPI 选型
 > **本文不写什么**：不写代码 / 不写 SDK 用法 / 不写怎么实现 MCP server（实践类走 `docs/practice/`）
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 一句话摘要
 
@@ -432,6 +436,10 @@ Step 5 评估演进：是否看好 MCP 长期标准？
 - **方向 5 安全治理**：MCP 鉴权（OAuth + audience binding）是方向 5 安全治理的一部分
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

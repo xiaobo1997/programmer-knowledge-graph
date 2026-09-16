@@ -3,7 +3,7 @@ title: "Agent 怎么'动手'：Function Calling 原理与完整调用流程"
 type: concept
 tags: [AI, Agent, Function Calling, Tool, JSON Schema, L1入门层]
 date: 2026-08-17
-wordCount: 1883
+wordCount: 1948
 readMinutes: 6
 ---
 
@@ -12,6 +12,10 @@ readMinutes: 6
 > 一句话摘要：Agent 会"思考"了（CoT/ReAct），但它怎么"动手"调工具？答案是 **Function Calling（工具调用）**——把函数的 JSON Schema 告诉模型，模型输出结构化的调用指令，你的代码执行、回填、循环。这是四问拆法的第二问。
 
 ---
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 1. 背景：思考之后，怎么动手
 
@@ -135,7 +139,7 @@ sequenceDiagram
 
     App->>Model: 1. 请求模型 - 带 tools 定义与用户问题
     Model-->>App: 2. 返回 function_call - 结构化 JSON
-    App->>Func: 3. 执行函数 - 解析参数，调真实 API
+    App->>Func: 3. 执行函数 - 解析参数,调真实 API
     Func-->>App: 返回结果
     App->>Model: 4. 第二次请求 - 带工具结果回填
     Model-->>App: 5. 返回最终回答 - 或更多 tool call
@@ -247,6 +251,10 @@ Agent 会"思考"（CoT/ReAct）、会"动手"（Function Calling），但它没
 > 本系列阅读路径：篇 0 [系列导读](0_系列导读-全景.md) → 篇 1-3（地基+生态）→ 篇 4 为什么会思考 → 本篇（怎么动手）→ 篇 6 怎么记事 → 篇 7 怎么规划 → 篇 8 端到端串联
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

@@ -3,7 +3,7 @@ title: "Agent 怎么'规划'：ReAct / Plan-and-Execute / Reflexion / ToT 四模
 type: concept
 tags: [AI, Agent, 规划, ReAct, Plan-and-Execute, Reflexion, ToT, L1入门层]
 date: 2026-08-17
-wordCount: 2617
+wordCount: 2682
 readMinutes: 8
 ---
 
@@ -12,6 +12,10 @@ readMinutes: 8
 > 一句话摘要：Agent 面对复杂任务时怎么决定"先做什么、后做什么"？答案是四种规划模式——ReAct（边想边做）、Plan-and-Execute（先计划后执行）、Reflexion（做完自我批判）、ToT（多路径探索）。选错模式，成本、延迟、可靠性的差别是"可预测的"。四问拆法收官篇。
 
 ---
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 1. 背景：四问的最后一问
 
@@ -280,6 +284,10 @@ flowchart TD
 > 本系列阅读路径：篇 0 [系列导读](0_系列导读-全景.md) → 篇 1-3（地基+生态）→ 篇 4-7 四问拆法（思考/动手/记事/规划）→ 本篇收官 → 篇 8 端到端串联
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

@@ -3,7 +3,7 @@ title: "多 Agent 与 Subagent：何时用、何时不用"
 type: concept
 tags: [AI, Agent, 多Agent, Subagent, 编排, L1入门层]
 date: 2026-08-17
-wordCount: 3880
+wordCount: 3945
 readMinutes: 12
 ---
 
@@ -12,6 +12,10 @@ readMinutes: 12
 > 一句话摘要：2026 年多 Agent 是被过度开方的架构——生产团队 60-70% 的"多 Agent 需求"其实一个带并行工具的 Agent 就够。什么时候真该拆：工作能分解成使用不同 prompt/模型/工具集的专家角色。编排六大模式（supervisor/hierarchical/swarm/blackboard/sequential/hybrid），token 成本乘数从 2.4× 到 7.1×，五大生产失败模式，以及"先单 Agent 基线，再按测量拆分"的铁律。
 
 ---
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 1. 背景：多 Agent 是 2026 最被过度开方的架构
 
@@ -150,8 +154,8 @@ sequenceDiagram
     participant M as 主 Agent 协调者
     participant S1 as Subagent 研究员
     participant S2 as Subagent 核查员
-    M->>S1: 最小上下文：子任务 A
-    M->>S2: 最小上下文：子任务 B
+    M->>S1: 最小上下文:子任务 A
+    M->>S2: 最小上下文:子任务 B
     S1->>S1: 独立窗口 - 不污染主上下文
     S2->>S2: 独立窗口 - 不污染主上下文
     S1-->>M: 1000-2000 token 结构化摘要
@@ -300,6 +304,10 @@ Agent 调了个工具，效果没进会话缓冲。trace 显示干净回答，�
 > 本系列阅读路径：篇 0 [系列导读](0_系列导读-全景.md) → 篇 1-3（地基+生态）→ 篇 4-7 四问拆法 → 篇 8 端到端 → 篇 9 Harness → 篇 10 MCP → 篇 11 Prompt → 本篇多 Agent → 篇 13 收官
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

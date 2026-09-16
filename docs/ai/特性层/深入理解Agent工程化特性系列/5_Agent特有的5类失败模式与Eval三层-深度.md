@@ -3,8 +3,8 @@ title: Agent 特有的 5 类失败模式 + Eval 三层设计
 type: deep-dive
 tags: [AI, Agent, 工程化, 可观测, Eval, 失败模式, 特性层]
 date: 2026-08-19
-wordCount: 5578
-readMinutes: 17
+wordCount: 5642
+readMinutes: 18
 ---
 
 # Agent 特有的 5 类失败模式 + Eval 三层设计
@@ -13,6 +13,10 @@ readMinutes: 17
 > **前置阅读**：建议先看入门层篇 9《Harness 是什么》（理解 agent 失败是什么）+ 篇 6《Trace 设计思想》（Eval 与 Trace 是配套能力）
 > **本文能给你什么**：Agent 特有的 5 类失败模式根因与检测 + Eval 三层设计 + 业内反模式 + 框架生态选型
 > **本文不写什么**：不写代码 / 不写怎么接 LangSmith / Langfuse（实践类走 `docs/practice/`）
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 一句话摘要
 
@@ -488,6 +492,10 @@ Layer 1（每步）+ Layer 2（每次输出）+ Layer 3（完整任务）= 完�
 **关键**：Eval 体系的**最大敌人是"完成建设就完事"**——必须持续运营。
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 

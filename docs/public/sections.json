@@ -10,7 +10,7 @@
         "title": "§1 为什么写：从零复刻 claude-code 的价值论证",
         "wordCount": 2309,
         "readMinutes": 7,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程） 后端工程师的一天，大量时间耗在重复的机械操作上：读代码找 bug、改文件、跑命令、搜…",
+        "excerpt": "为什么写 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程） 量级分档意识：十万级 QPS、千万级用户、亿级流…",
         "tags": [],
         "isTest": false
       },
@@ -19,7 +19,7 @@
         "title": "§1 为什么写：跨境收单支付业务问答 RAG 的价值论证",
         "wordCount": 2867,
         "readMinutes": 9,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程） 跨境收单支付是 2026 年最典型的「业务知识密集型」行业之一：费率怎么算、结算…",
+        "excerpt": "为什么写 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程） 量级分档意识：十万级 QPS、千万级用户、亿…",
         "tags": [],
         "isTest": false
       },
@@ -28,7 +28,7 @@
         "title": "§2 调研和对参考的思考",
         "wordCount": 1438,
         "readMinutes": 4,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测（gh CLI + 本地 claude 命令）…",
+        "excerpt": "调研和对参考的思考 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测…",
         "tags": [],
         "isTest": false
       },
@@ -37,7 +37,7 @@
         "title": "§2 调研和对参考的思考",
         "wordCount": 2242,
         "readMinutes": 7,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天实测（gh CLI + GitHub 仓库 +…",
+        "excerpt": "调研和对参考的思考 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天…",
         "tags": [],
         "isTest": false
       },
@@ -46,7 +46,7 @@
         "title": "§3 系统架构与技术选型",
         "wordCount": 4295,
         "readMinutes": 13,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测（gh CLI star 数）  定位：这是本…",
+        "excerpt": "系统架构与技术选型 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  调研数据：20260819 当天实测…",
         "tags": [],
         "isTest": false
       },
@@ -55,7 +55,7 @@
         "title": "§3 系统架构与技术选型",
         "wordCount": 2575,
         "readMinutes": 8,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天实测（gh CLI star 数）  定位：这…",
+        "excerpt": "系统架构与技术选型 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  调研数据：20260823 当天…",
         "tags": [],
         "isTest": false
       },
@@ -64,7 +64,7 @@
         "title": "§4 可以学会什么",
         "wordCount": 681,
         "readMinutes": 2,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  能做什么：从零写出\"思考 → 行动 → 观察\"的自主循环，让 LLM 不再是\"一次…",
+        "excerpt": "可以学会什么 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  能做什么：从零写出\"思考 → 行动 → 观…",
         "tags": [],
         "isTest": false
       },
@@ -73,7 +73,7 @@
         "title": "§4 可以学会什么",
         "wordCount": 2799,
         "readMinutes": 9,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：读完 wiki + 代码 + 四件套，你能获得的能力清单——每项能力都有…",
+        "excerpt": "可以学会什么 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：读完 wiki + 代码 + 四…",
         "tags": [],
         "isTest": false
       },
@@ -82,7 +82,7 @@
         "title": "§5 实现方案与思考",
         "wordCount": 6418,
         "readMinutes": 20,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  目标：带读者从零到一写出一个能跑的 CLI agent——每阶段有可运行结果，理解…",
+        "excerpt": "实现方案与思考 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  目标：带读者从零到一写出一个能跑的 CL…",
         "tags": [],
         "isTest": false
       },
@@ -91,7 +91,7 @@
         "title": "§5 实现方案与思考·上：从最小闭环到知识库",
         "wordCount": 3209,
         "readMinutes": 10,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：带你把 §4 列出的能力一项项做出来。上篇先解决两件事——跑通最小闭环建…",
+        "excerpt": "51实现方案与思考上 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：带你把 §4 列出的能力…",
         "tags": [],
         "isTest": false
       },
@@ -100,7 +100,7 @@
         "title": "§5 实现方案与思考·中：向量化与检索",
         "wordCount": 2974,
         "readMinutes": 9,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：上篇把业务文档切成了 20 个 chunk，但检索器还是关键词匹配——「…",
+        "excerpt": "52实现方案与思考中 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：上篇把业务文档切成了 2…",
         "tags": [],
         "isTest": false
       },
@@ -109,7 +109,7 @@
         "title": "§5 实现方案与思考·下：组装、评估与验收",
         "wordCount": 2931,
         "readMinutes": 9,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：中篇检索出了 top3，但答案还没出来。本篇走完最后一段：5.5 把检索…",
+        "excerpt": "53实现方案与思考下 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：中篇检索出了 top3，…",
         "tags": [],
         "isTest": false
       },
@@ -118,7 +118,7 @@
         "title": "§6 从 demo 到生产工具的演进之路思考",
         "wordCount": 1932,
         "readMinutes": 6,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  定位：我们的 demo 是学习用（麻雀虽小五脏俱全），生产版是真实产品（claud…",
+        "excerpt": "从demo到生产工具 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  定位：我们的 demo 是学习用（…",
         "tags": [],
         "isTest": false
       },
@@ -127,7 +127,7 @@
         "title": "§6 从 demo 到生产工具的演进之路思考",
         "wordCount": 3322,
         "readMinutes": 10,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§5 做出了能跑的 CLI demo，但它是「麻雀」——单机、单轮、20…",
+        "excerpt": "从demo到生产工具的演进之路思考 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§5 做出…",
         "tags": [],
         "isTest": false
       },
@@ -136,7 +136,7 @@
         "title": "§7 项目架构和亮点",
         "wordCount": 1033,
         "readMinutes": 3,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  注意：§3 是设计架构（计划），§7 是实际实现的架构（最终成果）——两者应该一致…",
+        "excerpt": "项目架构和亮点 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  注意：§3 是设计架构（计划），§7 是…",
         "tags": [],
         "isTest": false
       },
@@ -145,7 +145,7 @@
         "title": "§7 项目架构和亮点",
         "wordCount": 3118,
         "readMinutes": 10,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：前面六篇把 RAG 从「为什么写」到「怎么实现」讲完了，本篇回头审视这个…",
+        "excerpt": "项目架构和亮点 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：前面六篇把 RAG 从「为什么…",
         "tags": [],
         "isTest": false
       },
@@ -154,7 +154,7 @@
         "title": "§8 项目文档建设",
         "wordCount": 823,
         "readMinutes": 3,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  说明：项目文档 = 读者上手的第一入口，也是项目可持续的基础。本 demo 虽小，…",
+        "excerpt": "项目文档建设 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  说明：项目文档 = 读者上手的第一入口，也…",
         "tags": [],
         "isTest": false
       },
@@ -163,7 +163,7 @@
         "title": "§8 项目文档建设",
         "wordCount": 2857,
         "readMinutes": 9,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§7 讲完了代码层面的架构和亮点，本篇把视角从代码切到文档——一个能跑的…",
+        "excerpt": "项目文档建设 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：§7 讲完了代码层面的架构和亮点…",
         "tags": [],
         "isTest": false
       },
@@ -172,7 +172,7 @@
         "title": "§9 数据与事实声明 + 参考资料",
         "wordCount": 568,
         "readMinutes": 2,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  原则：所有数字标注来源 + 日期，参考资料可查证。 | 数据 | 值 | 来源 |…",
+        "excerpt": "数据与事实声明与参考资料 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  原则：所有数字标注来源 + 日…",
         "tags": [],
         "isTest": false
       },
@@ -181,7 +181,7 @@
         "title": "§9 数据与事实声明 + 参考资料",
         "wordCount": 1480,
         "readMinutes": 5,
-        "excerpt": "系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：全系列的收尾汇总页。把散落在各篇的数据声明和参考资料收敛到一处——读者或…",
+        "excerpt": "数据与事实声明和参考资料 的核心要点与实践指导。  系列：从零开始写一个 paymentragagent（整合层 demo 工程）  定位：全系列的收尾汇总页。…",
         "tags": [],
         "isTest": false
       },
@@ -190,7 +190,7 @@
         "title": "§10 Trade-off 与生产演进",
         "wordCount": 1083,
         "readMinutes": 3,
-        "excerpt": "系列：从零开始写一个 claudecodecli（整合层 demo 工程）  模板：projectdemotemplate.md v3.1（§10 = Trad…",
+        "excerpt": "Tradeoff与生产演进 的核心要点与实践指导。  系列：从零开始写一个 claudecodecli（整合层 demo 工程）  模板：projectdemo…",
         "tags": [],
         "isTest": false
       },
@@ -321,7 +321,7 @@
         "title": "深入理解 Agent 工程化特性系列 · 全景导读",
         "wordCount": 2748,
         "readMinutes": 9,
-        "excerpt": "这是「深入理解 Agent 工程化特性」系列的第 0 篇全景导读。  本系列共 10 篇 deepdive，覆盖 Agent 工程化的 5 大方向：编排引擎 /…",
+        "excerpt": "的核心要点与实践指导。  这是「深入理解 Agent 工程化特性」系列的第 0 篇全景导读。  本系列共 10 篇 deepdive，覆盖 Agent 工程化的…",
         "tags": [
           "AI",
           "Agent",
@@ -515,7 +515,7 @@
         "title": "AI 概念地图：从名词到体系",
         "wordCount": 2647,
         "readMinutes": 8,
-        "excerpt": "写给\"每天被新名词淹没\"的人——把今天 AI 工程领域的概念，按为什么会出现串成一张图。  智能（Agency）来自模型训练，不是来自代码。你能写出来的，是 H…",
+        "excerpt": "aiknowledgemapOLD 的核心要点与实践指导。  写给\"每天被新名词淹没\"的人——把今天 AI 工程领域的概念，按为什么会出现串成一张图。 量级分档…",
         "tags": [],
         "isTest": false
       },
@@ -524,7 +524,7 @@
         "title": "code-link（文档 → 代码）",
         "wordCount": 197,
         "readMinutes": 1,
-        "excerpt": "本文档：PKG wiki「从零开始写一个 claudecodecli」→ 代码仓库的链接。 仓库：programcodeexample 目录：agent/cla…",
+        "excerpt": "codelink 的核心要点与实践指导。  本文档：PKG wiki「从零开始写一个 claudecodecli」→ 代码仓库的链接。 仓库：programco…",
         "tags": [],
         "isTest": false
       },
@@ -640,7 +640,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/7_10万QPS接口工程-深度",
         "title": "10 万 QPS 接口工程：单接口性能极限的架构设计",
-        "wordCount": 3067,
+        "wordCount": 5018,
         "readMinutes": 10,
         "excerpt": "单接口 10 万 QPS——商品详情页、秒杀倒计时、热点活动页的真实形态。这个量级下，一次数据库查询都是灾难、一个锁都是瓶颈、一次缓存穿透都是事故。本篇讲清楚：…",
         "tags": [
@@ -655,7 +655,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/16_1000服务生产级维稳与AI治理-深度",
         "title": "1000+ 服务的生产级维稳与 AI 治理：规模时代的全体系收拢",
-        "wordCount": 3257,
+        "wordCount": 5236,
         "readMinutes": 10,
         "excerpt": "1000+ 服务是什么概念？任何「逐个检查」的人工动作都不可行了——一次全链路发布涉及 30 个团队，一个根因排查要穿过 8 层依赖，一份服务清单打印出来是十几…",
         "tags": [
@@ -671,7 +671,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/4_1024张表后的多维查询大盘与全链路日志-深度",
         "title": "1024 张表之后：多维查询、缓存、大盘与全链路日志",
-        "wordCount": 4073,
+        "wordCount": 5061,
         "readMinutes": 13,
         "excerpt": "用户命题原话：「大盘呢，全链路日志呢，异步，缓存，分表，1024表，用户怎么查询，商家怎么查询，表怎么数据，什么维度」——分库分表解决的是写入扩展，但它立刻制造…",
         "tags": [
@@ -713,12 +713,28 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/11_安全与合规-零信任实践-入门",
         "title": "安全与合规-零信任实践",
-        "wordCount": 3207,
+        "wordCount": 3206,
         "readMinutes": 10,
         "excerpt": "一句话摘要：大规模系统的安全 = 零信任（永不信任，持续验证）+ 合规（监管要求的制度化落地）+ 审计（一切可追溯）——规模越大，攻击面越大，安全从「部署前检查…",
         "tags": [
           "大规模架构",
           "安全"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/专题层/安全与合规/1_安全与合规实战-专题",
+        "title": "安全与合规实战：大规模架构的安全纵深与合规落地",
+        "wordCount": 5981,
+        "readMinutes": 16,
+        "excerpt": "规模上去之后，安全问题的性质变了：漏洞影响面从「一个服务」变成「全站」，一次数据泄露的代价从「修复」变成「监管处罚加信任崩塌」。本篇讲大规模架构下的安全纵深怎么…",
+        "tags": [
+          "架构",
+          "安全",
+          "零信任",
+          "数据安全",
+          "合规",
+          "专题层"
         ],
         "isTest": false
       },
@@ -790,6 +806,21 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解策略与观察者系列/1_策略模式与观察者模式-特性",
+        "title": "策略与观察者：分支消除与事件解耦的正道与滥用边界",
+        "wordCount": 5300,
+        "readMinutes": 18,
+        "excerpt": "策略与观察者是业务代码出场率最高的两个行为型模式——一个消除「怎么做」的分支，一个解耦「谁知道」的通知。它们同源（都是多态替换硬编码），走向两个方向：策略管「可…",
+        "tags": [
+          "设计模式",
+          "策略模式",
+          "观察者模式",
+          "事件驱动",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始稳定性系统性建设系列/4_超时与重试-入门",
         "title": "超时与重试：最容易被设错的两个参数",
         "wordCount": 2468,
@@ -829,7 +860,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/0_系列导读-全景",
         "title": "从零开始认识大规模架构 系列导读",
-        "wordCount": 1387,
+        "wordCount": 1399,
         "readMinutes": 4,
         "excerpt": "本系列 13 篇（0 导读 + 12 正文），按大规模系统的「分层版图」全覆盖：接入层、服务层、数据层、中间件、可观测、稳定性、发布、成本、团队。每篇按「理念 …",
         "tags": [
@@ -931,6 +962,23 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/整合层/从零实现大规模架构Demo/1_从零实现大规模架构Demo-整合",
+        "title": "从零实现大规模架构 Demo：动手搭建最小生产级架构",
+        "wordCount": 6097,
+        "readMinutes": 17,
+        "excerpt": "读过分层全景、实战决策与选型矩阵之后，是时候动手了。本篇把前面所有层的知识收束成一个可以真实搭起来的最小架构 Demo：Nginx 网关加四个服务加 MySQL…",
+        "tags": [
+          "架构",
+          "整合",
+          "实战",
+          "动手",
+          "高并发",
+          "高可用",
+          "整合层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/整合层/从零实现对账系统Demo/主篇-从零实现对账系统-整合",
         "title": "从零实现对账系统：可运行的 Demo 全工程",
         "wordCount": 3158,
@@ -1022,6 +1070,17 @@
         "isTest": false
       },
       {
+        "file": "/architecture/event-driven/整合层/从零实现事件驱动框架/1_从零实现事件驱动框架-Demo",
+        "title": "从零实现事件驱动框架 Demo",
+        "wordCount": 1000,
+        "readMinutes": 3,
+        "excerpt": "整合层 Demo：最小事件驱动框架——发布订阅幂等消费死信，400 行可运行。 验证三断言： 1. 重复投递 3 次只消费一次 2. 处理失败 3 次进死信 3…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/rpc/整合层/自定义实现一个RPC/1_RPC实现-整合",
         "title": "从零实现一个 RPC",
         "wordCount": 1445,
@@ -1039,7 +1098,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/8_存储兵器谱-1024张表HBase与ES选型-深度",
         "title": "存储兵器谱：1024 张表、HBase 与 ES 的选型决策",
-        "wordCount": 2751,
+        "wordCount": 5032,
         "readMinutes": 9,
         "excerpt": "MySQL 分表、HBase、ES 是大规模系统的三大存储兵器：MySQL 管事务与关联查询，HBase 管海量写入与宽表扫描，ES 管全文检索与多维聚合。三者…",
         "tags": [
@@ -1054,18 +1113,20 @@
       },
       {
         "file": "/architecture/system-design/large-scale/专题层/存储架构亿级选型全景/1_存储架构亿级选型全景-专题",
-        "title": "存储架构亿级选型全景",
-        "wordCount": 828,
-        "readMinutes": 3,
-        "excerpt": "本篇是存储架构的整合层收束篇，提供 MySQL/Redis/Kafka/ES 在千万/亿级下的分层选型与 Tradeoff 评估。 存储选型 = 量级定形态 +…",
+        "title": "存储架构亿级选型全景：四引擎匹配矩阵与决策树",
+        "wordCount": 5048,
+        "readMinutes": 15,
+        "excerpt": "存储选型的全部复杂性可以压缩成一句话：把数据的形状对到引擎的舒适区上。本篇给出四大引擎（MySQL/Redis/Kafka/ES）在十万到亿级四个量级下的匹配矩…",
         "tags": [
+          "架构",
           "存储",
           "MySQL",
           "Redis",
           "Kafka",
           "ES",
           "选型",
-          "亿级"
+          "亿级",
+          "专题层"
         ],
         "isTest": false
       },
@@ -1099,7 +1160,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/0_系列导读-全景",
         "title": "大规模架构实战系列导读：业务线 × 四面体全体系",
-        "wordCount": 1467,
+        "wordCount": 1553,
         "readMinutes": 5,
         "excerpt": "用户的原话就是本系列的命题：「支付，下单，库存，订单，购物车，优惠券，风控，交易，等等，几十个链路的分工合作，数据一致性，千万并发，亿级流量，10w QPS，机…",
         "tags": [
@@ -1115,7 +1176,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/1_大规模架构是什么与分层全景-入门",
         "title": "大规模架构是什么与分层全景",
-        "wordCount": 2709,
+        "wordCount": 3017,
         "readMinutes": 8,
         "excerpt": "一句话摘要：大规模架构 = 「当用户量/数据量/并发量跨越量级阈值时，系统每个层面必须做出的结构性改变」——不是加机器，是分层重构：接入层从单机到 CDN+多级…",
         "tags": [
@@ -1126,7 +1187,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/10_大数据链路-从binlog到数仓分层-深度",
         "title": "大数据链路：从 binlog 到数仓分层的全量数据体系",
-        "wordCount": 2716,
+        "wordCount": 5028,
         "readMinutes": 8,
         "excerpt": "业务库里的每一条变更，如何在分钟级出现在数仓、报表与算法特征里？大数据链路 = 采集（binlog/CDC）→ 传输（MQ）→ 落地（ODS）→ 加工（分层建模…",
         "tags": [
@@ -1177,6 +1238,22 @@
           "架构",
           "分布式ID",
           "订单号"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解服务发现系列/2_订阅推送与健康检查机制-深度",
+        "title": "订阅推送与健康检查机制深读：变更触达与生死判定的工程真相",
+        "wordCount": 7600,
+        "readMinutes": 25,
+        "excerpt": "本文核心：注册中心的「新鲜度」由两台引擎决定——订阅推送引擎（变更从服务端到调用方的触达路径：长轮询→UDP→gRPC 长连接的演进，本质是「触达责任」从客户端…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "注册中心",
+          "推送",
+          "健康检查",
+          "特性层"
         ],
         "isTest": false
       },
@@ -1239,7 +1316,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/12_多活与容灾-同城双活与异地多活-入门",
         "title": "多活与容灾-同城双活与异地多活",
-        "wordCount": 3487,
+        "wordCount": 3562,
         "readMinutes": 11,
         "excerpt": "一句话摘要：容灾的终极形态是异地多活——多个地域同时对外服务，任一地域故障不影响用户；实现路径三阶：同城双活（低延迟同步，机房级容灾）→ 两地三中心（区域级容灾…",
         "tags": [
@@ -1303,7 +1380,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/12_发布体系-流量发布灰度与代码合并-深度",
         "title": "发布体系：流量发布、灰度发布与代码合并",
-        "wordCount": 2959,
+        "wordCount": 5060,
         "readMinutes": 9,
         "excerpt": "每一次发布都是一次潜在的故障——行业数据公开共识：相当比例的线上故障由变更引发（发布/配置/基础设施变更）。发布体系的目标不是「发布不出错」（不可能），而是「任…",
         "tags": [
@@ -1318,7 +1395,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/8_发布与变更管理-灰度与回滚-入门",
         "title": "发布与变更管理-灰度与回滚",
-        "wordCount": 3114,
+        "wordCount": 3085,
         "readMinutes": 10,
         "excerpt": "一句话摘要：发布与变更管理 = 「代码从合并到用户手中的安全通道」——灰度发布（小流量验证新版本）、快速回滚（秒级退回稳定版本）、变更管控（审批/冻结/审计）三…",
         "tags": [
@@ -1551,7 +1628,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/3_服务层设计-微服务与服务治理-入门",
         "title": "服务层设计-微服务与服务治理",
-        "wordCount": 2895,
+        "wordCount": 3134,
         "readMinutes": 9,
         "excerpt": "一句话摘要：服务层 = 「业务逻辑的运行时组织」——从单体到微服务的拆分不是终点，是按业务边界将复杂度从代码内部转移到服务间通信的架构决策；微服务数量的增长带来…",
         "tags": [
@@ -1960,6 +2037,20 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解工厂模式系列/1_工厂模式-特性",
+        "title": "工厂模式：三代演进、Spring 工业形态与创建收拢的边界",
+        "wordCount": 5300,
+        "readMinutes": 18,
+        "excerpt": "工厂模式最容易被讲成「少 new 一个对象」——这是误读。它的真实价值是把「创建哪个实现」的决策从调用方收拢到一处：决策点收敛了，扩展才不用改老代码。本篇按三代…",
+        "tags": [
+          "设计模式",
+          "工厂模式",
+          "Spring",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/6_共识问题与Paxos-入门",
         "title": "共识问题与Paxos",
         "wordCount": 3724,
@@ -1975,7 +2066,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/13_观测体系运营-ELK指标告警与值守-深度",
         "title": "观测体系运营：ELK、指标、告警与值守的常态化",
-        "wordCount": 2970,
+        "wordCount": 5115,
         "readMinutes": 9,
         "excerpt": "工具装好只是观测体系的起点——ELK 集群会膨胀、告警会泛滥、值班会疲惫。观测体系的「运营」阶段要回答：日志怎么管成本、告警怎么治理噪音、值班怎么可持续。这一篇…",
         "tags": [
@@ -1984,6 +2075,22 @@
           "ELK",
           "告警治理",
           "值班",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/专题层/观测体系运营/1_观测体系运营实战-专题",
+        "title": "观测体系运营实战：从数据到行动的运营闭环",
+        "wordCount": 6290,
+        "readMinutes": 17,
+        "excerpt": "观测体系建好只是开始，让它持续产生价值靠运营：指标会不会腐化、告警会不会淹没值班、日志成本会不会失控、大盘还有没有人看。本篇讲观测的运营面：数据到行动的闭环怎么…",
+        "tags": [
+          "架构",
+          "可观测性",
+          "告警治理",
+          "数据质量",
+          "运营",
           "专题层"
         ],
         "isTest": false
@@ -2160,7 +2267,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/3_交易链路技术决策全景-深度",
         "title": "交易链路技术决策全景：同步异步、事务选型、RPC/REST 与错误处理",
-        "wordCount": 4867,
+        "wordCount": 5696,
         "readMinutes": 15,
         "excerpt": "用户命题原话：「技术面感觉深度一点，并且结合业务，RT，99线，降级处理，数据治理，数据一致性，哪些是同步，哪些是异步，mq，redis，抢优惠券，哪些有事务，…",
         "tags": [
@@ -2177,7 +2284,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/11_接口治理与系统治理-深度",
         "title": "接口治理与系统治理：让规模不变成混乱",
-        "wordCount": 3150,
+        "wordCount": 5039,
         "readMinutes": 10,
         "excerpt": "服务的数量会自己长大：今天 50 个服务，明年 300 个。治理回答的问题是——规模翻倍时，协作成本是线性增长还是失控增长？接口治理管「服务对外的契约」（谁提供…",
         "tags": [
@@ -2204,9 +2311,23 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解代理系列/1_静态代理与JDK动态代理-特性",
+        "title": "静态代理与 JDK 动态代理：从手写到反射调用链",
+        "wordCount": 5200,
+        "readMinutes": 17,
+        "excerpt": "静态代理是「为每个目标手写一个代理类」，JDK 动态代理是「运行时为接口批量生成代理类」。从前者到后者，变的不是模式思想，是代理类的生产方式——理解 Proxy…",
+        "tags": [
+          "设计模式",
+          "代理模式",
+          "JDK动态代理",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/6_可观测体系-指标日志链路-入门",
         "title": "可观测体系-指标日志链路",
-        "wordCount": 2955,
+        "wordCount": 3060,
         "readMinutes": 9,
         "excerpt": "一句话摘要：可观测体系 = 从系统外部信号推断内部状态的能力——三大信号各司其职：Metrics（数值序列：知道不对了）→ Traces（调用链：定位哪层慢了）…",
         "tags": [
@@ -2283,7 +2404,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/2_流量接入与防护-DNS网关CDN-入门",
         "title": "流量接入与防护-DNS网关CDN",
-        "wordCount": 2977,
+        "wordCount": 3156,
         "readMinutes": 9,
         "excerpt": "一句话摘要：接入层 = 流量进入系统的四道防线——DNS（去哪拿）、CDN（就近拿）、网关（统一入口+路由+限流）、WAF（防攻击）；每道防线解决不同的问题，顺…",
         "tags": [
@@ -2383,6 +2504,32 @@
           "架构",
           "分布式",
           "理论"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解模板方法与责任链系列/1_模板方法与责任链-特性",
+        "title": "模板方法与责任链：骨架固化与链式传递的机制与治理",
+        "wordCount": 5300,
+        "readMinutes": 18,
+        "excerpt": "模板方法把「流程不变、步骤可变」固化成父类骨架；责任链把「多个处理者依次尝试」串成链。一个是继承纵向扩展，一个是组合横向扩展——框架源码里出镜率最高的双雄。本篇…",
+        "tags": [
+          "设计模式",
+          "模板方法",
+          "责任链",
+          "Filter",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/整合层/模式实战组合/1_模式实战组合-整合",
+        "title": "模式实战组合",
+        "wordCount": 1000,
+        "readMinutes": 3,
+        "excerpt": "设计模式不是孤立使用的——在真实业务场景中，多种模式组合解决复杂问题。 实际业务中，单一模式往往不够：  电商促销：策略 + 观察者 + 工厂  支付清分：责任…",
+        "tags": [
+          "规划中"
         ],
         "isTest": false
       },
@@ -2506,7 +2653,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/1_千万订单系统从零搭建-深度",
         "title": "千万订单系统从零搭建：分片、状态机与一致性取舍",
-        "wordCount": 4230,
+        "wordCount": 5125,
         "readMinutes": 13,
         "excerpt": "日订单 1000 万（峰值 3 万单/秒）是什么概念？订单表一年 36 亿行，单库单表第一天就是死路。本篇从零做这套架构：分片键怎么选、订单号怎么发、状态机怎么…",
         "tags": [
@@ -2514,6 +2661,36 @@
           "订单",
           "分库分表",
           "高并发",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/专题层/千万订单系统实战/1_千万订单系统实战-专题",
+        "title": "千万订单系统实战：一笔订单的全链路生命周期串讲",
+        "wordCount": 5012,
+        "readMinutes": 15,
+        "excerpt": "单点决策（分片键、幂等、状态机）在「从零搭建」篇已经讲透，本篇换一条轴：跟着一笔订单从点击到完成走完全程——它经过哪十几跳、每一跳的预算与失败语义是什么、哪里会…",
+        "tags": [
+          "架构",
+          "订单",
+          "全链路",
+          "高并发",
+          "大促",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/engineering/专题层/全链路压测生产安全-专题",
+        "title": "全链路压测的生产安全：影子链路、数据隔离与风险清单",
+        "wordCount": 5400,
+        "readMinutes": 18,
+        "excerpt": "全链路压测最大的悖论：要压得真实，就得在生产环境压；在生产环境压，就可能打伤生产。本篇讲的是这个悖论的工程解——影子链路如何让压测流量「看得见、隔离得住、撤得干…",
+        "tags": [
+          "工程化",
+          "全链路压测",
+          "影子库",
           "专题层"
         ],
         "isTest": false
@@ -2722,6 +2899,68 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解策略与观察者系列/0_系列导读-全景",
+        "title": "深入理解策略与观察者系列",
+        "wordCount": 900,
+        "readMinutes": 3,
+        "excerpt": "策略消除 ifelse 分支，观察者解耦事件广播——这两个行为型模式是业务代码里出场率最高的一对。本系列讲它们的机制、代价与滥用边界。 策略模式把「同一件事的多…",
+        "tags": [
+          "设计模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解代理系列/0_系列导读-全景",
+        "title": "深入理解代理系列",
+        "wordCount": 900,
+        "readMinutes": 3,
+        "excerpt": "静态代理 / JDK 动态代理 / CGLIB / Spring AOP——代理是「控制访问」的核心机制，也是 AOP 的基石。本系列把三种代理实现拆到字节码与…",
+        "tags": [
+          "设计模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解单例系列/1_深入理解单例模式-特性",
+        "title": "深入理解单例模式：五种写法演进与内存语义",
+        "wordCount": 5200,
+        "readMinutes": 17,
+        "excerpt": "单例是创建型模式里最简单的，也是把 Java 内存模型（JMM）、类加载机制、序列化机制串成一堂课的最佳教材。本篇按「写法演进」推进：每一种写法修上一代的什么坑…",
+        "tags": [
+          "设计模式",
+          "单例模式",
+          "并发",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解单例系列/0_系列导读-全景",
+        "title": "深入理解单例系列",
+        "wordCount": 900,
+        "readMinutes": 3,
+        "excerpt": "5 种写法 + volatile 指令重排 + 反射/序列化破坏防御——单例是创建型模式里最简单的，也是面试最容易挖深的。本系列把「为什么这样写」拆到内存语义层…",
+        "tags": [
+          "设计模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解工厂模式系列/0_系列导读-全景",
+        "title": "深入理解工厂模式系列",
+        "wordCount": 900,
+        "readMinutes": 3,
+        "excerpt": "简单工厂 / 工厂方法 / 抽象工厂——工厂家族的价值不在「少 new 一个对象」，而在「把创建的决策收拢到一处」。本系列讲清三代的演进逻辑与真实工程定位。 工…",
+        "tags": [
+          "设计模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/特性层/深入理解混沌工程系列/1_混沌工程实验设计-深度",
         "title": "深入理解混沌工程",
         "wordCount": 1415,
@@ -2732,6 +2971,18 @@
           "混沌工程",
           "特性层",
           "实验"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解模板方法与责任链系列/0_系列导读-全景",
+        "title": "深入理解模板方法与责任链系列",
+        "wordCount": 900,
+        "readMinutes": 3,
+        "excerpt": "模板方法固定骨架开放细节，责任链让请求穿过一串处理者——一个是「父类定流程」，一个是「链式传递」。框架源码里出镜率最高的两个行为型模式。 模板方法用「父类定骨架…",
+        "tags": [
+          "设计模式",
+          "特性层"
         ],
         "isTest": false
       },
@@ -2849,6 +3100,43 @@
         "isTest": false
       },
       {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/1_事件驱动概念入门-入门",
+        "title": "事件驱动概念入门：从「调用你」到「通知你」",
+        "wordCount": 3300,
+        "readMinutes": 11,
+        "excerpt": "一句话：事件驱动架构（EDA）把系统间的协作从「调用方主动问你」改成「发生事情的一方广播事实、感兴趣的一方各自消化」——同步链路的天花板问题、多下游的扇出问题、…",
+        "tags": [
+          "事件驱动",
+          "EDA",
+          "架构",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/0_系列导读-全景",
+        "title": "事件驱动架构系列导读",
+        "wordCount": 400,
+        "readMinutes": 2,
+        "excerpt": "事件驱动的核心：发布订阅 + 异步处理 + 最终一致性。 事件驱动是微服务通信的核心模式之一，但博客碎片化严重，需要系统化认知。 | 序号 | 篇目 | 深度 …",
+        "tags": [],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/7_事件驱动架构总结-入门",
+        "title": "事件驱动架构总结：入门到实战的全景与下一步",
+        "wordCount": 3300,
+        "readMinutes": 11,
+        "excerpt": "一句话：本篇把前六篇钉成一张全景图——从「命令变通知」的语义转变，到分区、幂等、事务消息、死信重试的防线体系，再给三条读者路径与特性层的入口。入门层到这里收官，…",
+        "tags": [
+          "事件驱动",
+          "EDA",
+          "架构总结",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/cloud-native/特性层/深入理解Serverless系列/2_事件驱动与状态管理-深度",
         "title": "事件驱动与状态管理",
         "wordCount": 200,
@@ -2856,6 +3144,21 @@
         "excerpt": "事件源绑定/幂等/状态外置/函数编排(工作流)的完整工程方案。  本文为系列规划大纲页：篇目结构已定，正文按下方骨架落盘。  幂等: 至少一次的配套  状态外置…",
         "tags": [
           "Serverless"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/4_事件溯源与CQRS入门-入门",
+        "title": "事件溯源与 CQRS 入门：当事件从「通知」变成「数据」",
+        "wordCount": 3300,
+        "readMinutes": 11,
+        "excerpt": "一句话：事件溯源（Event Sourcing）把「事件只是通知」升级成「事件就是数据的唯一事实源」——状态不再被存储，而是由事件流重放推导；CQRS 则顺着这…",
+        "tags": [
+          "事件驱动",
+          "事件溯源",
+          "Event Sourcing",
+          "CQRS",
+          "入门层"
         ],
         "isTest": false
       },
@@ -2886,6 +3189,20 @@
         "isTest": false
       },
       {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/5_事务消息与最终一致性-入门",
+        "title": "事务消息与最终一致性：本地事务和发消息的原子性",
+        "wordCount": 3400,
+        "readMinutes": 11,
+        "excerpt": "一句话：事务消息解决一个精确的问题——「本地事务成功了，消息却没发出去」的分裂状态。它用半消息 + 回查两步，把「写库」和「发事件」焊在同一事务语义里，是事件驱…",
+        "tags": [
+          "事件驱动",
+          "事务消息",
+          "最终一致性",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/入门层/从零开始认识防资损系列/4_事中预警-入门",
         "title": "事中预警：对账发现与告警止损的联动",
         "wordCount": 2793,
@@ -2901,7 +3218,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/4_数据层设计-分库分表与缓存-入门",
         "title": "数据层设计-分库分表与缓存",
-        "wordCount": 3338,
+        "wordCount": 3281,
         "readMinutes": 10,
         "excerpt": "一句话摘要：数据层 = 大规模架构的「最终瓶颈」——计算可以无限加机器，数据的一致性与容量受物理限制；数据层的演进路线是「单库 → 读写分离 → 分库分表 → …",
         "tags": [
@@ -2936,7 +3253,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/9_数据面建设-实时订单大盘与后台数据大盘-深度",
         "title": "数据面建设：实时订单大盘、后台数据大盘与字段级数据治理",
-        "wordCount": 3359,
+        "wordCount": 5165,
         "readMinutes": 10,
         "excerpt": "数据面回答两个问题：「现在正不正常」（实时订单大盘）与「生意做得怎么样」（后台数据大盘/基本面）——外加一个底层支撑：字段级数据治理（哪些数据要一致、哪些不需要…",
         "tags": [
@@ -2946,6 +3263,37 @@
           "实时计算",
           "数据治理",
           "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/system-design/large-scale/专题层/数据迁移与不停机切换/1_数据迁移与不停机切换-专题",
+        "title": "数据迁移与不停机切换：从 day-0 到退役的作战日历",
+        "wordCount": 5055,
+        "readMinutes": 15,
+        "excerpt": "数据迁移的本质不是搬数据，是管理风险：业务在跑、数据在变、旧系统不能停、新系统要接管。本篇把一次完整迁移拆成 day0 到 dayN 的作战日历：每个阶段做什么…",
+        "tags": [
+          "架构",
+          "数据迁移",
+          "不停机",
+          "双写",
+          "切流",
+          "对账",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/6_死信与重试-入门",
+        "title": "死信与重试：消费失败的最后防线",
+        "wordCount": 3300,
+        "readMinutes": 11,
+        "excerpt": "一句话：重试是给「偶发失败」的自愈通道，死信是给「反复失败」的人工入口——两者组合成消费失败的完整处置链。没有死信的重试是无限循环，没有重试的死信是秒级放弃，配…",
+        "tags": [
+          "事件驱动",
+          "死信队列",
+          "重试",
+          "入门层"
         ],
         "isTest": false
       },
@@ -3010,9 +3358,25 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/专题层/团队与工程文化/1_团队与工程文化实战-专题",
+        "title": "团队与工程文化实战：大规模架构的组织面",
+        "wordCount": 5020,
+        "readMinutes": 14,
+        "excerpt": "架构问题到了最后都是组织问题：服务边界划不清是因为团队边界没划清，发布慢是因为门禁与考核在打架，稳定性差是因为没人真正拥有它。本篇讲大规模架构的组织面：团队怎么…",
+        "tags": [
+          "架构",
+          "团队",
+          "平台工程",
+          "工程效能",
+          "工程文化",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/10_团队与工程效率-平台工程实践-入门",
         "title": "团队与工程效率-平台工程实践",
-        "wordCount": 3106,
+        "wordCount": 3312,
         "readMinutes": 10,
         "excerpt": "一句话摘要：团队效率 = 「工程师的时间花在业务逻辑上而非基础设施的重复劳动上」——平台工程（Platform Engineering）把运维/部署/监控/安全…",
         "tags": [
@@ -3127,6 +3491,22 @@
         "isTest": false
       },
       {
+        "file": "/architecture/service-governance/gateway/特性层/深入理解网关机制系列/1_网关路由与过滤器链的实现原理-深度",
+        "title": "网关路由与过滤器链深读：规则匹配与责任链的执行账本",
+        "wordCount": 6200,
+        "readMinutes": 20,
+        "excerpt": "本文核心：网关把两个正交问题拆给两个机制——「请求去哪」由路由回答（规则匹配 + 原子切换的查表问题），「路上做什么」由过滤器链回答（有序责任链 + 前置后置两…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "网关",
+          "路由",
+          "过滤链",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/gateway/入门层/从零开始认识网关系列/1_网关是什么与为什么需要-入门",
         "title": "网关是什么：统一入口的治理收拢",
         "wordCount": 1870,
@@ -3151,6 +3531,22 @@
           "服务治理",
           "网关",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/gateway/特性层/深入理解网关机制系列/2_网关限流与高可用架构-深度",
+        "title": "网关限流与高可用架构深读：入口闸门的容量与容错账本",
+        "wordCount": 6300,
+        "readMinutes": 21,
+        "excerpt": "本文核心：网关是南北流量的总闸门——在这里，限流的语义从「单实例自保」升级为「集群总量控制」，高可用的语义从「进程不死」升级为「入口不能成为单点 + 故障要能快…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "网关",
+          "限流",
+          "高可用",
+          "特性层"
         ],
         "isTest": false
       },
@@ -3187,7 +3583,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/7_稳定性保障-限流降级与容灾-入门",
         "title": "稳定性保障-限流降级与容灾",
-        "wordCount": 3220,
+        "wordCount": 3206,
         "readMinutes": 10,
         "excerpt": "一句话摘要：稳定性保障 = 「承认故障必然发生后的系统性应对」——事前预防（容量规划+代码质量+变更管控）、事中止血（限流+降级+熔断+切换）、事后恢复（回滚+…",
         "tags": [
@@ -3211,9 +3607,26 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/large-scale/专题层/稳定性武器库/1_稳定性武器库-专题",
+        "title": "稳定性武器库：限流降级熔断隔离容灾的工具箱与选配逻辑",
+        "wordCount": 7836,
+        "readMinutes": 21,
+        "excerpt": "稳定性不是靠一次架构评审换来的，是靠一柜子武器加上「什么时候开哪一枪」的纪律：限流守入口、熔断断连锁、降级保核心、隔离画半径、容灾兜底跨区域。本篇讲大规模架构的…",
+        "tags": [
+          "架构",
+          "稳定性",
+          "高可用",
+          "限流",
+          "降级",
+          "熔断",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/14_稳定性武器库-SLA降级与熔断的场景化部署-深度",
         "title": "稳定性武器库：SLA、降级与熔断的场景化部署",
-        "wordCount": 2729,
+        "wordCount": 5258,
         "readMinutes": 9,
         "excerpt": "限流、熔断、降级、超时、重试、隔离的原理与机制，稳定性系统性建设系列已经完整讲透（七环节 + 流量防护三件套）。本篇不重复原理，讲大规模实战的武器部署地图：在千…",
         "tags": [
@@ -3338,6 +3751,35 @@
         "isTest": false
       },
       {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/3_消费模式与幂等-入门",
+        "title": "消费模式与幂等：重复投递世界的生存法则",
+        "wordCount": 3400,
+        "readMinutes": 11,
+        "excerpt": "一句话：事件通道的投递语义里没有「恰好一次」的免费午餐——工程上只有「至少一次 + 幂等消费」这一条主路。把「消息会重复、消费会失败、顺序不可控」当成默认前提，…",
+        "tags": [
+          "事件驱动",
+          "幂等",
+          "消费模式",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/入门层/从零开始认识事件驱动架构系列/2_消息模型与分区-入门",
+        "title": "消息模型与分区：顺序与吞吐的底层契约",
+        "wordCount": 3300,
+        "readMinutes": 11,
+        "excerpt": "一句话：分区（Partition/Queue）是事件通道的并行单位——它同时决定两件看似矛盾的事：吞吐靠它横向扩展，顺序靠它局部保住。理解「分区内有序、分区间无…",
+        "tags": [
+          "事件驱动",
+          "Kafka",
+          "RocketMQ",
+          "分区",
+          "入门层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/distributed-theory/入门层/从零开始认识分布式理论系列/15_协调服务选型-入门",
         "title": "协调服务选型",
         "wordCount": 3840,
@@ -3436,9 +3878,23 @@
         "isTest": false
       },
       {
+        "file": "/architecture/engineering/特性层/深入理解压测工程系列/2_压测指标体系与瓶颈定位-深度",
+        "title": "压测指标体系与瓶颈定位：从「压出数字」到「找到病根」",
+        "wordCount": 6200,
+        "readMinutes": 17,
+        "excerpt": "压测报告上写着「峰值 8000 QPS、P99 800ms」——然后呢？8000 这个数字本身毫无价值：瓶颈在哪一层、为什么停在那里、解决后能涨到多少，这才是压…",
+        "tags": [
+          "容量规划",
+          "压测",
+          "可观测",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/13_演进与反模式-大规模架构的终局思考-入门",
         "title": "演进与反模式-大规模架构的终局思考",
-        "wordCount": 2983,
+        "wordCount": 3164,
         "readMinutes": 9,
         "excerpt": "一句话摘要：大规模架构没有「终局」，只有持续演进的「当前最优解」——每一步演进都在解决上一个阶段的问题并引入新问题；反模式清单是演进路上的「护栏」——它们不会让…",
         "tags": [
@@ -3450,7 +3906,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/5_业务发展与数据迁移-不停机迁移发券一致性与防资损-深度",
         "title": "业务发展与数据迁移：不停机迁移、发券一致性与防资损体系",
-        "wordCount": 5009,
+        "wordCount": 5912,
         "readMinutes": 16,
         "excerpt": "业务命题原文：「业务发展。技术面。数据迁移，比如优惠订单表是64，在业务发展中，不停机迁移，然后4千万优惠券，1个小时，40万用户如何发完，每个人一张，不多不少…",
         "tags": [
@@ -3467,7 +3923,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/2_业务线全景与分工协作-深度",
         "title": "业务线全景：几十个链路的分工、协作与数据一致性",
-        "wordCount": 3962,
+        "wordCount": 5236,
         "readMinutes": 12,
         "excerpt": "用户命题原话：「支付，下单，库存，订单，购物车，优惠券，风控，交易，等等，几十个链路的分工合作，数据一致性」——本篇就是这句话的展开：一笔交易从购物车到退款，穿…",
         "tags": [
@@ -3611,7 +4067,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/6_亿级流量接入架构-DNS网关与防护-深度",
         "title": "亿级流量接入架构：从 DNS 到网关的流量入口设计",
-        "wordCount": 3140,
+        "wordCount": 5158,
         "readMinutes": 10,
         "excerpt": "亿级日 PV 的流量入口是什么形态？日均 1 亿 PV，峰值系数按 510 倍计——入口层要稳稳接住 10 万+ QPS 的瞬时洪峰，还要在机房故障时把流量引到…",
         "tags": [
@@ -3619,6 +4075,35 @@
           "DNS",
           "网关",
           "高可用",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/engineering/专题层/亿级容量实战选型决策-专题",
+        "title": "亿级容量实战选型决策：从水位拆解到架构档位",
+        "wordCount": 5400,
+        "readMinutes": 18,
+        "excerpt": "「亿级」不是一句口号，是一组必须拆开的水位数字：日活、峰值 QPS、数据量、连接数——每个维度跨过临界点，对应的架构档位就换一挡。本篇给一套可操作的容量决策法：…",
+        "tags": [
+          "工程化",
+          "容量规划",
+          "架构选型",
+          "专题层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/专题层/亿级消息堆积实战选型决策-专题",
+        "title": "亿级消息堆积实战选型决策：从堆不动的真相到分层治理",
+        "wordCount": 5400,
+        "readMinutes": 18,
+        "excerpt": "消息堆积是事件驱动系统的第一现场故障——但「堆积」只是症状，真相藏在「生产速率、消费速率、保留策略」三条曲线的关系里。本篇给一套堆积治理决策法：先诊断堆积类型（…",
+        "tags": [
+          "事件驱动",
+          "消息堆积",
+          "Kafka",
+          "RocketMQ",
           "专题层"
         ],
         "isTest": false
@@ -3648,6 +4133,20 @@
           "应急响应",
           "故障复盘",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/engineering/特性层/深入理解压测工程系列/1_影子流量与数据构造-深度",
+        "title": "影子流量与数据构造：打真链路不脏真数据",
+        "wordCount": 6500,
+        "readMinutes": 18,
+        "excerpt": "全链路压测的全部工程难度浓缩成一句话：让压测流量在链路上与真流量无法区分（保真实性），又让它对真数据的污染为零（保安全性）。影子流量体系就是这对矛盾的工程解——…",
+        "tags": [
+          "容量规划",
+          "全链路压测",
+          "影子流量",
+          "特性层"
         ],
         "isTest": false
       },
@@ -3823,7 +4322,7 @@
       {
         "file": "/architecture/system-design/large-scale/专题层/从零开始大规模架构实战系列/15_早高峰与流量突发治理-深度",
         "title": "早高峰与流量突发治理：可预测与不可预测的洪峰应对",
-        "wordCount": 3091,
+        "wordCount": 5077,
         "readMinutes": 10,
         "excerpt": "流量洪峰分两种：早高峰（每天 810 点定时脉冲，可预测、可预案、可预热）与流量突发（热搜/裂变/攻击，不可预测、不可预案、只能靠弹性与纪律）。两者的架构应对完…",
         "tags": [
@@ -3852,6 +4351,22 @@
         "isTest": false
       },
       {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解传输与IO系列/2_粘包拆包与零拷贝实现-深度",
+        "title": "粘包拆包与零拷贝实现深读：字节流的秩序与搬运的成本",
+        "wordCount": 7600,
+        "readMinutes": 25,
+        "excerpt": "本文核心：传输层优化的两大主题各有一个机制内核——消息边界：TCP 是无边界的字节流，「粘包拆包」不是异常而是本质，应用层协议必须自带定界机制（长度前缀是行业标…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "Netty",
+          "零拷贝",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/stability/特性层/深入理解资损防控机制系列/4_止损与应急冻结-深度",
         "title": "止损与应急冻结：自动化执行的授权边界",
         "wordCount": 4115,
@@ -3868,7 +4383,7 @@
       {
         "file": "/architecture/system-design/large-scale/入门层/从零开始认识大规模架构系列/5_中间件选型与治理-入门",
         "title": "中间件选型与治理",
-        "wordCount": 3461,
+        "wordCount": 3636,
         "readMinutes": 11,
         "excerpt": "一句话摘要：中间件 = 服务层与数据层之间的「基础设施胶水」——消息队列（异步解耦）、缓存（加速读取）、搜索（灵活查询）、配置中心（动态配置）、注册中心（服务发…",
         "tags": [
@@ -3895,7 +4410,7 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/12_主流RPC框架对比-入门",
         "title": "主流 RPC 框架对比：Dubbo、gRPC、Thrift、Spring Cloud",
-        "wordCount": 3350,
+        "wordCount": 3479,
         "readMinutes": 11,
         "excerpt": "本文核心：四大框架按「语言生态 × 协议 × 治理面」三轴区分：Dubbo——Java 生态/多协议(Triple)/治理面最完善/国内微服务标配；gRPC——…",
         "tags": [
@@ -4038,6 +4553,22 @@
           "Nacos",
           "Consul",
           "Eureka"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解服务发现系列/1_注册中心一致性协议-Distro与Raft-深度",
+        "title": "注册中心一致性协议深读：Distro、Raft 与可用性的定价",
+        "wordCount": 7800,
+        "readMinutes": 26,
+        "excerpt": "本文核心：注册中心的一致性选型本质是给「可用性」定价——AP 路线（Eureka 的对等复制、Nacos 的 Distro 协议）用「节点间短暂不一致」换「任意…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "注册中心",
+          "一致性",
+          "Raft",
+          "特性层"
         ],
         "isTest": false
       },
@@ -4275,6 +4806,21 @@
         "isTest": false
       },
       {
+        "file": "/architecture/system-design/design-patterns/特性层/深入理解代理系列/2_CGLIB与SpringAOP代理选型-特性",
+        "title": "CGLIB 与 Spring AOP 代理选型：子类化路线与框架决策",
+        "wordCount": 5400,
+        "readMinutes": 18,
+        "excerpt": "CGLIB 走「生成目标类的子类」这条路，绕开了 JDK 动态代理「只能代理接口」的边界，也撞上了 final 与 final 类这堵墙。本篇拆 CGLIB 的…",
+        "tags": [
+          "设计模式",
+          "CGLIB",
+          "Spring AOP",
+          "代理模式",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/service-governance/cluster-fault-tolerance/入门层/从零开始认识集群容错系列/4_failback失败恢复-入门",
         "title": "failback 失败恢复：后台重放的机制与边界",
         "wordCount": 1903,
@@ -4328,6 +4874,22 @@
         "isTest": false
       },
       {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解序列化与协议系列/2_Hessian2实现机制与序列化安全-深度",
+        "title": "Hessian2 实现机制与序列化安全深读：类型自描述的代价",
+        "wordCount": 7200,
+        "readMinutes": 24,
+        "excerpt": "本文核心：Hessian2 与 Protobuf 走了相反的设计路线——报文内嵌类型信息（类名、字段名写进字节流），换来「零 IDL、Java 对象直接进出」的…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "序列化",
+          "Hessian2",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/system-design/rest/入门层/从零开始认识REST设计系列/2_HTTP语义用对-入门",
         "title": "HTTP语义用对",
         "wordCount": 3175,
@@ -4357,6 +4919,39 @@
         "isTest": false
       },
       {
+        "file": "/architecture/event-driven/特性层/深入理解Kafka事件机制系列/2_KafkaBroker存储-特性",
+        "title": "Kafka Broker 存储机制深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "Broker 存储的核心：顺序 I/O + 页缓存 + 零拷贝——这是 Kafka 吞吐高的根本原因。 核心概念：  Partition：每个 Topic 分区…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/特性层/深入理解Kafka事件机制系列/3_KafkaConsumerGroup消费-特性",
+        "title": "Kafka Consumer Group 消费机制深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "Consumer Group 的核心：分区分配 + Rebalance + 位移提交——每个设计都围绕\"如何让消息不丢不重\"。 核心原则：  每个 Partit…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/特性层/深入理解Kafka事件机制系列/1_KafkaProducer机制-特性",
+        "title": "Kafka Producer 机制深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "Producer 的核心挑战：如何在高吞吐与低延迟之间做取舍—— batching、压缩、分区策略，每一项都是工程权衡。 核心组件：  Record Accum…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/architecture/cloud-native/入门层/从零开始认识云原生系列/3_Kubernetes心智模型-声明式与控制循环-入门",
         "title": "Kubernetes心智模型-声明式与控制循环",
         "wordCount": 3415,
@@ -4379,6 +4974,38 @@
           "服务治理",
           "mTLS",
           "入门层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解传输与IO系列/1_Netty线程模型与EventLoop关键路径-深度",
+        "title": "Netty 线程模型与 EventLoop 关键路径深读：串行化的性能哲学",
+        "wordCount": 7800,
+        "readMinutes": 26,
+        "excerpt": "本文核心：Netty 吞吐优势的机制核心是「一个 Channel 终身绑定一个 EventLoop 线程」——同一连接的全部 IO 事件串行执行，共享状态免锁；…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "Netty",
+          "IO",
+          "特性层"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/特性层/深入理解序列化与协议系列/1_Protobuf编码原理与wire格式-深度",
+        "title": "Protobuf 编码原理与 wire 格式深读：字段编号的基因工程",
+        "wordCount": 7500,
+        "readMinutes": 25,
+        "excerpt": "本文核心：Protobuf 的性能与兼容性都来自 wire format 的一个根本决定——报文里只存「字段编号+类型+值」，不存字段名。本文从 varint …",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "序列化",
+          "Protobuf",
+          "特性层"
         ],
         "isTest": false
       },
@@ -4441,6 +5068,39 @@
         "tags": [
           "架构",
           "REST"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/特性层/深入理解RocketMQ事件机制系列/1_RocketMQ架构与消息模型-特性",
+        "title": "RocketMQ 架构与消息模型深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "RocketMQ 的核心设计：主从同步 + 事务消息 + 消费组——为金融级可靠 messaging 而生。 核心角色：  NameServer：轻量路由注册，…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/特性层/深入理解RocketMQ事件机制系列/2_RocketMQ事务消息-特性",
+        "title": "RocketMQ 事务消息深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "事务消息的核心：半消息 + 本地事务 + 回查——解决业务写入与消息发送的原子性问题。 场景：订单创建 → 发消息通知，两步必须原子性。  半消息：Broker…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/event-driven/特性层/深入理解RocketMQ事件机制系列/3_RocketMQ消费模式与延迟消息-特性",
+        "title": "RocketMQ 消费模式与延迟消息深度解析",
+        "wordCount": 1200,
+        "readMinutes": 4,
+        "excerpt": "RocketMQ 消费的核心：集群消费 vs 广播 + 延迟级别——灵活应对不同业务场景。 | 模式 | 语义 | 适用场景 | |||| | 集群消费 | 每…",
+        "tags": [
+          "规划中"
         ],
         "isTest": false
       },
@@ -4510,8 +5170,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/11_可观测与链路追踪-入门",
         "title": "RPC 的可观测与链路追踪：调用链的透明化",
-        "wordCount": 3500,
-        "readMinutes": 11,
+        "wordCount": 3287,
+        "readMinutes": 10,
         "excerpt": "本文核心：RPC 调用跨进程跨机器，故障定位不能再靠「单机看日志」——可观测三支柱把调用链透明化：指标（QPS/RT/错误率的 Red 三元组，发现异常）、日志…",
         "tags": [
           "架构",
@@ -4526,7 +5186,7 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/10_限流熔断降级-入门",
         "title": "RPC 的限流熔断降级：调用链上的稳定性三件套",
-        "wordCount": 3500,
+        "wordCount": 3415,
         "readMinutes": 11,
         "excerpt": "本文核心：RPC 调用链上的三道稳定性防线——限流（provider 视角：进来的流量扛不住就快速拒绝，保护自身容量）、熔断（consumer 视角：下游持续失…",
         "tags": [
@@ -4553,6 +5213,22 @@
           "选型",
           "Dubbo",
           "gRPC"
+        ],
+        "isTest": false
+      },
+      {
+        "file": "/architecture/service-governance/rpc/专题层/RPC框架选型决策/1_四框架选型决策与迁移路径-深度",
+        "title": "RPC 框架选型决策与迁移路径：从对比表到落地节奏",
+        "wordCount": 8000,
+        "readMinutes": 27,
+        "excerpt": "本文核心：框架选型的失败模式不是「选错了组件」，而是「用对比表代替决策过程」——本篇把选型还原为四步：定约束（语言栈/基础设施人力/存量资产三问）、画决策树（J…",
+        "tags": [
+          "架构",
+          "服务治理",
+          "RPC",
+          "选型",
+          "迁移",
+          "专题层"
         ],
         "isTest": false
       },
@@ -4588,7 +5264,7 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/0_系列导读-全景",
         "title": "RPC 系列导读",
-        "wordCount": 1450,
+        "wordCount": 2028,
         "readMinutes": 6,
         "excerpt": "📖 本系列共 14 篇（0导读 + 13 正文），覆盖 RPC 机制整个知识面：认知心智、序列化传输、发现路由、容错治理、对比演进。  本篇是第 0 篇导读：…",
         "tags": [],
@@ -4597,8 +5273,8 @@
       {
         "file": "/architecture/service-governance/rpc/入门层/从零开始认识RPC系列/13_RPC协议与选型-入门",
         "title": "RPC 协议与选型：dubbo://、triple:// 与技术决策",
-        "wordCount": 1614,
-        "readMinutes": 5,
+        "wordCount": 3438,
+        "readMinutes": 11,
         "excerpt": "全系列收束篇：RPC 协议（dubbo:///triple:///grpc://）是 Dubbo 3.x 的协议矩阵——从私有 TCP 到 Triple（HTT…",
         "tags": [
           "架构",
@@ -8292,6 +8968,17 @@
         "isTest": false
       },
       {
+        "file": "/data/elasticsearch/整合层/ES生产部署实战/1_ES生产部署实战-整合",
+        "title": "ES 生产部署实战",
+        "wordCount": 1000,
+        "readMinutes": 3,
+        "excerpt": "Elasticsearch 生产部署的核心：集群规划 + 索引设计 + 运维监控。 | 角色 | CPU | 内存 | 磁盘 | 数量 | |||||| | M…",
+        "tags": [
+          "规划中"
+        ],
+        "isTest": false
+      },
+      {
         "file": "/data/elasticsearch/入门层/从零开始认识Elasticsearch系列/1_ES是什么与应用场景全景-入门",
         "title": "ES 是什么：搜索、日志、分析与向量的全景",
         "wordCount": 1627,
@@ -11518,8 +12205,8 @@
       {
         "file": "/middleware/nacos/入门层/从零开始认识Nacos系列/3_服务注册与发现-入门",
         "title": "Nacos 服务注册与发现：一次注册、订阅与推送的完整旅程",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 4032,
+        "readMinutes": 13,
         "excerpt": "本文核心：服务发现的运转靠四个机制咬合——注册（实例上线时向 Server 登记地址与元数据）、心跳（临时实例定期上报证明「我还活着」，超时未报即摘除）、健康检…",
         "tags": [
           "中间件",
@@ -11533,8 +12220,8 @@
       {
         "file": "/middleware/nacos/入门层/从零开始认识Nacos系列/2_核心概念与架构心智模型-入门",
         "title": "Nacos 核心概念与架构心智模型：两棵模型树与一次变更的旅程",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 4294,
+        "readMinutes": 13,
         "excerpt": "本文核心：Nacos 的全部概念可以收进两棵模型树——服务模型树（Service → Cluster → Instance，回答「一次调用找谁」）与配置模型树（…",
         "tags": [
           "中间件",
@@ -11547,8 +12234,8 @@
       {
         "file": "/middleware/nacos/入门层/从零开始认识Nacos系列/1_Nacos是什么与定位-入门",
         "title": "Nacos 是什么：注册中心与配置中心的统一底座",
-        "wordCount": 3400,
-        "readMinutes": 11,
+        "wordCount": 3340,
+        "readMinutes": 10,
         "excerpt": "一句话：Nacos 是「动态服务发现 + 配置管理」二合一的中间件——服务实例再怎么漂移，调用方都能拿到最新地址列表；线上参数再怎么改，都不用重启实例。  本文…",
         "tags": [
           "中间件",
@@ -11562,8 +12249,8 @@
       {
         "file": "/middleware/nacos/入门层/从零开始认识Nacos系列/0_系列导读-全景",
         "title": "Nacos 系列导读：从机制到组件的 4 层学习路径",
-        "wordCount": 1170,
-        "readMinutes": 3,
+        "wordCount": 1131,
+        "readMinutes": 4,
         "excerpt": "入门层 7 篇导读。讲清系列定位、4 层关系、阅读路径、与相邻系列的关系——不重复入门层定义。 微服务一旦多起来，两件事立刻变难：「服务在哪」和「配置怎么改」。…",
         "tags": [
           "中间件",
@@ -12376,8 +13063,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/7_版本演进与生态-入门",
         "title": "Sentinel 版本演进与生态：从限流器到云原生防护",
-        "wordCount": 3500,
-        "readMinutes": 11,
+        "wordCount": 3945,
+        "readMinutes": 12,
         "excerpt": "本文核心：Sentinel 的演进主线是「防护语义的抽象层逐级上移」——1.x 时代把流控/熔断做成进程内的规则引擎（语言 SDK 形态），后续版本把能力延伸到…",
         "tags": [
           "中间件",
@@ -12392,8 +13079,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/2_核心概念与心智模型-入门",
         "title": "Sentinel 核心概念与心智模型：一次请求的完整旅程",
-        "wordCount": 3400,
-        "readMinutes": 11,
+        "wordCount": 3349,
+        "readMinutes": 10,
         "excerpt": "篇 1 建立了资源、规则、Slot 链三个概念。本篇把它们拼成一张完整的心智模型——主线只有一个问题：一次请求从进入 Sentinel 到被放行或拒绝，中间到底…",
         "tags": [
           "中间件",
@@ -12406,8 +13093,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/6_接入实战与Dashboard-入门",
         "title": "Sentinel 接入实战与 Dashboard：从依赖到控制台",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 4111,
+        "readMinutes": 13,
         "excerpt": "本文核心：前五篇讲的是 Sentinel 的「内功」，本篇讲「怎么用起来」——两种接入方式（原生 Spring Boot 依赖：手动埋点+配置拦截器；Sprin…",
         "tags": [
           "中间件",
@@ -12421,8 +13108,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/3_流控规则-入门",
         "title": "Sentinel 流控规则：两种阈值、两种模式、三种效果",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 4006,
+        "readMinutes": 13,
         "excerpt": "本文核心：流控规则是 Sentinel 最常用的规则类型，参数体系可以收成「2×2×3」——2 种阈值类型（QPS：每秒请求数；并发线程数：同时在处理的请求数）…",
         "tags": [
           "中间件",
@@ -12436,8 +13123,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/5_热点参数与访问控制规则-入门",
         "title": "Sentinel 热点参数与访问控制规则：参数级流控与来源授权",
-        "wordCount": 3500,
-        "readMinutes": 11,
+        "wordCount": 3833,
+        "readMinutes": 12,
         "excerpt": "本文核心：常规流控规则按「资源」整体计数，本篇两类规则把粒度再往下拆一层、往外扩一圈——热点参数规则按「参数值」分别计数限流：同一个查询资源，爆款商品 ID 单…",
         "tags": [
           "中间件",
@@ -12451,8 +13138,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/4_熔断降级与系统自适应保护-入门",
         "title": "Sentinel 熔断降级与系统自适应保护：劣化检测与最后防线",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 4250,
+        "readMinutes": 13,
         "excerpt": "本文核心：流控管「流量大」，本篇两套规则管「系统劣化」——熔断降级规则（consumer 视角，检测依赖的劣化：慢调用比例/异常比例/异常数三种策略，超阈值熔断…",
         "tags": [
           "中间件",
@@ -12466,8 +13153,8 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/1_Sentinel是什么与定位-入门",
         "title": "Sentinel 是什么：流控防护组件的定位与全景",
-        "wordCount": 3600,
-        "readMinutes": 12,
+        "wordCount": 3620,
+        "readMinutes": 11,
         "excerpt": "一句话：Sentinel 是面向微服务的流控防护组件——用「资源 + 规则」两个概念，把「流量大了怎么办、依赖慢了怎么办」从救火问题变成可配置的工程问题。  本…",
         "tags": [
           "中间件",
@@ -12480,7 +13167,7 @@
       {
         "file": "/middleware/sentinel/入门层/从零开始认识Sentinel系列/0_系列导读-全景",
         "title": "Sentinel 系列导读：从规则到防护的 4 层学习路径",
-        "wordCount": 1150,
+        "wordCount": 1095,
         "readMinutes": 3,
         "excerpt": "入门层 7 篇导读。讲清系列定位、4 层关系、阅读路径、与相邻系列的关系——不重复入门层定义。 学流控防护最容易犯的错，是把「机制」和「组件」混在一起：  会配…",
         "tags": [

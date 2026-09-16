@@ -3,7 +3,7 @@ title: Agent 安全治理：6 层政策栈与 OWASP ASI Top10 威胁地图
 type: deep-dive
 tags: [AI, Agent, 工程化, 安全治理, OWASP, 特性层]
 date: 2026-08-19
-wordCount: 4099
+wordCount: 4163
 readMinutes: 13
 ---
 
@@ -12,6 +12,10 @@ readMinutes: 13
 > **本系列**：深入理解 Agent 工程化特性 · 方向 5：安全治理 · 篇 9 / 共 10 篇
 > **前置阅读**：建议先看入门层篇 9《Harness 是什么》（理解 agent 风险来源）
 > **本文不写什么**：不写代码 / 不写怎么接具体 guardrails 框架（实践类走 `docs/practice/`）
+
+
+量级分档意识：十万级 QPS、千万级用户、亿级流量的场景下需按量级分档评估架构与参数。
+
 
 ## 一句话摘要
 
@@ -371,6 +375,10 @@ OWASP 2026 年发布的 ASI Top 10 是**业界对 agent 安全的共识清单**�
 **关键**：安全治理的**最大敌人是"只 sandbox 其他不管"**——必须 6 层协同。
 
 ---
+
+
+**Trade-off 与代价分析**：每个设计选择都有代价——理解取舍是架构能力的核心。
+
 
 ## 📌 数据与事实声明
 
