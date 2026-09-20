@@ -20,7 +20,7 @@ readMinutes: 1
 | # | 篇目 | 架构 | 状态 |
 |---|---|---|---|
 | 1 | 订单支付微服务 Demo | FastAPI + Redis + MySQL + RabbitMQ + Nacos | ✅ 已完成 |
-| 2 | 风控风控微服务 Demo | FastAPI + Redis + MySQL + Kafka + Prometheus + Grafana | ✅ 已完成 |
+| 2 | 风控微服务 Demo | FastAPI + Redis + MySQL + Kafka + Prometheus + Grafana | ✅ 已完成 |
 
 两个 Demo 覆盖企业级微服务的两种典型架构：**交易链路（订单→支付）** vs **风控链路（实时风控 → 异步处理）**。
 
