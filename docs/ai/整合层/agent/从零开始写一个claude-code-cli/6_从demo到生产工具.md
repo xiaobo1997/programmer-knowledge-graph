@@ -1,4 +1,8 @@
 ---
+title: "6 从demo到生产工具"
+type: concept
+tags: [AI, Agent, 整合层, L4-Demo]
+date: 2026
 wordCount: 1998
 readMinutes: 6
 ---
@@ -15,6 +19,20 @@ readMinutes: 6
 
 ---
 
+
+**5W 速记卡**：
+- **What**：本文主题
+- **Why**：为什么值得学
+- **Who**：适合谁
+- **When**：什么时候用
+- **Where**：在哪用
+
+**自测三问**：
+1. 本文核心机制：
+2. 失效点：
+3. 与下篇衔接：
+
+---
 ## 6.1 演进链总览（demo vs 生产，5 维度）
 
 | 维度 | 我们的 demo | 生产版（claude-code 官方）| 差距本质 |

@@ -1,4 +1,8 @@
 ---
+title: "10 Trade-off 与生产演进"
+type: concept
+tags: [AI, Agent, 整合层, L4-Demo]
+date: 2026
 wordCount: 1148
 readMinutes: 4
 ---
@@ -6,8 +10,21 @@ readMinutes: 4
 
 ## 一句话摘要
 
-Trade-off与生产演进 的核心要点与实践指导。
+Trade-off 与生产演进 的核心要点与实践指导。
 
+**5W 速记卡**：
+- **What**：从 demo 到生产级工具的 Trade-off
+- **Why**：demo 到生产不是线性升级，是架构重塑
+- **Who**：做 agent 工程的工程师
+- **When**：demo 验证完进入生产前
+- **Where**：生产环境
+
+**自测三问**：
+1. 本文核心机制：demo → 生产的 5 维度 Trade-off
+2. 失效点：按生产标准做 demo → 成本爆炸
+3. 与下篇衔接：Trade-off → 实际架构
+
+---
 
 > **系列**：从零开始写一个 claude-code-cli（整合层 demo 工程）
 > **模板**：project-demo-template.md v3.1（§10 = Trade-off 5 维度）
