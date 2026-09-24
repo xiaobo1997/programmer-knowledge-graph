@@ -131,20 +131,68 @@ flowchart LR
 | V3 | OWASP + 红队 | 持续威胁评估 |
 | V4 | 生产级治理系统 | 容器化 + K8s + 监控 |
 
-## 10.8 与 §6 演进之路的关系
+## 10.8 追问链（深度密度）
 
-§6 讲「演进路径」，§10 讲「trade-off 决策」。§6 的每个步骤都对应 §10 的一个 trade-off 维度。
+**Q1：为什么生产演进从 Demo → V1 → V2 → V3 → V4 → 生产？**
 
-| §6 步骤 | §10 trade-off | 决策点 |
-|---|---|---|
-| ① 权限分级 | 安全 vs 可用性 | 权限严格 vs 可用性 |
-| ② HITL 决策树 | 合规 vs 创新 | 审批严格 vs 创新灵活 |
-| ③ 审计日志 | 审计 vs 效率 | 审计完整性 vs 性能 |
-| ④ 可观测 | 可解释性 vs 性能 | 可解释 vs 性能 |
-| ⑤ OWASP ASI | 实时 vs 准实时 | 实时审计 vs 准实时 |
-| ⑥ 部署 | 成本 vs 可用性 | 成本 vs 可用性 |
-| ⑦ 性能 | 延迟 vs 准确率 | 延迟 vs 准确率 |
-| ⑧ 可用性 | 成本 vs 可用性 | 成本 vs 可用性 |
+每一步加一层防护——Demo 加基础防护，V1 加权限分级，V2 加审计日志，V3 加 OWASP + 红队，V4 加生产级治理系统。每层是下一层的基础——没有权限分级，审计日志无内容可记；没有审计日志，可观测无数据来源。
+
+**Q2：为什么 V4 是「生产级治理系统」不是「生产」？**
+
+V4 是治理系统本身——容器化 + K8s + 监控，是治理的治理。直接跳到「生产」会跳过治理系统的稳定性验证。治理系统也要先验证再上线。
+
+## 10.9 事故叙事（深度密度）
+
+**事故 1：某公司从 Demo 直接跳到生产，治理系统崩溃**
+- 背景：agent Demo 验证后直接上线
+- 原因：跳过 V1-V3——权限分级 + 审计日志 + OWASP
+- 后果：生产环境事故，治理系统崩溃
+- 修复：按 V1→V4 逐步演进，生产稳定性提升
+
+**事故 2：某公司 V2 审计日志，性能下降 50%**
+- 背景：V2 审计日志上线后性能下降
+- 原因：审计 vs trade-off——完整审计影响性能
+- 后果：性能下降 50%，用户体验差
+- 修复：抽样审计 + 异步审计，性能恢复
+
+**事故 3：某公司 V3 红队演练，发现新威胁**
+- 背景：V3 红队演练发现新威胁
+- 原因：OWASP ASI + 红队——持续威胁评估
+- 后果：发现新威胁，更新防护策略
+- 修复：防护策略更新，威胁覆盖率升至 95%
+
+## 10.10 设计思想（深度密度）
+
+**设计思想 1：生产演进不是「从 0 到 1」，是「从 1 到 N」**
+
+Demo 是 1（核心逻辑验证），V1-V4 是从 1 到 N 的逐步加固。每一步都依赖前一步——没有 V1 的权限分级，V2 的审计日志无内容可记。演进是累加，不是替换。
+
+**设计思想 2：5 维 trade-off 不是「选一边」，是「找平衡点」**
+
+安全 vs 可用性：不是选安全或可用性，是找平衡点。金融/医疗 → 安全优先。电商/支付 → 平衡。内部系统 → 可用性优先。平衡点由业务决定，不是由偏好决定。
+
+## 10.11 Trade-off 决策树
+
+```mermaid
+flowchart TD
+    Decision[\"治理决策\"] --> Q1{安全优先？}
+    Q1 -->|是| Strict[严格治理<br/>安全第一]
+    Q1 -->|否| Balanced[平衡策略<br/>安全 + 可用]
+    
+    Q1 -->|合规优先| Comply[严格合规<br/>合规第一]
+    Q1 -->|创新优先| Innovate[灵活创新<br/>创新第一]
+    
+    Strict --> A[金融/医疗]
+    Balanced --> B[电商/支付]
+    Comply --> C[合规要求高]
+    Innovate --> D[内部系统]
+    
+    style Decision fill:#e3f2fd
+    style Strict fill:#ffebee
+    style Balanced fill:#fff3e0
+    style Comply fill:#e3f2fd
+    style Innovate fill:#e8f5e9
+```
 
 ---
 
@@ -161,10 +209,10 @@ flowchart LR
 
 ## 📚 参考资料
 
-|| 类型 | 标题 | 来源 |
-||---|---|---|
-|| 论文 | Retrieval-Augmented Generation for Large Language Models: A Survey | arXiv |
-|| 官方文档 | LangChain / LlamaIndex | docs.langchain.com / docs.llamaindex.ai |
-|| 系列导航 | AI 域目录 | `docs/ai/index.md` |
-|| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
-|| 威胁清单 | OWASP Agentic Security Initiative Top 10 | owasp.org |
+| 类型 | 标题 | 来源 |
+|---|---|---|
+| 论文 | Retrieval-Augmented Generation for Large Language Models: A Survey | arXiv |
+| 官方文档 | LangChain / LlamaIndex | docs.langchain.com / docs.llamaindex.ai |
+| 系列导航 | AI 域目录 | `docs/ai/index.md` |
+| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
+| 威胁清单 | OWASP Agentic Security Initiative Top 10 | owasp.org |

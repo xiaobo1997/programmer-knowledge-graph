@@ -44,3 +44,4 @@ readMinutes: 1
 |---|---|:---:|
 | 1 | [KRaft 控制器与元数据 Quorum](./1_KRaft控制器与元数据Quorum-深度) | ✅ |
 | 2 | [ZooKeeper 到 KRaft 迁移](./2_ZooKeeper到KRaft迁移-深度) | ✅ |
+| 3 | [Controller 与 KRaft 元数据演进](./3_Controller与KRaft元数据演进-深度) | ✅ |

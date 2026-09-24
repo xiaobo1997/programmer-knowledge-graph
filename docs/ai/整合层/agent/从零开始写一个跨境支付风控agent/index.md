@@ -126,6 +126,8 @@ README / 贡献 / 已知问题 / roadmap
 
 ### §9 数据与事实声明 + 参考资料
 star 数有来源（gh CLI）+ 日期（2026-09-21）
+- 数据：跨境支付风控市场数据来源——行业报告公开数据（来源待 gh CLI 实测补充）
+- 事实：跨境支付风控 agent 案例——Stripe Radar, PayPal Fraud Protection（公开资料，待补充 star 数）
 
 ### §10 Trade-off 与生产演进
 5 维（风险准确率 vs 误拦率 / 规则 vs LLM / 实时性 vs 精度 / 审计 vs 效率 / 可解释性 vs 性能）

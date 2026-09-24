@@ -127,6 +127,8 @@ README / 贡献 / 已知问题 / roadmap
 
 ### §9 数据与事实声明 + 参考资料
 star 数有来源（gh CLI）+ 日期（2026-09-21）
+- 数据：跨境支付客服市场数据来源——行业报告公开数据（来源待 gh CLI 实测补充）
+- 事实：跨境支付客服 agent 案例——Stripe Customer Portal, Adyen Customer Management（公开资料，待补充 star 数）
 
 ### §10 Trade-off 与生产演进
 5 维（回答准确率 vs 误拦率 / RAG vs 规则 / 实时性 vs 精度 / 审计 vs 效率 / 可解释性 vs 性能）

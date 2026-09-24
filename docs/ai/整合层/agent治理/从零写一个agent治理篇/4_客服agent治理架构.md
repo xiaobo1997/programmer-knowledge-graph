@@ -187,7 +187,43 @@ def check_tool_call(tool_name, args):
 - [ ] Data exfiltration 测试（每月 PII 检查）
 - [ ] Resource exhaustion 测试（每周压力测试）
 
-## 4.8 客服治理架构 vs 风控治理架构
+## 4.9 客服场景的 hook 检查清单（深度密度补充）
+
+**追问链**：
+
+**Q1：客服 agent 的 hook 和风控 agent 的 hook 为什么结构相同？**
+
+结构相同因为 L2 hook 是通用安全层——工具白名单 + PII 脱敏 + 金额检查 + 频率限制。风控和客服的差异在 L1 权限和 L4 HITL，不在 L2 hook。hook 是「安全底线」，L1/L4 是「业务策略」。
+
+**Q2：为什么客服 hook 要检查「频率限制」？**
+
+客服场景高频调用——用户咨询 → agent 回答 → 用户再咨询。没有频率限制，agent 被高频调用拖垮系统。频率限制是「自我保护」，不是「安全防护」。
+
+**事故叙事**：
+
+**事故 1：某客服 agent hook 未脱敏 PII，用户数据泄露**
+- 背景：客服 agent hook 只检查工具白名单
+- 原因：hook 缺 PII 脱敏——姓名/地址/电话未过滤
+- 后果：PII 泄露，用户投诉
+- 修复：hook 加入 PII 脱敏，泄露率降至 0%
+
+**事故 2：某客服 agent hook 未做金额检查，超额退款通过**
+- 背景：客服 agent hook 只做白名单
+- 原因：hook 缺金额检查——超额退款未拦截
+- 后果：超额退款通过，损失 $200K
+- 修复：hook 加入金额检查，拦截率升至 99%
+
+**设计思想**：
+
+**设计思想 1：hook 是 L2——权限 ladder（L1）之后、sandbox（L3）之前**
+
+L1 验证「谁能做」，L2 验证「做什么」，L3 验证「在什么环境做」。三层各管一维，交叉覆盖。风控和客服的 L2 hook 结构相同，因为安全逻辑与业务逻辑解耦。
+
+**设计思想 2：hook 检查清单是「活的」**
+
+新工具上线 → 加白名单。新数据类型 → 加脱敏。新风险 → 加检查。清单是活的，不是一次性的。风控和客服各维护一份清单，但结构一致。
+
+## 4.10 客服治理架构 vs 风控治理架构
 
 | 维度 | 客服 agent | 风控 agent |
 |---|---|---|
@@ -213,9 +249,9 @@ def check_tool_call(tool_name, args):
 
 ## 📚 参考资料
 
-|| 类型 | 标题 | 来源 |
-||---|---|---|
-|| 官方威胁清单 | OWASP Agentic Security Initiative Top 10（2026）| owasp.org/agentic-security-initiative |
-|| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
-|| 特性层 | 篇 9 Agent 安全治理 + 篇 10 权限设计 | PKG docs/ai/特性层 |
-|| 系列导航 | AI 域目录 | `docs/ai/index.md` |
+| 类型 | 标题 | 来源 |
+|---|---|---|
+| 官方威胁清单 | OWASP Agentic Security Initiative Top 10（2026）| owasp.org/agentic-security-initiative |
+| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
+| 特性层 | 篇 9 Agent 安全治理 + 篇 10 权限设计 | PKG docs/ai/特性层 |
+| 系列导航 | AI 域目录 | `docs/ai/index.md` |

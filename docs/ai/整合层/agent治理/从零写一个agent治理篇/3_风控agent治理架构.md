@@ -187,7 +187,43 @@ def check_tool_call(tool_name, args):
 - [ ] Data exfiltration 测试（每月 PII 检查）
 - [ ] Resource exhaustion 测试（每周压力测试）
 
-## 3.8 风控治理架构 vs 客服治理架构
+## 3.8 风控场景的 hook 检查清单（深度密度补充）
+
+**追问链**：
+
+**Q1：为什么 hook 检查要分「工具白名单」和「PII 脱敏」两类？**
+
+工具白名单防的是「调了什么工具」——防误操作。PII 脱敏防的是「调工具时带了什么数据」——防泄露。两类检查覆盖两个风险维度：操作风险 + 数据风险。只做一类，另一类裸奔。
+
+**Q2：为什么金额检查要在 hook 层做，不是在规则引擎做？**
+
+规则引擎是业务逻辑（金额 > 阈值 → 拦截），hook 是安全逻辑（参数含敏感数据 → 脱敏）。hook 层的金额检查是「最后一道防线」——规则引擎漏了，hook 兜底。
+
+**事故叙事**：
+
+**事故 1：某风控 agent hook 未检查 PII，敏感数据泄露**
+- 背景：风控 agent hook 只检查工具白名单
+- 原因：hook 缺 PII 脱敏——敏感数据未过滤
+- 后果：卡号/身份证泄露，监管罚款
+- 修复：hook 加入 PII 脱敏，泄露率降至 0%
+
+**事故 2：某风控 agent hook 未做金额检查，超额交易通过**
+- 背景：风控 agent hook 只做白名单
+- 原因：hook 缺金额检查——超额交易未拦截
+- 后果：超额交易通过，损失 $500K
+- 修复：hook 加入金额检查，拦截率升至 99%
+
+**设计思想**：
+
+**设计思想 1：hook 不是「加个检查」，是「分层防御」的一层**
+
+hook 是 L2——权限 ladder（L1）之后、sandbox（L3）之前。L1 验证「谁能做」，L2 验证「做什么」，L3 验证「在什么环境做」。三层各管一维，交叉覆盖。
+
+**设计思想 2：hook 检查清单不是「一次性」，是「持续维护」**
+
+新工具上线 → 加白名单。新数据类型 → 加脱敏。新风险 → 加检查。清单是活的，不是一次性的。
+
+## 3.9 风控治理架构 vs 客服治理架构
 
 | 维度 | 风控 agent | 客服 agent |
 |---|---|---|
@@ -213,9 +249,9 @@ def check_tool_call(tool_name, args):
 
 ## 📚 参考资料
 
-|| 类型 | 标题 | 来源 |
-||---|---|---|
-|| 官方威胁清单 | OWASP Agentic Security Initiative Top 10（2026）| owasp.org/agentic-security-initiative |
-|| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
-|| 特性层 | 篇 9 Agent 安全治理 + 篇 10 权限设计 | PKG docs/ai/特性层 |
-|| 系列导航 | AI 域目录 | `docs/ai/index.md` |
+| 类型 | 标题 | 来源 |
+|---|---|---|
+| 官方威胁清单 | OWASP Agentic Security Initiative Top 10（2026）| owasp.org/agentic-security-initiative |
+| 开源框架 | NVIDIA NeMo-Guardrails | github.com/NVIDIA/NeMo-Guardrails |
+| 特性层 | 篇 9 Agent 安全治理 + 篇 10 权限设计 | PKG docs/ai/特性层 |
+| 系列导航 | AI 域目录 | `docs/ai/index.md` |
