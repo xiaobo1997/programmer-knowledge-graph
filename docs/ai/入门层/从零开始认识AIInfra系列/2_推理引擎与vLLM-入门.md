@@ -3,8 +3,8 @@ title: "推理引擎与 vLLM：prefill、decode 与把 GPU 榨干的两件武器
 type: concept
 tags: [AI Infra, 推理, vLLM, PagedAttention, 入门层]
 date: 2026-09-17
-wordCount: 4588
-readMinutes: 12
+wordCount: 4953
+readMinutes: 15
 ---
 
 # 推理引擎与 vLLM：prefill、decode 与把 GPU 榨干的两件武器

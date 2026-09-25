@@ -3,8 +3,8 @@ title: Python 连接 MySQL：ORM 进阶与数据库治理
 type: deep-dive
 tags: [Python, MySQL, SQLAlchemy, 连接池, 事务, 特性层]
 date: 2026-09-16
-wordCount: 6900
-readMinutes: 22
+wordCount: 6428
+readMinutes: 20
 aside: false
 ---
 

@@ -1,4 +1,7 @@
 ---
+
+wordCount: 1296
+readMinutes: 4
 ---
 title: "6 从demo到生产工具的演进之路思考"
 type: reference

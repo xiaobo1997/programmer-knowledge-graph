@@ -3,7 +3,7 @@ title: "6 从demo到生产工具"
 type: concept
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026
-wordCount: 1998
+wordCount: 2049
 readMinutes: 6
 ---
 # §6 从 demo 到生产工具的演进之路思考

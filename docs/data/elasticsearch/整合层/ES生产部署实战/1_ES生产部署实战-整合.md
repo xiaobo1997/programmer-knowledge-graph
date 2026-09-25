@@ -3,7 +3,7 @@ title: ES 生产部署实战：容量、分片、安全与运维闭环
 type: deep-dive
 tags: [Elasticsearch, 生产部署, 集群运维, 整合层]
 date: 2026-09-15
-wordCount: 6300
+wordCount: 6688
 readMinutes: 21
 ---
 

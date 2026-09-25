@@ -3,7 +3,7 @@ title: "MyBatis 集成"
 type: concept
 tags: [Spring Boot, 数据访问, MyBatis, SQL, L1入门层]
 date: 2026-09-23
-wordCount: 3265
+wordCount: 3672
 readMinutes: 11
 ---
 

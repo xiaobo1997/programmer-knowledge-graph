@@ -3,8 +3,8 @@ title: ZAB 与 Paxos 的异同一页讲透
 date: 2026-09-24
 type: deep-dive
 tags: [架构, 分布式理论, ZAB, Paxos, ZooKeeper, 共识]
-wordCount: 6088
-readMinutes: 24
+wordCount: 6833
+readMinutes: 21
 ---
 
 # ZAB 与 Paxos 的异同一页讲透

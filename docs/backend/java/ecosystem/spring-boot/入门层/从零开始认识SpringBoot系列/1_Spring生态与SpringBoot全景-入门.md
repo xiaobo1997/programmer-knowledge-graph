@@ -3,8 +3,8 @@ title: "Spring 生态与 Spring Boot 全景"
 type: concept
 tags: [Spring Boot, 生态, L1入门层]
 date: 2026-09-23
-wordCount: 3265
-readMinutes: 10
+wordCount: 3695
+readMinutes: 12
 ---
 
 # Spring 生态与 Spring Boot 全景

@@ -3,8 +3,8 @@ title: Sentinel 特性层总览：三系列实现深读
 type: overview
 tags: [中间件, Sentinel, 特性层]
 date: 2026-09-23
-wordCount: 850
-readMinutes: 3
+wordCount: 714
+readMinutes: 2
 aside: false
 ---
 

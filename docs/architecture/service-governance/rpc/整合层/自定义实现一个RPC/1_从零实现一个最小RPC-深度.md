@@ -3,8 +3,8 @@ title: 从零实现一个最小 RPC
 date: 2026-09-23
 type: deep-dive
 tags: [架构, RPC, 整合层, Netty, 动态代理, 序列化]
-wordCount: 7100
-readMinutes: 28
+wordCount: 6835
+readMinutes: 21
 ---
 
 # 从零实现一个最小 RPC

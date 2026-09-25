@@ -3,8 +3,8 @@ title: RocketMQ 架构与消息模型深度解析
 type: deep-dive
 date: 2026-09-15
 aside: false
-wordCount: 6159
-readMinutes: 15
+wordCount: 6679
+readMinutes: 21
 tags: [RocketMQ, 事件驱动, 消息模型, NameServer, CommitLog]
 ---
 

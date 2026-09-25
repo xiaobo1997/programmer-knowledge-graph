@@ -2,7 +2,7 @@
 title: 深入理解 RocketMQ 特性系列 · L2 特性层深度专题
 date: 2026-08-27
 aside: false
-wordCount: 1968
+wordCount: 2034
 readMinutes: 6
 ---
 

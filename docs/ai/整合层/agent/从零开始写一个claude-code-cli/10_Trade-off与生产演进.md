@@ -3,7 +3,7 @@ title: "10 Trade-off 与生产演进"
 type: concept
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026
-wordCount: 1148
+wordCount: 1250
 readMinutes: 4
 ---
 # §10 Trade-off 与生产演进

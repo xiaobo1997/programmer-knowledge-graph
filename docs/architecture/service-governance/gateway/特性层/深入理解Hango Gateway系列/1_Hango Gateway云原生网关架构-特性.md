@@ -3,8 +3,8 @@ title: Hango Gateway：云原生新一代网关架构深度解析
 type: deep-dive
 tags: [架构, 网关, 云原生, 特性层]
 date: 2026-09-16
-wordCount: 3200
-readMinutes: 11
+wordCount: 687
+readMinutes: 2
 aside: false
 ---
 

@@ -2,7 +2,7 @@
 title: "深入理解底层编码系列（源码走读）"
 date: 2026-09-03
 aside: false
-wordCount: 415
+wordCount: 450
 readMinutes: 1
 ---
 

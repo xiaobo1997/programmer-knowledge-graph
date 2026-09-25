@@ -3,8 +3,8 @@ title: "Web MVC 请求链路"
 type: concept
 tags: [Spring Boot, Web, L1入门层]
 date: 2026-09-23
-wordCount: 3419
-readMinutes: 11
+wordCount: 3824
+readMinutes: 12
 ---
 
 # Web MVC 请求链路

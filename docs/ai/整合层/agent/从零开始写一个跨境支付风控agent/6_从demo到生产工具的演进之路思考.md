@@ -3,8 +3,8 @@ title: "从零开始写一个跨境支付风控 agent · §6 从 demo 到生产�
 type: concept
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5000
-readMinutes: 16
+wordCount: 1221
+readMinutes: 4
 ---
 
 # §6 从 demo 到生产工具的演进之路思考

@@ -3,8 +3,8 @@ title: Trace 上下文与采样原理
 date: 2026-09-24
 type: deep-dive
 tags: [架构, 可观测性, 链路追踪, OpenTelemetry, 采样]
-wordCount: 5813
-readMinutes: 26
+wordCount: 6459
+readMinutes: 20
 ---
 
 # Trace 上下文与采样原理

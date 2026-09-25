@@ -3,8 +3,8 @@ title: 深入理解扩展机制系列总览：责任链、SPI 与自定义落地
 type: overview
 tags: [中间件, Sentinel, Slot, 扩展机制, 特性层]
 date: 2026-09-23
-wordCount: 800
-readMinutes: 3
+wordCount: 705
+readMinutes: 2
 aside: false
 ---
 

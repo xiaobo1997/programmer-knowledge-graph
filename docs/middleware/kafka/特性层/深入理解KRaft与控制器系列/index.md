@@ -2,7 +2,7 @@
 title: "深入理解KRaft与控制器系列（原理深挖）"
 date: 2026-09-03
 aside: false
-wordCount: 440
+wordCount: 463
 readMinutes: 1
 ---
 

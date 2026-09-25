@@ -3,8 +3,8 @@ title: TCC 空回滚、悬挂与幂等治理
 date: 2026-09-24
 type: deep-dive
 tags: [架构, 分布式事务, TCC, 空回滚, 悬挂, 幂等]
-wordCount: 6549
-readMinutes: 28
+wordCount: 7198
+readMinutes: 22
 ---
 
 # TCC 空回滚、悬挂与幂等治理深度

@@ -3,8 +3,8 @@ title: "XtraBackup 物理备份与 PITR：从拷贝原理到任意时点恢复"
 type: deep-dive
 tags: [MySQL, xtrabackup, PITR, 备份恢复, 专题层]
 date: 2026-09-18
-wordCount: 5314
-readMinutes: 26
+wordCount: 5933
+readMinutes: 19
 ---
 
 # XtraBackup 物理备份与 PITR：从拷贝原理到任意时点恢复

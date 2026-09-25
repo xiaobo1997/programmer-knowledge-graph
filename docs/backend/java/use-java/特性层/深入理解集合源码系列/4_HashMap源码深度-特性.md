@@ -3,8 +3,8 @@ title: "HashMap 源码深度：扰动、树化、高低位扩容与并发史"
 type: deep-dive
 tags: [Java, 集合, HashMap, 源码, 红黑树, 扩容, L2特性层]
 date: 2026-09-18
-wordCount: 5017
-readMinutes: 22
+wordCount: 5551
+readMinutes: 17
 ---
 
 # HashMap 源码深度：扰动、树化、高低位扩容与并发史

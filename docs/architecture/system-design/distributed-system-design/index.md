@@ -2,8 +2,8 @@
 title: 分布式系统设计
 date: 2026-09-05
 aside: false
-wordCount: 905
-readMinutes: 3
+wordCount: 1146
+readMinutes: 4
 ---
 
 # ⬡ 分布式系统设计

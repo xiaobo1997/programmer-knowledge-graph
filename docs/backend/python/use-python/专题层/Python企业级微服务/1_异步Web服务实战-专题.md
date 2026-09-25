@@ -3,7 +3,7 @@ title: Python 并发编程实战：异步 Web 服务
 type: deep-dive
 tags: [Python, 并发, FastAPI, 异步, 专题层]
 date: 2026-09-16
-wordCount: 6200
+wordCount: 6283
 readMinutes: 20
 aside: false
 ---

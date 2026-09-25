@@ -3,8 +3,8 @@ title: "AI Infra 是什么：把大模型跑起来的四层基础设施"
 type: concept
 tags: [AI Infra, 推理, 入门层]
 date: 2026-09-17
-wordCount: 4714
-readMinutes: 12
+wordCount: 5102
+readMinutes: 16
 ---
 
 # AI Infra 是什么：把大模型跑起来的四层基础设施

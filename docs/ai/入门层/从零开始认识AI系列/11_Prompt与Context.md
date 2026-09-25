@@ -3,8 +3,8 @@ title: "Prompt 与 Context：提示工程到上下文工程"
 type: concept
 tags: [AI, Agent, Prompt, Context, 上下文工程, L1入门层]
 date: 2026-08-17
-wordCount: 3254
-readMinutes: 10
+wordCount: 3884
+readMinutes: 12
 ---
 
 # Prompt 与 Context：提示工程到上下文工程

@@ -3,8 +3,8 @@ title: Python 性能优化与工程化实践
 type: practice
 tags: [Python, 性能, 工程化, 专题层]
 date: 2026-09-16
-wordCount: 6400
-readMinutes: 21
+wordCount: 5921
+readMinutes: 19
 aside: false
 ---
 

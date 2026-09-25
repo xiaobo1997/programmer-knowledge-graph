@@ -3,8 +3,8 @@ title: 从零开始认识架构师软实力系列
 type: overview
 date: 2026-09-17
 aside: false
-wordCount: 650
-readMinutes: 3
+wordCount: 380
+readMinutes: 1
 tags: [架构师, 软实力, 职业成长, 入门层]
 ---
 

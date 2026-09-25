@@ -3,8 +3,8 @@ title: Raft 选举与日志复制
 date: 2026-09-24
 type: deep-dive
 tags: [架构, 分布式理论, Raft, 共识, 选主, 日志复制]
-wordCount: 6515
-readMinutes: 25
+wordCount: 7312
+readMinutes: 23
 ---
 
 # Raft 选举与日志复制：从心跳超时到 commitIndex 推进的完整链路

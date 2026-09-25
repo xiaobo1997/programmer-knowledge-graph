@@ -3,7 +3,7 @@ title: 负载均衡算法系列总览：从算法公式到工程账本
 type: overview
 tags: [架构, 服务治理, 负载均衡, 特性层]
 date: 2026-09-23
-wordCount: 750
+wordCount: 939
 readMinutes: 3
 aside: false
 ---

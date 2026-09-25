@@ -3,8 +3,8 @@ title: RocketMQ 事务消息深度解析
 type: deep-dive
 date: 2026-09-15
 aside: false
-wordCount: 5835
-readMinutes: 15
+wordCount: 6258
+readMinutes: 20
 tags: [RocketMQ, 事务消息, 半消息, 事务回查, 最终一致性]
 ---
 

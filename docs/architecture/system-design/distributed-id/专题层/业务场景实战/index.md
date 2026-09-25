@@ -2,8 +2,8 @@
 title: 业务场景实战
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 402
+readMinutes: 1
 ---
 
 # 业务场景实战

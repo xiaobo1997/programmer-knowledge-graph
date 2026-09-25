@@ -3,8 +3,8 @@ title: Sentinel 整合层总览：全景收束与选型落地
 type: overview
 tags: [中间件, Sentinel, 整合层]
 date: 2026-09-23
-wordCount: 700
-readMinutes: 2
+wordCount: 805
+readMinutes: 3
 aside: false
 ---
 

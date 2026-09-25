@@ -3,8 +3,8 @@ title: Slot 责任链深读：编排顺序与 SPI 扩展机制
 type: deep-dive
 tags: [中间件, Sentinel, Slot, 责任链, SPI, 特性层]
 date: 2026-09-23
-wordCount: 6200
-readMinutes: 20
+wordCount: 5497
+readMinutes: 17
 ---
 
 # Slot 责任链深读：编排顺序与 SPI 扩展机制

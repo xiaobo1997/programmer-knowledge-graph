@@ -3,7 +3,7 @@ title: Sentinel 专题层总览：治理与场景的两次收口
 type: overview
 tags: [中间件, Sentinel, 专题层]
 date: 2026-09-23
-wordCount: 760
+wordCount: 848
 readMinutes: 3
 aside: false
 ---

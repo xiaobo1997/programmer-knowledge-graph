@@ -1,4 +1,7 @@
 ---
+
+wordCount: 1021
+readMinutes: 3
 ---
 title: "10 Trade-off与生产演进"
 type: reference

@@ -3,8 +3,8 @@ title: 微服务拆分全景
 type: overview
 tags: [架构, 微服务, 拆分]
 date: 2026-09-16
-wordCount: 600
-readMinutes: 2
+wordCount: 255
+readMinutes: 1
 aside: false
 ---
 

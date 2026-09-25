@@ -3,8 +3,8 @@ title: 自定义 Slot 与指标统计结构深读：从节点树到私有记账
 type: deep-dive
 tags: [中间件, Sentinel, Slot, 统计结构, 扩展, 特性层]
 date: 2026-09-23
-wordCount: 6300
-readMinutes: 20
+wordCount: 5491
+readMinutes: 17
 ---
 
 # 自定义 Slot 与指标统计结构深读：从节点树到私有记账

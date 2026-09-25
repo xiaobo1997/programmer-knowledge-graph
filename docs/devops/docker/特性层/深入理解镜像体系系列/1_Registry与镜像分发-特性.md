@@ -3,8 +3,8 @@ title: Registry 与镜像分发：manifest/blob 协议、拉取加速与签名�
 type: deep-dive
 tags: [DevOps, Docker, Registry, 镜像分发, 镜像签名, 特性层]
 date: 2026-09-18
-wordCount: 5390
-readMinutes: 20
+wordCount: 5969
+readMinutes: 19
 ---
 
 # Registry 与镜像分发：manifest/blob 协议、拉取加速与签名准入

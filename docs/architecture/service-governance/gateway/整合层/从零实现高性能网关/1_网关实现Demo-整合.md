@@ -3,8 +3,8 @@ title: 从零实现高性能网关
 type: demo
 tags: [架构, 网关, Demo, 整合层]
 date: 2026-09-16
-wordCount: 2000
-readMinutes: 7
+wordCount: 422
+readMinutes: 1
 aside: false
 ---
 

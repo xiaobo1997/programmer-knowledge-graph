@@ -3,8 +3,8 @@ title: "AI 应用实战 · SDD 篇"
 type: overview
 tags: [AI, SDD, 整合层, L4-Practice]
 date: 2026-09
-wordCount: 2000
-readMinutes: 6
+wordCount: 730
+readMinutes: 2
 ---
 
 # AI 应用实战 · SDD 篇

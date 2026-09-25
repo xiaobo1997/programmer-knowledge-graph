@@ -3,8 +3,8 @@ title: "AI Infra 收官：云原生技能怎么迁移，学习路径怎么走"
 type: concept
 tags: [AI Infra, 推理, 学习路径, 入门层]
 date: 2026-09-17
-wordCount: 4608
-readMinutes: 12
+wordCount: 4905
+readMinutes: 15
 ---
 
 # AI Infra 收官：云原生技能怎么迁移，学习路径怎么走

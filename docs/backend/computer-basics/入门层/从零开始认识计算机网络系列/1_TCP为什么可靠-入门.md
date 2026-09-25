@@ -3,7 +3,7 @@ title: "TCP 为什么可靠：三次握手、滑动窗口与 TIME_WAIT"
 type: concept
 tags: [计算机网络, TCP, 入门层]
 date: 2026-09-18
-wordCount: 4821
+wordCount: 5213
 readMinutes: 16
 ---
 

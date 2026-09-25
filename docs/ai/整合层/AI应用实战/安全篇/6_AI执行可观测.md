@@ -3,8 +3,8 @@ title: "AI 应用实战 · 安全篇 · §6 AI 执行可观测"
 type: practice
 tags: [AI, 安全, 整合层, L4-Practice]
 date: 2026-09
-wordCount: 4500
-readMinutes: 14
+wordCount: 772
+readMinutes: 2
 ---
 
 # §6 AI 执行可观测：Trace + 日志 + 指标 + 告警

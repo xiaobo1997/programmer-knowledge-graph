@@ -3,8 +3,8 @@ title: "AI 应用实战 · 安全篇 · §5 AI 错误决策识别"
 type: practice
 tags: [AI, 安全, 整合层, L4-Practice]
 date: 2026-09
-wordCount: 5000
-readMinutes: 16
+wordCount: 967
+readMinutes: 3
 ---
 
 # §5 AI 错误决策识别：主动 + 被动发现

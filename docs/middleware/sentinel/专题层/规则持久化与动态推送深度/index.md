@@ -3,7 +3,7 @@ title: 规则持久化与动态推送专题总览
 type: overview
 tags: [中间件, Sentinel, 规则持久化, 专题层]
 date: 2026-09-23
-wordCount: 620
+wordCount: 796
 readMinutes: 2
 aside: false
 ---

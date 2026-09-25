@@ -3,8 +3,8 @@ title: 配置中心
 type: overview
 tags: [架构, 配置中心]
 date: 2026-09-16
-wordCount: 400
-readMinutes: 2
+wordCount: 190
+readMinutes: 1
 aside: false
 ---
 

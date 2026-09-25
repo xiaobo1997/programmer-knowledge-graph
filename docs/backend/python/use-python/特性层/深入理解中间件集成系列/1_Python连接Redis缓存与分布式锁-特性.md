@@ -3,8 +3,8 @@ title: Python 连接 Redis：缓存与分布式锁
 type: deep-dive
 tags: [Python, Redis, 连接池, 分布式锁, 特性层]
 date: 2026-09-16
-wordCount: 6800
-readMinutes: 21
+wordCount: 6549
+readMinutes: 20
 aside: false
 ---
 

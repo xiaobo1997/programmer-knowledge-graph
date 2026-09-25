@@ -3,8 +3,8 @@ title: 机器ID分配与容器化漂移：workerId 的注册、漂移与时钟
 type: deep-dive
 tags: [架构, 分布式ID, 雪花, workerId, 容器化, 时钟回拨]
 date: 2026-09-18
-wordCount: 6434
-readMinutes: 18
+wordCount: 6872
+readMinutes: 21
 ---
 
 # 机器ID分配与容器化漂移：workerId 的注册、漂移与时钟

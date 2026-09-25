@@ -2,8 +2,8 @@
 title: PowerJob Map-Reduce 分片模型
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 265
+readMinutes: 1
 ---
 
 # PowerJob Map-Reduce 分片模型

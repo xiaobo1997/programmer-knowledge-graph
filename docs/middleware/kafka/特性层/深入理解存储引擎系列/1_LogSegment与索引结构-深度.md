@@ -3,8 +3,8 @@ title: Log Segment 与索引结构：Kafka 存储的物理形态
 type: deep-dive
 tags: [中间件, Kafka, 存储引擎, 特性层]
 date: 2026-09-10
-wordCount: 7300
-readMinutes: 20
+wordCount: 5617
+readMinutes: 18
 ---
 
 # Log Segment 与索引结构：Kafka 存储的物理形态

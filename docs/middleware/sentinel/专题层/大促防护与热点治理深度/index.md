@@ -3,8 +3,8 @@ title: 大促防护与热点治理专题总览
 type: overview
 tags: [中间件, Sentinel, 大促防护, 热点参数, 专题层]
 date: 2026-09-23
-wordCount: 640
-readMinutes: 2
+wordCount: 865
+readMinutes: 3
 aside: false
 ---
 

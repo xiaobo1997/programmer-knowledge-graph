@@ -2,8 +2,8 @@
 title: PowerJob Server-Worker 架构
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 231
+readMinutes: 1
 ---
 
 # PowerJob Server-Worker 架构

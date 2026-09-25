@@ -3,8 +3,8 @@ title: AOT 与 GraalVM 原生镜像：Spring Boot 3.x 的静态化编译与达�
 type: deep-dive
 tags: [Java, SpringBoot, GraalVM, AOT, 原生镜像, 特性层]
 date: 2026-09-18
-wordCount: 5459
-readMinutes: 20
+wordCount: 6043
+readMinutes: 19
 ---
 
 # AOT 与 GraalVM 原生镜像：Spring Boot 3.x 的静态化编译与达标代价

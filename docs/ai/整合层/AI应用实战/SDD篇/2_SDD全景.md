@@ -3,8 +3,8 @@ title: "AI 应用实战 · SDD 篇 · §2 SDD 全景：文档先行 + AI 辅助 
 type: concept
 tags: [AI, SDD, 整合层, L4-Practice]
 date: 2026-09
-wordCount: 4500
-readMinutes: 14
+wordCount: 937
+readMinutes: 3
 ---
 
 # §2 SDD 全景：文档先行 + AI 辅助 + 知识库

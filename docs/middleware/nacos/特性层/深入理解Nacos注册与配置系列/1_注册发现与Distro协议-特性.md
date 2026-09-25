@@ -3,8 +3,8 @@ title: 注册发现与 Distro 协议：临时实例的 AP 路线
 type: deep-dive
 tags: [中间件, Nacos, 注册中心, Distro, AP-CP, 特性层]
 date: 2026-09-18
-wordCount: 6398
-readMinutes: 20
+wordCount: 6908
+readMinutes: 22
 ---
 
 # 注册发现与 Distro 协议：临时实例的 AP 路线

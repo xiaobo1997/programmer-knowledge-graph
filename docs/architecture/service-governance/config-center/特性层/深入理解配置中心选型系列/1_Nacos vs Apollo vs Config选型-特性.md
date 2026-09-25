@@ -3,8 +3,8 @@ title: Nacos vs Apollo vs Spring Cloud Config 选型深度对比
 type: deep-dive
 tags: [架构, 配置中心, 选型, 特性层]
 date: 2026-09-16
-wordCount: 2800
-readMinutes: 9
+wordCount: 541
+readMinutes: 2
 aside: false
 ---
 

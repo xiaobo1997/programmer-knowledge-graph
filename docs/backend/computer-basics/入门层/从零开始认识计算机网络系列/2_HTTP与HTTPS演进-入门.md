@@ -3,7 +3,7 @@ title: "HTTP 与 HTTPS 演进：队头阻塞、混合加密与证书链"
 type: concept
 tags: [计算机网络, HTTP, HTTPS, 入门层]
 date: 2026-09-18
-wordCount: 4663
+wordCount: 5062
 readMinutes: 16
 ---
 

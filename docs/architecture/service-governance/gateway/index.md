@@ -3,8 +3,8 @@ title: 网关
 type: overview
 tags: [架构, 网关]
 date: 2026-09-16
-wordCount: 500
-readMinutes: 2
+wordCount: 223
+readMinutes: 1
 aside: false
 ---
 

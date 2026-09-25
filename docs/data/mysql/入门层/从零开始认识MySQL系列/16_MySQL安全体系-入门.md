@@ -3,8 +3,8 @@ title: "MySQL 安全体系：账号、加密与审计的四道防线"
 type: concept
 tags: [MySQL, 安全, 最小权限, TLS, TDE, 审计, L1入门层]
 date: 2026-09-18
-wordCount: 3694
-readMinutes: 16
+wordCount: 3989
+readMinutes: 12
 ---
 
 # MySQL 安全体系：账号、加密与审计的四道防线

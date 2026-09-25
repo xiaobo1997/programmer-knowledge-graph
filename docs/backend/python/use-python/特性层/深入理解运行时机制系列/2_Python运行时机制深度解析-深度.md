@@ -3,8 +3,8 @@ title: Python 运行时机制深度解析
 type: deep-dive
 tags: [Python, CPython, 字节码, 内存管理, GC, 特性层]
 date: 2026-09-16
-wordCount: 7000
-readMinutes: 22
+wordCount: 6408
+readMinutes: 20
 aside: false
 ---
 

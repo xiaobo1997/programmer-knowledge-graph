@@ -3,8 +3,8 @@ title: Python 风控微服务 Demo
 type: demo
 tags: [Python, 微服务, Demo, 整合层, 风控, Kafka]
 date: 2026-09-16
-wordCount: 7600
-readMinutes: 25
+wordCount: 7020
+readMinutes: 22
 aside: false
 ---
 

@@ -3,8 +3,8 @@ title: redisObject 对象系统：type、encoding 与对象共享
 type: deep-dive
 tags: [中间件, Redis, 底层编码, redisObject, 对象共享]
 date: 2026-09-18
-wordCount: 5596
-readMinutes: 18
+wordCount: 6230
+readMinutes: 19
 ---
 
 # redisObject 对象系统：type、encoding 与对象共享

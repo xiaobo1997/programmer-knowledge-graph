@@ -4,7 +4,7 @@ type: deep-dive
 tags: [架构, 事件驱动, Kafka, Broker, 存储引擎, 特性层]
 date: 2026-09-15
 aside: false
-wordCount: 6203
+wordCount: 6812
 readMinutes: 21
 ---
 

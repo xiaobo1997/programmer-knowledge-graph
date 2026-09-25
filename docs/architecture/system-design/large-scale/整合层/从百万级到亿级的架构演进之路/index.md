@@ -3,8 +3,8 @@ type: overview
 title: 从百万级到亿级的架构演进之路
 date: 2026-09-23
 aside: false
-wordCount: 1100
-readMinutes: 4
+wordCount: 990
+readMinutes: 3
 ---
 
 # 从百万级到亿级的架构演进之路

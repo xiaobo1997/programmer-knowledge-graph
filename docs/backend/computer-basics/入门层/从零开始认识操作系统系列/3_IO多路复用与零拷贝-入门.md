@@ -3,7 +3,7 @@ title: "IO 多路复用与零拷贝：五种 IO 模型、epoll 与 Kafka/Redis �
 type: concept
 tags: [操作系统, IO 多路复用, epoll, 零拷贝, sendfile, 入门层]
 date: 2026-09-18
-wordCount: 4767
+wordCount: 5227
 readMinutes: 16
 ---
 

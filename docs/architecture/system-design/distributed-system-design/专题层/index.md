@@ -2,8 +2,8 @@
 title: 分布式系统设计 · 专题层
 date: 2026-09-11
 aside: false
-wordCount: 300
-readMinutes: 2
+wordCount: 115
+readMinutes: 1
 ---
 
 # ⬡ 分布式系统设计 · 专题层

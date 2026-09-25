@@ -3,8 +3,8 @@ title: "从零写一个 agent：治理篇 · §4 客服 agent 治理架构"
 type: concept
 tags: [AI, Agent, 治理, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5500
-readMinutes: 17
+wordCount: 1995
+readMinutes: 6
 ---
 
 # §4 客服 agent 治理架构：6 层政策栈落地

@@ -3,8 +3,8 @@ title: "从零写一个 agent：治理篇 · §6 权限分级 + HITL 决策树"
 type: concept
 tags: [AI, Agent, 治理, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5500
-readMinutes: 17
+wordCount: 1926
+readMinutes: 6
 ---
 
 # §6 权限分级 + HITL 决策树：风控 + 客服

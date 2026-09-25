@@ -3,8 +3,8 @@ title: "从零写一个 agent：治理篇 · §10 Trade-off 与生产演进"
 type: concept
 tags: [AI, Agent, 治理, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5500
-readMinutes: 17
+wordCount: 1941
+readMinutes: 6
 ---
 
 # §10 Trade-off 与生产演进：治理核心权衡

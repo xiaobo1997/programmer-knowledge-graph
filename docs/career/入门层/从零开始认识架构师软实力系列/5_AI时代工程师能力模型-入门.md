@@ -3,8 +3,8 @@ title: "AI 时代工程师能力模型：哪些能力在增值（入门）"
 type: concept
 tags: [架构师, 软实力, 职业成长, 入门层]
 date: 2026-09-17
-wordCount: 7127
-readMinutes: 18
+wordCount: 7471
+readMinutes: 23
 ---
 
 # AI 时代工程师能力模型：哪些能力在增值（入门）

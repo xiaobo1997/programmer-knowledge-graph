@@ -2,8 +2,8 @@
 title: cron 表达式与触发原理
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 349
+readMinutes: 1
 ---
 
 # cron 表达式与触发原理

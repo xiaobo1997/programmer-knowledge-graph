@@ -3,8 +3,8 @@ title: 从零实现大规模架构 Demo：千万级请求的四层骨架与验�
 type: deep-dive
 tags: [大规模架构, 架构Demo, 容量, 整合层]
 date: 2026-09-15
-wordCount: 6300
-readMinutes: 21
+wordCount: 6485
+readMinutes: 20
 ---
 
 # 从零实现大规模架构 Demo：千万级请求的四层骨架与验证闭环

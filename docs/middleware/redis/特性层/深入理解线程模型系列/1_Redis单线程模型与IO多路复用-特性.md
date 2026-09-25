@@ -3,8 +3,8 @@ title: 深入理解 Redis 单线程模型与 IO 多路复用：快的原因与�
 type: deep-dive
 tags: [Redis, 单线程, epoll, IO多路复用, 多线程IO, 阻塞, 特性层]
 date: 2026-09-24
-wordCount: 6806
-readMinutes: 17
+wordCount: 7751
+readMinutes: 24
 ---
 
 # 深入理解 Redis 单线程模型与 IO 多路复用：快的原因与慢的边界

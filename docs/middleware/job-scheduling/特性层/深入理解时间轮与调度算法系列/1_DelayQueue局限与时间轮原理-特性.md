@@ -2,8 +2,8 @@
 title: DelayQueue 局限与时间轮原理
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 286
+readMinutes: 1
 ---
 
 # DelayQueue 局限与时间轮原理

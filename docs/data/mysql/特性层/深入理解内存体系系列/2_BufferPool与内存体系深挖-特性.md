@@ -3,8 +3,8 @@ title: Buffer Pool 深挖：LRU 改进、刷脏策略、预读、change buffer �
 type: deep-dive
 tags: [数据存储, MySQL, InnoDB, Buffer Pool, 刷脏, doublewrite, 特性层]
 date: 2026-09-18
-wordCount: 7306
-readMinutes: 23
+wordCount: 8053
+readMinutes: 25
 ---
 
 # Buffer Pool 深挖：LRU 改进、刷脏策略、预读、change buffer 与 doublewrite 的源码级账本

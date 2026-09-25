@@ -3,8 +3,8 @@ title: 滑动窗口深读：LeapArray 与 Sentinel 的统计结构
 type: deep-dive
 tags: [中间件, Sentinel, 流控, 滑动窗口, 特性层]
 date: 2026-09-23
-wordCount: 6200
-readMinutes: 20
+wordCount: 5841
+readMinutes: 18
 ---
 
 # 滑动窗口深读：LeapArray 与 Sentinel 的统计结构

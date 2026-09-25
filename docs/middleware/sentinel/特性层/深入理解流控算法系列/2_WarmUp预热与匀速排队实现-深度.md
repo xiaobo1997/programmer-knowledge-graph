@@ -3,8 +3,8 @@ title: 预热与匀速排队深读：WarmUp 与 RateLimiter 的实现账本
 type: deep-dive
 tags: [中间件, Sentinel, 流控, 预热, 匀速排队, 特性层]
 date: 2026-09-23
-wordCount: 6300
-readMinutes: 21
+wordCount: 6039
+readMinutes: 19
 ---
 
 # 预热与匀速排队深读：WarmUp 与 RateLimiter 的实现账本

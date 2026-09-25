@@ -3,8 +3,8 @@ title: Jenkins 与 GitLab CI 选型：两种引擎的机制差异与成本结构
 type: deep-dive
 tags: [DevOps, CICD, Jenkins, GitLabCI, 流水线, 特性层]
 date: 2026-09-18
-wordCount: 5425
-readMinutes: 20
+wordCount: 6004
+readMinutes: 19
 ---
 
 # Jenkins 与 GitLab CI 选型：两种引擎的机制差异与成本结构

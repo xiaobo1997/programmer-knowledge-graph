@@ -3,8 +3,8 @@ title: ACL 权限体系与鉴权：从 plain_acl.yml 到 Broker 判定链
 type: deep-dive
 tags: [中间件, RocketMQ, 安全治理, ACL, 鉴权]
 date: 2026-09-18
-wordCount: 5469
-readMinutes: 18
+wordCount: 5944
+readMinutes: 19
 ---
 
 # ACL 权限体系与鉴权：从 plain_acl.yml 到 Broker 判定链

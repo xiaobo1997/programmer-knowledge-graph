@@ -3,7 +3,7 @@ title: "条件装配与 Starter 机制"
 type: concept
 tags: [Spring Boot, 自动装配, starter, L1入门层]
 date: 2026-09-23
-wordCount: 3293
+wordCount: 3619
 readMinutes: 11
 ---
 

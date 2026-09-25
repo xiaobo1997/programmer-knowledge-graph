@@ -3,8 +3,8 @@ title: 自定义实现一个 RPC：机制收束的整合实验
 type: overview
 tags: [架构, 服务治理, RPC, 整合层]
 date: 2026-09-23
-wordCount: 1100
-readMinutes: 4
+wordCount: 845
+readMinutes: 3
 aside: false
 ---
 

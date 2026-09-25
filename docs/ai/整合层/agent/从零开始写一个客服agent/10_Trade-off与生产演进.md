@@ -3,8 +3,8 @@ title: "从零开始写一个客服 agent（多轮对话） · §10 Trade-off �
 type: concept
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5500
-readMinutes: 17
+wordCount: 1466
+readMinutes: 5
 ---
 
 # §10 Trade-off 与生产演进：客服 agent 核心权衡

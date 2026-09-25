@@ -3,8 +3,8 @@ title: "从零开始写一个客服 agent（多轮对话） · §6 从 demo 到�
 type: concept
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 5000
-readMinutes: 16
+wordCount: 1213
+readMinutes: 4
 ---
 
 # §6 从 demo 到生产工具的演进之路思考

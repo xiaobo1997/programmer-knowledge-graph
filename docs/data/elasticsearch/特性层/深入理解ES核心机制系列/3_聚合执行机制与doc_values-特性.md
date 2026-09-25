@@ -3,8 +3,8 @@ title: 聚合执行机制与 doc_values：列存、聚合树与熔断线
 type: deep-dive
 tags: [数据存储, Elasticsearch, 聚合, doc_values, 熔断, 特性层]
 date: 2026-09-17
-wordCount: 5810
-readMinutes: 19
+wordCount: 6242
+readMinutes: 20
 ---
 
 # 聚合执行机制与 doc_values：列存、聚合树与熔断线

@@ -3,8 +3,8 @@ title: "MGR 组复制深挖：Paxos 认证如何改写主从的可用性契约"
 type: deep-dive
 tags: [MySQL, MGR, 组复制, Paxos, 高可用, 专题层]
 date: 2026-09-18
-wordCount: 5331
-readMinutes: 27
+wordCount: 5769
+readMinutes: 18
 ---
 
 # MGR 组复制深挖：Paxos 认证如何改写主从的可用性契约

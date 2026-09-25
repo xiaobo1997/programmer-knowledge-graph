@@ -3,8 +3,8 @@ title: Controller 与 KRaft 元数据演进：从临时节点抢跑到元数据�
 type: deep-dive
 tags: [Kafka, Controller, KRaft, ZooKeeper, 元数据, Leader选举, 特性层]
 date: 2026-09-24
-wordCount: 5413
-readMinutes: 16
+wordCount: 6180
+readMinutes: 19
 ---
 
 # Controller 与 KRaft 元数据演进：从临时节点抢跑到元数据日志

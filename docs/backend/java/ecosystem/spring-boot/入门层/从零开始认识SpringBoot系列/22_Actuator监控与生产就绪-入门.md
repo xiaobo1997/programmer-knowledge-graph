@@ -3,8 +3,8 @@ title: "Actuator 监控与生产就绪"
 type: concept
 tags: [Spring Boot, Actuator, 监控, Micrometer, L1入门层]
 date: 2026-09-23
-wordCount: 3799
-readMinutes: 10
+wordCount: 4120
+readMinutes: 13
 ---
 
 # Actuator 监控与生产就绪

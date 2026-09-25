@@ -2,8 +2,8 @@
 title: 分布式 ID
 date: 2026-09-05
 aside: false
-wordCount: 1097
-readMinutes: 3
+wordCount: 1536
+readMinutes: 5
 ---
 
 # ⬡ 分布式 ID

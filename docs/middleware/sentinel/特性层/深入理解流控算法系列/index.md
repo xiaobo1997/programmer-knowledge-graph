@@ -3,8 +3,8 @@ title: 深入理解流控算法系列总览：从统计结构到流量整形
 type: overview
 tags: [中间件, Sentinel, 流控, 特性层]
 date: 2026-09-23
-wordCount: 820
-readMinutes: 3
+wordCount: 676
+readMinutes: 2
 aside: false
 ---
 

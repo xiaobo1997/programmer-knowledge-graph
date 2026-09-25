@@ -3,8 +3,8 @@ title: Spring Security 整合与过滤链：认证、授权与自定义 JwtFilte
 type: deep-dive
 tags: [Java, SpringBoot, SpringSecurity, 过滤链, JWT, 特性层]
 date: 2026-09-18
-wordCount: 5155
-readMinutes: 20
+wordCount: 5863
+readMinutes: 18
 ---
 
 # Spring Security 整合与过滤链：认证、授权与自定义 JwtFilter 的机制边界

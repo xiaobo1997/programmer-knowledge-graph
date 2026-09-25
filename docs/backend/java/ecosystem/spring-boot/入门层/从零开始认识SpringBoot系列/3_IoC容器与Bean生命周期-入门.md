@@ -3,8 +3,8 @@ title: "IoC 容器与 Bean 生命周期"
 type: concept
 tags: [Spring Boot, IoC, Bean, L1入门层]
 date: 2026-09-23
-wordCount: 3164
-readMinutes: 10
+wordCount: 3653
+readMinutes: 11
 ---
 
 # IoC 容器与 Bean 生命周期

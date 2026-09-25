@@ -4,7 +4,7 @@ type: deep-dive
 tags: [架构, 事件驱动, Kafka, Producer, 消息队列, 特性层]
 date: 2026-09-15
 aside: false
-wordCount: 6463
+wordCount: 7106
 readMinutes: 22
 ---
 

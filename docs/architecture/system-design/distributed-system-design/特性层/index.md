@@ -2,8 +2,8 @@
 title: 服务治理深化系列
 date: 2026-09-11
 aside: false
-wordCount: 1204
-readMinutes: 4
+wordCount: 392
+readMinutes: 1
 ---
 
 # ⬡ 服务治理深化系列

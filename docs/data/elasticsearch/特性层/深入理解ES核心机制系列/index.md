@@ -3,8 +3,8 @@ title: 深入理解ES核心机制系列
 type: overview
 date: 2026-09-17
 aside: false
-wordCount: 700
-readMinutes: 3
+wordCount: 343
+readMinutes: 1
 tags: [Elasticsearch, 特性层]
 ---
 

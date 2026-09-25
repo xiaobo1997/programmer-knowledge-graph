@@ -3,8 +3,8 @@ title: "AI 应用实战 · 安全篇"
 type: overview
 tags: [AI, 安全, 整合层, L4-Practice]
 date: 2026-09
-wordCount: 2000
-readMinutes: 6
+wordCount: 723
+readMinutes: 2
 ---
 
 # AI 应用实战 · 安全篇

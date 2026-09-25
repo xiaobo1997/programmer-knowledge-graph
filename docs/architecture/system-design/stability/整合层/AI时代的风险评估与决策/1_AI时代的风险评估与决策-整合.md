@@ -3,8 +3,8 @@ title: "AI 时代的风险评估与决策：人不该退场的三个理由"
 type: overview
 tags: [稳定性, AI治理, 风险评估, 决策, 架构, 人机协作]
 date: 2026-09-18
-wordCount: 6800
-readMinutes: 20
+wordCount: 2122
+readMinutes: 7
 ---\n
 # AI 时代的风险评估与决策：人不该退场的三个理由
 

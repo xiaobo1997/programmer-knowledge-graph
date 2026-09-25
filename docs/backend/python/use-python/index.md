@@ -3,8 +3,8 @@ title: Python 全栈工程化
 type: overview
 tags: [Python, 工程化, 后端]
 date: 2026-09-16
-wordCount: 800
-readMinutes: 3
+wordCount: 217
+readMinutes: 1
 aside: false
 ---
 

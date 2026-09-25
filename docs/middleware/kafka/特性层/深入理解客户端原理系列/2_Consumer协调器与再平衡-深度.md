@@ -3,8 +3,8 @@ title: Consumer 协调器与再平衡：消费组的自我治理
 type: deep-dive
 tags: [中间件, Kafka, Consumer, 再平衡, 特性层]
 date: 2026-09-10
-wordCount: 7200
-readMinutes: 20
+wordCount: 5852
+readMinutes: 18
 ---
 
 # Consumer 协调器与再平衡：消费组的自我治理

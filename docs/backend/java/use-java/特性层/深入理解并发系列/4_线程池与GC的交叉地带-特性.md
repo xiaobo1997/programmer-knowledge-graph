@@ -3,8 +3,8 @@ title: "线程池与GC的交叉地带：任务堆积如何变成老年代压力"
 type: deep-dive
 tags: [Java, 并发, 线程池, GC, JVM, 内存, L2特性层]
 date: 2026-09-18
-wordCount: 5292
-readMinutes: 22
+wordCount: 5710
+readMinutes: 18
 ---
 
 # 线程池与GC的交叉地带：任务堆积如何变成老年代压力

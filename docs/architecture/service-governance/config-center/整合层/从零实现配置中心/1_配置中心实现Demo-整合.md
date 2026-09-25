@@ -3,8 +3,8 @@ title: 从零实现配置中心：存储 + 长轮询推送
 type: demo
 tags: [架构, 配置中心, Demo, 整合层]
 date: 2026-09-16
-wordCount: 1500
-readMinutes: 5
+wordCount: 455
+readMinutes: 1
 aside: false
 ---
 

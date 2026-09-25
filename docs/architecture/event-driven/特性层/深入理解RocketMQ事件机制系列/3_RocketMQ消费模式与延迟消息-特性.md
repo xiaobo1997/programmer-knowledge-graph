@@ -3,8 +3,8 @@ title: RocketMQ 消费模式与延迟消息深度解析
 type: deep-dive
 date: 2026-09-15
 aside: false
-wordCount: 6003
-readMinutes: 15
+wordCount: 6324
+readMinutes: 20
 tags: [RocketMQ, 消费模式, 广播消费, 重试队列, 死信队列, 延迟消息]
 ---
 

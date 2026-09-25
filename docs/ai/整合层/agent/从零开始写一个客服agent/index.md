@@ -3,8 +3,8 @@ title: "从零开始写一个客服 agent（多轮对话）"
 type: overview
 tags: [AI, Agent, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 2500
-readMinutes: 8
+wordCount: 1932
+readMinutes: 6
 ---
 
 # 从零开始写一个客服 agent（多轮对话）

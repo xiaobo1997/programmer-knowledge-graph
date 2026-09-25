@@ -3,8 +3,8 @@ title: 从零开始认识AIInfra系列
 type: overview
 date: 2026-09-17
 aside: false
-wordCount: 700
-readMinutes: 3
+wordCount: 574
+readMinutes: 2
 tags: [AI Infra, 推理, 入门层]
 ---
 

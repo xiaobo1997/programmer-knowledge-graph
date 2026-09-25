@@ -4,8 +4,8 @@ type: deep-dive
 tags: [架构, 事件驱动, Kafka, Consumer, 消费组, 特性层]
 date: 2026-09-15
 aside: false
-wordCount: 6714
-readMinutes: 22
+wordCount: 7287
+readMinutes: 23
 ---
 
 # Kafka Consumer Group 消费机制深读：Rebalance 协议、位点提交与并行消费的世代账本

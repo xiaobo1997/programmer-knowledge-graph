@@ -3,8 +3,8 @@ title: "DDD 实战：领域驱动设计的工程化落地"
 type: overview
 tags: [DDD, 领域驱动, 聚合根, 限界上下文, 电商订单]
 date: 2026-09-18
-wordCount: 7800
-readMinutes: 22
+wordCount: 4374
+readMinutes: 14
 ---\n
 # DDD 实战：领域驱动设计的工程化落地
 

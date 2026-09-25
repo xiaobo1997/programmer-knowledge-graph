@@ -3,8 +3,8 @@ title: "volatile 与内存屏障：三性分工、插入策略与成本账本"
 type: deep-dive
 tags: [Java, 并发, volatile, JMM, happens-before, 内存屏障, synchronized, L2特性层]
 date: 2026-09-24
-wordCount: 5916
-readMinutes: 24
+wordCount: 6535
+readMinutes: 20
 ---
 
 # volatile 与内存屏障：三性分工、插入策略与成本账本

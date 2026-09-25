@@ -2,8 +2,8 @@
 title: 号段模式进阶
 date: 2026-09-16
 aside: false
-wordCount: 0
-readMinutes: 0
+wordCount: 401
+readMinutes: 1
 ---
 
 # 号段模式进阶

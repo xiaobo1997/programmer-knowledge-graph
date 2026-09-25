@@ -3,8 +3,8 @@ title: Join 算法与优化器成本模型：NLJ、hash join、MRR、BKA 是怎�
 type: deep-dive
 tags: [数据存储, MySQL, Join, 优化器, hash join, 特性层]
 date: 2026-09-18
-wordCount: 6407
-readMinutes: 20
+wordCount: 7083
+readMinutes: 22
 ---
 
 # Join 算法与优化器成本模型：NLJ、hash join、MRR、BKA 是怎么被选出来的

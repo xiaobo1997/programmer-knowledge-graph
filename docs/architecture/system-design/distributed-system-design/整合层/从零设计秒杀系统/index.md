@@ -3,6 +3,8 @@ title: 从零设计秒杀系统
 type: series-index
 tags: [架构, 秒杀, 高并发, 系统设计, 整合层]
 date: 2026-09-21
+wordCount: 618
+readMinutes: 2
 ---
 
 # 从零设计秒杀系统

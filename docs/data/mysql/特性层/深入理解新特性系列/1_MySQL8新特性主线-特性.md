@@ -3,8 +3,8 @@ title: MySQL 8 新特性主线：六个特性各自解决了什么旧痛点
 type: deep-dive
 tags: [数据存储, MySQL, MySQL8, 新特性, 窗口函数, CTE, 特性层]
 date: 2026-09-18
-wordCount: 6847
-readMinutes: 22
+wordCount: 7438
+readMinutes: 23
 ---
 
 # MySQL 8 新特性主线：六个特性各自解决了什么旧痛点

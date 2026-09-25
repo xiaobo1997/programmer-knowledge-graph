@@ -3,8 +3,8 @@ title: "GPU 调度与算力池化：显存为什么成了新的内存层级"
 type: concept
 tags: [AI Infra, GPU 调度, 算力池化, 入门层]
 date: 2026-09-17
-wordCount: 4130
-readMinutes: 11
+wordCount: 4407
+readMinutes: 14
 ---
 
 # GPU 调度与算力池化：显存为什么成了新的内存层级

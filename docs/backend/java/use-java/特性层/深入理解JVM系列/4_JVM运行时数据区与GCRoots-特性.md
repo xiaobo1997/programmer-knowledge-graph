@@ -3,8 +3,8 @@ title: "JVM 运行时数据区与 GC Roots：谁在用、谁该收、谁收不�
 type: deep-dive
 tags: [Java, JVM, 运行时数据区, GC Roots, 内存泄漏, ThreadLocal, L2特性层]
 date: 2026-09-24
-wordCount: 7092
-readMinutes: 29
+wordCount: 7848
+readMinutes: 25
 ---
 
 # JVM 运行时数据区与 GC Roots：谁在用、谁该收、谁收不走

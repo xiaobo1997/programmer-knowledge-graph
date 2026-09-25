@@ -3,7 +3,7 @@ title: 从零实现事件驱动框架：用最小内核理解 Event Bus 的全�
 type: deep-dive
 tags: [事件驱动, Event Bus, 框架实现, 整合层, Demo]
 date: 2026-09-15
-wordCount: 6200
+wordCount: 6815
 readMinutes: 21
 ---
 

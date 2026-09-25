@@ -2,7 +2,7 @@
 title: 设计模式
 date: 2026-09-03
 aside: false
-wordCount: 818
+wordCount: 853
 readMinutes: 3
 ---
 

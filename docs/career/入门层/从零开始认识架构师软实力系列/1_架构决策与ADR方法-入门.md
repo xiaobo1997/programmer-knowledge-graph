@@ -3,8 +3,8 @@ title: "架构决策与 ADR 方法：让技术决策可追溯（入门）"
 type: concept
 tags: [架构师, 软实力, 职业成长, 入门层]
 date: 2026-09-17
-wordCount: 5773
-readMinutes: 14
+wordCount: 6055
+readMinutes: 19
 ---
 
 # 架构决策与 ADR 方法：让技术决策可追溯（入门）

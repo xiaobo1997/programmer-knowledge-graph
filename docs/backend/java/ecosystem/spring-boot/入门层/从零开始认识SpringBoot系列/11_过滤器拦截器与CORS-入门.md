@@ -3,8 +3,8 @@ title: "过滤器、拦截器与 CORS"
 type: concept
 tags: [Spring Boot, Web, L1入门层]
 date: 2026-09-23
-wordCount: 3006
-readMinutes: 10
+wordCount: 3429
+readMinutes: 11
 ---
 
 # 过滤器、拦截器与 CORS

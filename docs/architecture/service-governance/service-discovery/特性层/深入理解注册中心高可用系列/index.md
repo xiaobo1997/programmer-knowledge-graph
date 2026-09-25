@@ -3,7 +3,7 @@ title: 注册中心高可用系列总览：故障不对称下的三层设计
 type: overview
 tags: [架构, 服务治理, 注册中心, 高可用, 特性层]
 date: 2026-09-23
-wordCount: 760
+wordCount: 969
 readMinutes: 3
 aside: false
 ---

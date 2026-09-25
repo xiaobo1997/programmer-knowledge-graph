@@ -3,8 +3,8 @@ title: Python 并发编程与异步生态
 type: deep-dive
 tags: [Python, GIL, asyncio, threading, multiprocessing, 特性层]
 date: 2026-09-16
-wordCount: 7000
-readMinutes: 22
+wordCount: 5769
+readMinutes: 18
 aside: false
 ---
 

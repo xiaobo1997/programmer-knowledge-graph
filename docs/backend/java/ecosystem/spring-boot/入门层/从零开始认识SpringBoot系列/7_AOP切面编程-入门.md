@@ -3,8 +3,8 @@ title: "AOP 切面编程"
 type: concept
 tags: [Spring Boot, AOP, L1入门层]
 date: 2026-09-23
-wordCount: 3209
-readMinutes: 10
+wordCount: 3630
+readMinutes: 11
 ---
 
 # AOP 切面编程

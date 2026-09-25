@@ -3,8 +3,8 @@ title: Python 企业级微服务 Demo
 type: deep-dive
 tags: [Python, 微服务, Demo, 订单支付, 整合层]
 date: 2026-09-16
-wordCount: 7200
-readMinutes: 24
+wordCount: 6961
+readMinutes: 22
 aside: false
 ---
 

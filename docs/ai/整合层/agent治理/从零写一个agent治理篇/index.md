@@ -3,8 +3,8 @@ title: "从零写一个 agent：治理篇"
 type: overview
 tags: [AI, Agent, 治理, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 8000
-readMinutes: 25
+wordCount: 1020
+readMinutes: 3
 ---
 
 # 从零写一个 agent：治理篇

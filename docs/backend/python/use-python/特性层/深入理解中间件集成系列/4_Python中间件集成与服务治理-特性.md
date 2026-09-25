@@ -3,8 +3,8 @@ title: Python 中间件集成与服务治理
 type: deep-dive
 tags: [Python, 中间件, 服务治理, 熔断, 限流, 特性层]
 date: 2026-09-16
-wordCount: 7000
-readMinutes: 22
+wordCount: 6411
+readMinutes: 20
 aside: false
 ---
 

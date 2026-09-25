@@ -3,8 +3,8 @@ title: "整合层"
 type: overview
 tags: [AI, 整合层, L4-Demo]
 date: 2026-09
-wordCount: 3000
-readMinutes: 10
+wordCount: 2305
+readMinutes: 7
 ---
 
 # 整合层

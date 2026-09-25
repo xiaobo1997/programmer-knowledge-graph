@@ -3,7 +3,7 @@ title: "数据源与 JDBC 基础"
 type: concept
 tags: [Spring Boot, 数据访问, JDBC, HikariCP, 连接池, L1入门层]
 date: 2026-09-23
-wordCount: 3255
+wordCount: 3637
 readMinutes: 11
 ---
 

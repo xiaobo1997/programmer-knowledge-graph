@@ -3,8 +3,8 @@ title: Producer 发送器源码：攒批、分区与发送的三层流水
 type: deep-dive
 tags: [中间件, Kafka, Producer, 源码走读, 特性层]
 date: 2026-09-10
-wordCount: 7200
-readMinutes: 20
+wordCount: 5533
+readMinutes: 17
 ---
 
 # Producer 发送器源码：攒批、分区与发送的三层流水

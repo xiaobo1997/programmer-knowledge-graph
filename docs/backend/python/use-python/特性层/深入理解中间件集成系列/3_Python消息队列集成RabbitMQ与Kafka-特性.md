@@ -3,8 +3,8 @@ title: Python 消息队列集成：RabbitMQ 与 Kafka
 type: deep-dive
 tags: [Python, RabbitMQ, Kafka, pika, 消息队列, 特性层]
 date: 2026-09-16
-wordCount: 7000
-readMinutes: 22
+wordCount: 5632
+readMinutes: 18
 aside: false
 ---
 

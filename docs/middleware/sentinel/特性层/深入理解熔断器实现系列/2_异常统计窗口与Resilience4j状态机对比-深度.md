@@ -3,8 +3,8 @@ title: 异常统计与状态机对比深读：Sentinel 窗口 vs Resilience4j
 type: deep-dive
 tags: [中间件, Sentinel, 熔断, Resilience4j, 对比, 特性层]
 date: 2026-09-23
-wordCount: 6400
-readMinutes: 21
+wordCount: 5555
+readMinutes: 17
 ---
 
 # 异常统计与状态机对比深读：Sentinel 窗口 vs Resilience4j

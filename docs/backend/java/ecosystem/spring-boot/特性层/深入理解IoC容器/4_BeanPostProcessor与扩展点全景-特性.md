@@ -3,8 +3,8 @@ title: "BeanPostProcessor 与扩展点全景：触发时机图、顺序控制与
 type: deep-dive
 tags: [Spring, Spring Boot, IoC, BeanPostProcessor, BeanFactoryPostProcessor, SmartLifecycle, 扩展点, L2特性层]
 date: 2026-09-24
-wordCount: 5313
-readMinutes: 22
+wordCount: 5861
+readMinutes: 18
 ---
 
 # BeanPostProcessor 与扩展点全景：触发时机图、顺序控制与真实事例
